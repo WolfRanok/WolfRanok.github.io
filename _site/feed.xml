@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-03T20:50:27+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">博客测试</title><link href="http://localhost:4000/demo" rel="alternate" type="text/html" title="博客测试" /><published>2013-10-18T00:00:00+08:00</published><updated>2013-10-18T00:00:00+08:00</updated><id>http://localhost:4000/blogging-with-title</id><content type="html" xml:base="http://localhost:4000/demo"><![CDATA[<p>这里写需要展示在外部的内容，且需要与正文隔一个空行</p>
+
+<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<h3 id="三级标题">三级标题</h3>
+<h4 id="四级标题">四级标题</h4>
+<h5 id="五级标题">五级标题</h5>
+<h6 id="六级标题">六级标题</h6>
+<hr />
+
+<p>需要说明的一点是，makedown完全支持html格式的代码</p>
+
+<p><a href="https://www.baidu.com">百度一下</a> 超链接需要是http格式的</p>
+
+<p>这是一个公式 \(a^2+b^2 &gt; 2ab\)</p>
+
+<p>这是一个<code class="language-plaintext highlighter-rouge">行内代码</code>块</p>
+
+<p>在写代码的时候可以用指定语言的方式来表现出不同的高亮，代码块之间需要有一个空行</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">showw</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"这是一个python代码块"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">show</span><span class="p">(){</span>
+    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"这是一个C++代码块"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><em>斜体文字</em></p>
+
+<p><em>斜体文字</em></p>
+
+<p><strong>粗体文字</strong></p>
+
+<p><strong>粗体文字</strong></p>
+
+<p><strong><em>粗斜体文字</em></strong></p>
+
+<p><strong><em>粗斜体文字</em></strong></p>
+
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+
+<p><del>删除线</del></p>
+
+<p><u>下划线</u></p>
+
+<blockquote>
+  <p>警告内容</p>
+</blockquote>
+
+<p>表格是制作方式类似于latex</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>hex</th>
+      <th>dec</th>
+      <th>oct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>10</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>16</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>F5</td>
+      <td>21</td>
+      <td>25</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>导入图片,图片的主路径在assets/img处</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img%5Cwolf-test.jpg" alt="blog-img\wolf-test.jpg" />
+    </div>
+    
+</div>
+
+<p>导入多张图片，只需要在图片导入的位置用，分隔即可</p>
+
+<div class="row">
+    
+    <div class="column">
+        <img src="/assets/img/pexels/book-glass.jpeg" alt="book-glass.jpeg" />
+    </div>
+    
+    <div class="column">
+        <img src="/assets/img/feature-img/desk-messy.jpeg" alt="desk-messy.jpeg" />
+    </div>
+    
+</div>]]></content><author><name></name></author><category term="Test" /><category term="Image" /><summary type="html"><![CDATA[这里写需要展示在外部的内容，且需要与正文隔一个空行]]></summary></entry></feed>
