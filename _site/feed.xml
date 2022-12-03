@@ -1,4 +1,152 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-03T21:05:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">博客测试</title><link href="http://localhost:4000/demo" rel="alternate" type="text/html" title="博客测试" /><published>2013-10-18T00:00:00+08:00</published><updated>2013-10-18T00:00:00+08:00</updated><id>http://localhost:4000/blogging-with-title</id><content type="html" xml:base="http://localhost:4000/demo"><![CDATA[<p>这里写需要展示在外部的内容，且需要与正文隔一个空行</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-03T22:00:40+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">MySql 学习笔记</title><link href="http://localhost:4000/mysql" rel="alternate" type="text/html" title="MySql 学习笔记" /><published>2022-12-03T00:00:00+08:00</published><updated>2022-12-03T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-mysql</id><content type="html" xml:base="http://localhost:4000/mysql"><![CDATA[<p>MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。</p>
+
+<hr />
+<h2 id="前言">前言</h2>
+<p>本人比较懒，所以专门挑了一个篇幅比较少的MySql来写博客，主要还是针对笔记的性质来写的。如果有错欢迎指正。
+—</p>
+
+<h2 id="mysql-基本语法">MySql 基本语法</h2>
+<h4 id="1分组">1.分组</h4>
+<p><code class="language-plaintext highlighter-rouge">GROUP BY</code> 字段名 [<code class="language-plaintext highlighter-rouge">HAVING</code> 条件表达式]</p>
+
+<h4 id="2去重">2.去重</h4>
+<p>在 <code class="language-plaintext highlighter-rouge">select</code>的字段前面加上<code class="language-plaintext highlighter-rouge">distinct</code>就可以去重</p>
+
+<h4 id="3插入多行数据">3.插入多行数据</h4>
+
+<p>格式：<br />
+<code class="language-plaintext highlighter-rouge">insert into</code> 表名[（字段名1，字段名2,…）] <code class="language-plaintext highlighter-rouge">values</code>(值\(a_1\)，值\(b_1\),…), (值\(a_2\),值\(b_2\),…)</p>
+
+<p>示例：</p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">insert</span> <span class="k">into</span> <span class="n">mywork</span>
+<span class="k">values</span><span class="p">(</span><span class="nv">"小明"</span><span class="p">,</span><span class="mi">18</span><span class="p">),(</span><span class="nv">"小红"</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="4外连接">4.外连接</h4>
+<p>语法：<br />
+<code class="language-plaintext highlighter-rouge">select</code> 字段列表 <code class="language-plaintext highlighter-rouge">from</code> 表1 [inner] <code class="language-plaintext highlighter-rouge">join</code> 表2 <code class="language-plaintext highlighter-rouge">on</code> 连接条件;
+示例:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span> 
+<span class="k">from</span> <span class="n">wuhan</span><span class="p">.</span><span class="n">commercialhousing</span> 
+<span class="k">join</span> <span class="n">secondhouse</span> <span class="k">on</span> <span class="n">district</span> <span class="n">regexp</span> <span class="n">qy</span>
+<span class="k">limit</span> <span class="mi">10</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>同理还有左外连接：<code class="language-plaintext highlighter-rouge">left join</code>，右外连接：<code class="language-plaintext highlighter-rouge">right join</code></p>
+
+<h4 id="5排序">5.排序</h4>
+
+<p>排序语句：<code class="language-plaintext highlighter-rouge">order by</code> 字段值<code class="language-plaintext highlighter-rouge">[ desc | asc]</code>
+其中 <code class="language-plaintext highlighter-rouge">asc</code>是表示升序（默认），表示降序</p>
+
+<p>示例：</p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="n">customer_number</span>
+<span class="k">from</span> <span class="n">Orders</span>
+<span class="k">group</span> <span class="k">by</span> <span class="n">customer_number</span>
+<span class="k">order</span> <span class="k">by</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">desc</span>
+</code></pre></div></div>
+
+<h4 id="6if语句">6.if语句</h4>
+
+<p>语法：<code class="language-plaintext highlighter-rouge">IF(expr1,expr2,expr3)</code></p>
+
+<p>如果 expr1 是<code class="language-plaintext highlighter-rouge">TRUE</code> (或者expr1 &lt;&gt; 0 且 expr1 &lt;&gt; NULL)，则 IF()的返回值为expr2;<br /> 否则返回值则为 expr3。IF() 的返回值为数字值或字符串值，具体情况视其所在语境而定。</p>
+
+<h4 id="7ifnull语句">7.ifnull语句</h4>
+
+<p>语法：<code class="language-plaintext highlighter-rouge">IFNULL(expr1,expr2)</code>
+expr1不为<code class="language-plaintext highlighter-rouge">NULL</code>，则 IFNULL() 的返回值为expr1; 否则其返回值为 expr2。<br />IFNULL()的返回值是数字或是字符串，具体情况取决于其所使用的语境。</p>
+
+<h4 id="8正则语句">8.正则语句</h4>
+
+<p>关键字：<code class="language-plaintext highlighter-rouge">regexp</code></p>
+
+<p>使用语法：被检测字符串 <code class="language-plaintext highlighter-rouge">regexp [binary]</code> 正则语句
+不区分大小写（即大写和小写都匹配）。为区分大小写，可以使用 BINARY 关键字<br />例如：</p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">WHHERE</span> <span class="n">name</span> <span class="n">REGEXP</span> <span class="nb">BINARY</span> <span class="s1">'Hern .000'</span>
+</code></pre></div></div>
+
+<h2 id="mysql常用函数">mysql常用函数</h2>
+
+<h4 id="日期比较函数datediff">日期比较函数：datediff</h4>
+
+<p>语法：<code class="language-plaintext highlighter-rouge">DATEDIFF(date1,date2)</code>
+参数说明<br />
+date1: 比较日期1<br />
+date2: 比较日期2<br /></p>
+
+<p>DATEDIFF函数返回date1 - date2的计算结果，date1和date2两个参数需是有效的日期或日期时间值;如果参数传递的是日期时间值，DATEDIFF函数仅将日期部分用于计算，并忽略时间部分(只有值的日期部分参与计算)</p>
+
+<p>示例：</p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">DATEDIFF</span><span class="p">(</span><span class="s1">'2022-04-29'</span><span class="p">,</span><span class="s1">'2022-04-30'</span><span class="p">);</span> <span class="c1">--返回 -1</span>
+<span class="k">SELECT</span> <span class="n">DATEDIFF</span><span class="p">(</span><span class="s1">'2022-04-30'</span><span class="p">,</span><span class="s1">'2022-04-29'</span><span class="p">);</span> <span class="c1">--返回 1</span>
+</code></pre></div></div>
+
+<h4 id="日期加减函数date_add">日期加减函数：date_add</h4>
+
+<p>语法：<code class="language-plaintext highlighter-rouge">date_add(‘某个日期时间’,interval 1 时间种类名)</code><br />
+示例：</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="n">date_add</span><span class="p">(</span><span class="k">data</span><span class="p">,</span> <span class="n">interval</span> <span class="mi">1</span> <span class="nb">year</span><span class="p">);</span> <span class="c1">--加1年</span>
+<span class="k">select</span> <span class="n">date_add</span><span class="p">(</span><span class="n">fata</span><span class="p">,</span> <span class="n">interval</span> <span class="mi">1</span> <span class="k">month</span><span class="p">);</span> <span class="c1">--加1月</span>
+</code></pre></div></div>
+
+<p>quarter:季，week:周，day:天，hour:小时，minute:分钟，second:秒，microsecond:毫秒<br />
+注：也可以不用变量，直接加减某个时间，如：select date_add(‘1998-01-01’, interval 1 day);</p>
+
+<h4 id="字符串拼接concat">字符串拼接：concat</h4>
+
+<p>将给入的参数逐一拼接<br />
+例如：</p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">concat</span><span class="p">(</span><span class="err">‘</span><span class="o">%</span><span class="err">’</span><span class="p">,</span><span class="err">’</span><span class="n">abc</span><span class="err">’</span><span class="p">,</span><span class="err">’</span><span class="o">%</span><span class="err">’</span><span class="p">)</span> <span class="c1">--结果为%abc%</span>
+</code></pre></div></div>
+<h4 id="字符串与日期的相互转换">字符串与日期的相互转换</h4>
+<p>使用语法：<br />
+<code class="language-plaintext highlighter-rouge">DATE_FORMAT(date,format) </code>日期转字符串<br />
+<code class="language-plaintext highlighter-rouge">STR_TO_DATE(str,format) </code>字符串转日期<br />
+示例：</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="n">DATE_FORMAT</span><span class="p">(</span><span class="n">now</span><span class="p">(),</span><span class="s1">'%Y-%m-%d %H:%i:%s'</span><span class="p">);</span>
+</code></pre></div></div>
+<p>返回：2022-12-01 10:07:41</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="n">str_to_date</span><span class="p">(</span><span class="s1">'2022-8-7'</span><span class="p">,</span><span class="s1">'%Y'</span><span class="p">)</span>
+</code></pre></div></div>
+<p>返回：2022-00-00<br />
+因为这里只获取到了年份，但是作为datetime对象需要补全月份和日所以会有-00-00出现。</p>
+
+<h4 id="组内字符串拼接-group_concat">组内字符串拼接 group_concat</h4>
+
+<p>语法：<br /></p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">GROUP_CONCAT</span><span class="p">([</span><span class="k">DISTINCT</span><span class="p">]</span> <span class="n">column1</span> <span class="p">[</span><span class="k">ORDER</span> <span class="k">BY</span> <span class="n">column2</span> <span class="k">ASC</span><span class="o">|</span><span class="k">DESC</span><span class="p">]</span> <span class="p">[</span><span class="n">SEPARATOR</span> <span class="n">seq</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>将分组中column1这一列对应的多行的值按照column2 升序或者降序进行连接，其中分隔符为seq<br />
+如果用到了DISTINCT，将表示将不重复的column1按照column2升序或者降序连接<br />
+如果没有指定SEPARATOR的话，也就是说没有写，那么就会默认以 ‘,’分隔</p>
+
+<h2 id="技巧语法">技巧语法</h2>
+
+<h4 id="查询排名前n的数据">查询排名前n的数据</h4>
+
+<p>使用<code class="language-plaintext highlighter-rouge">limit</code> n语句实现（该语句需要放在查询结果的最后）</p>
+
+<p>示例：</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">wuhan</span><span class="p">.</span><span class="n">secondhouse</span> <span class="k">limit</span> <span class="mi">10</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h4 id="使用正则配对字符串">使用正则配对字符串</h4>
+
+<p>使用<code class="language-plaintext highlighter-rouge">regexp</code>关键字实现
+格式： <code class="language-plaintext highlighter-rouge">字段值 regexp 正则字符串</code>
+示例：</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="k">distinct</span> <span class="n">district</span><span class="p">,</span><span class="n">house_type</span><span class="p">,</span><span class="n">wq_area</span><span class="p">,</span><span class="n">wq_num</span><span class="p">,</span><span class="n">yqy_area</span><span class="p">,</span><span class="n">yqy_num</span>
+<span class="k">from</span> <span class="n">commercialhousing</span>
+<span class="k">where</span> <span class="n">district</span> <span class="n">regexp</span> <span class="s1">'江岸'</span><span class="p">;</span>
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。]]></summary></entry><entry><title type="html">博客测试</title><link href="http://localhost:4000/demo" rel="alternate" type="text/html" title="博客测试" /><published>2013-10-18T00:00:00+08:00</published><updated>2013-10-18T00:00:00+08:00</updated><id>http://localhost:4000/blogging-with-title</id><content type="html" xml:base="http://localhost:4000/demo"><![CDATA[<p>这里写需要展示在外部的内容，且需要与正文隔一个空行</p>
 
 <h1 id="一级标题">一级标题</h1>
 <h2 id="二级标题">二级标题</h2>
