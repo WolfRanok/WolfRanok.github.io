@@ -76,7 +76,7 @@ ___粗斜体文字___
 | F5  | 21  | 25  |
 
 导入图片,图片的主路径在assets/img处
-{% include aligner.html images="blog-img\wolf-test.jpg" column=1 %}
+{% include aligner.html images="blog-img/wolf-test.jpg" column=1 %}
 
 导入多张图片，只需要在图片导入的位置用，分隔即可
 {% include aligner.html images="pexels/book-glass.jpeg,feature-img/desk-messy.jpeg" %}

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-03T20:50:27+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">博客测试</title><link href="http://localhost:4000/demo" rel="alternate" type="text/html" title="博客测试" /><published>2013-10-18T00:00:00+08:00</published><updated>2013-10-18T00:00:00+08:00</updated><id>http://localhost:4000/blogging-with-title</id><content type="html" xml:base="http://localhost:4000/demo"><![CDATA[<p>这里写需要展示在外部的内容，且需要与正文隔一个空行</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-03T21:05:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">博客测试</title><link href="http://localhost:4000/demo" rel="alternate" type="text/html" title="博客测试" /><published>2013-10-18T00:00:00+08:00</published><updated>2013-10-18T00:00:00+08:00</updated><id>http://localhost:4000/blogging-with-title</id><content type="html" xml:base="http://localhost:4000/demo"><![CDATA[<p>这里写需要展示在外部的内容，且需要与正文隔一个空行</p>
 
 <h1 id="一级标题">一级标题</h1>
 <h2 id="二级标题">二级标题</h2>
@@ -96,7 +96,7 @@
 <div class="row">
     
     <div style="flex: 100.0%">
-        <img class="single" src="/assets/img/blog-img%5Cwolf-test.jpg" alt="blog-img\wolf-test.jpg" />
+        <img class="single" src="/assets/img/blog-img/wolf-test.jpg" alt="wolf-test.jpg" />
     </div>
     
 </div>
