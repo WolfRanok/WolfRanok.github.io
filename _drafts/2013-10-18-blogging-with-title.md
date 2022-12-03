@@ -5,9 +5,7 @@ tags: [Test, Image]     #标签会影响
 feature-img: "assets/img/feature-img/circuit.jpeg" # 这是一个会出现在博客文章内部的图片
 thumbnail: "assets/img/thumbnails/feature-img/circuit.jpeg" # 这是一个会出现在博客外部的图片
 color: brown # 会影响界面部分元素的颜色，如果界面没有自定义图片的话就会给一个对应颜色的图片
-bootstrap: true # 当这条被设为true时，则编码会兼容bootstrap（一个比较老的框架）格式的信息
-hide_title: false # 当这条被设为true时，会隐藏标题和日期
-permalink: demo # 这条会将该界面的URL自定义
+
 ---
 
 这里写需要展示在外部的内容，且需要与正文隔一个空行
@@ -19,8 +17,6 @@ permalink: demo # 这条会将该界面的URL自定义
 ##### 五级标题
 ###### 六级标题
 ---
-
-需要说明的一点是，makedown完全支持html格式的代码
 
 [百度一下](https://www.baidu.com) 超链接需要是http格式的
 
@@ -80,4 +76,3 @@ ___粗斜体文字___
 
 导入多张图片，只需要在图片导入的位置用，分隔即可
 {% include aligner.html images="pexels/book-glass.jpeg,feature-img/desk-messy.jpeg" %}
-
