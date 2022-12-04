@@ -1,4 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-04T14:06:40+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">MySql 学习笔记</title><link href="http://localhost:4000/mysql" rel="alternate" type="text/html" title="MySql 学习笔记" /><published>2022-12-03T00:00:00+08:00</published><updated>2022-12-03T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-mysql</id><content type="html" xml:base="http://localhost:4000/mysql"><![CDATA[<p>MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-04T14:48:47+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">Jekyll 入门指导</title><link href="http://localhost:4000/jekyll" rel="alternate" type="text/html" title="Jekyll 入门指导" /><published>2022-12-04T00:00:00+08:00</published><updated>2022-12-04T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll"><![CDATA[<p>jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务,例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。</p>
+
+<hr />
+
+<h2 id="前言">前言</h2>
+
+<p>该博客的部署使用的就是Jekyll框架，Jekyll是一门很成熟的技术（也可能是有点老的缘故），他可以将makedown格式的文档转化成一个个静态的页面，即便你没有系统的学过前端三件套也可以制作自己的主页（真的太棒了！）。</p>
+
+<p>对于使用者来说只需要找到对应的资源模板，套用jekyll即可得到你想要的博客。</p>
+
+<p>如果你想要了解更多，这个是Jekyll官网的传送门 \(\Longrightarrow\) <a href="https://www.jekyll.com.cn/">Jekyll</a></p>
+
+<hr />
+
+<h2 id="jekyll-基础知识">Jekyll 基础知识</h2>
+
+<h3 id="基本结构">基本结构</h3>
+<p>Jekyll 也遵循「约定大于配置」的基本原则，所以上手成本极低。</p>
+
+<p>在新创建的项目目录下，有几个重要的文件夹：</p>
+
+<h4 id="_layouts">_layouts</h4>
+
+<p>用于存放各种布局.html 的文件用于对.md文件的转换，在md设置的消息头中的变量，.md文件选择了layout布局之后，会引入对应的布局.html中，html会存放这些变量的默认值，</p>
+
+<h4 id="_drafts">_drafts</h4>
+
+<p>用于存放.md博客的草稿，不会再jekyll工作的时候生成，需要使用指令jekyll server –draft 才会显示在界面中</p>
+<h4 id="_posts">_posts</h4>
+
+<p>用于存放博客文章</p>
+<h4 id="_site">_site</h4>
+
+<p>用于存放项目构建完成之后所生成的静态文件，也就是说，静态网站的所有文件都会来源于此，其中 CSS 文件、JS 文件以及图片文件，会存放在该目录下的 assets 文件夹中。我们可以直接把该目录下的文件拿去部署</p>
+
+<p>除此之外，还有一些其他文件：</p>
+<h4 id="_configyml">_config.yml</h4>
+
+<p>是项目的配置文件，一些全局配置会写在这个文件内，比如 collections（后续推文会讲解），默认文件/路径，等等。总之，这里可以自定义很多东西</p>
+
+<h4 id="gitignore">.gitignore</h4>
+
+<p>创建项目时会自动生成，不需要纳入到 CVS 的文件存放于此，它可以限制一些元素在_site 中的生成</p>
+
+<h4 id="gemfile--gemfilelock">Gemfile &amp; Gemfile.lock</h4>
+
+<p>存放项目所依赖的 Ruby gems，里面拥有存放页面的样式信息，当新加入了主题配置之后，需要使用bundle install指令安装新的配置才能使用。需要使用新的主题时，需要在_config.yml文件的there做更改。注意，使用了新的布局之后可能会导致一些布局不可用，例如“post”，因为在新的主题上可能没有定义这样的布局。所以使用新的布局之后要在_layout中查看一下是否有对应的布局可以使用。</p>
+
+<h4 id="aboutmd">about.md</h4>
+
+<p>会存放有关在界面中的about的内容，生成的页面会出现在主界面上的位置，同理命名其他的文件也会在主界面的上方出现</p>
+
+<hr />
+
+<h2 id="makedown-语法">makedown 语法</h2>
+<h4 id="permalink">permalink</h4>
+<p>可以用于自定义所创建页面的URL。例如，permalink：/Jekyll/ 表示创建的页面会在主页面URL中后加上/Jekyll</p>
+
+<h4 id="layout">layout</h4>
+<p>表示自己所使用的界面样式，常见的值有post</p>
+
+<h4 id="_configyml-1">._config.yml</h4>
+
+<ol>
+  <li>defaults：可用于写一些默认值，例如为layout设置默认值（要注意以下冒号的位置）
+    <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">defaults</span><span class="pi">:</span>
+  <span class="pi">-</span> 
+<span class="err"> </span><span class="na">scope</span><span class="pi">:</span>
+   <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>  <span class="c1"># 这里填写此默认值影响的返回路径</span>
+ <span class="na">values</span><span class="pi">:</span>   <span class="c1"># 这里补充默认值</span>
+     <span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post"</span>
+</code></pre></div>    </div>
+    <p>再例如对图片文件的加载：</p>
+    <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">defaults</span><span class="pi">:</span>
+  <span class="pi">-</span>
+<span class="err"> </span><span class="na">scope</span><span class="pi">:</span>
+   <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">assets/img"</span>
+ <span class="na">values</span><span class="pi">:</span>
+   <span class="na">image</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div>    </div>
+    <p>该例子表示，在html文件中可能加载图片信息的位置会在，assets/img的文件夹下寻找</p>
+  </li>
+</ol>
+
+<hr />
+<h2 id="常用指令">常用指令</h2>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">jekyll new 工程名</code>  创建工程</li>
+  <li><code class="language-plaintext highlighter-rouge">bundle exec jekyll server</code>   启动项目，启动项目之后可以在浏览器中访问http://127.0.0.1:400/看到效果。</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll new PATH --blank</code>  创建新的空项目</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll build</code> 或 <code class="language-plaintext highlighter-rouge">jekyll b</code> 构建项目，生成可部署的 _site 目录</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll serve</code> 或 <code class="language-plaintext highlighter-rouge">jekyll s</code>  构建并运行项目，会自动监听文件变化，不需要反复执行</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll clean</code>  清除所有的构建产物</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll new-theme</code>  创建一个新的主题脚手架</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll doctor</code>  诊断，输出所有已经废弃的依赖包或者有问题的配置</li>
+</ol>]]></content><author><name>Ranok</name></author><category term="Jekyll" /><category term="web前端" /><summary type="html"><![CDATA[jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务,例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。]]></summary></entry><entry><title type="html">MySql 学习笔记</title><link href="http://localhost:4000/mysql" rel="alternate" type="text/html" title="MySql 学习笔记" /><published>2022-12-03T00:00:00+08:00</published><updated>2022-12-03T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-mysql</id><content type="html" xml:base="http://localhost:4000/mysql"><![CDATA[<p>MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。</p>
 
 <hr />
 <h2 id="前言">前言</h2>
@@ -159,7 +254,7 @@ date2: 比较日期2<br /></p>
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="k">distinct</span> <span class="n">district</span><span class="p">,</span><span class="n">house_type</span><span class="p">,</span><span class="n">wq_area</span><span class="p">,</span><span class="n">wq_num</span><span class="p">,</span><span class="n">yqy_area</span><span class="p">,</span><span class="n">yqy_num</span>
 <span class="k">from</span> <span class="n">commercialhousing</span>
 <span class="k">where</span> <span class="n">district</span> <span class="n">regexp</span> <span class="s1">'江岸'</span><span class="p">;</span>
-</code></pre></div></div>]]></content><author><name></name></author><category term="MySql" /><category term="数据库" /><summary type="html"><![CDATA[MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。]]></summary></entry><entry><title type="html">博客测试</title><link href="http://localhost:4000/demo" rel="alternate" type="text/html" title="博客测试" /><published>2013-10-18T00:00:00+08:00</published><updated>2013-10-18T00:00:00+08:00</updated><id>http://localhost:4000/blogging-with-title</id><content type="html" xml:base="http://localhost:4000/demo"><![CDATA[<p>这里写需要展示在外部的内容，且需要与正文隔一个空行</p>
+</code></pre></div></div>]]></content><author><name>Ranok</name></author><category term="MySql" /><category term="数据库" /><summary type="html"><![CDATA[MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。]]></summary></entry><entry><title type="html">博客测试</title><link href="http://localhost:4000/demo" rel="alternate" type="text/html" title="博客测试" /><published>2013-10-18T00:00:00+08:00</published><updated>2013-10-18T00:00:00+08:00</updated><id>http://localhost:4000/blogging-with-title</id><content type="html" xml:base="http://localhost:4000/demo"><![CDATA[<p>这里写需要展示在外部的内容，且需要与正文隔一个空行</p>
 
 <h1 id="一级标题">一级标题</h1>
 <h2 id="二级标题">二级标题</h2>
@@ -274,4 +369,4 @@ date2: 比较日期2<br /></p>
         <img src="/assets/img/feature-img/desk-messy.jpeg" alt="desk-messy.jpeg" />
     </div>
     
-</div>]]></content><author><name></name></author><category term="Test" /><category term="Image" /><summary type="html"><![CDATA[这里写需要展示在外部的内容，且需要与正文隔一个空行]]></summary></entry></feed>
+</div>]]></content><author><name>Ranok</name></author><category term="Test" /><category term="Image" /><summary type="html"><![CDATA[这里写需要展示在外部的内容，且需要与正文隔一个空行]]></summary></entry></feed>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 博客测试
+author: Ranok
 tags: [Test, Image]     #标签会影响
 feature-img: "assets/img/feature-img/circuit.jpeg" # 这是一个会出现在博客文章内部的图片
 thumbnail: "assets/img/thumbnails/feature-img/circuit.jpeg" # 这是一个会出现在博客外部的图片

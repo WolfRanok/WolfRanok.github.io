@@ -1,6 +1,7 @@
 ---
 layout: post
 title: MySql 学习笔记
+author: Ranok
 tag: [MySql,数据库]
 color: brown
 permalink: mysql
