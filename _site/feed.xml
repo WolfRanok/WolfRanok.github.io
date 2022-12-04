@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-04T13:43:22+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">MySql 学习笔记</title><link href="http://localhost:4000/mysql" rel="alternate" type="text/html" title="MySql 学习笔记" /><published>2022-12-03T00:00:00+08:00</published><updated>2022-12-03T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-mysql</id><content type="html" xml:base="http://localhost:4000/mysql"><![CDATA[<p>MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-04T14:06:40+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">MySql 学习笔记</title><link href="http://localhost:4000/mysql" rel="alternate" type="text/html" title="MySql 学习笔记" /><published>2022-12-03T00:00:00+08:00</published><updated>2022-12-03T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-mysql</id><content type="html" xml:base="http://localhost:4000/mysql"><![CDATA[<p>MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。</p>
 
 <hr />
 <h2 id="前言">前言</h2>
-<p>本人比较懒，所以专门挑了一个篇幅比较少的MySql来写博客，主要还是针对笔记的性质来写的。如果有错欢迎指正。
-—</p>
+<p>本人比较懒，所以专门挑了一个篇幅比较少的MySql来写博客，主要还是针对笔记的性质来写的。如果有错欢迎指正。</p>
+
+<hr />
 
 <h2 id="mysql-基本语法">MySql 基本语法</h2>
 <h4 id="1分组">1.分组</h4>
@@ -158,7 +159,7 @@ date2: 比较日期2<br /></p>
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="k">distinct</span> <span class="n">district</span><span class="p">,</span><span class="n">house_type</span><span class="p">,</span><span class="n">wq_area</span><span class="p">,</span><span class="n">wq_num</span><span class="p">,</span><span class="n">yqy_area</span><span class="p">,</span><span class="n">yqy_num</span>
 <span class="k">from</span> <span class="n">commercialhousing</span>
 <span class="k">where</span> <span class="n">district</span> <span class="n">regexp</span> <span class="s1">'江岸'</span><span class="p">;</span>
-</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。]]></summary></entry><entry><title type="html">博客测试</title><link href="http://localhost:4000/demo" rel="alternate" type="text/html" title="博客测试" /><published>2013-10-18T00:00:00+08:00</published><updated>2013-10-18T00:00:00+08:00</updated><id>http://localhost:4000/blogging-with-title</id><content type="html" xml:base="http://localhost:4000/demo"><![CDATA[<p>这里写需要展示在外部的内容，且需要与正文隔一个空行</p>
+</code></pre></div></div>]]></content><author><name></name></author><category term="MySql" /><category term="数据库" /><summary type="html"><![CDATA[MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。]]></summary></entry><entry><title type="html">博客测试</title><link href="http://localhost:4000/demo" rel="alternate" type="text/html" title="博客测试" /><published>2013-10-18T00:00:00+08:00</published><updated>2013-10-18T00:00:00+08:00</updated><id>http://localhost:4000/blogging-with-title</id><content type="html" xml:base="http://localhost:4000/demo"><![CDATA[<p>这里写需要展示在外部的内容，且需要与正文隔一个空行</p>
 
 <h1 id="一级标题">一级标题</h1>
 <h2 id="二级标题">二级标题</h2>

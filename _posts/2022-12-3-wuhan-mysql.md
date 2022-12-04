@@ -1,15 +1,17 @@
 ---
 layout: post
 title: MySql 学习笔记
+tag: [MySql,数据库]
 color: brown
 permalink: mysql
-thumbnail: assets/img/thumbnails/feature-img/mysql.png # 文件路径在github还是只支持反斜杠
+thumbnail: assets/img/thumbnails/feature-img/mysql.png # 文件路径在github还是只支持正斜杠'/'
 ---
 MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。
 
 ---
 ## 前言
 本人比较懒，所以专门挑了一个篇幅比较少的MySql来写博客，主要还是针对笔记的性质来写的。如果有错欢迎指正。
+
 ---
 
 ## MySql 基本语法
