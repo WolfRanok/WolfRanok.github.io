@@ -78,6 +78,19 @@ expr1不为`NULL`，则 IFNULL() 的返回值为expr1; 否则其返回值为 exp
 WHHERE name REGEXP BINARY 'Hern .000'
 ```
 
+#### 9.存在判断语句 exists
+
+当我们只需要判断某些满足特定条件的数据是否存在时，为了提高效率，我们不需要将所有的数据捞出来判断，只需要判断是否存在就可以了。
+采用exists即可满足需求。<br>
+示例：<br>
+```sql
+select exists (SELECT *
+        from  a 
+        where
+        money>0 and time>'2021-03-05';
+)
+```
+
 ## mysql常用函数
 
 #### 日期比较函数：datediff

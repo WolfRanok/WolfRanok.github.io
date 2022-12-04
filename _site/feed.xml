@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-03T22:00:40+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">MySql 学习笔记</title><link href="http://localhost:4000/mysql" rel="alternate" type="text/html" title="MySql 学习笔记" /><published>2022-12-03T00:00:00+08:00</published><updated>2022-12-03T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-mysql</id><content type="html" xml:base="http://localhost:4000/mysql"><![CDATA[<p>MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-04T13:37:05+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">MySql 学习笔记</title><link href="http://localhost:4000/mysql" rel="alternate" type="text/html" title="MySql 学习笔记" /><published>2022-12-03T00:00:00+08:00</published><updated>2022-12-03T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-mysql</id><content type="html" xml:base="http://localhost:4000/mysql"><![CDATA[<p>MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。</p>
 
 <hr />
 <h2 id="前言">前言</h2>
@@ -65,6 +65,18 @@ expr1不为<code class="language-plaintext highlighter-rouge">NULL</code>，则 
 <p>使用语法：被检测字符串 <code class="language-plaintext highlighter-rouge">regexp [binary]</code> 正则语句
 不区分大小写（即大写和小写都匹配）。为区分大小写，可以使用 BINARY 关键字<br />例如：</p>
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">WHHERE</span> <span class="n">name</span> <span class="n">REGEXP</span> <span class="nb">BINARY</span> <span class="s1">'Hern .000'</span>
+</code></pre></div></div>
+
+<h4 id="9存在判断语句-exists">9.存在判断语句 exists</h4>
+
+<p>当我们只需要判断某些满足特定条件的数据是否存在时，为了提高效率，我们不需要将所有的数据捞出来判断，只需要判断是否存在就可以了。
+采用exists即可满足需求。<br />
+示例：<br /></p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="k">exists</span> <span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span>
+        <span class="k">from</span>  <span class="n">a</span> 
+        <span class="k">where</span>
+        <span class="n">money</span><span class="o">&gt;</span><span class="mi">0</span> <span class="k">and</span> <span class="nb">time</span><span class="o">&gt;</span><span class="s1">'2021-03-05'</span><span class="p">;</span>
+<span class="p">)</span>
 </code></pre></div></div>
 
 <h2 id="mysql常用函数">mysql常用函数</h2>
