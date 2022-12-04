@@ -18,7 +18,7 @@ jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和W
 
 对于使用者来说只需要找到对应的资源模板，套用jekyll即可得到你想要的博客。
 
-如果你想要了解更多，这个是Jekyll官网的传送门 $$\Longrightarrow$$ [Jekyll](https://www.jekyll.com.cn/)
+如果你想要了解更多，这个是Jekyll官网的传送门 $$\Longrightarrow$$ [Jekyll](http://jekyllrb.com/)
 
 ---
 
