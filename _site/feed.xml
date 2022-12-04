@@ -1,4 +1,174 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-04T15:37:23+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">Jekyll 入门指导</title><link href="http://localhost:4000/jekyll" rel="alternate" type="text/html" title="Jekyll 入门指导" /><published>2022-12-04T00:00:00+08:00</published><updated>2022-12-04T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll"><![CDATA[<p>jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务,例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-04T21:50:14+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">OpenStack 期末复习</title><link href="http://localhost:4000/openstack" rel="alternate" type="text/html" title="OpenStack 期末复习" /><published>2022-12-04T00:00:00+08:00</published><updated>2022-12-04T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-openstack</id><content type="html" xml:base="http://localhost:4000/openstack"><![CDATA[<p>OpenStack是Rackspace和NASA共同成立的一个开源项目，它是为云计算服务的，提供存储空间、计算能力等资源服务的Web Service。简单来说，OpenStack就是一个操作系统，一套软件，一套IaaS（基础设施即服务）软件，对资源进行管理，并且以服务的形式提供给上层应用或者用户去使用。</p>
+
+<hr />
+
+<h2 id="前言">前言</h2>
+
+<p>以下为openstack的期末复习，考试考点整理，内容比较多且知识点生僻难懂，请好好准备，祝愿各位可以在期末获取一个好成绩！</p>
+
+<hr />
+
+<h2 id="第一章考点">第一章考点</h2>
+
+<h2 id="openstack-的主要项目以及对应的项目名称">OpenStack 的主要项目以及对应的项目名称</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>服务</th>
+      <th>直译</th>
+      <th>项目名称</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dashboard</td>
+      <td>仪表盘</td>
+      <td>Horizon</td>
+    </tr>
+    <tr>
+      <td>Computer</td>
+      <td>计算</td>
+      <td>Nova</td>
+    </tr>
+    <tr>
+      <td>Natwork</td>
+      <td>网络</td>
+      <td>Neutron</td>
+    </tr>
+    <tr>
+      <td>Object Storage</td>
+      <td>对象存储</td>
+      <td>Swift</td>
+    </tr>
+    <tr>
+      <td>Block Storage</td>
+      <td>块存储</td>
+      <td>Cindar</td>
+    </tr>
+    <tr>
+      <td>Identity</td>
+      <td>身份</td>
+      <td>Keystone</td>
+    </tr>
+    <tr>
+      <td>Image</td>
+      <td>镜像</td>
+      <td>Glance</td>
+    </tr>
+    <tr>
+      <td>Telemetry</td>
+      <td>计量</td>
+      <td>Ceilometer</td>
+    </tr>
+    <tr>
+      <td>Orchestration</td>
+      <td>编排</td>
+      <td>Heat</td>
+    </tr>
+    <tr>
+      <td>Database</td>
+      <td>数据库</td>
+      <td>Trove</td>
+    </tr>
+    <tr>
+      <td>Data Processing</td>
+      <td>数据处理</td>
+      <td>Sahara</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="第四章考点">第四章考点</h2>
+
+<h4 id="rest-含义解释">REST 含义解释</h4>
+<p>REST 是 Representational State Transfer 的缩写，通常译为<strong>表现层状态转化</strong></p>
+
+<p>客户端在使用HTTP提供的四种操作（GET、POST、PUT、DELETE）访问服务器上的资源时，这些操作会让服务端的状态发生转化，而这种转化是建立在表现层之上的，所以被称之为表现层转化。</p>
+
+<hr />
+<h4 id="openstack-的认证与api-请求流程">OpenStack 的认证与API 请求流程</h4>
+
+<ol>
+  <li>向云管理员提供的身份端点请求一个认证令牌。</li>
+  <li>如果请求成功，服务器会返回一个认证令牌。</li>
+  <li>发送API请求，并在X-Auht-Token头部包含上一步返回的令牌认证。</li>
+  <li>如果遇到未授权（401）的错误，则需要重新请求另一个令牌。</li>
+</ol>
+
+<h5 id="获取openstack认证令牌">获取OpenStack认证令牌</h5>
+
+<ol>
+  <li>进入demo环境：<code class="language-plaintext highlighter-rouge">source keystonerc_demo</code></li>
+  <li>运行命令cURL来请求一个令牌。</li>
+</ol>
+
+<h5 id="发送api请求">发送API请求</h5>
+
+<ol>
+  <li>设置OS_TOKEN环境变量，将其值设为令牌ID： <code class="language-plaintext highlighter-rouge">export OS_TOKEN=令牌ID</code></li>
+  <li>设置OS_PROJECT_NAME环境变量：<code class="language-plaintext highlighter-rouge">export OS_PROJECT_NAME=demo</code></li>
+  <li>设置OS_COMPUTE_API环境变量：<code class="language-plaintext highlighter-rouge">export OS_COMPUTE_API=http://192.168.199.21:8774/v2.1</code></li>
+  <li>使用Compute API列出示例类型。</li>
+</ol>
+
+<hr />
+<h2 id="第五章">第五章</h2>
+
+<h4 id="keystone的管理层次结构">Keystone的管理层次结构</h4>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/openstack/Keystone.bmp" alt="Keystone.bmp" />
+    </div>
+    
+</div>
+
+<p>问：在一个域中的用户<code class="language-plaintext highlighter-rouge">User1</code>是否可以管理项目<code class="language-plaintext highlighter-rouge">Project1</code></p>
+
+<p>答：可以，因为用户User1是系统管理员，拥有对项目Project1的管理权限。</p>
+
+<hr />
+<h4 id="keystone认证流程图">Keystone认证流程图</h4>
+<p>这张图需要背下来。</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/openstack/KeystoneWWork.bmp" alt="KeystoneWWork.bmp" />
+    </div>
+    
+</div>
+
+<p>对图片的解释：</p>
+
+<ol>
+  <li>用户向Keystone提供凭证，Keystone验证通过后向用户返回令牌的同时还会返回一个通用目录。</li>
+  <li>用户使用该令牌向该目录列表中的端点请求该用户对应的项目信息，Keystone验证通过后返回用户对应的项目列表</li>
+  <li>用户从列表中选择要访问的项目再次向Keystone发出请求，Keystone验证通过后返回管理该项目的服务列表，并允许访问该项目的令牌。</li>
+  <li>用户会通过这个服务和通用目录映射找到服务的端点，并通过端点找到实际服务组件的位置。</li>
+  <li>用户在凭借项目令牌和端点来访问实际上的服务组件。</li>
+  <li>服务组件会向Keystone提供这个用户项目令牌进行验证，Keystone验证通过后会返回一系列的确认信息和附加信息给服务</li>
+  <li>服务执行一系列操作。</li>
+</ol>
+
+<h4 id="配置文件中对两个值的解释">配置文件中对两个值的解释</h4>
+
+<h5 id="-空字符串">”” 空字符串</h5>
+<p>表示“always”（总是）</p>
+
+<h5 id="-感叹号">”!” 感叹号</h5>
+<p>表示“nerver”或者“nobady”，即拒绝。</p>
+
+<h2 id="小知识点">小知识点</h2>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">oslo.policy</code>是<code class="language-plaintext highlighter-rouge">json</code>格式的文件。</li>
+  <li><code class="language-plaintext highlighter-rouge">openstack</code>是使用<code class="language-plaintext highlighter-rouge">python</code>语言实现的。</li>
+</ol>]]></content><author><name>Ranok</name></author><category term="OpenStack" /><category term="期末考试" /><summary type="html"><![CDATA[OpenStack是Rackspace和NASA共同成立的一个开源项目，它是为云计算服务的，提供存储空间、计算能力等资源服务的Web Service。简单来说，OpenStack就是一个操作系统，一套软件，一套IaaS（基础设施即服务）软件，对资源进行管理，并且以服务的形式提供给上层应用或者用户去使用。]]></summary></entry><entry><title type="html">Jekyll 入门指导</title><link href="http://localhost:4000/jekyll" rel="alternate" type="text/html" title="Jekyll 入门指导" /><published>2022-12-04T00:00:00+08:00</published><updated>2022-12-04T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll"><![CDATA[<p>jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务,例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。</p>
 
 <hr />
 
