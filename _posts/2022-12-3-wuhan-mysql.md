@@ -124,6 +124,7 @@ select date_add(fata, interval 1 month); --加1月
 quarter:季，week:周，day:天，hour:小时，minute:分钟，second:秒，microsecond:毫秒<br>
 注：也可以不用变量，直接加减某个时间，如：select date_add(‘1998-01-01’, interval 1 day);
 
+### 字符串专题
 #### 字符串拼接：concat
 
 将给入的参数逐一拼接<br>
@@ -158,6 +159,23 @@ GROUP_CONCAT([DISTINCT] column1 [ORDER BY column2 ASC|DESC] [SEPARATOR seq])
 将分组中column1这一列对应的多行的值按照column2 升序或者降序进行连接，其中分隔符为seq<br>
 如果用到了DISTINCT，将表示将不重复的column1按照column2升序或者降序连接<br>
 如果没有指定SEPARATOR的话，也就是说没有写，那么就会默认以 ','分隔
+
+#### 字符串截取 substring
+语法格式：`SUBSTRING(str, begin, end)`<br>
+substring函数可以将字符串str从下标begin到end截取下来（下标从1开始计算）（闭区间包括begin和end），其中end默认为空，当end省略时表示截取到字符串最后。<br>
+mysq支持逆向访问，即可以使用负数表示下标，负数的下标即从右边开始计算的下标。<br>
+示例：
+```sql
+select substring("01234",1,2);	-- 01
+select substring("01234",1);	-- 01234
+select substring("01234",1,100); -- 01234
+select substring("01234",-1);	-- 4
+```
+
+#### 字符串大小写转换
+`upper(str)`  字符串中所有字母转大写<br>
+`lower(str)`  字符串中所有字母转小写
+
 
 ## 技巧语法
 
