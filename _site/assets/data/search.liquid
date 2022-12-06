@@ -1,6 +1,16 @@
 [
   
   {
+    "title"    : "python 多线程与多进程",
+    "category" : "",
+    "tags"     : " python, 多线程, 多进程",
+    "url"      : "/process",
+    "date"     : "December 5, 2022",
+    "excerpt"  : "进程是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。线程是进程中的一部分，也是进程的的实际运作单位，它也是操作系统中的最小运算调度单位。\n\n\n前言\n多线程与多进程还是比较实用的。本博客以应用为目的展示两个基础的类。\n\n多进程 Process\n\nprocess模块是一个创建进程的模块，借助这个模块，就可以完成进程的创建。\nfrom multiprocessing import Process\n\n参数介绍\nProcess(group=N...",
+  "content"  : "进程是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。线程是进程中的一部分，也是进程的的实际运作单位，它也是操作系统中的最小运算调度单位。\n\n\n前言\n多线程与多进程还是比较实用的。本博客以应用为目的展示两个基础的类。\n\n多进程 Process\n\nprocess模块是一个创建进程的模块，借助这个模块，就可以完成进程的创建。\nfrom multiprocessing import Process\n\n参数介绍\nProcess(group=None, target=None, name=None, args=(), kwargs={})\n\n\n\n  group——参数未使用，值始终为None\n  target——表示调用对象，即子进程要执行的任务\n  args——表示调用对象的位置参数元组，args=(1,2,’egon’,)\n  kwargs——表示调用对象的字典，kwargs={‘name’:’egon’,’age’:18}\n  name——为子进程的名称\n\n\n方法介绍\n\n  obj.start()：启动进程，并调用该子进程中的obj.run()\n  obj.run()：进程启动时运行的方法，正是它去调用target指定的函数，我们自定义类的类中一定要实现该方法\n  obj.terminate()：强制终止进程obj，不会进行任何清理操作，如果obj创建了子进程，该子进程就成了僵尸进程，使用该方法需要特别小心这种情况。如果obj还保存了一个锁那么也将不会被释放，进而导致死锁\n  obj.is_alive()：如果obj仍然运行，返回True\n  obj.join([timeout])：主线程等待obj终止（强调：是主线程处于等的状态，而obj是处于运行的状态）。timeout是可选的超时时间，需要强调的是，obj.join只能join住start开启的进程，而不能join住run开启的进程\n\n\n属性介绍\n\n  obj.daemon：默认值为False，如果设为True，代表obj为后台运行的守护进程，当obj的父进程终止时，obj也随之终止，并且设定为True后，obj不能创建自己的新进程，必须在\n  obj.start()：之前设置\n  obj.name：进程的名称\n  obj.pid：进程的pid\n  obj.exitcode：进程在运行时为None、如果为–N，表示被信号N结束(了解即可)\n  obj.authkey：进程的身份验证键,默认是由os.urandom()随机生成的32字符的字符串。这个键的用途是为涉及网络连接的底层进程间通信提供安全性，这类连接只有在具有相同的身份验证键时才能成功（了解即可）\n\n\n使用案例\nfrom multiprocessing import Process\nimport os\n\ndef worker(arg):\n    # 返回父子进程的pid\n    print(os.getpid(), os.getppid())\n\n\nif __name__ == &quot;__main__&quot;:\n    print(&#39;I am parent process&#39;)\n    jobs = []\n    for i in range(5):\n        p = Process(target=worker, args=(i,))\n        jobs.append(p)\n        p.start()\n\n方法介绍\n\n\n    \n    \n        \n    \n    \n\n\n使用样例\n利用函数使用多线程\nfrom threading import Thread\na = 0\ndef work():\n    global a\n    a += 1\n    print(a，end=’’)\n\nif __name__ == &#39;__main__&#39;:\n    childs = []\n    for i in range(5):\n        childs.append(Thread(target=work))\n        childs[-1].start()\n\n\n程序运行结果：\n1 2 3 4 5\n如果创建的不是线程而是进程则资源不会共享，运行结果会是：\n1 1 1 1 1\n\n利用类重写Thrrad方法实现多线程\nfrom threading import Thread\nimport time\nnum = 0\nchilds = []\nclass MyThread(Thread):\n    def run(self):\n        self.t = num\n\n        for _ in range(3):\n            print(self.t, &#39;线程正在工作&#39;)\n            time.sleep(0.5)\n\n\nfor i in range(3):\n    num = i + 1\n    childs.append(MyThread())\n    childs[-1].start()\n\n运行结果之一：\n1 线程正在工作\n2 线程正在工作\n3 线程正在工作\n132 线程正在工作 线程正在工作 \n线程正在工作\n\n13 线程正在工作\n2 线程正在工作\n 线程正在工作\n\n可以看到输出十分的杂乱，说明确实是多线程输出。\n"
+} ,
+  
+  {
     "title"    : "OpenStack 期末复习",
     "category" : "",
     "tags"     : " OpenStack, 期末考试",
