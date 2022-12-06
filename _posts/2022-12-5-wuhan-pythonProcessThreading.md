@@ -5,7 +5,7 @@ tag: [python, 多线程,多进程]
 author: Ranok
 color: brown
 permalink: process
-# thumbnail: "assets/img/thumbnails/feature-img/openstack.png"
+thumbnail: "assets/img/thumbnails/feature-img/threading.png"
 ---
 
 进程是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。线程是进程中的一部分，也是进程的的实际运作单位，它也是操作系统中的最小运算调度单位。
