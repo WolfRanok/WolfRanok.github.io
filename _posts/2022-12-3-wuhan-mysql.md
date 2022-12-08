@@ -94,6 +94,24 @@ select exists (SELECT *
 )
 ```
 
+#### 10.表格合并
+
+`UNION`操作符合并两个或多个 SELECT 语句的结果。
+`UNION`关键字应处于两次查询之间
+默认地，`UNION` 操作符选取不同的值。如果允许重复的值，请使用 `UNION ALL`。
+示例1：
+```sql
+SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+```
+示例2：
+```sql
+SELECT column_name(s) FROM table1
+UNION ALL
+SELECT column_name(s) FROM table2;
+```
+
 ## mysql常用函数
 
 #### 日期比较函数：datediff

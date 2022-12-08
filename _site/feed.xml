@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-06T20:18:58+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">机器学习三大基础库</title><link href="http://localhost:4000/machine" rel="alternate" type="text/html" title="机器学习三大基础库" /><published>2022-12-06T00:00:00+08:00</published><updated>2022-12-06T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-machine</id><content type="html" xml:base="http://localhost:4000/machine"><![CDATA[<p>机器学习是研究怎样使用计算机模拟或实现人类学习活动的科学，是人工智能中最具智能特征，最前沿的研究领域之一。自20世纪80年代以来，机器学习作为实现人工智能的途径，在人工智能界引起了广泛的兴趣，特别是近十几年来，机器学习领域的研究工作发展很快，它已成为人工智能的重要课题之一。机器学习不仅在基于知识的系统中得到应用，而且在自然语言理解、非单调推理、机器视觉、模式识别等许多领域也得到了广泛应用。一个系统是否具有学习能力已成为是否具有“智能”的一个标志。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-08T10:37:16+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">机器学习三大基础库</title><link href="http://localhost:4000/machine" rel="alternate" type="text/html" title="机器学习三大基础库" /><published>2022-12-06T00:00:00+08:00</published><updated>2022-12-06T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-machine</id><content type="html" xml:base="http://localhost:4000/machine"><![CDATA[<p>机器学习是研究怎样使用计算机模拟或实现人类学习活动的科学，是人工智能中最具智能特征，最前沿的研究领域之一。自20世纪80年代以来，机器学习作为实现人工智能的途径，在人工智能界引起了广泛的兴趣，特别是近十几年来，机器学习领域的研究工作发展很快，它已成为人工智能的重要课题之一。机器学习不仅在基于知识的系统中得到应用，而且在自然语言理解、非单调推理、机器视觉、模式识别等许多领域也得到了广泛应用。一个系统是否具有学习能力已成为是否具有“智能”的一个标志。</p>
 
 <hr />
 
@@ -1551,6 +1551,22 @@ expr1不为<code class="language-plaintext highlighter-rouge">NULL</code>，则 
         <span class="k">where</span>
         <span class="n">money</span><span class="o">&gt;</span><span class="mi">0</span> <span class="k">and</span> <span class="nb">time</span><span class="o">&gt;</span><span class="s1">'2021-03-05'</span><span class="p">;</span>
 <span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="10表格合并">10.表格合并</h4>
+
+<p><code class="language-plaintext highlighter-rouge">UNION</code>操作符合并两个或多个 SELECT 语句的结果。
+<code class="language-plaintext highlighter-rouge">UNION</code>关键字应处于两次查询之间
+默认地，<code class="language-plaintext highlighter-rouge">UNION</code> 操作符选取不同的值。如果允许重复的值，请使用 <code class="language-plaintext highlighter-rouge">UNION ALL</code>。
+示例1：</p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">table1</span>
+<span class="k">UNION</span>
+<span class="k">SELECT</span> <span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">table2</span><span class="p">;</span>
+</code></pre></div></div>
+<p>示例2：</p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">table1</span>
+<span class="k">UNION</span> <span class="k">ALL</span>
+<span class="k">SELECT</span> <span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">table2</span><span class="p">;</span>
 </code></pre></div></div>
 
 <h2 id="mysql常用函数">mysql常用函数</h2>
