@@ -1,4 +1,482 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-08T10:37:16+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">机器学习三大基础库</title><link href="http://localhost:4000/machine" rel="alternate" type="text/html" title="机器学习三大基础库" /><published>2022-12-06T00:00:00+08:00</published><updated>2022-12-06T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-machine</id><content type="html" xml:base="http://localhost:4000/machine"><![CDATA[<p>机器学习是研究怎样使用计算机模拟或实现人类学习活动的科学，是人工智能中最具智能特征，最前沿的研究领域之一。自20世纪80年代以来，机器学习作为实现人工智能的途径，在人工智能界引起了广泛的兴趣，特别是近十几年来，机器学习领域的研究工作发展很快，它已成为人工智能的重要课题之一。机器学习不仅在基于知识的系统中得到应用，而且在自然语言理解、非单调推理、机器视觉、模式识别等许多领域也得到了广泛应用。一个系统是否具有学习能力已成为是否具有“智能”的一个标志。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-09T15:38:08+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">机器学习期末考试</title><link href="http://localhost:4000/machinelearning" rel="alternate" type="text/html" title="机器学习期末考试" /><published>2022-12-09T00:00:00+08:00</published><updated>2022-12-09T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-machineLearning</id><content type="html" xml:base="http://localhost:4000/machinelearning"><![CDATA[<p>今天的人工智能主要依赖的不再是符号知识表示和程序推理机制，现代 AI 而是建立在新的基础上，即机器学习。无论是传统的基于数学的机器学习模型或决策树，还是深度学习的神经网络架构，当今人工智能领域的大多数 AI 应用程序都是基于机器学习技术。</p>
+
+<hr />
+
+<h2 id="前言">前言</h2>
+<p>机器学习是智能专业的专核心课，其科目本身的难度较高，不论是在于理论层面还是代码实现层面都有一定的难度。想要征服机器学习还是一件非常具有挑战性的事情。</p>
+
+<p>本次博客整理了有关机器学习课程的期末考试重点，希望同学们可以获得一个好成绩。</p>
+
+<hr />
+
+<h2 id="问题一有关拟合的问题">问题一：有关拟合的问题</h2>
+<h4 id="什么是过拟合和欠拟合">什么是过拟合和欠拟合？</h4>
+
+<p>过拟合是指模型在训练集上表现很好，到了验证和测试阶段就很差，即模型的泛化能力很差。
+欠拟合是指模型在训练集上表现的不好，以至于在验证和测试阶段表现的也比较差。</p>
+
+<h4 id="如何解决过拟合与欠拟合">如何解决过拟合与欠拟合？</h4>
+<h5 id="过拟合的解决方法">过拟合的解决方法：</h5>
+<ol>
+  <li>重新调整一下参数和超参数。</li>
+  <li>对数据进行特征降维处理，有选择性的抛弃一些特征。</li>
+  <li>降低模型的复杂度。</li>
+  <li>使用正则化约束。</li>
+</ol>
+
+<h5 id="欠拟合的解决方法">欠拟合的解决方法：</h5>
+<ol>
+  <li>增加模型的复杂度，例如使用神经网络代替线性回归、用随机森林代替决策树。</li>
+  <li>考虑选用更多更具有代表意义的特征的数据特征。</li>
+  <li>重新调整一下参数和超参数。</li>
+  <li>降低正则化约束。</li>
+</ol>
+
+<h4 id="决策树如何防止过拟合">决策树如何防止过拟合</h4>
+<p>剪枝。</p>
+
+<hr />
+<h2 id="问题二回归模型与分类模型的区别是什么请举例说明">问题二：回归模型与分类模型的区别是什么？请举例说明。</h2>
+
+<p>回归模型：是对连续变量，进行预测的模型，即回归问题是定量问题。<br />
+回归模型问题的举例：对某城市房价预测、对某地区空气湿度的预测。</p>
+
+<p>分类模型：是对离散变量、进行预测的模型，即分类问题是定类问题。<br />
+分类模型问题的举例：对明天是否下雨的预测、判断病人是否患有某种疾病的预测。</p>
+
+<hr />
+<h2 id="问题三机器学习的四大问题是什么">问题三：机器学习的四大问题是什么？</h2>
+<p>回归、分类、聚类、降维。</p>
+
+<hr />
+<h2 id="问题四机器学习的一般步骤需要以某一实物为例">问题四：机器学习的一般步骤。（需要以某一实物为例）</h2>
+<h4 id="回归问题以披萨价格预测为例">回归问题以披萨价格预测为例。</h4>
+<h5 id="明确任务收集数据">明确任务收集数据。</h5>
+<p>在一定范围内的各个城市中随机选取若干家披萨店，作为初始数据。</p>
+<h5 id="数据分析与预处理">数据分析与预处理。</h5>
+<p>将数据特征初步定为以下几项：</p>
+
+<p>比萨的尺寸、披萨的脂肪含量、披萨的制作成本、披萨的口味、披萨的品牌、披萨所在城市的GDP水平、生产披萨的披萨店的知名度。</p>
+
+<p>分析这些特征是否出现缺失值，对缺失值较多的特征直接删除。对缺失值较少的使用平均值填补定量的特征（例如披萨的脂肪含量），使用众数填补定类的特征（例如披萨的口味）。</p>
+
+<p>将定类数据数值化，方便后期计算。</p>
+
+<p>使用灰色关联分析法有选择性地剔除关联度较小的几个特征，即进行降维与特征选择处理。</p>
+
+<h5 id="模型训练">模型训练</h5>
+
+<p>选择使用线性回归解决该回归问题。</p>
+
+<h5 id="模型评估与参数调优">模型评估与参数调优</h5>
+
+<p>R2评估，模型的优劣，当R2的值越接近1时模型性能越好。
+使用k折交叉验证方法选取出最佳的学习率等参数并再次进行模型训练。</p>
+
+<h5 id="模型应用">模型应用</h5>
+
+<p>将训练模型保存下来，并公布用以推广。</p>
+
+<hr />
+
+<h2 id="问题五k折交叉验证的简述">问题五：k折交叉验证的简述。</h2>
+
+<p>k折交叉验证常用于参数调优，使得更容易训练出较高性能的模型。</p>
+
+<p>k折交叉验证的工作流程：<br /></p>
+<ol>
+  <li>将训练集随机地进行k块、并选出其中1块作为验证集。</li>
+  <li>用其余k-1块的数据进行训练，并用验证集，计算出这一次的误差。</li>
+  <li>重复k次以上步骤，每次选取不同的块作为验证集</li>
+  <li>统计每一次计算得到的误差估计，并取平均值作为本次训练参数的最终指标。</li>
+</ol>
+
+<hr />
+
+<h2 id="问题六模型的评估标准">问题六：模型的评估标准</h2>
+<h4 id="回归问题的评估标准">回归问题的评估标准</h4>
+<ol>
+  <li>MSE（均方误差） 预测残差的平方和，数值越小越好。</li>
+  <li>RMSE（平均绝对误差）是在MSE的基础上开根号计算得到，同样数值越小越好。</li>
+  <li>MAE（平均绝对误差）预测残差的绝对值之和，值越小越好。</li>
+  <li>R2 (R方分数)既考虑预测值与真值之间的差异又考虑问题本身与真值之间的差异。结果的约接近于1越好。
+    <h4 id="分类问题的评估标准">分类问题的评估标准</h4>
+  </li>
+  <li>正确率（Accuracy）即被预测正确的样本在所有预测样本中的占比。</li>
+  <li>召回率(TRR) 即在所有真的正类中被模型预测出来的比例。</li>
+  <li>AUC值：AUC的概率意义是随机取一对正负样本，正样本得分大于负样本得分的概
+ AUC的范围在[0, 1]之间，并且越接近1越好，越接近0.5属于乱猜</li>
+</ol>
+
+<hr />
+
+<h2 id="问题七决策树的建立以ppt为例">问题七：决策树的建立（以ppt为例）</h2>
+<h4 id="考察公式">考察公式：</h4>
+
+<p>信息熵公式：\(H(X)=\sum_{i=1}^{n}p_i log_2^{\frac{1}{p_i}}=-\sum_{i=1}^{n}p_i log_2{p_i}\)<br />
+信息增益公式：\(Gain(D,a)=Ent(D)-Ent(d|a)=Ent(D)-\sum_{v=1}^V \frac{D_v}{D}Ent(D_v)\)</p>
+
+<h4 id="问题描述">问题描述</h4>
+
+<p>如下图，第一列为论坛号码，第二列为性别，第三列为活跃度，最后一列用户是否流失。</p>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/machinelearning/1.png" alt="1.png" />
+    </div>
+    
+</div>
+
+<p>根据该图整理得到如下表格：</p>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/machinelearning/2.png" alt="2.png" />
+    </div>
+    
+</div>
+
+<h4 id="整体熵为多少">整体熵为多少</h4>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/machinelearning/3.png" alt="3.png" />
+    </div>
+    
+</div>
+
+<h5 id="计算按照性别划分的信息增益">计算按照性别划分的信息增益</h5>
+
+<p>要计算性别的信息增益需要先计算性别的信息熵</p>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/machinelearning/3.png" alt="3.png" />
+    </div>
+    
+</div>
+
+<p>因此得到按照性别划分的信息增益为</p>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/machinelearning/4.png" alt="4.png" />
+    </div>
+    
+</div>
+
+<h4 id="计算按照活跃度划分的信息增益">计算按照活跃度划分的信息增益</h4>
+
+<p>同样的，要计算活跃度的信息增益需要先计算活跃度的信息熵</p>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/machinelearning/5.png" alt="5.png" />
+    </div>
+    
+</div>
+
+<p>因此得到按照活跃度划分的信息增益为：</p>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/machinelearning/6.png" alt="6.png" />
+    </div>
+    
+</div>
+
+<h4 id="比较两种特征对流失度的影响">比较两种特征对流失度的影响</h4>
+
+<p>活跃度的信息增益比性别的信息增益大，也就是说，活跃度对用户流失的影响比性别大。</p>
+
+<h4 id="做出决策树图形并说明理由">做出决策树图形并说明理由</h4>
+
+<p>根据第三问的分析，活跃度的信息增益比性别的信息增益大所以要选用，活跃度作为决策树的根节点。最终结果如下所示：</p>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/machinelearning/7.png" alt="7.png" />
+    </div>
+    
+</div>
+
+<hr />
+
+<h2 id="问题八逻辑回归的优化目标函数是什么交叉熵中的两个概率是分布什么不确定">问题八：逻辑回归的优化目标函数是什么？交叉熵中的两个概率是分布什么？(不确定)</h2>
+
+<p>逻辑回归的优化目标函数是:对数似然函数。 <br />
+交叉熵的灵感概率是：真实分布，非真实分布。</p>
+
+<h2 id="问题九简述k近邻的算法流程以及问题问题分析">问题九：简述k近邻的算法流程，以及问题问题分析</h2>
+<h3 id="算法流程">算法流程</h3>
+<ol>
+  <li><strong>计算距离</strong>：计算已知类别数据集中的点与当前点之间的距离
+2）<strong>排序</strong>：按距离递增次序排序
+3）<strong>选择</strong>：选取与当前点距离最小的k个点
+4）<strong>计算频次</strong>：统计前k个点所在的类别出现的频率
+5）<strong>确定类别</strong>：返回前k个点出现频率最高的类别作为当前点的预测分类</li>
+</ol>
+
+<h3 id="计算题以ppt为例">计算题（以ppt为例）</h3>
+<h4 id="考察公式-1">考察公式</h4>
+<p>欧氏距离：平方和开根号 <br />
+曼哈顿距离（城市街区距离）：绝对值的和</p>
+
+<h3 id="提问">提问</h3>
+<p>假设我们现在有几部电影，如何去预测序号9电影的类别？</p>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/machinelearning/8.png" alt="8.png" />
+    </div>
+    
+</div>
+
+<p>分别计算每个电影和被预测电影的距离，然后求解</p>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/machinelearning/9.png" alt="9.png" />
+    </div>
+    
+</div>
+
+<p>所以最终结果预测为喜剧片。</p>
+
+<hr />
+
+<h2 id="问题十标准化与归一化问题以ppt为例">问题十：标准化与归一化问题（以PPT为例）</h2>
+<h4 id="归一化重点">归一化（重点）</h4>
+
+<p><strong>归一化定义</strong>：通过对原始数据进行变换把数据映射到(默认为[0,1])之间</p>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/machinelearning/10.png" alt="10.png" />
+    </div>
+    
+</div>
+
+<p>作用于每一列，max为一列的最大值，min为一列的最小值，那么X’’为最终结果，mx，mi分别为指定区间值，默认mx为1，mi为0</p>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/machinelearning/11.png" alt="11.png" />
+    </div>
+    
+</div>
+
+<h4 id="标准化">标准化</h4>
+
+<p>定义：通过对原始数据进行变换把数据变换到均值为0,标准差为1范围内</p>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/machinelearning/12.png" alt="12.png" />
+    </div>
+    
+</div>
+
+<p>其中，它作用于每一列，mean为平均值，σ为标准差</p>
+
+<hr />
+
+<h2 id="问题十一k均值k-means聚类的算法">问题十一：k均值（k-means）聚类的算法</h2>
+<h4 id="流程">流程</h4>
+<ol>
+  <li>随机设置K个特征空间内的点作为初始的聚类中心</li>
+  <li>对于其他每个点计算到K个中心的距离，未知的点选择最近的一个聚类中心点作为标记类别</li>
+  <li>接着对着标记的聚类中心之后，重新计算出每个聚类的新中心点（平均值）</li>
+  <li>如果计算得出的新中心点与原中心点一样（质心不再移动），那么结束，否则重新进行第二步过程</li>
+</ol>
+
+<h4 id="目标函数及其描述">目标函数及其描述：</h4>
+<p>？？？</p>
+
+<hr />
+
+<h2 id="问题十二梯度下降法">问题十二：梯度下降法</h2>
+<h4 id="梯度下降算法的作用">梯度下降算法的作用：</h4>
+
+<p>梯度下降法是一个优化算法，可以递归地找到模型的最小值，从而找到在最优参数。</p>
+
+<h4 id="需要处理的问题">需要处理的问题：</h4>
+
+<ol>
+  <li>学习率：需要在模型建立的速度和质量上做出权衡，学习率过大可能会导致最终结果不收敛，学习率过小会导致训练时间过长。</li>
+  <li>方向：计算出当前点的梯度方向，并向下不断更新自己的位置。</li>
+  <li>终止条件：考虑使用迭代次数、损失函数值到达一定范围之后终止。</li>
+</ol>
+
+<hr />
+
+<h2 id="问题十三逻辑回归不确定">问题十三：逻辑回归（不确定）</h2>
+<h4 id="损失函数">损失函数：</h4>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/machinelearning/13.png" alt="13.png" />
+    </div>
+    
+</div>
+
+<h4 id="目标函数">目标函数</h4>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/machinelearning/14.png" alt="14.png" />
+    </div>
+    
+</div>
+
+<h4 id="定义">定义：</h4>
+<p>逻辑回归是机器学习中的一种分类模型，做二分类（1/0）任务，并给出相应概率。</p>
+<h4 id="sigmoid函数">sigmoid函数</h4>
+<p>sigmoid可以将数值压缩到[0,1]的范围内。</p>
+
+<hr />
+
+<h2 id="问题十四编程大题">问题十四：编程大题</h2>
+<h4 id="线性回归以实验为例">线性回归（以实验为例）</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>序号</th>
+      <th>直径（英寸）</th>
+      <th>价格（ 美元）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>10</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>14</td>
+      <td>17.5</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>18</td>
+      <td>18</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="该线性回归是一个几元函数表达式是什么">该线性回归是一个几元函数，表达式是什么？</h5>
+<p>是一个一元线性回归函数。<br />
+表达式为：\(f(x) = w_1x_1 + b\)<br />
+其中\(w_1\)表示的是“直径”特征的权重，\(x_1\)表示“直径”变量，\(b\)表示截距</p>
+
+<h5 id="代码实现">代码实现</h5>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>   <span class="c1"># 最小二乘法线性回归
+</span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">X_train_old</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">18</span><span class="p">]).</span><span class="n">reshape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">Y_train_old</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mf">17.5</span><span class="p">,</span><span class="mi">18</span><span class="p">]).</span><span class="n">reshape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">X_train_old</span><span class="p">,</span><span class="n">Y_train_old</span>
+
+<span class="c1"># 因为数据较少所以没必要再单独划出测试集了
+</span><span class="n">X_train</span><span class="p">,</span><span class="n">X_test</span><span class="p">,</span><span class="n">Y_train</span><span class="p">,</span><span class="n">Y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_train_old</span><span class="p">,</span><span class="n">Y_train_old</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">33</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+<span class="c1"># X_train,X_test,Y_train,Y_test = X_train_old,[],Y_train_old,[]
+</span><span class="n">X_train</span><span class="p">,</span><span class="n">X_test</span><span class="p">,</span><span class="n">Y_train</span><span class="p">,</span><span class="n">Y_test</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">model</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">Y_train</span><span class="p">)</span>
+
+<span class="n">T_sim1</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+</code></pre></div></div>
+<h5 id="逻辑回归以实验为例">逻辑回归（以实验为例）</h5>
+<p>代码实现：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+
+<span class="c1"># 1.获取数据
+</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Sample code number'</span><span class="p">,</span> <span class="s">'Clump Thickness'</span><span class="p">,</span> <span class="s">'Uniformity of Cell Size'</span><span class="p">,</span> <span class="s">'Uniformity of Cell Shape'</span><span class="p">,</span>
+                   <span class="s">'Marginal Adhesion'</span><span class="p">,</span> <span class="s">'Single Epithelial Cell Size'</span><span class="p">,</span> <span class="s">'Bare Nuclei'</span><span class="p">,</span> <span class="s">'Bland Chromatin'</span><span class="p">,</span>
+                   <span class="s">'Normal Nucleoli'</span><span class="p">,</span> <span class="s">'Mitoses'</span><span class="p">,</span> <span class="s">'Class'</span><span class="p">]</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s">"breast-cancer-wisconsin.data"</span><span class="p">,</span><span class="n">names</span><span class="o">=</span><span class="n">names</span><span class="p">)</span>
+<span class="n">data</span><span class="p">.</span><span class="n">head</span><span class="p">()</span>
+
+<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">22</span><span class="p">)</span>
+<span class="n">x_train</span><span class="p">.</span><span class="n">head</span><span class="p">()</span>
+
+<span class="n">estimator</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
+<span class="n">estimator</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="n">y_predict</span> <span class="o">=</span> <span class="n">estimator</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="问题十五随机森林">问题十五：随机森林</h2>
+<h4 id="随机森林的算法流程随机森林bagging决策树">随机森林的算法流程（随机森林=Bagging+决策树）</h4>
+
+<ol>
+  <li>随机选取m条数据</li>
+  <li>随机选取k个特征</li>
+  <li>训练决策树</li>
+  <li>重复1-3</li>
+  <li>对上面的若决策树进行平权投票</li>
+</ol>
+
+<h4 id="bagging和boosting的区别">bagging和boosting的区别</h4>
+
+<h5 id="区别一数据方面">区别一:数据方面</h5>
+<ol>
+  <li>Bagging：对数据进行采样训练；</li>
+  <li>Boosting：根据前一轮学习结果调整数据的重要性。</li>
+</ol>
+
+<h5 id="区别二投票方面">区别二:投票方面</h5>
+<ol>
+  <li>Bagging：所有学习器平权投票；</li>
+  <li>Boosting：对学习器进行加权投票。</li>
+</ol>
+
+<h5 id="区别三学习顺序">区别三:学习顺序</h5>
+<ol>
+  <li>Bagging的学习是并行的，每个学习器没有依赖关系；</li>
+  <li>Boosting学习是串行，学习有先后顺序。</li>
+</ol>
+
+<h5 id="区别四主要作用">区别四:主要作用</h5>
+<ol>
+  <li>Bagging主要用于提高泛化性能（解决过拟合，也可以说降低方差）</li>
+  <li>Boosting主要用于提高训练精度 （解决欠拟合，也可以说降低偏差）</li>
+</ol>]]></content><author><name>Ranok</name></author><category term="机器学习" /><category term="期末考试" /><summary type="html"><![CDATA[今天的人工智能主要依赖的不再是符号知识表示和程序推理机制，现代 AI 而是建立在新的基础上，即机器学习。无论是传统的基于数学的机器学习模型或决策树，还是深度学习的神经网络架构，当今人工智能领域的大多数 AI 应用程序都是基于机器学习技术。]]></summary></entry><entry><title type="html">机器学习三大基础库</title><link href="http://localhost:4000/machine" rel="alternate" type="text/html" title="机器学习三大基础库" /><published>2022-12-06T00:00:00+08:00</published><updated>2022-12-06T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-machine</id><content type="html" xml:base="http://localhost:4000/machine"><![CDATA[<p>机器学习是研究怎样使用计算机模拟或实现人类学习活动的科学，是人工智能中最具智能特征，最前沿的研究领域之一。自20世纪80年代以来，机器学习作为实现人工智能的途径，在人工智能界引起了广泛的兴趣，特别是近十几年来，机器学习领域的研究工作发展很快，它已成为人工智能的重要课题之一。机器学习不仅在基于知识的系统中得到应用，而且在自然语言理解、非单调推理、机器视觉、模式识别等许多领域也得到了广泛应用。一个系统是否具有学习能力已成为是否具有“智能”的一个标志。</p>
 
 <hr />
 
@@ -1206,7 +1684,102 @@ index表示行标题，columns表示列标题，默认名称为从0开始的有�
 2 线程正在工作<br />
  线程正在工作<br /></p>
 
-<p>可以看到输出<strong>十分的杂乱</strong>，说明确实是多线程输出。</p>]]></content><author><name>Ranok</name></author><category term="python" /><category term="多线程" /><category term="多进程" /><summary type="html"><![CDATA[进程是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。线程是进程中的一部分，也是进程的的实际运作单位，它也是操作系统中的最小运算调度单位。]]></summary></entry><entry><title type="html">OpenStack 期末复习</title><link href="http://localhost:4000/openstack" rel="alternate" type="text/html" title="OpenStack 期末复习" /><published>2022-12-04T00:00:00+08:00</published><updated>2022-12-04T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-openstack</id><content type="html" xml:base="http://localhost:4000/openstack"><![CDATA[<p>OpenStack是Rackspace和NASA共同成立的一个开源项目，它是为云计算服务的，提供存储空间、计算能力等资源服务的Web Service。简单来说，OpenStack就是一个操作系统，一套软件，一套IaaS（基础设施即服务）软件，对资源进行管理，并且以服务的形式提供给上层应用或者用户去使用。</p>
+<p>可以看到输出<strong>十分的杂乱</strong>，说明确实是多线程输出。</p>]]></content><author><name>Ranok</name></author><category term="python" /><category term="多线程" /><category term="多进程" /><summary type="html"><![CDATA[进程是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。线程是进程中的一部分，也是进程的的实际运作单位，它也是操作系统中的最小运算调度单位。]]></summary></entry><entry><title type="html">Jekyll 入门指导</title><link href="http://localhost:4000/jekyll" rel="alternate" type="text/html" title="Jekyll 入门指导" /><published>2022-12-04T00:00:00+08:00</published><updated>2022-12-04T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll"><![CDATA[<p>jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务,例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。</p>
+
+<hr />
+
+<h2 id="前言">前言</h2>
+
+<p>该博客的部署使用的就是Jekyll框架，Jekyll是一门很成熟的技术（也可能是有点老的缘故），他可以将makedown格式的文档转化成一个个静态的页面，即便你没有系统的学过前端三件套也可以制作自己的主页（真的太棒了！）。</p>
+
+<p>对于使用者来说只需要找到对应的资源模板，套用jekyll即可得到你想要的博客。</p>
+
+<p>如果你想要了解更多，这个是Jekyll官网的传送门 \(\Longrightarrow\) <a href="http://jekyllrb.com/">Jekyll</a></p>
+
+<hr />
+
+<h2 id="jekyll-基础知识">Jekyll 基础知识</h2>
+
+<h3 id="基本结构">基本结构</h3>
+<p>Jekyll 也遵循「约定大于配置」的基本原则，所以上手成本极低。</p>
+
+<p>在新创建的项目目录下，有几个重要的文件夹：</p>
+
+<h4 id="_layouts">_layouts</h4>
+
+<p>用于存放各种布局.html 的文件用于对.md文件的转换，在md设置的消息头中的变量，.md文件选择了layout布局之后，会引入对应的布局.html中，html会存放这些变量的默认值，</p>
+
+<h4 id="_drafts">_drafts</h4>
+
+<p>用于存放.md博客的草稿，不会再jekyll工作的时候生成，需要使用指令jekyll server –draft 才会显示在界面中</p>
+<h4 id="_posts">_posts</h4>
+
+<p>用于存放博客文章</p>
+<h4 id="_site">_site</h4>
+
+<p>用于存放项目构建完成之后所生成的静态文件，也就是说，静态网站的所有文件都会来源于此，其中 CSS 文件、JS 文件以及图片文件，会存放在该目录下的 assets 文件夹中。我们可以直接把该目录下的文件拿去部署</p>
+
+<p>除此之外，还有一些其他文件：</p>
+<h4 id="_configyml">_config.yml</h4>
+
+<p>是项目的配置文件，一些全局配置会写在这个文件内，比如 collections（后续推文会讲解），默认文件/路径，等等。总之，这里可以自定义很多东西</p>
+
+<h4 id="gitignore">.gitignore</h4>
+
+<p>创建项目时会自动生成，不需要纳入到 CVS 的文件存放于此，它可以限制一些元素在_site 中的生成</p>
+
+<h4 id="gemfile--gemfilelock">Gemfile &amp; Gemfile.lock</h4>
+
+<p>存放项目所依赖的 Ruby gems，里面拥有存放页面的样式信息，当新加入了主题配置之后，需要使用bundle install指令安装新的配置才能使用。需要使用新的主题时，需要在_config.yml文件的there做更改。注意，使用了新的布局之后可能会导致一些布局不可用，例如“post”，因为在新的主题上可能没有定义这样的布局。所以使用新的布局之后要在_layout中查看一下是否有对应的布局可以使用。</p>
+
+<h4 id="aboutmd">about.md</h4>
+
+<p>会存放有关在界面中的about的内容，生成的页面会出现在主界面上的位置，同理命名其他的文件也会在主界面的上方出现</p>
+
+<hr />
+
+<h2 id="makedown-语法">makedown 语法</h2>
+<h4 id="permalink">permalink</h4>
+<p>可以用于自定义所创建页面的URL。例如，permalink：/Jekyll/ 表示创建的页面会在主页面URL中后加上/Jekyll</p>
+
+<h4 id="layout">layout</h4>
+<p>表示自己所使用的界面样式，常见的值有post</p>
+
+<h4 id="_configyml-1">._config.yml</h4>
+
+<ol>
+  <li>defaults：可用于写一些默认值，例如为layout设置默认值（要注意以下冒号的位置）
+    <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">defaults</span><span class="pi">:</span>
+  <span class="pi">-</span> 
+<span class="err"> </span><span class="na">scope</span><span class="pi">:</span>
+   <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>  <span class="c1"># 这里填写此默认值影响的返回路径</span>
+ <span class="na">values</span><span class="pi">:</span>   <span class="c1"># 这里补充默认值</span>
+     <span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post"</span>
+</code></pre></div>    </div>
+    <p>再例如对图片文件的加载：</p>
+    <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">defaults</span><span class="pi">:</span>
+  <span class="pi">-</span>
+<span class="err"> </span><span class="na">scope</span><span class="pi">:</span>
+   <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">assets/img"</span>
+ <span class="na">values</span><span class="pi">:</span>
+   <span class="na">image</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div>    </div>
+    <p>该例子表示，在html文件中可能加载图片信息的位置会在，assets/img的文件夹下寻找</p>
+  </li>
+</ol>
+
+<hr />
+<h2 id="常用指令">常用指令</h2>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">jekyll new 工程名</code>  创建工程</li>
+  <li><code class="language-plaintext highlighter-rouge">bundle exec jekyll server</code>   启动项目，启动项目之后可以在浏览器中访问http://127.0.0.1:400/看到效果。</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll new PATH --blank</code>  创建新的空项目</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll build</code> 或 <code class="language-plaintext highlighter-rouge">jekyll b</code> 构建项目，生成可部署的 _site 目录</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll serve</code> 或 <code class="language-plaintext highlighter-rouge">jekyll s</code>  构建并运行项目，会自动监听文件变化，不需要反复执行</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll clean</code>  清除所有的构建产物</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll new-theme</code>  创建一个新的主题脚手架</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll doctor</code>  诊断，输出所有已经废弃的依赖包或者有问题的配置</li>
+</ol>]]></content><author><name>Ranok</name></author><category term="Jekyll" /><category term="web前端" /><summary type="html"><![CDATA[jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务,例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。]]></summary></entry><entry><title type="html">OpenStack 期末复习</title><link href="http://localhost:4000/openstack" rel="alternate" type="text/html" title="OpenStack 期末复习" /><published>2022-12-04T00:00:00+08:00</published><updated>2022-12-04T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-openstack</id><content type="html" xml:base="http://localhost:4000/openstack"><![CDATA[<p>OpenStack是Rackspace和NASA共同成立的一个开源项目，它是为云计算服务的，提供存储空间、计算能力等资源服务的Web Service。简单来说，OpenStack就是一个操作系统，一套软件，一套IaaS（基础设施即服务）软件，对资源进行管理，并且以服务的形式提供给上层应用或者用户去使用。</p>
 
 <hr />
 
@@ -1376,102 +1949,7 @@ index表示行标题，columns表示列标题，默认名称为从0开始的有�
 <ol>
   <li><code class="language-plaintext highlighter-rouge">oslo.policy</code>是<code class="language-plaintext highlighter-rouge">json</code>格式的文件。</li>
   <li><code class="language-plaintext highlighter-rouge">openstack</code>是使用<code class="language-plaintext highlighter-rouge">python</code>语言实现的。</li>
-</ol>]]></content><author><name>Ranok</name></author><category term="OpenStack" /><category term="期末考试" /><summary type="html"><![CDATA[OpenStack是Rackspace和NASA共同成立的一个开源项目，它是为云计算服务的，提供存储空间、计算能力等资源服务的Web Service。简单来说，OpenStack就是一个操作系统，一套软件，一套IaaS（基础设施即服务）软件，对资源进行管理，并且以服务的形式提供给上层应用或者用户去使用。]]></summary></entry><entry><title type="html">Jekyll 入门指导</title><link href="http://localhost:4000/jekyll" rel="alternate" type="text/html" title="Jekyll 入门指导" /><published>2022-12-04T00:00:00+08:00</published><updated>2022-12-04T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll"><![CDATA[<p>jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务,例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。</p>
-
-<hr />
-
-<h2 id="前言">前言</h2>
-
-<p>该博客的部署使用的就是Jekyll框架，Jekyll是一门很成熟的技术（也可能是有点老的缘故），他可以将makedown格式的文档转化成一个个静态的页面，即便你没有系统的学过前端三件套也可以制作自己的主页（真的太棒了！）。</p>
-
-<p>对于使用者来说只需要找到对应的资源模板，套用jekyll即可得到你想要的博客。</p>
-
-<p>如果你想要了解更多，这个是Jekyll官网的传送门 \(\Longrightarrow\) <a href="http://jekyllrb.com/">Jekyll</a></p>
-
-<hr />
-
-<h2 id="jekyll-基础知识">Jekyll 基础知识</h2>
-
-<h3 id="基本结构">基本结构</h3>
-<p>Jekyll 也遵循「约定大于配置」的基本原则，所以上手成本极低。</p>
-
-<p>在新创建的项目目录下，有几个重要的文件夹：</p>
-
-<h4 id="_layouts">_layouts</h4>
-
-<p>用于存放各种布局.html 的文件用于对.md文件的转换，在md设置的消息头中的变量，.md文件选择了layout布局之后，会引入对应的布局.html中，html会存放这些变量的默认值，</p>
-
-<h4 id="_drafts">_drafts</h4>
-
-<p>用于存放.md博客的草稿，不会再jekyll工作的时候生成，需要使用指令jekyll server –draft 才会显示在界面中</p>
-<h4 id="_posts">_posts</h4>
-
-<p>用于存放博客文章</p>
-<h4 id="_site">_site</h4>
-
-<p>用于存放项目构建完成之后所生成的静态文件，也就是说，静态网站的所有文件都会来源于此，其中 CSS 文件、JS 文件以及图片文件，会存放在该目录下的 assets 文件夹中。我们可以直接把该目录下的文件拿去部署</p>
-
-<p>除此之外，还有一些其他文件：</p>
-<h4 id="_configyml">_config.yml</h4>
-
-<p>是项目的配置文件，一些全局配置会写在这个文件内，比如 collections（后续推文会讲解），默认文件/路径，等等。总之，这里可以自定义很多东西</p>
-
-<h4 id="gitignore">.gitignore</h4>
-
-<p>创建项目时会自动生成，不需要纳入到 CVS 的文件存放于此，它可以限制一些元素在_site 中的生成</p>
-
-<h4 id="gemfile--gemfilelock">Gemfile &amp; Gemfile.lock</h4>
-
-<p>存放项目所依赖的 Ruby gems，里面拥有存放页面的样式信息，当新加入了主题配置之后，需要使用bundle install指令安装新的配置才能使用。需要使用新的主题时，需要在_config.yml文件的there做更改。注意，使用了新的布局之后可能会导致一些布局不可用，例如“post”，因为在新的主题上可能没有定义这样的布局。所以使用新的布局之后要在_layout中查看一下是否有对应的布局可以使用。</p>
-
-<h4 id="aboutmd">about.md</h4>
-
-<p>会存放有关在界面中的about的内容，生成的页面会出现在主界面上的位置，同理命名其他的文件也会在主界面的上方出现</p>
-
-<hr />
-
-<h2 id="makedown-语法">makedown 语法</h2>
-<h4 id="permalink">permalink</h4>
-<p>可以用于自定义所创建页面的URL。例如，permalink：/Jekyll/ 表示创建的页面会在主页面URL中后加上/Jekyll</p>
-
-<h4 id="layout">layout</h4>
-<p>表示自己所使用的界面样式，常见的值有post</p>
-
-<h4 id="_configyml-1">._config.yml</h4>
-
-<ol>
-  <li>defaults：可用于写一些默认值，例如为layout设置默认值（要注意以下冒号的位置）
-    <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">defaults</span><span class="pi">:</span>
-  <span class="pi">-</span> 
-<span class="err"> </span><span class="na">scope</span><span class="pi">:</span>
-   <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>  <span class="c1"># 这里填写此默认值影响的返回路径</span>
- <span class="na">values</span><span class="pi">:</span>   <span class="c1"># 这里补充默认值</span>
-     <span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post"</span>
-</code></pre></div>    </div>
-    <p>再例如对图片文件的加载：</p>
-    <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">defaults</span><span class="pi">:</span>
-  <span class="pi">-</span>
-<span class="err"> </span><span class="na">scope</span><span class="pi">:</span>
-   <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">assets/img"</span>
- <span class="na">values</span><span class="pi">:</span>
-   <span class="na">image</span><span class="pi">:</span> <span class="no">true</span>
-</code></pre></div>    </div>
-    <p>该例子表示，在html文件中可能加载图片信息的位置会在，assets/img的文件夹下寻找</p>
-  </li>
-</ol>
-
-<hr />
-<h2 id="常用指令">常用指令</h2>
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">jekyll new 工程名</code>  创建工程</li>
-  <li><code class="language-plaintext highlighter-rouge">bundle exec jekyll server</code>   启动项目，启动项目之后可以在浏览器中访问http://127.0.0.1:400/看到效果。</li>
-  <li><code class="language-plaintext highlighter-rouge">jekyll new PATH --blank</code>  创建新的空项目</li>
-  <li><code class="language-plaintext highlighter-rouge">jekyll build</code> 或 <code class="language-plaintext highlighter-rouge">jekyll b</code> 构建项目，生成可部署的 _site 目录</li>
-  <li><code class="language-plaintext highlighter-rouge">jekyll serve</code> 或 <code class="language-plaintext highlighter-rouge">jekyll s</code>  构建并运行项目，会自动监听文件变化，不需要反复执行</li>
-  <li><code class="language-plaintext highlighter-rouge">jekyll clean</code>  清除所有的构建产物</li>
-  <li><code class="language-plaintext highlighter-rouge">jekyll new-theme</code>  创建一个新的主题脚手架</li>
-  <li><code class="language-plaintext highlighter-rouge">jekyll doctor</code>  诊断，输出所有已经废弃的依赖包或者有问题的配置</li>
-</ol>]]></content><author><name>Ranok</name></author><category term="Jekyll" /><category term="web前端" /><summary type="html"><![CDATA[jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务,例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。]]></summary></entry><entry><title type="html">MySql 学习笔记</title><link href="http://localhost:4000/mysql" rel="alternate" type="text/html" title="MySql 学习笔记" /><published>2022-12-03T00:00:00+08:00</published><updated>2022-12-03T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-mysql</id><content type="html" xml:base="http://localhost:4000/mysql"><![CDATA[<p>MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。</p>
+</ol>]]></content><author><name>Ranok</name></author><category term="OpenStack" /><category term="期末考试" /><summary type="html"><![CDATA[OpenStack是Rackspace和NASA共同成立的一个开源项目，它是为云计算服务的，提供存储空间、计算能力等资源服务的Web Service。简单来说，OpenStack就是一个操作系统，一套软件，一套IaaS（基础设施即服务）软件，对资源进行管理，并且以服务的形式提供给上层应用或者用户去使用。]]></summary></entry><entry><title type="html">MySql 学习笔记</title><link href="http://localhost:4000/mysql" rel="alternate" type="text/html" title="MySql 学习笔记" /><published>2022-12-03T00:00:00+08:00</published><updated>2022-12-03T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-mysql</id><content type="html" xml:base="http://localhost:4000/mysql"><![CDATA[<p>MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。</p>
 
 <hr />
 <h2 id="前言">前言</h2>
