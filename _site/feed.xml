@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-09T15:53:24+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">机器学习期末考试</title><link href="http://localhost:4000/machinelearning" rel="alternate" type="text/html" title="机器学习期末考试" /><published>2022-12-09T00:00:00+08:00</published><updated>2022-12-09T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-machineLearning</id><content type="html" xml:base="http://localhost:4000/machinelearning"><![CDATA[<p>今天的人工智能主要依赖的不再是符号知识表示和程序推理机制，现代 AI 而是建立在新的基础上，即机器学习。无论是传统的基于数学的机器学习模型或决策树，还是深度学习的神经网络架构，当今人工智能领域的大多数 AI 应用程序都是基于机器学习技术。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-10T19:55:15+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">机器学习期末考试</title><link href="http://localhost:4000/machinelearning" rel="alternate" type="text/html" title="机器学习期末考试" /><published>2022-12-09T00:00:00+08:00</published><updated>2022-12-09T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-machineLearning</id><content type="html" xml:base="http://localhost:4000/machinelearning"><![CDATA[<p>今天的人工智能主要依赖的不再是符号知识表示和程序推理机制，现代 AI 而是建立在新的基础上，即机器学习。无论是传统的基于数学的机器学习模型或决策树，还是深度学习的神经网络架构，当今人工智能领域的大多数 AI 应用程序都是基于机器学习技术。</p>
 
 <hr />
 
@@ -2033,9 +2033,10 @@ expr1不为<code class="language-plaintext highlighter-rouge">NULL</code>，则 
 
 <h4 id="10表格合并">10.表格合并</h4>
 
-<p><code class="language-plaintext highlighter-rouge">UNION</code>操作符合并两个或多个 SELECT 语句的结果。
-<code class="language-plaintext highlighter-rouge">UNION</code>关键字应处于两次查询之间
-默认地，<code class="language-plaintext highlighter-rouge">UNION</code> 操作符选取不同的值。如果允许重复的值，请使用 <code class="language-plaintext highlighter-rouge">UNION ALL</code>。
+<p><code class="language-plaintext highlighter-rouge">UNION</code>操作符合并两个或多个 SELECT 语句的结果。<br />
+<code class="language-plaintext highlighter-rouge">UNION</code>关键字应处于两次查询之间<br />
+默认地，<code class="language-plaintext highlighter-rouge">UNION</code> 操作符选取不同的值。如果允许重复的值，请使用 <code class="language-plaintext highlighter-rouge">UNION ALL</code>。<br />
+<strong>注意</strong>：<code class="language-plaintext highlighter-rouge">union</code>的优先级低于<code class="language-plaintext highlighter-rouge">order by</code>，即先合并再排序。
 示例1：</p>
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">table1</span>
 <span class="k">UNION</span>
@@ -2046,6 +2047,15 @@ expr1不为<code class="language-plaintext highlighter-rouge">NULL</code>，则 
 <span class="k">UNION</span> <span class="k">ALL</span>
 <span class="k">SELECT</span> <span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">table2</span><span class="p">;</span>
 </code></pre></div></div>
+
+<h4 id="11数据修改-update">11.数据修改 update</h4>
+<p>语法：<br /></p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">UPDATE</span> <span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span> <span class="k">SET</span> <span class="err">字段</span> <span class="mi">1</span><span class="o">=</span><span class="err">值</span> <span class="mi">1</span> <span class="p">[,</span><span class="err">字段</span> <span class="mi">2</span><span class="o">=</span><span class="err">值</span> <span class="mi">2</span><span class="err">…</span> <span class="p">]</span> 
+<span class="p">[</span><span class="k">WHERE</span> <span class="err">子句</span> <span class="p">]</span>
+<span class="p">[</span><span class="k">ORDER</span> <span class="k">BY</span> <span class="err">子句</span><span class="p">]</span> <span class="p">[</span><span class="k">LIMIT</span> <span class="err">子句</span><span class="p">]</span>
+</code></pre></div></div>
+
+<hr />
 
 <h2 id="mysql常用函数">mysql常用函数</h2>
 
@@ -2121,6 +2131,8 @@ mysq支持逆向访问，即可以使用负数表示下标，负数的下标即�
 <h4 id="字符串大小写转换">字符串大小写转换</h4>
 <p><code class="language-plaintext highlighter-rouge">upper(str)</code>  字符串中所有字母转大写<br />
 <code class="language-plaintext highlighter-rouge">lower(str)</code>  字符串中所有字母转小写</p>
+
+<hr />
 
 <h2 id="技巧语法">技巧语法</h2>
 

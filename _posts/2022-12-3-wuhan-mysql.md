@@ -96,9 +96,10 @@ select exists (SELECT *
 
 #### 10.表格合并
 
-`UNION`操作符合并两个或多个 SELECT 语句的结果。
-`UNION`关键字应处于两次查询之间
-默认地，`UNION` 操作符选取不同的值。如果允许重复的值，请使用 `UNION ALL`。
+`UNION`操作符合并两个或多个 SELECT 语句的结果。<br>
+`UNION`关键字应处于两次查询之间<br>
+默认地，`UNION` 操作符选取不同的值。如果允许重复的值，请使用 `UNION ALL`。<br>
+**注意**：`union`的优先级低于`order by`，即先合并再排序。
 示例1：
 ```sql
 SELECT column_name(s) FROM table1
@@ -111,6 +112,16 @@ SELECT column_name(s) FROM table1
 UNION ALL
 SELECT column_name(s) FROM table2;
 ```
+
+#### 11.数据修改 update
+语法：<br>
+```sql
+UPDATE <表名> SET 字段 1=值 1 [,字段 2=值 2… ] 
+[WHERE 子句 ]
+[ORDER BY 子句] [LIMIT 子句]
+```
+
+---
 
 ## mysql常用函数
 
@@ -194,6 +205,7 @@ select substring("01234",-1);	-- 4
 `upper(str)`  字符串中所有字母转大写<br>
 `lower(str)`  字符串中所有字母转小写
 
+---
 
 ## 技巧语法
 
