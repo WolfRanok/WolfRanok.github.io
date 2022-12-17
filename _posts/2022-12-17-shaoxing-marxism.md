@@ -2,7 +2,7 @@
 layout: post
 title: 马原期末复习
 author: Ranok
-tag: [马克思主义基本原理,期末复习]
+tag: [马克思主义基本原理,期末考试]
 color: brown
 permalink: marxism
 thumbnail: assets/img/thumbnails/feature-img/marxism.jpg # 文件路径在github还是只支持正斜杠'/'
