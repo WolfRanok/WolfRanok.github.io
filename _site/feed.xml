@@ -1,4 +1,179 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-17T20:57:07+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">马原期末复习</title><link href="http://localhost:4000/marxism" rel="alternate" type="text/html" title="马原期末复习" /><published>2022-12-17T00:00:00+08:00</published><updated>2022-12-17T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-marxism</id><content type="html" xml:base="http://localhost:4000/marxism"><![CDATA[<p>马克思主义基本原理是指马克思主义政治经济学、辩证唯物主义和历史唯物主义以及科学社会主义。它是马克思主义科学体系的基本理论、基本范畴，是其立场、观点和方法的理论表达。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-18T20:00:53+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">计组期末复习</title><link href="http://localhost:4000/computer" rel="alternate" type="text/html" title="计组期末复习" /><published>2022-12-18T00:00:00+08:00</published><updated>2022-12-18T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-computer</id><content type="html" xml:base="http://localhost:4000/computer"><![CDATA[<p>计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。</p>
+
+<hr />
+
+<h2 id="前言">前言</h2>
+<p>本博客针对《计算机组成原理》课程进行期末复习，其中复习形式以<strong>对真题的解答</strong>为主要方式。本门课程偏硬件，对于软件专业的可能需要花费更多的时间来攻克本门课程。希望你顺利通过本门考试。</p>
+
+<hr />
+
+<h2 id="考题分析">考题分析</h2>
+
+<p>| 题型 | 单项分数 | 题量 | 总分 |
+|:-:|:-:|:-:|:-:|
+| 选择 | 2 | 10 | 20 |
+| 判断 | 1 | 10 | 10 |
+| 简答 | 5 | 10 | 20 |
+| 计算 | 10 | 3 | 30 |
+—</p>
+
+<h2 id="选择题">选择题</h2>
+
+<h4 id="1-两个数9f5-h和513-h相加得-c-">1. 两个数\(9F5 H\)和\(513 H\)相加，得( C ).</h4>
+
+<blockquote>
+  <p>后缀<code class="language-plaintext highlighter-rouge">H</code>表示16进制，其表示方式\(9F5 H\)等价于\((9F5)_{16}\)</p>
+</blockquote>
+
+<p>  A: BDBH<br />
+  B: CD8H<br />
+  C: F08H<br />
+  D: CC8H</p>
+
+<h4 id="2--d-表示法主要用于表示浮点数中的阶码">2. ( D )表示法主要用于表示浮点数中的阶码。</h4>
+
+<p>  A: 原码<br />
+  B: 补码<br />
+  C: 反码<br />
+  D: 移码<br /></p>
+
+<h4 id="3-存储字长是-c-">3. 存储字长是( C )</h4>
+<blockquote>
+  <p>存储字长是位数，大小才是个数</p>
+</blockquote>
+
+<p>  A: 存储单元的个数<br />
+  B: 机器指令的位数<br />
+  C: 存放在一个存储单元之后的二进制代码位数<br />
+  D: 机器字长<br /></p>
+
+<h4 id="4-若x补--110001100则x原-b-">4. 若[x]补 = 1.10001100，则[x]原=( B )。</h4>
+<blockquote>
+  <p>这里的第一位表示符号位不是小数点<br />
+原码 = 补码按位取反后 + 1</p>
+</blockquote>
+
+<p>  A: 1.0010101<br />
+  B: 1.01110100<br />
+  C: 0.0010110<br />
+  D: 0.1101010<br /></p>
+
+<h4 id="5-若cpu的地址线为a0a15某芯片存储单元有8k则加在该存储器芯片上的地址线为-c-">5. 若CPU的地址线为A0~A15，某芯片存储单元有8K，则加在该存储器芯片上的地址线为( C )。</h4>
+<blockquote>
+  <p>1k 表示 \(2^{10}\) 所以可以推算出 8k 表示 \(2^{13}\) 所以总线占据13位</p>
+</blockquote>
+
+<p>  A: A0~A10<br />
+  B: A0~A11<br />
+  C: A0~A12<br />
+  D: A0~A13<br /></p>
+
+<h4 id="6-冯诺依曼机工作方式的基本特点是-b-">6. 冯.诺依曼机工作方式的基本特点是( B )。</h4>
+
+<p>  A: 多指令流单数据流<br />
+  B: 按地址访问并顺序执行指令<br />
+  C: 堆栈操作<br />
+  D: 存储器按内容选择地址<br /></p>
+
+<h4 id="7-某一ram-芯片其容为10248位其数据线和地延线分别为-c-">7. 某一RAM 芯片，其容为1024*8位，其数据线和地延线分别为( C )。</h4>
+<blockquote>
+  <p>1024 表示地址线 \(2^10\) 共8位，数据线为8位</p>
+</blockquote>
+
+<p>  A: 3、10<br />
+  B: 10、3<br />
+  C: 8、10<br />
+  D: 10、8<br /></p>
+
+<h4 id="8-cache的地址映射中若主存中的任意一块均可映射到cache内的任意一块的位置上称-b-">8. Cache的地址映射中，若主存中的任意一块均可映射到Cache内的任意一块的位置上，称( B )。</h4>
+<blockquote>
+  <p>直接映射表示：取模映射，每一个块只能映射到模数固定的位置上。<br />
+全相联映射：如题意。<br />
+组相联映射：组间直接映射，组内全映射<br /></p>
+</blockquote>
+
+<p>  A: 直接映射<br />
+  B: 全相联映射<br />
+  C: 组相联映射<br />
+  D: 以上全是<br /></p>
+
+<h4 id="9-某机字长8位来用补码形式则机疑数能表示的范国是-c-">9. 某机字长8位，来用补码形式，则机疑数能表示的范国是( C )。</h4>
+<blockquote>
+  <p>左闭右开</p>
+</blockquote>
+
+<p>  A: -127~+127<br />
+  B: -128~+128<br />
+  C: -128~+127<br />
+  D: -127~+128<br /></p>
+
+<h4 id="10-计算机操作的最小单位时间是-a-">10. 计算机操作的最小单位时间是( A )。</h4>
+
+<p>  A: 时钟周期<br />
+  B: 机器周期<br />
+  C: CPU周期<br />
+  D: 指令周期<br /></p>
+
+<hr />
+
+<h2 id="判断题">判断题</h2>
+
+<h4 id="11超前进位不要考虑前一位来的进位">11．超前进位不要考虑前一位来的进位。（✔）</h4>
+<h4 id="12-在补码的加减法中用两位符号位判断溢出两位符号位组合为10时表示结果正溢">12. 在补码的加减法中，用两位符号位判断溢出,两位符号位组合为10时，表示结果正溢。（✖）</h4>
+<blockquote>
+  <p>00	结果为正，无溢出 <br />
+01	正溢，（大于机器所能表示的最大正数）<br />
+10	负溢，（小于机器所能表示的最小负数）<br />
+11	结果为负，无溢出<br /></p>
+</blockquote>
+
+<h4 id="13-nand闪存更适用作为u盘-">13. NAND闪存更适用作为U盘。 （✔）</h4>
+<h4 id="14-在程序的执行过程中cache与主存的地址映射是由操作系统来管理的-">14. 在程序的执行过程中，Cache与主存的地址映射是由操作系统来管理的。 (✖)</h4>
+<blockquote>
+  <p>此处应该把<code class="language-plaintext highlighter-rouge">操作系统</code>换成<code class="language-plaintext highlighter-rouge">硬件</code></p>
+</blockquote>
+
+<h4 id="15存取时间比存取周期花费的时间要长一些-">15．存取时间比存取周期花费的时间要长一些。 (✖)</h4>
+<blockquote>
+  <p>存取周期包括了存储时间，所以存储周期时间要更长</p>
+</blockquote>
+
+<h4 id="16-浮点数的正负由阶码的正负符号决定-">16. 浮点数的正负由阶码的正负符号决定。 (✖)</h4>
+<blockquote>
+  <p>正负由符号位决定</p>
+</blockquote>
+
+<h4 id="17-nor闪存更适用作为程序存储器-">17. NOR闪存更适用作为程序存储器。 (✖)</h4>
+
+<h4 id="18-e2prom-是带电可擦可编程的只读存储-">18. \(E^2PROM\) 是带电可擦可编程的只读存储。 (✔)</h4>
+<h4 id="19硬件实现的功能一般比款件实现具有更尚的执行速度-">19．硬件实现的功能一般比款件实现具有更尚的执行速度。 (✔)</h4>
+<h4 id="20-动态存储dram的刷新是以列为单位的-">20. 动态存储DRAM的刷新是以列为单位的。 (✖)</h4>
+<blockquote>
+  <p>应该以<strong>行</strong>为单位</p>
+</blockquote>
+
+<hr />
+
+<h2 id="简答题">简答题</h2>
+<h4 id="21-任意写出五种指令寻址方式">21. 任意写出五种指令寻址方式。</h4>
+
+<p>  1. 隐含寻址
+  2. 立即寻址
+  3. 直接寻址
+  4. 间接寻址
+  5. 寄存器寻址
+  6. 寄存器间接寻址
+  7. 偏移寻址
+  8. 堆栈寻址</p>
+
+<h4 id="22写出-nor和nand型flash闪存各自的优缺点">22．写出 NOR和NAND型Flash闪存各自的优缺点</h4>
+<p>  NOR可靠性高，适用于擦除次数和编程操作较少，而直接执行代码的场合。
+  NAND存储速度快，闪存有10倍于NOR闪存的可擦除次数，适用于大容量存储设备。</p>
+
+<hr />
+
+<h2 id="计算题">计算题</h2>
+<h4 id="23-设浮点数的阶码和尾数部分均用二进制补码表示按照浮点数的运算规则计算xyx2-1010101100y2-100-0101000">23. 设浮点数的阶码和尾数部分均用二进制补码表示，按照浮点数的运算规则计算X+Y:<br />\(X=2^{-101}*0.101100，Y=2^{-100}*(-0.101000)\)</h4>]]></content><author><name>Ranok</name></author><category term="计算机组成原理" /><category term="期末考试" /><summary type="html"><![CDATA[计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。]]></summary></entry><entry><title type="html">马原期末复习</title><link href="http://localhost:4000/marxism" rel="alternate" type="text/html" title="马原期末复习" /><published>2022-12-17T00:00:00+08:00</published><updated>2022-12-17T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-marxism</id><content type="html" xml:base="http://localhost:4000/marxism"><![CDATA[<p>马克思主义基本原理是指马克思主义政治经济学、辩证唯物主义和历史唯物主义以及科学社会主义。它是马克思主义科学体系的基本理论、基本范畴，是其立场、观点和方法的理论表达。</p>
 
 <hr />
 
