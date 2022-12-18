@@ -4,7 +4,6 @@ title: 相册
 subtitle: Ranok 的画廊
 permalink: /gallery/
 gallery_path: "assets/img/pexels"
-tags: [Page]
 ---
 <!-- 在文件`assets/img/pexels` 下的图片会展示在这里-->
 

@@ -1,8 +1,8 @@
 ---
 layout: search
-title: Search
+title: 搜索 
 permalink: /search/
-subtitle: "What are you looking for?"
-feature-img: "assets/img/pexels/search-map.jpeg"
+subtitle: "你在寻找什么？"
+feature-img: "assets/img/pexels/wolf2.jpg"
 icon: "fa-search"
 ---
