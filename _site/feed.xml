@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-18T22:38:15+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">计组期末复习</title><link href="http://localhost:4000/computer" rel="alternate" type="text/html" title="计组期末复习" /><published>2022-12-18T00:00:00+08:00</published><updated>2022-12-18T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-computer</id><content type="html" xml:base="http://localhost:4000/computer"><![CDATA[<p>计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-19T19:37:04+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">计组期末复习</title><link href="http://localhost:4000/computer" rel="alternate" type="text/html" title="计组期末复习" /><published>2022-12-18T00:00:00+08:00</published><updated>2022-12-18T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-computer</id><content type="html" xml:base="http://localhost:4000/computer"><![CDATA[<p>计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。</p>
 
 <hr />
 
@@ -173,7 +173,65 @@
 <hr />
 
 <h2 id="计算题">计算题</h2>
-<h4 id="23-设浮点数的阶码和尾数部分均用二进制补码表示按照浮点数的运算规则计算xyx2-1010101100y2-100-0101000">23. 设浮点数的阶码和尾数部分均用二进制补码表示，按照浮点数的运算规则计算X+Y:<br />\(X=2^{-101}*0.101100，Y=2^{-100}*(-0.101000)\)</h4>]]></content><author><name>Ranok</name></author><category term="计算机组成原理" /><category term="期末考试" /><summary type="html"><![CDATA[计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。]]></summary></entry><entry><title type="html">马原期末复习</title><link href="http://localhost:4000/marxism" rel="alternate" type="text/html" title="马原期末复习" /><published>2022-12-17T00:00:00+08:00</published><updated>2022-12-17T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-marxism</id><content type="html" xml:base="http://localhost:4000/marxism"><![CDATA[<p>马克思主义基本原理是指马克思主义政治经济学、辩证唯物主义和历史唯物主义以及科学社会主义。它是马克思主义科学体系的基本理论、基本范畴，是其立场、观点和方法的理论表达。</p>
+<h3 id="23-二进制计算">23. 二进制计算</h3>
+<blockquote>
+  <p>指数 = 阶码 - 127</p>
+
+  <p>IEEE754标准: 1位符号位 + 8位阶码 + 23位尾数</p>
+</blockquote>
+
+<h4 id="1设浮点数的阶码和尾数部分均用二进制补码表示按照浮点数的运算规则计算xyx2-1010101100y2-100-0101000">(1)设浮点数的阶码和尾数部分均用二进制补码表示，按照浮点数的运算规则计算X+Y:<br />\(X=2^{-101}*0.101100，Y=2^{-100}*(-0.101000)\)</h4>
+
+<p>  [x]浮=1011;0.101100，[y]浮=1100;1.011000</p>
+
+<p>  对阶:小阶向大阶看齐。</p>
+
+<p>  △E=EA-EB=-1</p>
+
+<p>  [x]浮’=1100;0.010110</p>
+
+<p>  尾数相加：00.010110+11.011000=11.101110</p>
+
+<p>  需左规一次</p>
+
+<p>  [x+y]浮=1011；1.011100</p>
+
+<p>  X+Y=2-101*（-0.100100）</p>
+
+<h4 id="2将十进制数10375表示成单精度的ieee754标准规定的32位短浮点数结呆以十六进制形式给出">（2）将十进制数10.375表示成单精度的IEEE754标准规定的32位短浮点数（结呆以十六进制形式给出)。</h4>
+
+<p>将整数部分和小数部分整理成二进制可以得到：</p>
+
+<p>  \(10.375=(1010.011)_2\)</p>
+
+<p>移动小数点，使其位于第一二位之间：</p>
+
+<p>  \(1010.011=1.010011 X 2^3\)</p>
+
+<p>可以得到：</p>
+
+<p>  S=0 E=3+127=130 M=010011</p>
+
+<p>所以有二进制的IEEE754标准表达式：</p>
+
+<p>  01000001 00100110 00000000 00000000</p>
+
+<p>最终得到16进制的IEEE754标准表达式：</p>
+
+<p>  \((41260000)_{16}\)</p>
+
+<h3 id="24设主存容量为256k字cache容量为2k字块长为256字存储器按字寻址">24．设主存容量为256K字，Cache容量为2K字，块长为256字，存储器按字寻址。</h3>
+<blockquote>
+  <p>块数 = 容量 / 块长</p>
+
+  <p>标志位的位数就是Cache的行长</p>
+</blockquote>
+
+<h4 id="1在直接映射方式下设计主存地址格式并求标志位的位数">1)在直接映射方式下,设计主存地址格式并求标志位的位数;</h4>
+<p>由题意可得：<br />
+  \(主存的块数 = 2^{18}/2^8 = 2^{10}\)(块)</p>
+
+<h4 id="2在全相联映射方式下设计主存地址格式并求标志位的位数">2)在全相联映射方式下，设计主存地址格式并求标志位的位数。</h4>]]></content><author><name>Ranok</name></author><category term="计算机组成原理" /><category term="期末考试" /><summary type="html"><![CDATA[计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。]]></summary></entry><entry><title type="html">马原期末复习</title><link href="http://localhost:4000/marxism" rel="alternate" type="text/html" title="马原期末复习" /><published>2022-12-17T00:00:00+08:00</published><updated>2022-12-17T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-marxism</id><content type="html" xml:base="http://localhost:4000/marxism"><![CDATA[<p>马克思主义基本原理是指马克思主义政治经济学、辩证唯物主义和历史唯物主义以及科学社会主义。它是马克思主义科学体系的基本理论、基本范畴，是其立场、观点和方法的理论表达。</p>
 
 <hr />
 
