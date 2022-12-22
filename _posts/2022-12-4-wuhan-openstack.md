@@ -18,8 +18,15 @@ OpenStack是Rackspace和NASA共同成立的一个开源项目，它是为云计�
 ---
 
 ## 第一章考点
+#### 什么是云计算
+云计算是一种把计算机基础资源经过重组后给用户使用的一系列相关服务。
 
-## OpenStack 的主要项目以及对应的项目名称
+#### 云计算架构对应几种架构模式以及概念
+IaaS（基础设施即服务）<br>
+PaaS（平台即服务）<br>
+SaaS（软件即服务）
+
+#### OpenStack 的主要项目以及对应的项目名称
 
 
 | 服务 | 直译 | 项目名称 |
@@ -38,19 +45,62 @@ OpenStack是Rackspace和NASA共同成立的一个开源项目，它是为云计�
 
 ---
 
+## 第二章考点
+#### 网络配置流程
+
+1. 进入网络配置的文件：`vi  /etc/sysconfig/netwrok-scripts/ifcfg-ens33`<br>
+2. 修改`BOOTPROTO`的值为`static` <br>
+3. 修改`ONBOOT`的值为`yes`<br>
+4. 添加配置4条信息：`IPADDR NETNASK GATEWAY DNS1`<br>
+5. 键入`qw`保存并退出配置文件
+6. 输入：`systemctl restart network` 重启`network`服务。
+
+#### openstack的安装
+
+1. 安装openstack-packstack以及其依赖包：`yum install -y openstack-packstack`
+2. 安装openstack：`packstack --allinone`
+3. 进入文件查看生成的初始密码配置：`vi /etc/my.cnf.d/server.cnf`
+
+---
+
+## 第三章考点
+
+### 数据库
+#### 1.数据库验证
+验证方式：`systemctl status sqlname`
+
+#### 2. 数据库有哪些
+NoSQL数据库：`MongoDB Memcached Redis`<br>
+SQL数据库：`MySQL Maria PostgreSQL`
+
+### 消息队列
+#### 什么是消息队列
+消息队列是一种应用程序对应用程序的通信方法。消息传递指的是程序之间通过打消良中发送数却进行通信,而不是通过百捉调用彼此来通信。
+
+#### 消息队列实现的协议以及对应的软件
+协议：AMQP<br>
+软件：RabbitMQ
+
+---
+
 ## 第四章考点
 
 #### REST 含义解释
 REST 是 Representational State Transfer 的缩写，通常译为**表现层状态转化**
 
-客户端在使用HTTP提供的四种操作（GET、POST、PUT、DELETE）访问服务器上的资源时，这些操作会让服务端的状态发生转化，而这种转化是建立在表现层之上的，所以被称之为表现层转化。
+客户端在使用HTTP提供的四种操作（GET、POST、PUT、DELETE）访问服务器上的资源时，这些操作会让服务端的状态发生转化，而这种转化是建立在表现层之上的，所以被称之为**表现层转化**。
 
----
+#### 调用OpenStack API的四种方式
+1. cURL <br>
+2. OpenStack命令行客服端<br>
+3. REST客户端<br>
+4. OpenStack的Python SDK
+
 #### OpenStack 的认证与API 请求流程
 
 1. 向云管理员提供的身份端点请求一个认证令牌。
 2. 如果请求成功，服务器会返回一个认证令牌。
-3. 发送API请求，并在X-Auht-Token头部包含上一步返回的令牌认证。
+3. 发送API请求，并在X-Auth-Token头部包括上一步返回的认证令牌。可以一直使用这个令牌发送API请求，直到服务完成该请求，或者出现未授权(401)的错误。
 4. 如果遇到未授权（401）的错误，则需要重新请求另一个令牌。
 
 ##### 获取OpenStack认证令牌
@@ -63,7 +113,7 @@ REST 是 Representational State Transfer 的缩写，通常译为**表现层状�
 1. 设置OS_TOKEN环境变量，将其值设为令牌ID： `export OS_TOKEN=令牌ID`
 2. 设置OS_PROJECT_NAME环境变量：`export OS_PROJECT_NAME=demo`
 3. 设置OS_COMPUTE_API环境变量：`export OS_COMPUTE_API=http://192.168.199.21:8774/v2.1`
-4. 使用Compute API列出示例类型。
+4. 使用Compute API列出示例类型：`curl -s -H "X-Auth-Token: $OS_TOKEN" $os_COMPUTE_API/flavors lpython -m json.tool`。
 
 ---
 ## 第五章
@@ -92,6 +142,33 @@ REST 是 Representational State Transfer 的缩写，通常译为**表现层状�
 6. 服务组件会向Keystone提供这个用户项目令牌进行验证，Keystone验证通过后会返回一系列的确认信息和附加信息给服务
 7. 服务执行一系列操作。
 
+#### 罗列命令行操作
+1. 列出可用角色：`openstack role list`<br>
+2. 创建角色：`openstack role create new-role`<br>
+3. 分配角色：`openstack role add --user 用户名或ID --oject项目名或ID角色名或ID`<br>
+4. 查看角色详细信息：`openstack role show角色名或ID`<br>
+5. 删除角色：`openstack role remove --user 用户名或ID--project用户名或ID角色名或ID`
+
+---
+
+## 第六章
+#### 常用的镜像格式以及容器
+
+镜像格式：`qcwr`<br>
+不用容器使用`bare`代替<br>
+使用容器可以在`ovf ova aki ari docker`中选择
+
+#### openstack中创建镜像的流程
+创建镜像，转成快照
+
+1. 获取实例啃决照的文件路径，可通过查看其详细信息中的“ID”值。<br>
+2. 其中执行openstack image create 创建新的镜像：`openstack image create "entOS7-img"--file varlib/glance/limages/--disk-format qcow2--container-format bare`<br>
+3. 新创建的镜像类型变为镜像(image) .<br>
+
+
+
+---
+## 其他
 #### 配置文件中对两个值的解释
 
 ##### "" 空字符串

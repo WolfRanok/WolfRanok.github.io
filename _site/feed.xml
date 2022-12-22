@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-21T16:46:02+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">计组期末复习</title><link href="http://localhost:4000/computer" rel="alternate" type="text/html" title="计组期末复习" /><published>2022-12-18T00:00:00+08:00</published><updated>2022-12-18T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-computer</id><content type="html" xml:base="http://localhost:4000/computer"><![CDATA[<p>计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-22T16:44:23+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">计组期末复习</title><link href="http://localhost:4000/computer" rel="alternate" type="text/html" title="计组期末复习" /><published>2022-12-18T00:00:00+08:00</published><updated>2022-12-18T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-computer</id><content type="html" xml:base="http://localhost:4000/computer"><![CDATA[<p>计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。</p>
 
 <hr />
 
@@ -2584,8 +2584,15 @@ index表示行标题，columns表示列标题，默认名称为从0开始的有�
 <hr />
 
 <h2 id="第一章考点">第一章考点</h2>
+<h4 id="什么是云计算">什么是云计算</h4>
+<p>云计算是一种把计算机基础资源经过重组后给用户使用的一系列相关服务。</p>
 
-<h2 id="openstack-的主要项目以及对应的项目名称">OpenStack 的主要项目以及对应的项目名称</h2>
+<h4 id="云计算架构对应几种架构模式以及概念">云计算架构对应几种架构模式以及概念</h4>
+<p>IaaS（基础设施即服务）<br />
+PaaS（平台即服务）<br />
+SaaS（软件即服务）</p>
+
+<h4 id="openstack-的主要项目以及对应的项目名称">OpenStack 的主要项目以及对应的项目名称</h4>
 
 <table>
   <thead>
@@ -2656,20 +2663,69 @@ index表示行标题，columns表示列标题，默认名称为从0开始的有�
 
 <hr />
 
+<h2 id="第二章考点">第二章考点</h2>
+<h4 id="网络配置流程">网络配置流程</h4>
+
+<ol>
+  <li>进入网络配置的文件：<code class="language-plaintext highlighter-rouge">vi  /etc/sysconfig/netwrok-scripts/ifcfg-ens33</code><br /></li>
+  <li>修改<code class="language-plaintext highlighter-rouge">BOOTPROTO</code>的值为<code class="language-plaintext highlighter-rouge">static</code> <br /></li>
+  <li>修改<code class="language-plaintext highlighter-rouge">ONBOOT</code>的值为<code class="language-plaintext highlighter-rouge">yes</code><br /></li>
+  <li>添加配置4条信息：<code class="language-plaintext highlighter-rouge">IPADDR NETNASK GATEWAY DNS1</code><br /></li>
+  <li>键入<code class="language-plaintext highlighter-rouge">qw</code>保存并退出配置文件</li>
+  <li>输入：<code class="language-plaintext highlighter-rouge">systemctl restart network</code> 重启<code class="language-plaintext highlighter-rouge">network</code>服务。</li>
+</ol>
+
+<h4 id="openstack的安装">openstack的安装</h4>
+
+<ol>
+  <li>安装openstack-packstack以及其依赖包：<code class="language-plaintext highlighter-rouge">yum install -y openstack-packstack</code></li>
+  <li>安装openstack：<code class="language-plaintext highlighter-rouge">packstack --allinone</code></li>
+  <li>进入文件查看生成的初始密码配置：<code class="language-plaintext highlighter-rouge">vi /etc/my.cnf.d/server.cnf</code></li>
+</ol>
+
+<hr />
+
+<h2 id="第三章考点">第三章考点</h2>
+
+<h3 id="数据库">数据库</h3>
+<h4 id="1数据库验证">1.数据库验证</h4>
+<p>验证方式：<code class="language-plaintext highlighter-rouge">systemctl status sqlname</code></p>
+
+<h4 id="2-数据库有哪些">2. 数据库有哪些</h4>
+<p>NoSQL数据库：<code class="language-plaintext highlighter-rouge">MongoDB Memcached Redis</code><br />
+SQL数据库：<code class="language-plaintext highlighter-rouge">MySQL Maria PostgreSQL</code></p>
+
+<h3 id="消息队列">消息队列</h3>
+<h4 id="什么是消息队列">什么是消息队列</h4>
+<p>消息队列是一种应用程序对应用程序的通信方法。消息传递指的是程序之间通过打消良中发送数却进行通信,而不是通过百捉调用彼此来通信。</p>
+
+<h4 id="消息队列实现的协议以及对应的软件">消息队列实现的协议以及对应的软件</h4>
+<p>协议：AMQP<br />
+软件：RabbitMQ</p>
+
+<hr />
+
 <h2 id="第四章考点">第四章考点</h2>
 
 <h4 id="rest-含义解释">REST 含义解释</h4>
 <p>REST 是 Representational State Transfer 的缩写，通常译为<strong>表现层状态转化</strong></p>
 
-<p>客户端在使用HTTP提供的四种操作（GET、POST、PUT、DELETE）访问服务器上的资源时，这些操作会让服务端的状态发生转化，而这种转化是建立在表现层之上的，所以被称之为表现层转化。</p>
+<p>客户端在使用HTTP提供的四种操作（GET、POST、PUT、DELETE）访问服务器上的资源时，这些操作会让服务端的状态发生转化，而这种转化是建立在表现层之上的，所以被称之为<strong>表现层转化</strong>。</p>
 
-<hr />
+<h4 id="调用openstack-api的四种方式">调用OpenStack API的四种方式</h4>
+<ol>
+  <li>cURL <br /></li>
+  <li>OpenStack命令行客服端<br /></li>
+  <li>REST客户端<br /></li>
+  <li>OpenStack的Python SDK</li>
+</ol>
+
 <h4 id="openstack-的认证与api-请求流程">OpenStack 的认证与API 请求流程</h4>
 
 <ol>
   <li>向云管理员提供的身份端点请求一个认证令牌。</li>
   <li>如果请求成功，服务器会返回一个认证令牌。</li>
-  <li>发送API请求，并在X-Auht-Token头部包含上一步返回的令牌认证。</li>
+  <li>发送API请求，并在X-Auth-Token头部包括上一步返回的认证令牌。可以一直使用这个令牌发送API请求，直到服务完成该请求，或者出现未授权(401)的错误。</li>
   <li>如果遇到未授权（401）的错误，则需要重新请求另一个令牌。</li>
 </ol>
 
@@ -2686,7 +2742,7 @@ index表示行标题，columns表示列标题，默认名称为从0开始的有�
   <li>设置OS_TOKEN环境变量，将其值设为令牌ID： <code class="language-plaintext highlighter-rouge">export OS_TOKEN=令牌ID</code></li>
   <li>设置OS_PROJECT_NAME环境变量：<code class="language-plaintext highlighter-rouge">export OS_PROJECT_NAME=demo</code></li>
   <li>设置OS_COMPUTE_API环境变量：<code class="language-plaintext highlighter-rouge">export OS_COMPUTE_API=http://192.168.199.21:8774/v2.1</code></li>
-  <li>使用Compute API列出示例类型。</li>
+  <li>使用Compute API列出示例类型：<code class="language-plaintext highlighter-rouge">curl -s -H "X-Auth-Token: $OS_TOKEN" $os_COMPUTE_API/flavors lpython -m json.tool</code>。</li>
 </ol>
 
 <hr />
@@ -2730,6 +2786,35 @@ index表示行标题，columns表示列标题，默认名称为从0开始的有�
   <li>服务执行一系列操作。</li>
 </ol>
 
+<h4 id="罗列命令行操作">罗列命令行操作</h4>
+<ol>
+  <li>列出可用角色：<code class="language-plaintext highlighter-rouge">openstack role list</code><br /></li>
+  <li>创建角色：<code class="language-plaintext highlighter-rouge">openstack role create new-role</code><br /></li>
+  <li>分配角色：<code class="language-plaintext highlighter-rouge">openstack role add --user 用户名或ID --oject项目名或ID角色名或ID</code><br /></li>
+  <li>查看角色详细信息：<code class="language-plaintext highlighter-rouge">openstack role show角色名或ID</code><br /></li>
+  <li>删除角色：<code class="language-plaintext highlighter-rouge">openstack role remove --user 用户名或ID--project用户名或ID角色名或ID</code></li>
+</ol>
+
+<hr />
+
+<h2 id="第六章">第六章</h2>
+<h4 id="常用的镜像格式以及容器">常用的镜像格式以及容器</h4>
+
+<p>镜像格式：<code class="language-plaintext highlighter-rouge">qcwr</code><br />
+不用容器使用<code class="language-plaintext highlighter-rouge">bare</code>代替<br />
+使用容器可以在<code class="language-plaintext highlighter-rouge">ovf ova aki ari docker</code>中选择</p>
+
+<h4 id="openstack中创建镜像的流程">openstack中创建镜像的流程</h4>
+<p>创建镜像，转成快照</p>
+
+<ol>
+  <li>获取实例啃决照的文件路径，可通过查看其详细信息中的“ID”值。<br /></li>
+  <li>其中执行openstack image create 创建新的镜像：<code class="language-plaintext highlighter-rouge">openstack image create "entOS7-img"--file varlib/glance/limages/--disk-format qcow2--container-format bare</code><br /></li>
+  <li>新创建的镜像类型变为镜像(image) .<br /></li>
+</ol>
+
+<hr />
+<h2 id="其他">其他</h2>
 <h4 id="配置文件中对两个值的解释">配置文件中对两个值的解释</h4>
 
 <h5 id="-空字符串">”” 空字符串</h5>
