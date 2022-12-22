@@ -86,9 +86,7 @@ SQL数据库：`MySQL Maria PostgreSQL`
 ## 第四章考点
 
 #### REST 含义解释
-REST 是 Representational State Transfer 的缩写，通常译为**表现层状态转化**
-
-客户端在使用HTTP提供的四种操作（GET、POST、PUT、DELETE）访问服务器上的资源时，这些操作会让服务端的状态发生转化，而这种转化是建立在表现层之上的，所以被称之为**表现层转化**。
+RESTFUL是一种网络应用程序的设计风格和开发方式，是我们用http调用资源的时候的统一接口的访问形式，用自己的话说就是把对资源的调用转化到一种表现方式上来，例如开发的时候使用微信小程序表现可以避免用不同的语言开发app应用
 
 #### 调用OpenStack API的四种方式
 1. cURL <br>
@@ -162,12 +160,21 @@ REST 是 Representational State Transfer 的缩写，通常译为**表现层状�
 创建镜像，转成快照
 
 1. 获取实例啃决照的文件路径，可通过查看其详细信息中的“ID”值。<br>
-2. 其中执行openstack image create 创建新的镜像：`openstack image create "entOS7-img"--file varlib/glance/limages/--disk-format qcow2--container-format bare`<br>
+2. 其中执行openstack image create 创建新的镜像：`openstack image create "entOS7-img"--file varlib/glance/limages/快照id --disk-format qcow2--container-format bare`<br>
 3. 新创建的镜像类型变为镜像(image) .<br>
 
-
-
 ---
+## 第七章
+
+#### 虚拟机实例化的流程
+1. 首先用户（可以是OpenStack最终用户，也可以是其他程序）执行Nova Client提供的用于创建虚拟机的命令。<br>
+2. nova-api服务监听到来白于Nova Client的HTTP请求,并将这些请求转换为AMQP消息之后加入消息队列。<br>
+3. 通过消息队列调用nova-conductor报务。<br>
+4. nova-conductor服务从消息队列中接收到虚拟机实例化请求消息后,进行一些准备工作。<br>
+5. nova-conductor服务通过消息队列告诉nova-scheduler服务去选择一个合适的计算节点来创建虚拟机，此时nova-scheduler会读取数据库的内容。<br>
+6. nova-conductor服务从nova-scheduler服务得到了合适的将计算节点的信息后，在通过消息队列来通知nova-compute服务实现虚拟机的创建。<br>
+
+
 ## 其他
 #### 配置文件中对两个值的解释
 

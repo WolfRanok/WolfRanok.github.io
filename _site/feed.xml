@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-22T16:44:23+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">计组期末复习</title><link href="http://localhost:4000/computer" rel="alternate" type="text/html" title="计组期末复习" /><published>2022-12-18T00:00:00+08:00</published><updated>2022-12-18T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-computer</id><content type="html" xml:base="http://localhost:4000/computer"><![CDATA[<p>计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-22T16:59:30+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">计组期末复习</title><link href="http://localhost:4000/computer" rel="alternate" type="text/html" title="计组期末复习" /><published>2022-12-18T00:00:00+08:00</published><updated>2022-12-18T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-computer</id><content type="html" xml:base="http://localhost:4000/computer"><![CDATA[<p>计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。</p>
 
 <hr />
 
@@ -2708,9 +2708,7 @@ SQL数据库：<code class="language-plaintext highlighter-rouge">MySQL Maria Po
 <h2 id="第四章考点">第四章考点</h2>
 
 <h4 id="rest-含义解释">REST 含义解释</h4>
-<p>REST 是 Representational State Transfer 的缩写，通常译为<strong>表现层状态转化</strong></p>
-
-<p>客户端在使用HTTP提供的四种操作（GET、POST、PUT、DELETE）访问服务器上的资源时，这些操作会让服务端的状态发生转化，而这种转化是建立在表现层之上的，所以被称之为<strong>表现层转化</strong>。</p>
+<p>RESTFUL是一种网络应用程序的设计风格和开发方式，是我们用http调用资源的时候的统一接口的访问形式，用自己的话说就是把对资源的调用转化到一种表现方式上来，例如开发的时候使用微信小程序表现可以避免用不同的语言开发app应用</p>
 
 <h4 id="调用openstack-api的四种方式">调用OpenStack API的四种方式</h4>
 <ol>
@@ -2809,11 +2807,23 @@ SQL数据库：<code class="language-plaintext highlighter-rouge">MySQL Maria Po
 
 <ol>
   <li>获取实例啃决照的文件路径，可通过查看其详细信息中的“ID”值。<br /></li>
-  <li>其中执行openstack image create 创建新的镜像：<code class="language-plaintext highlighter-rouge">openstack image create "entOS7-img"--file varlib/glance/limages/--disk-format qcow2--container-format bare</code><br /></li>
+  <li>其中执行openstack image create 创建新的镜像：<code class="language-plaintext highlighter-rouge">openstack image create "entOS7-img"--file varlib/glance/limages/快照id --disk-format qcow2--container-format bare</code><br /></li>
   <li>新创建的镜像类型变为镜像(image) .<br /></li>
 </ol>
 
 <hr />
+<h2 id="第七章">第七章</h2>
+
+<h4 id="虚拟机实例化的流程">虚拟机实例化的流程</h4>
+<ol>
+  <li>首先用户（可以是OpenStack最终用户，也可以是其他程序）执行Nova Client提供的用于创建虚拟机的命令。<br /></li>
+  <li>nova-api服务监听到来白于Nova Client的HTTP请求,并将这些请求转换为AMQP消息之后加入消息队列。<br /></li>
+  <li>通过消息队列调用nova-conductor报务。<br /></li>
+  <li>nova-conductor服务从消息队列中接收到虚拟机实例化请求消息后,进行一些准备工作。<br /></li>
+  <li>nova-conductor服务通过消息队列告诉nova-scheduler服务去选择一个合适的计算节点来创建虚拟机，此时nova-scheduler会读取数据库的内容。<br /></li>
+  <li>nova-conductor服务从nova-scheduler服务得到了合适的将计算节点的信息后，在通过消息队列来通知nova-compute服务实现虚拟机的创建。<br /></li>
+</ol>
+
 <h2 id="其他">其他</h2>
 <h4 id="配置文件中对两个值的解释">配置文件中对两个值的解释</h4>
 
