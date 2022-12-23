@@ -1,4 +1,211 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-22T16:59:30+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">计组期末复习</title><link href="http://localhost:4000/computer" rel="alternate" type="text/html" title="计组期末复习" /><published>2022-12-18T00:00:00+08:00</published><updated>2022-12-18T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-computer</id><content type="html" xml:base="http://localhost:4000/computer"><![CDATA[<p>计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-23T16:34:52+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">服务器期末复习</title><link href="http://localhost:4000/server" rel="alternate" type="text/html" title="服务器期末复习" /><published>2022-12-23T00:00:00+08:00</published><updated>2022-12-23T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-server</id><content type="html" xml:base="http://localhost:4000/server"><![CDATA[<p>  服务器指的是网络环境下为客户机(Client)提供某种服务的专用计算机，服务器安装有网络操作系统和各种服务器应用系统软件(如Web服务、电子邮件服务)的计算机。服务器具有高速的CPU运算能力、长时间的可靠运行、强大的I/O外部数据吞吐能力以及更好的扩展性。</p>
+
+<hr />
+
+<h2 id="前言">前言</h2>
+<p>  《服务端技术原理与应用》是一门考察类课程，其课程本身难度不大，但是知识点比较多。希望你能好好准备，取得一个好成绩。</p>
+
+<hr />
+
+<h2 id="知识点剖析">知识点剖析</h2>
+
+<h4 id="小点">小点</h4>
+<ol>
+  <li>在Windows server中，新建的用户属于users组<br /></li>
+  <li>系统安装在NTFS盘中<br /></li>
+  <li>ipconfig /release可以释放IP地址<br /></li>
+  <li>权限以最低为准<br /></li>
+  <li>每个人的最低权限都是只读权限</li>
+</ol>
+
+<hr />
+
+<h3 id="1-域名空间结构">1. 域名空间结构</h3>
+<h4 id="简单介绍">简单介绍</h4>
+<p>  根域：代表域名命名空间的根，这里为空。</p>
+
+<p>  顶级域：直接处于根域下面的域，代表一种类型的组织或一些国家。在Internet中，顶级域由InterNIC（Internet Network Information Center）进行管理和维护。</p>
+
+<p>  二级域：在顶级域下面，用来标明顶级域以内的一个特定的组织。在Internet中，二级域也是由InterNIC负责管理和维护。</p>
+
+<p>  子域：在二级域的下面所创建的域，它一般由各个组织根据自己的需求与要求，自行创建和维护。</p>
+
+<p>  主机：是域名命名空间中的最下面一层，它被称之为完全合格的域名（Fully Qualified Domain Name，FQDN），例如www.sanxia.net.cn就是一个完全合格的域名。</p>
+
+<h4 id="域名级别">域名级别</h4>
+
+<p><strong>机构顶级域名：</strong><br />
+  com 商业机构，<br />
+  gov 政府机构，<br />
+  edu 教育机构，<br />
+  int 国际组织，<br />
+  mil 军事部门，<br />
+  net 网络运行与服务中心<br />
+  org 其他的非赢利机构</p>
+
+<p><strong>地区顶级域名：</strong><br />
+  CN（中国）<br />
+  hk （中国香港）<br />
+  TW（中国台湾）<br />
+  JP（日本）<br />
+  RU（俄罗斯）<br />
+  UK或GB（英国）</p>
+
+<hr />
+
+<h3 id="2window-server-2016主要新增功能">2.Window Server 2016主要新增功能</h3>
+<h4 id="身份标识和访问权限">身份标识和访问权限</h4>
+<p>  Window Server 2016的Active Directory域服务可以帮助组织保护Active Directory环境并为组织和个人设备提供更好的标识管理，并提供联合身份验证服务(AD FS) , AD FS对轻型目录访问协议(LDAP) 目录中存储的用户进行身份验证的新功能。</p>
+
+<h4 id="系统管理性能">系统管理性能</h4>
+<p>  Window Server 2016提供了新安装选项: Nano Server。 Nano Server针对私有云和数据中心进行优化的远程管理的服务器操作系统。其所需磁盘空间小，启动速度快。Windows Server 2016引入了一种新的PackageManagement功能(以前称为OneGet)，该功能可以允许IT专业人员或开发人员使软件发现、安装、清单(SDIl)在本地或远程自动进行，无论安装程序技术为何，也不管软件位于何处。</p>
+
+<h4 id="系统网络管理">系统网络管理</h4>
+<p>  Window Server 2016新增了软件定义的网络。与分布式防火墙和网络安全组联合使用，使你能够以类似于Azure的方式动态分段和保护工作负荷。其次，你可以使用System Center Virtual Machine</p>
+
+<p>  Manager部署并管理整个软件定义的网络(SDN)堆栈。最后，可以使用Docker来管理Windows Server 容器网络，并将SDN 策略与虚拟机和容器关联。在TCP性能改进方面，默认初始拥塞窗口(ICW) 已从4增加到10并已实现TCP快速打开(TFO)。</p>
+
+<h4 id="系统数据存储">系统数据存储</h4>
+<p>  Windows Server 2016中的存储包括软件定义存储以及传统文件服务器的新功能和增强功能。存储空间直通允许通过使用具有本地存储的服务器构建高可用性和可缩放存储。存储副本可在各个服务器或群集之间实现存储不可知的块级同步复制，以便在站点间进行灾难恢复及故障转移群集扩展。</p>
+
+<h4 id="web应用程序开发">web应用程序开发</h4>
+<p>  Windows Server 2016中的lIS 10.0 Web服务器提供的新增功能包括:</p>
+
+<p>  1. 在网络堆栈中支持HTTP/2协议，并与IIS10.0集成，允许IIS 10.0网站针对支持的配置为HTTP/2请求自动提供服务。</p>
+
+<p>  2. 在Nano Server 中运行和管理lIS 10.0的功能</p>
+
+<p>  3. 支持通配符主机头，使管理员能够为域设置Web 服务器，然后让Web服务器为任何子域的请求提供服务。
+一个用于管理IIS的新 PowerShell模块(1ISAdministration)。</p>
+
+<hr />
+
+<h3 id="3dhcp报文">3.DHCP报文</h3>
+<p>  DHCP服务器和客户端之间通过8种类型的报文进行通信。8种类型报文的格式相同，只是某些字段的取值不同。DHCP报文格式基于BOOTP的报文格式。它们是:</p>
+
+<h4 id="1-dhcp-discover">1. DHCP DISCOVER:</h4>
+<p>  这是DHCP客户端首次登录网络时进行DHCP过程的第一个报文，用来寻找DHCP服务器。</p>
+
+<h4 id="2-dhcp-offer">2. DHCP OFFER:</h4>
+<p>  DHCP服务器用来响应DHCP，DISCOVER报文，此报文携带了各种配置信息。</p>
+
+<h4 id="3-dhcp-request">3. DHCP REQUEST</h4>
+<p>  此报文用于以下三种用途：</p>
+
+<p>  客户端初始化后，发送广播的DHCP REQUEST 报文来回应服务器的 DHCP OFFER 报文。</p>
+
+<p>  客户端重启初始化后，发送广播的 DHCP REQUEST 报文来确认先前被分配的IP地址等配置信息。</p>
+
+<p>  当客户端已经和某个IP地址绑定后，发送 DHCP REQUEST 报文来延长IP地址的租期。</p>
+
+<h4 id="4-dhcp-ack">4. DHCP ACK:</h4>
+<p>  服务器对客户端的DHCP REQUEST 报文的确认响应报文，客户端收到此报
+文后，才真正获得了IP地址和相关的配置信息。</p>
+
+<h4 id="5-dhcp-nak">5. DHCP NAK:</h4>
+<p>  服务器对客户端的DHCP REQUEST 报文的拒绝响应报文，比如服务器对客户</p>
+
+<p>  端分配的IP地址已超过使用租借期限（服务器没有找到相应的租约记录)或者由于某些原因无法正常分配IP地址，则发送 DHCP NAK报文作为应答（客户端移到了另一个新的网络)。</p>
+
+<p>  通知DHCP客户端无法分配合适IP地址。DHCP客户端需要重新发送</p>
+
+<h4 id="dhcp-discovery">DHCP DISCOVERY</h4>
+<p>  报文来申请新的IP地址。</p>
+
+<h4 id="dhcp-decline">DHCP DECLINE:</h4>
+<p>  当客户端发现服务器分配给它的IP地址发生冲突时会通过发送此报文来通知服务器，并且会重新向服务器申请地址。</p>
+
+<h4 id="dhcp-release">DHCP RELEASE:</h4>
+<p>  客户端可通过发送此报文主动释放服务器分配给它的IP地址，当服务器收到此报文后，可将这个IP地址分配给其它的客户端。</p>
+
+<h4 id="dhcp-inform">DHCP INFORM:</h4>
+<p>  客户端已经获得了IP地址，发送此报文的目的是为了从服务器获得其他的一些网络配置信息，比如网关地址、DNS服务器地址等，</p>
+
+<hr />
+
+<h3 id="4操作题ip配置">4.操作题（ip配置）</h3>
+
+<p>  在DHCP服务器上创建一个IP地址作用域，它的名称为“office”，所包含的IP地址范围为：192.168.1.1～192.168.1.100，子网掩码为：255.255.255.0，需要排除的IP地址范围为：192.168.1.51～192.168.1.60，采用默认的租约期限，不用配置DHCP选项。</p>
+
+<h4 id="操作步骤">操作步骤：</h4>
+<p>  步骤1：单击【开始】→【程序】→【管理工具】→【DHCP】，打开“DHCP”管理控制台。</p>
+
+<p>  步骤2：右键单击这台计算机的名称，然后选择【新建作用域】 。</p>
+
+<p>  步骤3：当出现“欢迎使用新建作用域向导”时，单击【下一步】按钮。这时出现“作用域名”对话框。</p>
+
+<p>  步骤4：在“作用域名”对话框中，输入：“office”，然后单击【下一步】按钮。</p>
+
+<p>  步骤5：在“IP地址范围”对话框中的【起始IP地址】中输入：192.168.1.1、在【结束IP地址】中输入：192.168.1.100、在【子网掩码】中输入：255.255.255.0。单击【下一步】。</p>
+
+<p>  步骤6：在“添加排除”对话框中的【起始IP地址】中输入：192.168.1.51、在【结束IP地址】中输入： 192.168.1.60、然后单击【添加】按钮，再单击【下一步】按钮。</p>
+
+<p>  步骤7：在“配置DHCP选项”对话框中，选择【否，我想稍后配置这些选项】，单击【下一步】按钮。</p>
+
+<p>  步骤8：当出现“正在完成建立作用域向导”对话框时，单击【完成】按钮。</p>
+
+<h3 id="5dhcp地址分配类型">5.DHCP地址分配类型</h3>
+<p>DHCP允许有三种类型的地址分配如下:</p>
+
+<h4 id="1自动分配方式">1.自动分配方式</h4>
+<p>  当DHCP客户端第一次成功的从DHCP 服务器端租用到IP地址之后,就永远使用这个地址。</p>
+
+<h4 id="2动态分配方式">2.动态分配方式</h4>
+<p>  当DHCP第一次从 HDCP服务器端租用到IP地址之后，并非永久的使用该地址，只要租约到期，客户端就得释放这个IP地址，以给其它工作站使用。当然，客户端可以比其它主机更优先的更新租约，或是租用其它的IP地址。</p>
+
+<h4 id="3手工分配方式">3.手工分配方式</h4>
+<p>  DHCP客户端的IP地址是由网络管理员指定的,DHCP服务器只是把指定的IP地址告诉客户端。</p>
+
+<hr />
+
+<h3 id="6分布式文件系dfs的优点">6.分布式文件系（DFS）的优点</h3>
+<p>  DFS是将相同的文件同时存储到网络上多台服务器上后，就可以有以下功能和优点:</p>
+
+<h4 id="1访问文件更加容易">1.访问文件更加容易</h4>
+<p>  分布式文件系统使用户可以更容易地访问文件。共享文件可能在物理上跨越多个服务器,用户只需要转到网络上的一个位置即可访问文件。</p>
+
+<h4 id="2可用性">2.可用性</h4>
+<p>  基于域的DFS命名空间以两种方法确保用户保持文件的访问，一是WindowsServer 20016自动将DFS拓扑发布到活动目录中，以确保DFS拓扑对域中所有服务器上的用户总是可见的;二是用户可以复制DFS根目录和DFS共享文件夹。复制意味着可以在域中的多个服务器上存储DFS根目录和DFS共享文件夹，即使这些文件驻留的一个物理服务器不可用，用户仍然可以访问此文件。</p>
+
+<h4 id="3服务器负载平衡">3.服务器负载平衡</h4>
+<p>  DFS根目录支持物理上分布在网络中的多个DFS共享文件夹。这一点很有用,例如，当用户将频繁访问某一文件时,并非所有的用户都在单个服务器上物理地访问此文件，这将会增加服务器的负担,DFS确保访问文件的用户分布于多个服务器。然而，在用户看来,文件驻留在网络上的相同位置。</p>
+
+<h3 id="7服务器的分类">7.服务器的分类</h3>
+<h4 id="主dns服务器">主DNS服务器</h4>
+<p>  主域名服务器负责维护域中的域名服务信息，管理员需要配置正向解析文件、反向解析文件等相关信息，本身具有向客户机提供域名解析的功能。</p>
+
+<h4 id="辅助dns服务器">辅助DNS服务器</h4>
+<p>  辅助域名服务器不需要配置正向解析与反向解析的数据库文件，辅助域名服务器的正向解析与反向解析数据库是从主域名服务器复制得来的。辅助域名服务器的作用是分担主域名服务器的查询负担，提供域名查询的稳定性和可靠性。</p>
+
+<h4 id="转发dns服务器">转发DNS服务器</h4>
+<p>  转发DNS服务器(Forwarder Name Server)可以向其他DNS转发解析请求。</p>
+
+<h4 id="惟缓存dns服务器">惟缓存DNS服务器</h4>
+<p>  惟缓存DNS服务器不配置域名解析数据库文件，也不从主域名服务器同步其数据库信息。当本地DNS客户机有查询请求时，它会向某个远程DNS服务器转发查询请求。</p>
+
+<hr />
+
+<h3 id="8操作题账户配置">8.操作题（账户配置）</h3>
+
+<p>在计算机上创建一个本地用户帐户，帐户名为“student”，密码为“12345”，并且允许用户在第一次登录时更改密码。</p>
+
+<h4 id="操作步骤-1">操作步骤：</h4>
+
+<p>步骤1：右键单击【我的电脑】→【管理】，然后在“计算机管理”对话框中的【本地用户和组】中右击【用户】，然后选择【新用户】 。</p>
+
+<p>步骤2：在“新用户”对话框中的【用户名】中输入【student】 ，在【密码】中输入：12345，在【确认密码】中再次输入：12345，然后选中用户【下次登录时须更改密码 】 。</p>
+
+<p>步骤3：单击【创建】按钮。</p>
+
+<hr />
+
+<h3 id="9如何在一台服务器上建立多个web站点">9.如何在一台服务器上建立多个Web站点</h3>
+
+<ol>
+  <li>使用不同的IP地址<br /></li>
+  <li>使用不同的端口号<br /></li>
+  <li>使用主机头<br /></li>
+</ol>]]></content><author><name>Ranok</name></author><category term="服务器" /><category term="期末考试" /><summary type="html"><![CDATA[  服务器指的是网络环境下为客户机(Client)提供某种服务的专用计算机，服务器安装有网络操作系统和各种服务器应用系统软件(如Web服务、电子邮件服务)的计算机。服务器具有高速的CPU运算能力、长时间的可靠运行、强大的I/O外部数据吞吐能力以及更好的扩展性。]]></summary></entry><entry><title type="html">计组期末复习</title><link href="http://localhost:4000/computer" rel="alternate" type="text/html" title="计组期末复习" /><published>2022-12-18T00:00:00+08:00</published><updated>2022-12-18T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-computer</id><content type="html" xml:base="http://localhost:4000/computer"><![CDATA[<p>计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。</p>
 
 <hr />
 
