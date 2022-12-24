@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 计组期末复习
+title: 计算机组成原理
 author: Ranok
 tags: [计算机组成原理, 期末考试]     #标签会影响
 feature-img: "assets/img/feature-img/computer.jpg" # 这是一个会出现在博客文章内部的图片

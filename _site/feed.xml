@@ -1,4 +1,397 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-23T16:34:52+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">服务器期末复习</title><link href="http://localhost:4000/server" rel="alternate" type="text/html" title="服务器期末复习" /><published>2022-12-23T00:00:00+08:00</published><updated>2022-12-23T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-server</id><content type="html" xml:base="http://localhost:4000/server"><![CDATA[<p>  服务器指的是网络环境下为客户机(Client)提供某种服务的专用计算机，服务器安装有网络操作系统和各种服务器应用系统软件(如Web服务、电子邮件服务)的计算机。服务器具有高速的CPU运算能力、长时间的可靠运行、强大的I/O外部数据吞吐能力以及更好的扩展性。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-24T20:47:39+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">Java EE</title><link href="http://localhost:4000/javaee" rel="alternate" type="text/html" title="Java EE" /><published>2022-12-24T00:00:00+08:00</published><updated>2022-12-24T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-javaee</id><content type="html" xml:base="http://localhost:4000/javaee"><![CDATA[<p>  Java EE，Java 平台企业版（Java Platform Enterprise Edition），之前称为Java 2 Platform, Enterprise Edition (J2EE)，2018年3月更名为 Jakarta EE(这个名称应该还没有得到群众认可)。是 Sun 公司为企业级应用推出的标准平台，用来开发B/S架构软件。Java EE 可以说是一个框架，也可以说是一种规范。</p>
+
+<hr />
+
+<h2 id="前言">前言</h2>
+<p>  《java EE》是一门与就业相关度较高的一门课程，作为企业级的应用开发，虽然书本上学的ssm框架已经过时，但是作为我们初学者，它的价值还是不小的。</p>
+
+<p>  本博客按知识点整理一些相关内容，祝愿你可以取得一个让自己满意的成绩。</p>
+
+<hr />
+<h2 id="问题解析">问题解析</h2>
+<h4 id="spring中bean的作用域有哪些默认是哪一个">Spring中Bean的作用域有哪些，默认是哪一个</h4>
+
+<p>  singleton：单例模式（<strong>默认</strong>），在整个Spring IoC容器中，使用singleton定义的Bean将只有一个实例</p>
+
+<p>  prototype：原型模式，每次通过容器的getBean方法获取prototype定义的Bean时，都将产生一个新的Bean实例</p>
+
+<p>  request：对于每次HTTP请求，使用request定义的Bean都将产生一个新实例，即每次HTTP请求将会产生不同的Bean实例。只有在Web应用中使用Spring时，该作用域才有效</p>
+
+<p>  session：对于每次HTTP Session，使用session定义的Bean豆浆产生一个新实例。同样只有在Web应用中使用Spring时，该作用域才有效</p>
+
+<p>  globalsession：每个全局的HTTP Session，使用session定义的Bean都将产生一个新实例。典型情况下，仅在使用portlet context的时候有效。同样只有在Web应用中使用Spring时，该作用域才有效</p>
+
+<hr />
+
+<h4 id="spring中有哪些注解">Spring中有哪些注解</h4>
+<p>  1. @Controller：将Controller层的类对象交由spring容器生成与管理</p>
+
+<p>  2. @Service：将Service层的类对象交由spring容器生成与管理</p>
+
+<p>  3. @Repository：将Dao层的类对象交由spring容器生成与管理</p>
+
+<p>  4. @Component将类对象交由spring容器生成与管理</p>
+
+<hr />
+
+<h4 id="spring-aopioc的概念">Spring AOP、IOC的概念</h4>
+<p>  AOP(Aspect-Oriented Programming:面向切面编程)：是指将那些与业务无关，却被多个业务模块所共同调用逻辑或责任（例如事务处理、日志管理、权限控制等）封装起来，便于减少系统的重复代码，降低模块间的耦合度，提升系统的可维护性。</p>
+
+<p>  IOC就是控制反转，是指程序将创建对象的控制权转交给Spring框架进行管理，由Spring通过java的反射机制根据配置文件在运行时动态的创建实例，并管理各个实例之间的依赖关系。</p>
+
+<hr />
+
+<h4 id="spring-aop中的通知类型">Spring AOP中的通知类型</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">通知类型</th>
+      <th style="text-align: center">注解</th>
+      <th style="text-align: center">说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">before（前置通知）</td>
+      <td style="text-align: center">@Before</td>
+      <td style="text-align: center">通知方法在目标方法调用之前执行</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">after（后置通知）</td>
+      <td style="text-align: center">@After</td>
+      <td style="text-align: center">通知方法在目标方法返回或异常后调用</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">after-returning（返回通知）</td>
+      <td style="text-align: center">@AfterReturning</td>
+      <td style="text-align: center">通知方法会在目标方法返回后调用</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">after-throwing（异常抛出通知）</td>
+      <td style="text-align: center">@AfterThrowing</td>
+      <td style="text-align: center">通知方法会在目标方法抛出异常后调用</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">around（环绕通知）</td>
+      <td style="text-align: center">@Around</td>
+      <td style="text-align: center">通知方法会将目标方法封装起来</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="spring-实现aop的动态代理的方式">Spring 实现AOP的动态代理的方式</h4>
+
+<p>  1. JDK动态代理（基于接口实现的）：JDK动态代理制能对实现了接口的类生成代理，而不是针对类</p>
+
+<p>  2. CGLIB动态代理（基于类实现的）：CGLIB是针对类实现代理，主要对指定的类生成一个子类，覆盖其中的方法，添加额外功能，因为是继承，所以该类方法不能用final来声明。</p>
+
+<hr />
+
+<h4 id="mybaes如何防止sql注入问题">MyBaes如何防止SQL注入问题</h4>
+
+<p>  在编写MyBatis的映射语句时，尽量采用“#{xxx}”这样的格式。若不得不使用“${xxx}”这样的参数，要手工地做好过滤工作，来防止SQL注入攻击。</p>
+
+<hr />
+
+<h4 id="动态sql的使用">动态SQL的使用</h4>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"queryList"</span> <span class="na">parameterType=</span><span class="s">"com.jinzheng.pojo.Book"</span> <span class="na">resultType=</span><span class="s">"com.jinzheng.pojo.Book"</span><span class="nt">&gt;</span>
+    select * from tb_book
+    <span class="nt">&lt;where&gt;</span>
+        <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"id != null and id !='' "</span><span class="nt">&gt;</span>
+            or id = #{id}
+        <span class="nt">&lt;/if&gt;</span>
+        <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"name != null and name !='' "</span><span class="nt">&gt;</span>
+            or name like concat('%',#{name},'%')
+        <span class="nt">&lt;/if&gt;</span>
+        <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"press != null and press !='' "</span><span class="nt">&gt;</span>
+            or press like concat('%',#{press},'%')
+        <span class="nt">&lt;/if&gt;</span>
+        <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"author != null and author !='' "</span><span class="nt">&gt;</span>
+            or author like concat('%',#{author},'%')
+        <span class="nt">&lt;/if&gt;</span>
+        <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"bookPrice != null and bookPrice !='' "</span><span class="nt">&gt;</span>
+            or bookPrice = #{bookPrice}
+        <span class="nt">&lt;/if&gt;</span>
+    <span class="nt">&lt;/where&gt;</span>
+<span class="nt">&lt;/select&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h4 id="spring-mvc的工作原理">Spring MVC的工作原理</h4>
+
+<div class="row">
+    
+    <div class="column">
+        <img class="single" src="/assets/img/blog-img/javaee/1.png" alt="1.png" />
+    </div>
+    
+</div>
+
+<hr />
+
+<h4 id="开发java-web项目的三层架构">开发Java Web项目的三层架构</h4>
+
+<p>  1)：数据访问层：(dao持久层)主要是对原始数据（数据库或者文本文件等存放数据的形式）的操作层，
+而不是指原始数据，也就是说，是对数据的操作，而不是数据库，具体为业务逻辑层或表示层
+提供数据服务．</p>
+
+<p>  2)：业务逻辑层：(service)主要是针对具体的问题的操作，也可以理解成对数据层的操作，对数据业务
+逻辑处理，如果说数据层是积木，那逻辑层就是对这些积木的搭建。具体的讲主要负责对数
+据层的操作。也就是说把一些数据层的操作进行组合。</p>
+
+<p>  3)：表示层：(controller)主要表示WEB方式，如果逻辑层相当强大和完善，
+无论表现层如何定义和更改，逻辑层都能完善地提供服务。
+主要对用户的请求接受，以及数据的返回，为客户端提供应用程序的访问。</p>
+
+<hr />
+
+<h4 id="serverlet需要实现的两个方法是什么">serverlet需要实现的两个方法是什么</h4>
+<p>  1. toGet 方法<br />
+  2. toPut 方法<br /></p>
+
+<h4 id="jsp的9个内置对象">JSP的9个内置对象</h4>
+
+<p>  1. Request对象<br />
+  2. Response对象<br />
+  3. Out对象<br />
+  4. session对象<br />
+  5. Application对象<br />
+  6. PageContext对象<br />
+  7. Config对象<br />
+  8. Page（相当于this）对象<br />
+  9. Exception对象</p>
+
+<hr />
+
+<h4 id="程序设计题">程序设计题</h4>
+<h5 id="1-mybean">1. MyBean</h5>
+<p>设计一个数据库访问的代码：</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">userFindByIdTest</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">String</span> <span class="n">resources</span> <span class="o">=</span> <span class="s">"mybatis-config.xml"</span><span class="o">;</span>
+    <span class="nc">Reader</span> <span class="n">reader</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="k">try</span> <span class="o">{</span>
+        <span class="n">reader</span> <span class="o">=</span> <span class="nc">Resources</span><span class="o">.</span><span class="na">getResourceAsReader</span><span class="o">(</span><span class="n">resources</span><span class="o">);</span>
+    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+    <span class="o">}</span>
+    <span class="nc">SqlSessionFactory</span> <span class="n">sqlMapper</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SqlSessionFactoryBuilder</span><span class="o">().</span><span class="na">build</span><span class="o">(</span><span class="n">reader</span><span class="o">);</span>
+    <span class="nc">SqlSession</span> <span class="n">session</span> <span class="o">=</span> <span class="n">sqlMapper</span><span class="o">.</span><span class="na">openSession</span><span class="o">();</span>
+    <span class="nc">User</span> <span class="n">user</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="na">selectOne</span><span class="o">(</span><span class="s">"findById"</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">user</span><span class="o">.</span><span class="na">getUname</span><span class="o">());</span>
+    <span class="n">session</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h5 id="2-aop">2. AOP</h5>
+<p>基于注解的AOP代码：</p>
+
+<h6 id="注册bean">注册bean</h6>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;bean</span> <span class="na">name=</span><span class="s">"userDao"</span> <span class="na">class=</span><span class="s">"com.itheima.demo03.UserDaoImpl"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;bean</span> <span class="na">name=</span><span class="s">"AnnoAdvice"</span> <span class="na">class=</span><span class="s">"com.itheima.demo04.AnnoAdvice"</span><span class="nt">/&gt;</span>
+<span class="c">&lt;!-- 开启@aspectj的自动代理支持 --&gt;</span>
+<span class="nt">&lt;aop:aspectj-autoproxy/&gt;</span>
+
+</code></pre></div></div>
+
+<h6 id="定义通知">定义通知</h6>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+ * 1、在切面中，需要通过指定的注解将方法标识为通知方法
+ * @Before：前置通知，在目标对象方法执行之前执行
+ * @After：后置通知，在目标对象方法的finally字句中执行
+ * @AfterReturning：返回通知，在目标对象方法返回值之后执行
+ * @AfterThrowing：异常通知，在目标对象方法的catch字句中执行
+ *
+ * 2、切入点表达式：设置在标识通知的注解的value属性中
+ * execution(public int com.atguigu.spring.aop.annotation.CalculatorImpl.add(int, int)
+ * execution(* com.atguigu.spring.aop.annotation.CalculatorImpl.*(..)
+ * 第一个*表示任意的访问修饰符和返回值类型
+ * 第二个*表示类中任意的方法
+ * ..表示任意的参数列表
+ * 类的地方也可以使用*，表示包下所有的类
+ * 3、重用切入点表达式
+ * //@Pointcut声明一个公共的切入点表达式
+ * @Pointcut("execution(* com.atguigu.spring.aop.annotation.CalculatorImpl.*(..))")
+ * public void pointCut(){}
+ * 使用方式：@Before("pointCut()")
+ *
+ * 4、获取连接点的信息
+ * 在通知方法的参数位置，设置JoinPoint类型的参数，就可以获取连接点所对应方法的信息
+ * //获取连接点所对应方法的签名信息
+ * Signature signature = joinPoint.getSignature();
+ * //获取连接点所对应方法的参数
+ * Object[] args = joinPoint.getArgs();
+ *
+ */</span>
+ 
+<span class="nd">@Component</span>
+<span class="nd">@Aspect</span>  <span class="c1">//将当前组件标识为切面</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">LoggerAspect</span> <span class="o">{</span>
+ 
+    <span class="nd">@Pointcut</span><span class="o">(</span><span class="s">"execution(* com.atguigu.spring.aop.annotation.CalculatorImpl.*(..))"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">pointCut</span><span class="o">(){}</span>
+ 
+    <span class="c1">//前置通知</span>
+    <span class="c1">//@Before("execution(public int com.atguigu.spring.aop.annotation.CalculatorImpl.add(int, int))")</span>
+    <span class="c1">//@Before("execution(* com.atguigu.spring.aop.annotation.CalculatorImpl.*(..))")</span>
+    <span class="nd">@Before</span><span class="o">(</span><span class="s">"pointCut()"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">beforeAdviceMethod</span><span class="o">(</span><span class="nc">JoinPoint</span> <span class="n">joinPoint</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">//获取连接点所对应方法的签名信息</span>
+        <span class="nc">Signature</span> <span class="n">signature</span> <span class="o">=</span> <span class="n">joinPoint</span><span class="o">.</span><span class="na">getSignature</span><span class="o">();</span>
+        <span class="c1">//获取连接点所对应方法的参数</span>
+        <span class="nc">Object</span><span class="o">[]</span> <span class="n">args</span> <span class="o">=</span> <span class="n">joinPoint</span><span class="o">.</span><span class="na">getArgs</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"LoggerAspect，方法："</span><span class="o">+</span><span class="n">signature</span><span class="o">.</span><span class="na">getName</span><span class="o">()+</span><span class="s">"，参数："</span><span class="o">+</span> <span class="nc">Arrays</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">args</span><span class="o">));</span>
+    <span class="o">}</span>
+ 
+    <span class="c1">//后置通知</span>
+    <span class="nd">@After</span><span class="o">(</span><span class="s">"pointCut()"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">afterAdviceMethod</span><span class="o">(</span><span class="nc">JoinPoint</span> <span class="n">joinPoint</span><span class="o">){</span>
+        <span class="c1">// System.out.println("LoggerAspect,后置通知");</span>
+        <span class="c1">//获取连接点所对应方法的签名信息</span>
+        <span class="nc">Signature</span> <span class="n">signature</span> <span class="o">=</span> <span class="n">joinPoint</span><span class="o">.</span><span class="na">getSignature</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"LoggerAspect，方法："</span><span class="o">+</span><span class="n">signature</span><span class="o">.</span><span class="na">getName</span><span class="o">()+</span><span class="s">"，执行完毕"</span><span class="o">);</span>
+    <span class="o">}</span>
+ 
+    <span class="c1">//返回通知</span>
+    <span class="cm">/**
+     * 在返回通知中若要获取目标对象方法的返回值
+     * 只需要通过@AfterReturning注解的returning属性
+     * 就可以将通知方法的某个参数指定为接收目标对象方法的返回值的参数
+     */</span>
+    <span class="nd">@AfterReturning</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"pointCut()"</span><span class="o">,</span> <span class="n">returning</span> <span class="o">=</span> <span class="s">"result"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">afterReturningAdviceMethod</span><span class="o">(</span><span class="nc">JoinPoint</span> <span class="n">joinPoint</span><span class="o">,</span> <span class="nc">Object</span> <span class="n">result</span><span class="o">){</span>
+        <span class="c1">// System.out.println("LoggerAspect,返回通知");</span>
+        <span class="c1">//获取连接点所对应方法的签名信息</span>
+        <span class="nc">Signature</span> <span class="n">signature</span> <span class="o">=</span> <span class="n">joinPoint</span><span class="o">.</span><span class="na">getSignature</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"LoggerAspect，方法："</span><span class="o">+</span><span class="n">signature</span><span class="o">.</span><span class="na">getName</span><span class="o">()+</span><span class="s">"，结果："</span><span class="o">+</span><span class="n">result</span><span class="o">);</span>
+    <span class="o">}</span>
+ 
+      <span class="c1">//异常通知</span>
+    <span class="nd">@AfterThrowing</span><span class="o">(</span> <span class="s">"pointCut()"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">afterThrowingAdviceMethod</span><span class="o">(</span><span class="nc">JoinPoint</span> <span class="n">joinPoint</span><span class="o">){</span>
+        <span class="c1">//获取连接点所对应方法的签名信息</span>
+        <span class="nc">Signature</span> <span class="n">signature</span> <span class="o">=</span> <span class="n">joinPoint</span><span class="o">.</span><span class="na">getSignature</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"LoggerAspect，方法："</span><span class="o">+</span><span class="n">signature</span><span class="o">.</span><span class="na">getName</span><span class="o">()+</span><span class="s">",异常通知"</span><span class="o">);</span>
+    <span class="o">}</span>
+ 
+    <span class="cm">/**
+     * 在异常通知中若要获取目标对象方法的异常
+     * 只需要通过AfterThrowing注解的throwing属性
+     * 就可以将通知方法的某个参数指定为接收目标对象方法出现的异常的参数
+     */</span>
+    <span class="nd">@AfterThrowing</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"pointCut()"</span><span class="o">,</span> <span class="n">throwing</span> <span class="o">=</span> <span class="s">"ex"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">afterThrowingAdviceMethod</span><span class="o">(</span><span class="nc">JoinPoint</span> <span class="n">joinPoint</span><span class="o">,</span> <span class="nc">Throwable</span> <span class="n">ex</span><span class="o">){</span>
+        <span class="c1">//获取连接点所对应方法的签名信息</span>
+        <span class="nc">Signature</span> <span class="n">signature</span> <span class="o">=</span> <span class="n">joinPoint</span><span class="o">.</span><span class="na">getSignature</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"LoggerAspect，方法："</span><span class="o">+</span><span class="n">signature</span><span class="o">.</span><span class="na">getName</span><span class="o">()+</span><span class="s">"，异常："</span><span class="o">+</span><span class="n">ex</span><span class="o">);</span>
+    <span class="o">}</span>
+ 
+ 
+    <span class="c1">//环绕通知</span>
+    <span class="nd">@Around</span><span class="o">(</span><span class="s">"pointCut()"</span><span class="o">)</span>
+    <span class="c1">//环绕通知的方法的返回值一定要和目标对象方法的返回值一致</span>
+    <span class="kd">public</span> <span class="nc">Object</span> <span class="nf">aroundAdviceMethod</span><span class="o">(</span><span class="nc">ProceedingJoinPoint</span> <span class="n">joinPoint</span><span class="o">){</span>
+        <span class="nc">Object</span> <span class="n">result</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"环绕通知--&gt;前置通知"</span><span class="o">);</span>
+            <span class="c1">//表示目标对象方法的执行</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">joinPoint</span><span class="o">.</span><span class="na">proceed</span><span class="o">();</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"环绕通知--&gt;返回通知"</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Throwable</span> <span class="n">throwable</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">throwable</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"环绕通知--&gt;异常通知"</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"环绕通知--&gt;后置通知"</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h4 id="mybean-xml程序编写">MyBean XML程序编写</h4>
+<p>要求写出对应的增删改查的几种代码</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8" ?&gt;</span>
+<span class="cp">&lt;!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd"&gt;</span>
+<span class="nt">&lt;mapper</span> <span class="na">namespace=</span><span class="s">"com.jinzheng.dao.BookMapper"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!--    显示所有目录--&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"findAll"</span> <span class="na">resultType=</span><span class="s">"com.jinzheng.pojo.Book"</span><span class="nt">&gt;</span>
+        select * from tb_book
+    <span class="nt">&lt;/select&gt;</span>
+
+<span class="c">&lt;!--    根据id查询图书信息 --&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"findBookById"</span> <span class="na">parameterType=</span><span class="s">"Integer"</span>
+            <span class="na">resultType=</span><span class="s">"com.jinzheng.pojo.Book"</span><span class="nt">&gt;</span>
+        select *
+        from tb_book
+        where id=#{id}
+    <span class="nt">&lt;/select&gt;</span>
+
+<span class="c">&lt;!--    添加数据--&gt;</span>
+    <span class="nt">&lt;insert</span> <span class="na">id=</span><span class="s">"addBook"</span> <span class="na">parameterType=</span><span class="s">"com.jinzheng.pojo.Book"</span><span class="nt">&gt;</span>
+        insert into tb_book values (#{id},#{name},#{press},#{author},#{bookPrice})
+    <span class="nt">&lt;/insert&gt;</span>
+
+<span class="c">&lt;!--        删除数据--&gt;</span>
+    <span class="nt">&lt;delete</span> <span class="na">id=</span><span class="s">"deleteById"</span> <span class="na">parameterType=</span><span class="s">"Integer"</span><span class="nt">&gt;</span>
+        delete from tb_book where id = #{id}
+    <span class="nt">&lt;/delete&gt;</span>
+
+<span class="c">&lt;!--    修改数据--&gt;</span>
+    <span class="nt">&lt;update</span> <span class="na">id=</span><span class="s">"updateBook"</span> <span class="na">parameterType=</span><span class="s">"com.jinzheng.pojo.Book"</span><span class="nt">&gt;</span>
+        update tb_book
+        <span class="nt">&lt;set&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"name != null and name != '' "</span><span class="nt">&gt;</span>
+                name = #{name},
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"press != null and press != '' "</span><span class="nt">&gt;</span>
+                press = #{press},
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"author != null and author != '' "</span><span class="nt">&gt;</span>
+                author = #{author},
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"bookPrice != null and bookPrice != '' "</span><span class="nt">&gt;</span>
+                bookPrice = #{bookPrice},
+            <span class="nt">&lt;/if&gt;</span>
+
+        <span class="nt">&lt;/set&gt;</span>
+        where id = #{id}
+    <span class="nt">&lt;/update&gt;</span>
+
+<span class="c">&lt;!--        根据图书信息去模糊查询图书信息(动态SQL)--&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"queryList"</span> <span class="na">parameterType=</span><span class="s">"com.jinzheng.pojo.Book"</span> <span class="na">resultType=</span><span class="s">"com.jinzheng.pojo.Book"</span><span class="nt">&gt;</span>
+        select * from tb_book
+        <span class="nt">&lt;where&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"id != null and id !='' "</span><span class="nt">&gt;</span>
+                or id = #{id}
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"name != null and name !='' "</span><span class="nt">&gt;</span>
+                or name like concat('%',#{name},'%')
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"press != null and press !='' "</span><span class="nt">&gt;</span>
+                or press like concat('%',#{press},'%')
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"author != null and author !='' "</span><span class="nt">&gt;</span>
+                or author like concat('%',#{author},'%')
+            <span class="nt">&lt;/if&gt;</span>
+            <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">"bookPrice != null and bookPrice !='' "</span><span class="nt">&gt;</span>
+                or bookPrice = #{bookPrice}
+            <span class="nt">&lt;/if&gt;</span>
+        <span class="nt">&lt;/where&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+
+<span class="nt">&lt;/mapper&gt;</span>
+
+</code></pre></div></div>]]></content><author><name>Ranok</name></author><category term="java" /><category term="java ee" /><category term="期末考试" /><summary type="html"><![CDATA[  Java EE，Java 平台企业版（Java Platform Enterprise Edition），之前称为Java 2 Platform, Enterprise Edition (J2EE)，2018年3月更名为 Jakarta EE(这个名称应该还没有得到群众认可)。是 Sun 公司为企业级应用推出的标准平台，用来开发B/S架构软件。Java EE 可以说是一个框架，也可以说是一种规范。]]></summary></entry><entry><title type="html">服务器</title><link href="http://localhost:4000/server" rel="alternate" type="text/html" title="服务器" /><published>2022-12-23T00:00:00+08:00</published><updated>2022-12-23T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-server</id><content type="html" xml:base="http://localhost:4000/server"><![CDATA[<p>  服务器指的是网络环境下为客户机(Client)提供某种服务的专用计算机，服务器安装有网络操作系统和各种服务器应用系统软件(如Web服务、电子邮件服务)的计算机。服务器具有高速的CPU运算能力、长时间的可靠运行、强大的I/O外部数据吞吐能力以及更好的扩展性。</p>
 
 <hr />
 
@@ -205,7 +598,7 @@
   <li>使用不同的IP地址<br /></li>
   <li>使用不同的端口号<br /></li>
   <li>使用主机头<br /></li>
-</ol>]]></content><author><name>Ranok</name></author><category term="服务器" /><category term="期末考试" /><summary type="html"><![CDATA[  服务器指的是网络环境下为客户机(Client)提供某种服务的专用计算机，服务器安装有网络操作系统和各种服务器应用系统软件(如Web服务、电子邮件服务)的计算机。服务器具有高速的CPU运算能力、长时间的可靠运行、强大的I/O外部数据吞吐能力以及更好的扩展性。]]></summary></entry><entry><title type="html">计组期末复习</title><link href="http://localhost:4000/computer" rel="alternate" type="text/html" title="计组期末复习" /><published>2022-12-18T00:00:00+08:00</published><updated>2022-12-18T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-computer</id><content type="html" xml:base="http://localhost:4000/computer"><![CDATA[<p>计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。</p>
+</ol>]]></content><author><name>Ranok</name></author><category term="服务器" /><category term="期末考试" /><summary type="html"><![CDATA[  服务器指的是网络环境下为客户机(Client)提供某种服务的专用计算机，服务器安装有网络操作系统和各种服务器应用系统软件(如Web服务、电子邮件服务)的计算机。服务器具有高速的CPU运算能力、长时间的可靠运行、强大的I/O外部数据吞吐能力以及更好的扩展性。]]></summary></entry><entry><title type="html">计算机组成原理</title><link href="http://localhost:4000/computer" rel="alternate" type="text/html" title="计算机组成原理" /><published>2022-12-18T00:00:00+08:00</published><updated>2022-12-18T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-computer</id><content type="html" xml:base="http://localhost:4000/computer"><![CDATA[<p>计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。</p>
 
 <hr />
 
@@ -581,7 +974,7 @@ w = log(块大小)，r = log(Cache行数)，s = log(主存块数) - w</p>
         <img class="single" src="/assets/img/blog-img/computer/2.bmp" alt="2.bmp" />
     </div>
     
-</div>]]></content><author><name>Ranok</name></author><category term="计算机组成原理" /><category term="期末考试" /><summary type="html"><![CDATA[计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。]]></summary></entry><entry><title type="html">马原期末复习</title><link href="http://localhost:4000/marxism" rel="alternate" type="text/html" title="马原期末复习" /><published>2022-12-17T00:00:00+08:00</published><updated>2022-12-17T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-marxism</id><content type="html" xml:base="http://localhost:4000/marxism"><![CDATA[<p>马克思主义基本原理是指马克思主义政治经济学、辩证唯物主义和历史唯物主义以及科学社会主义。它是马克思主义科学体系的基本理论、基本范畴，是其立场、观点和方法的理论表达。</p>
+</div>]]></content><author><name>Ranok</name></author><category term="计算机组成原理" /><category term="期末考试" /><summary type="html"><![CDATA[计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。]]></summary></entry><entry><title type="html">马克思主义原理</title><link href="http://localhost:4000/marxism" rel="alternate" type="text/html" title="马克思主义原理" /><published>2022-12-17T00:00:00+08:00</published><updated>2022-12-17T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-marxism</id><content type="html" xml:base="http://localhost:4000/marxism"><![CDATA[<p>马克思主义基本原理是指马克思主义政治经济学、辩证唯物主义和历史唯物主义以及科学社会主义。它是马克思主义科学体系的基本理论、基本范畴，是其立场、观点和方法的理论表达。</p>
 
 <hr />
 
@@ -999,7 +1392,7 @@ w = log(块大小)，r = log(Cache行数)，s = log(主存块数) - w</p>
 <h4 id="68实现共产主义是历史发展的必然p312-313">68.实现共产主义是历史发展的必然（P312-313）</h4>
 <p>  共产主义理想作为一种社会理想，是对人类社会发展规律认识的基础上，设想的社会目标。<br />
   遗产主义理想是一定会实现的，是以前的社会发展规律以及资本主义社会的基本矛盾发展为依据的。<br />
-  社会主义运动的实践，特别是社会主义国家的兴起和不断发展已经并正在用事实证明共产主义理想实现的必然性。</p>]]></content><author><name>Ranok</name></author><category term="马克思主义基本原理" /><category term="期末考试" /><summary type="html"><![CDATA[马克思主义基本原理是指马克思主义政治经济学、辩证唯物主义和历史唯物主义以及科学社会主义。它是马克思主义科学体系的基本理论、基本范畴，是其立场、观点和方法的理论表达。]]></summary></entry><entry><title type="html">机器学习期末考试</title><link href="http://localhost:4000/machinelearning" rel="alternate" type="text/html" title="机器学习期末考试" /><published>2022-12-09T00:00:00+08:00</published><updated>2022-12-09T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-machineLearning</id><content type="html" xml:base="http://localhost:4000/machinelearning"><![CDATA[<p>今天的人工智能主要依赖的不再是符号知识表示和程序推理机制，现代 AI 而是建立在新的基础上，即机器学习。无论是传统的基于数学的机器学习模型或决策树，还是深度学习的神经网络架构，当今人工智能领域的大多数 AI 应用程序都是基于机器学习技术。</p>
+  社会主义运动的实践，特别是社会主义国家的兴起和不断发展已经并正在用事实证明共产主义理想实现的必然性。</p>]]></content><author><name>Ranok</name></author><category term="马克思主义基本原理" /><category term="期末考试" /><summary type="html"><![CDATA[马克思主义基本原理是指马克思主义政治经济学、辩证唯物主义和历史唯物主义以及科学社会主义。它是马克思主义科学体系的基本理论、基本范畴，是其立场、观点和方法的理论表达。]]></summary></entry><entry><title type="html">机器学习</title><link href="http://localhost:4000/machinelearning" rel="alternate" type="text/html" title="机器学习" /><published>2022-12-09T00:00:00+08:00</published><updated>2022-12-09T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-machineLearning</id><content type="html" xml:base="http://localhost:4000/machinelearning"><![CDATA[<p>今天的人工智能主要依赖的不再是符号知识表示和程序推理机制，现代 AI 而是建立在新的基础上，即机器学习。无论是传统的基于数学的机器学习模型或决策树，还是深度学习的神经网络架构，当今人工智能领域的大多数 AI 应用程序都是基于机器学习技术。</p>
 
 <hr />
 
@@ -2780,7 +3173,7 @@ index表示行标题，columns表示列标题，默认名称为从0开始的有�
   <li><code class="language-plaintext highlighter-rouge">jekyll clean</code>  清除所有的构建产物</li>
   <li><code class="language-plaintext highlighter-rouge">jekyll new-theme</code>  创建一个新的主题脚手架</li>
   <li><code class="language-plaintext highlighter-rouge">jekyll doctor</code>  诊断，输出所有已经废弃的依赖包或者有问题的配置</li>
-</ol>]]></content><author><name>Ranok</name></author><category term="Jekyll" /><category term="web前端" /><summary type="html"><![CDATA[jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务,例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。]]></summary></entry><entry><title type="html">OpenStack 期末复习</title><link href="http://localhost:4000/openstack" rel="alternate" type="text/html" title="OpenStack 期末复习" /><published>2022-12-04T00:00:00+08:00</published><updated>2022-12-04T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-openstack</id><content type="html" xml:base="http://localhost:4000/openstack"><![CDATA[<p>OpenStack是Rackspace和NASA共同成立的一个开源项目，它是为云计算服务的，提供存储空间、计算能力等资源服务的Web Service。简单来说，OpenStack就是一个操作系统，一套软件，一套IaaS（基础设施即服务）软件，对资源进行管理，并且以服务的形式提供给上层应用或者用户去使用。</p>
+</ol>]]></content><author><name>Ranok</name></author><category term="Jekyll" /><category term="web前端" /><summary type="html"><![CDATA[jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务,例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。]]></summary></entry><entry><title type="html">OpenStack</title><link href="http://localhost:4000/openstack" rel="alternate" type="text/html" title="OpenStack" /><published>2022-12-04T00:00:00+08:00</published><updated>2022-12-04T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-openstack</id><content type="html" xml:base="http://localhost:4000/openstack"><![CDATA[<p>OpenStack是Rackspace和NASA共同成立的一个开源项目，它是为云计算服务的，提供存储空间、计算能力等资源服务的Web Service。简单来说，OpenStack就是一个操作系统，一套软件，一套IaaS（基础设施即服务）软件，对资源进行管理，并且以服务的形式提供给上层应用或者用户去使用。</p>
 
 <hr />
 

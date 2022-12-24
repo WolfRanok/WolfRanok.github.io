@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 服务器期末复习
+title: 服务器
 author: Ranok
 tags: [服务器, 期末考试]     #标签会影响
 feature-img: "assets/img/feature-img/server.jpg" # 这是一个会出现在博客文章内部的图片

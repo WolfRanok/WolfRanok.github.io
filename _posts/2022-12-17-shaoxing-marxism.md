@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 马原期末复习
+title: 马克思主义原理
 author: Ranok
 tag: [马克思主义基本原理,期末考试]
 color: brown

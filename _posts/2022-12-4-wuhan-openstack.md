@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OpenStack 期末复习
+title: OpenStack
 author: Ranok
 color: brown
 tag: [OpenStack,期末考试]

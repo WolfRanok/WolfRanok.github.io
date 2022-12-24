@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 机器学习期末考试
+title: 机器学习
 author: Ranok
 color: brown
 tag: [机器学习,期末考试,python]
