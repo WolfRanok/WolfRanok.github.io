@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-24T20:47:39+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">Java EE</title><link href="http://localhost:4000/javaee" rel="alternate" type="text/html" title="Java EE" /><published>2022-12-24T00:00:00+08:00</published><updated>2022-12-24T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-javaee</id><content type="html" xml:base="http://localhost:4000/javaee"><![CDATA[<p>  Java EE，Java 平台企业版（Java Platform Enterprise Edition），之前称为Java 2 Platform, Enterprise Edition (J2EE)，2018年3月更名为 Jakarta EE(这个名称应该还没有得到群众认可)。是 Sun 公司为企业级应用推出的标准平台，用来开发B/S架构软件。Java EE 可以说是一个框架，也可以说是一种规范。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-08T16:18:38+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">Java EE</title><link href="http://localhost:4000/javaee" rel="alternate" type="text/html" title="Java EE" /><published>2022-12-24T00:00:00+08:00</published><updated>2022-12-24T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-javaee</id><content type="html" xml:base="http://localhost:4000/javaee"><![CDATA[<p>  Java EE，Java 平台企业版（Java Platform Enterprise Edition），之前称为Java 2 Platform, Enterprise Edition (J2EE)，2018年3月更名为 Jakarta EE(这个名称应该还没有得到群众认可)。是 Sun 公司为企业级应用推出的标准平台，用来开发B/S架构软件。Java EE 可以说是一个框架，也可以说是一种规范。</p>
 
 <hr />
 
@@ -1095,7 +1095,8 @@ w = log(块大小)，r = log(Cache行数)，s = log(主存块数) - w</p>
 </blockquote>
 
 <p>方法论原理：<br />
-  矛盾的同一性是指矛盾着的对立面，互相依存，互相贯通的性质和趋势，有两个方面的含义，一是矛盾着的对立面，相互依存互为存在的前提并共处于一个统一个体中。<br />
+  矛盾的同一性是指矛盾着的对立面，互相依存，互相贯通的性质和趋势，有两个方面的含义<br />
+  一是矛盾着的对立面，相互依存互为存在的前提并共处于一个统一个体中。<br />
   二是矛盾着的对立面，互相贯通，在一定条件下可以互相转化。矛盾的斗争性是矛盾着的，对立面互相排斥，互相分离的性质和趋势。</p>
 
 <p>方法论要求：<br />
@@ -1107,9 +1108,11 @@ w = log(块大小)，r = log(Cache行数)，s = log(主存块数) - w</p>
 </blockquote>
 
 <p>方法论原理：<br />
-  矛盾的同一性是指矛盾着的对立面，互相依存，互相贯通的性质和趋势，有两个方面的含义。 <br />
-  一是矛盾着的对立面，相互依存互为存在的前提并共处于一个统一个体中。<br />
-  二是矛盾着的对立面，互相贯通，在一定条件下可以互相转化，矛盾的斗争性是矛盾着的，对立面互相排斥，互相分离的性质和趋势。</p>
+  矛盾的普遍性和特殊性是辩证统一的关系，矛盾的普遍性，即矛盾的共性，矛盾的特殊性，即矛盾的个性。 <br />
+  二者相互区别矛盾的共性是无条件的，绝对的矛盾的，个性是有条件的，相对的<br />
+  二者相互区别任何存在的事物都是共性和个性的有机统一，共性寓于个性之中，没有离开个性的共性，也没有离开共性的个性<br />
+  二者在一定条件下相互转化<br />
+  方法论要求我们坚持个性与共性相结合的分析方法</p>
 
 <p>方法论要求：<br />
   矛盾同一性和斗争性的辩证关系原理要求，我们在观察和处理问题时，必须善于把两者结合起来，在斗争性中把握同一性，在同一性中把握斗争性，既要看到矛盾双方的对立，又要看到矛盾双方的统一。</p>
@@ -1471,6 +1474,34 @@ w = log(块大小)，r = log(Cache行数)，s = log(主存块数) - w</p>
 
 <p>将训练模型保存下来，并公布用以推广。</p>
 
+<h4 id="分类问题以肿瘤预测为例">分类问题以肿瘤预测为例。</h4>
+<h5 id="明确任务收集数据-1">明确任务收集数据。</h5>
+<p>随机选取若干家医院的肿瘤病人数据作为初始数据</p>
+
+<h5 id="数据分析与预处理-1">数据分析与预处理。</h5>
+
+<p>将数据特征初步定为以下几项：
+肿瘤的直径、体积、颜色、数量、肿瘤是否为良性、病人体温、病人是否出现炎症等信息。</p>
+
+<p>将肿瘤是否为良性作为目标列作为输出项并做数值化处理。</p>
+
+<p>分析这些特征是否出现缺失值，对缺失值较多的特征直接删除。对缺失值较少的使用平均值填补定量的特征（例如肿瘤的直径），使用众数填补定类的特征（例如病人是否出现炎症）。</p>
+
+<p>使用灰色关联分析法有选择性地剔除关联度较小的几个特征，即进行降维与特征选择处理。</p>
+
+<h5 id="模型训练-1">模型训练</h5>
+
+<p>选择使用逻辑回归解决该分类问题。</p>
+
+<h5 id="模型评估与参数调优-1">模型评估与参数调优</h5>
+
+<p>使用AUC值评估模型的优劣，当R2的值越接近1时模型性能越好。
+使用k折交叉验证方法选取出最佳的激活函数的阈值等参数并再次进行模型训练。</p>
+
+<h5 id="模型应用-1">模型应用</h5>
+
+<p>将训练模型保存下来，并公布用以推广。</p>
+
 <hr />
 
 <h2 id="问题五k折交叉验证的简述">问题五：k折交叉验证的简述。</h2>
@@ -1549,7 +1580,7 @@ w = log(块大小)，r = log(Cache行数)，s = log(主存块数) - w</p>
 <div class="row">
     
     <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/3.png" alt="3.png" />
+        <img class="single" src="/assets/img/blog-img/machinelearning/4.png" alt="4.png" />
     </div>
     
 </div>
@@ -1559,7 +1590,7 @@ w = log(块大小)，r = log(Cache行数)，s = log(主存块数) - w</p>
 <div class="row">
     
     <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/4.png" alt="4.png" />
+        <img class="single" src="/assets/img/blog-img/machinelearning/5.png" alt="5.png" />
     </div>
     
 </div>
@@ -1571,7 +1602,7 @@ w = log(块大小)，r = log(Cache行数)，s = log(主存块数) - w</p>
 <div class="row">
     
     <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/5.png" alt="5.png" />
+        <img class="single" src="/assets/img/blog-img/machinelearning/6.png" alt="6.png" />
     </div>
     
 </div>
@@ -1581,7 +1612,7 @@ w = log(块大小)，r = log(Cache行数)，s = log(主存块数) - w</p>
 <div class="row">
     
     <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/6.png" alt="6.png" />
+        <img class="single" src="/assets/img/blog-img/machinelearning/14.png" alt="14.png" />
     </div>
     
 </div>
@@ -1696,9 +1727,6 @@ w = log(块大小)，r = log(Cache行数)，s = log(主存块数) - w</p>
   <li>接着对着标记的聚类中心之后，重新计算出每个聚类的新中心点（平均值）</li>
   <li>如果计算得出的新中心点与原中心点一样（质心不再移动），那么结束，否则重新进行第二步过程</li>
 </ol>
-
-<h4 id="目标函数及其描述">目标函数及其描述：</h4>
-<p>？？？</p>
 
 <hr />
 

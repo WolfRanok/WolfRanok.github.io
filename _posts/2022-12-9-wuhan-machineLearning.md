@@ -162,20 +162,20 @@ k折交叉验证的工作流程：<br>
 ##### 计算按照性别划分的信息增益
 
 要计算性别的信息增益需要先计算性别的信息熵
-{% include aligner.html images="blog-img/machinelearning/3.png" %}
+{% include aligner.html images="blog-img/machinelearning/4.png" %}
 
 因此得到按照性别划分的信息增益为
-{% include aligner.html images="blog-img/machinelearning/4.png" %}
+{% include aligner.html images="blog-img/machinelearning/5.png" %}
 
 #### 计算按照活跃度划分的信息增益
 
 同样的，要计算活跃度的信息增益需要先计算活跃度的信息熵
 
-{% include aligner.html images="blog-img/machinelearning/5.png" %}
+{% include aligner.html images="blog-img/machinelearning/6.png" %}
 
 因此得到按照活跃度划分的信息增益为：
 
-{% include aligner.html images="blog-img/machinelearning/6.png" %}
+{% include aligner.html images="blog-img/machinelearning/14.png" %}
 
 #### 比较两种特征对流失度的影响
 
