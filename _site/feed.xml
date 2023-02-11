@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-10T20:12:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">Java EE</title><link href="http://localhost:4000/javaee" rel="alternate" type="text/html" title="Java EE" /><published>2022-12-24T00:00:00+08:00</published><updated>2022-12-24T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-javaee</id><content type="html" xml:base="http://localhost:4000/javaee"><![CDATA[<p>  Java EE，Java 平台企业版（Java Platform Enterprise Edition），之前称为Java 2 Platform, Enterprise Edition (J2EE)，2018年3月更名为 Jakarta EE(这个名称应该还没有得到群众认可)。是 Sun 公司为企业级应用推出的标准平台，用来开发B/S架构软件。Java EE 可以说是一个框架，也可以说是一种规范。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-11T23:55:55+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">Java EE</title><link href="http://localhost:4000/javaee" rel="alternate" type="text/html" title="Java EE" /><published>2022-12-24T00:00:00+08:00</published><updated>2022-12-24T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-javaee</id><content type="html" xml:base="http://localhost:4000/javaee"><![CDATA[<p>  Java EE，Java 平台企业版（Java Platform Enterprise Edition），之前称为Java 2 Platform, Enterprise Edition (J2EE)，2018年3月更名为 Jakarta EE(这个名称应该还没有得到群众认可)。是 Sun 公司为企业级应用推出的标准平台，用来开发B/S架构软件。Java EE 可以说是一个框架，也可以说是一种规范。</p>
 
 <hr />
 
@@ -598,7 +598,24 @@
   <li>使用不同的IP地址<br /></li>
   <li>使用不同的端口号<br /></li>
   <li>使用主机头<br /></li>
-</ol>]]></content><author><name>Ranok</name></author><category term="服务器" /><category term="期末考试" /><summary type="html"><![CDATA[  服务器指的是网络环境下为客户机(Client)提供某种服务的专用计算机，服务器安装有网络操作系统和各种服务器应用系统软件(如Web服务、电子邮件服务)的计算机。服务器具有高速的CPU运算能力、长时间的可靠运行、强大的I/O外部数据吞吐能力以及更好的扩展性。]]></summary></entry><entry><title type="html">计算机组成原理</title><link href="http://localhost:4000/computer" rel="alternate" type="text/html" title="计算机组成原理" /><published>2022-12-18T00:00:00+08:00</published><updated>2022-12-18T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-computer</id><content type="html" xml:base="http://localhost:4000/computer"><![CDATA[<p>计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。</p>
+</ol>
+
+<h3 id="10概念考察总汇">10.概念考察总汇</h3>
+
+<h4 id="操作系统">操作系统</h4>
+<p>  操作系统位于底层硬件与用户之间，是两者沟通的桥梁。用户可以通过操作系统的用户界面，输入命令。</p>
+
+<h4 id="动态磁盘">动态磁盘</h4>
+<p>  动态硬盘，即动态磁盘。动态硬盘是指在Windows操作系统的磁盘管理器中将本地硬盘升级得来的。</p>
+
+<h4 id="dns">DNS</h4>
+<p>  即域名系统，它作为可以将域名和IP地址相互映射的一个分布式数据库，能够使人更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。</p>
+
+<h4 id="vpn">VPN</h4>
+<p>  VPN虚拟专用网络，利用公用网络架设专用网络活动目录。</p>
+
+<h4 id="组策略">组策略</h4>
+<p>  是管理员为用户和计算机定义并控制程序、网络资源及操作系统行为的主要工具。</p>]]></content><author><name>Ranok</name></author><category term="服务器" /><category term="期末考试" /><summary type="html"><![CDATA[  服务器指的是网络环境下为客户机(Client)提供某种服务的专用计算机，服务器安装有网络操作系统和各种服务器应用系统软件(如Web服务、电子邮件服务)的计算机。服务器具有高速的CPU运算能力、长时间的可靠运行、强大的I/O外部数据吞吐能力以及更好的扩展性。]]></summary></entry><entry><title type="html">计算机组成原理</title><link href="http://localhost:4000/computer" rel="alternate" type="text/html" title="计算机组成原理" /><published>2022-12-18T00:00:00+08:00</published><updated>2022-12-18T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-computer</id><content type="html" xml:base="http://localhost:4000/computer"><![CDATA[<p>计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。</p>
 
 <hr />
 
