@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-19T21:59:40+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">基于svm实现的屏幕翻译项目解析</title><link href="http://localhost:4000/tranlate" rel="alternate" type="text/html" title="基于svm实现的屏幕翻译项目解析" /><published>2023-02-19T00:00:00+08:00</published><updated>2023-02-19T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-translate</id><content type="html" xml:base="http://localhost:4000/tranlate"><![CDATA[<p><a id="go_to_top"></a>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-27T21:57:23+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">基于svm实现的屏幕翻译项目解析</title><link href="http://localhost:4000/tranlate" rel="alternate" type="text/html" title="基于svm实现的屏幕翻译项目解析" /><published>2023-02-19T00:00:00+08:00</published><updated>2023-02-19T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-translate</id><content type="html" xml:base="http://localhost:4000/tranlate"><![CDATA[<p><a id="go_to_top"></a>
   不知不觉间，人工智能慢慢开始走进千家万户。无人驾驶、AI绘图、语音识别、AI聊天都是人工智能的领域。我作为一个智能的学生已经被迷得不行了，在这份热爱的支持下我完成了这份项目。虽然我的项目与当今智能技术无法比拟，但是其中运用到的机器学习模型（如<code class="language-plaintext highlighter-rouge">SVM</code>分类器）足以能够让我的项目归类到人工智能。</p>
 
 <hr />
-<h2 id="目录">目录</h2>
+<h1 id="目录">目录</h1>
 <ul>
   <li><a href="#目录">目录</a></li>
   <li><a href="#前言">前言</a></li>
@@ -16,13 +16,28 @@
           <li><a href="#数据规范化">数据规范化</a></li>
         </ul>
       </li>
+      <li><a href="#建模与机器学习svm">建模与机器学习（SVM）</a>
+        <ul>
+          <li><a href="#对建模的理解与机器学习的理解">对建模的理解与机器学习的理解</a></li>
+          <li><a href="#建模">建模</a>
+            <ul>
+              <li><a href="#1随机划分训练集与测试集">1.随机划分训练集与测试集</a></li>
+              <li><a href="#2参数调优">2.参数调优</a></li>
+              <li><a href="#3训练">3.训练</a></li>
+              <li><a href="#4模型检验">4.模型检验</a></li>
+              <li><a href="#5模型保存">5.模型保存</a></li>
+            </ul>
+          </li>
+          <li><a href="#数据处理">数据处理</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
 
 <hr />
 
-<h2 id="前言">前言</h2>
+<h1 id="前言">前言</h1>
 <p>  此项目专用于204技术交流会使用，未经本人允许不得外传。为了更好地展示项目，所以在这里写下这篇博客。本博客面向新人，我尽可能的使用了最朴素的方式来表达我的项目技术流程以及算法思想，且文章中不会出现大量生僻难懂的术语，请放心食用。另外，此静态博客网基于<a href="http://jekyllrb.com/">Jekyll</a>框架搭建，但对<code class="language-plaintext highlighter-rouge">Jekyll</code>的讨论并不在此次技术交流之列中。如果你对<code class="language-plaintext highlighter-rouge">Jekyll</code>感兴趣，随时欢迎与我讨论❤️。</p>
 
 <p>  本项目设计以及编码历时共7天，共计划分8个模块，项目大致可以划出以下几个技术分支：</p>
@@ -39,7 +54,7 @@
   <p>温馨提示：如果你觉得界面配色有些刺眼，你可以点击右上角的菜单，选择使用<strong>圆形</strong>按钮切换主题背景。</p>
 </blockquote>
 
-<h2 id="项目总目标">项目总目标</h2>
+<h1 id="项目总目标">项目总目标</h1>
 
 <p>  实现一个可以实时读取屏幕信息，并翻译图中英文的屏幕翻译器。</p>
 
@@ -57,15 +72,25 @@
     
 </div>
 
+<p>  项目主要的技术点以及流程如下所示</p>
+
+<div class="row">
+    
+    <div style="flex: 33.333333333333336%">
+        <img class="single" src="/assets/img/blog-img/translate/9.png" alt="9.png" />
+    </div>
+    
+</div>
+
 <hr />
-<h2 id="正文">正文</h2>
+<h1 id="正文">正文</h1>
 
 <hr />
 
-<h3 id="数据收集与数据清洗">数据收集与数据清洗</h3>
+<h2 id="数据收集与数据清洗">数据收集与数据清洗</h2>
 <hr />
 
-<h4 id="为什么要收集数据">为什么要收集数据？</h4>
+<h3 id="为什么要收集数据">为什么要收集数据？</h3>
 
 <p>  要翻译屏幕中的英文，首先要做的应该是识别出屏幕中的英文。识别的工作是交由机器学习模型实现的，但是模型并不是一开始就拥有识别英文的能力。事实上你可以将<code class="language-plaintext highlighter-rouge">python</code>所提供机器学习模型视为空壳，只有通过不断的喂养其数据，主观的告诉模型什么是对的什么是错的，在不断的训练学习之后模型才有识别的能力。机器学习因此得名“机器学习”。</p>
 
@@ -75,7 +100,7 @@
 <p>  一般的，一个模型的好坏主要最关键的因素是数据的优劣。数据越多越纯净就越容易训练出优秀的模型。因此数据整理的部分显的尤为重要。</p>
 
 <hr />
-<h4 id="数据收集">数据收集</h4>
+<h3 id="数据收集">数据收集</h3>
 
 <p>  模型需要识别的是屏幕中的英文，所以收集的数据也应该是印刷体的的字母图片。不过这类数据资源在网上很少能找得到，少数在<a href="https://www.php.cn/tool/git/413611.html">Gethub</a>和<a href="https://cloud.tencent.com/developer/news/68329">Kaggle</a>上找到的资源所训练出的模型效果都不尽人意。</p>
 
@@ -105,14 +130,255 @@
 <p>  你问我为什么不多造几个数据，而是使用下采样扩充？<br />
   <del>（肝不够多）</del>下采样得到的图片是对原有图片的衍生，同样拥有原图像的基本信息，用这样的数据进行训练不会影响模型的效果。</p>
 
-<h4 id="数据规范化">数据规范化</h4>
+<h3 id="数据规范化">数据规范化</h3>
 
 <p>  图像数据需要最终供模型训练，而训练的接口是固定的，因此所有的数据应该有相同的规格。</p>
 
 <p>  我的做法是将数据处理成 \(20*20\) 像素的黑白图片素材使用。</p>
 
+<p>  也就是将一个普通的字母图片通过横向纵向的拉伸与压缩变成一个 \(20*20\) 标准的图片。显而易见的，这种做法很容易导致图片信息了流失。我在实践中也遇到了这个问题，其中影响最大的就是字母 \(il\) 等长宽比差距较大的字母，如果直接通过拉伸与放缩的手段让其规范化的话就会出现以下的结果（左边为原图，右边为处理后的图像）以至于影响到后面建模的效果:</p>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img/translate/5.jpg" alt="5.jpg" />
+    </div>
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C6.jpg" alt="blog-img\translate\6.jpg" />
+    </div>
+    
+</div>
+
+<p>  对此我的做法是显式地判断图片的长宽比，当长宽比超过4时，手动放缩，具体代码如下：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">def</span> <span class="nf">resize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">img</span><span class="p">):</span>
+        <span class="s">"""
+        图像需要原先就是灰度图像
+        将图片调整到标准大小20*20
+        :param img: 原图像
+        :return:finish_img
+        """</span>
+
+        <span class="k">if</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">:</span>  <span class="c1"># 表示长宽比太大了，不适合做拉伸操作
+</span>            <span class="c1">## 待补充，这里需要解决过度拉伸的问题，可能需要寻找填充的方法
+</span>            <span class="c1"># 计算需要用于填充的图像的宽高
+</span>            <span class="n">high</span> <span class="o">=</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">wide</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+
+            <span class="n">grid</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">high</span><span class="p">,</span> <span class="n">wide</span><span class="p">))</span>  <span class="c1"># 计算用于填充的黑色图片
+</span>
+            <span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">grid</span><span class="p">,</span> <span class="n">img</span><span class="p">))</span>  <span class="c1"># 左右都做填充
+</span>            <span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">img</span><span class="p">,</span> <span class="n">grid</span><span class="p">))</span>  <span class="c1"># 左右都做填充
+</span>
+            <span class="c1"># 最后将填充的图像重新转换为20*20的格式
+</span>            <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="p">.</span><span class="n">debug</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s">"这里做了一次对称填充"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+        <span class="c1"># 调整大小并返回
+</span>        <span class="k">return</span> <span class="n">img</span>
+</code></pre></div></div>
 <hr />
 
+<h2 id="建模与机器学习svm">建模与机器学习（SVM）</h2>
+
+<h3 id="对建模的理解与机器学习的理解">对建模的理解与机器学习的理解</h3>
+<p>  在数据规范化后我们得到了，噪音（杂质）相对较少的 \(20 * 20\)的图片信息，但是我们的\(SVM\)分类器模型（下面以“\(SVM\)”简称）还不能直接使用这些数据，\(SVM\)所反映的是多个数值影响一个数值的<strong>映射关系函数</strong>，可以简单的概括成以下的函数，训练的最终目的就是为了得到这个函数：</p>
+
+\[f(x) = w_1x_1 + w_2x_2 + w_3x_3 + \dots w_nx_n\]
+
+<blockquote>
+  <p>其中 \(x_i\) 表示自变量，可以理解为对应图片像素点的数值，\(w_i\)表示权值，\(f(x)\)是最终计算出来的结果。</p>
+</blockquote>
+
+<p>  将之前清洗好的图像，当成一个个\(n\)组400维的方程组，使用\(SVM\) 算法“解方程”。</p>
+
+<blockquote>
+  <p>400维由来：一个20*20的图片有400个像素点</p>
+</blockquote>
+
+<p>  上面最终计算得到上面的式子，也就是我们所说的一个训练好的模型。</p>
+
+<hr />
+<h3 id="建模">建模</h3>
+<p>  数据建模，在这里不是指3D建模，而是指一个<strong>机器学习</strong>的流程。这里数据建模用到了机器学习是本项目可以称之为<strong>人工智能</strong>的原因之一。<be>接下来将简单讲解机器学习的流程。</be></p>
+
+<h4 id="1随机划分训练集与测试集">1.随机划分训练集与测试集</h4>
+
+<p>  将整理好的数据，按照一定比例划分成训练集与测试集，训练集的数据顾名思义是用于训练数据的，测试集的数据是用来检验模型的正确率的。</p>
+
+<blockquote>
+  <p>训练集的数据就好比那些的有答案的课本，我们拿他学习提升自己的能力，而测试集则更像是试卷，用来检测我们的学习成果。</p>
+</blockquote>
+
+<h4 id="2参数调优">2.参数调优</h4>
+
+<p>   一个模型往往有很多的参数需要我们定义，这些参数在不同的情况下需要取不同的数值才能使模型达到最优的效果。不同于平时的算法竞赛题目，这些参数值往往不是确定的，需要我们自己去调整。当然，我们不需要自己手动调参，我们可以用<a href="https://blog.csdn.net/guoyc439/article/details/123381908">网格搜索</a>与<a href="https://blog.csdn.net/qq_36535820/article/details/119762665">k折交叉验证</a>两种方法来解决最优参数的寻找问题。</p>
+
+<p>  这两种算法的主要做法是，将训练集的数据继续分出一个和验证集，通过不断测试与调整，最终计算出最优模型的参数。由于篇幅有限，其具体做法这里不做过多的描述。</p>
+
+<h4 id="3训练">3.训练</h4>
+
+<p>  模型训练的操作，其实才是机器学习里面最难的部分，不过好在SVM已经被python封装好了，我们只需要提供前面清洗出的数据以及定义<a href="#2参数调优">参数调优</a>，稍等片刻即可得到训练好的模型。</p>
+
+<h4 id="4模型检验">4.模型检验</h4>
+
+<p>  将之前分出的测试集数据代入模型进行预测，计算正确率。当然评价一个模型的好坏的指标有很多其他的评价指标还有\(R^2\)，召回率等等，这里不做延伸。</p>
+
+<h4 id="5模型保存">5.模型保存</h4>
+
+<p>  每次训练一个模型经常要消耗大量的时间，为此我们需要保存训练好的模型，在下次做识别时就不需要再训练了。</p>
+
+<p>  上面对机器学习的建模过程的描述地十分简单，但是实际的建模过程远比这个要复杂。只要前面在的“数据分析”“数据选择与清洗”“模型选择”“参数设置”等等环节出现了一个错误都有可能把你的人工智能模型训练成“人工智障”，而且前面的繁多步骤也会加大调参排错的难度。我也是花了4天左右的时间才训练出了一个比较过得去的模型。</p>
+
+<blockquote>
+  <p>⚡如果你也想入门人工智能，那要求你至少要有比较强的python基础，成熟的面向对象的思维，以及强大的心理素质。⚡</p>
+</blockquote>
+
+<p>  以下是py代码实现</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s">"""
+        SVM模型实现
+        :return: None
+        """</span>
+        <span class="c1">## 数据分析与预处理
+</span>        <span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">get_data</span><span class="p">()</span>
+
+        <span class="c1">## 网格搜索,找到最优参数
+</span>        <span class="n">machine_svm</span> <span class="o">=</span> <span class="n">svm</span><span class="p">.</span><span class="n">SVC</span><span class="p">()</span>
+
+        <span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span><span class="s">'C'</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">10</span><span class="p">)}</span>  <span class="c1"># 这里设置了参数的测试范围
+</span>        <span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">machine_svm</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>  <span class="c1"># 建立网格搜索器模型
+</span>        <span class="n">grid_search</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>  <span class="c1"># 开始搜索
+</span>
+        <span class="c1">## 创建分类器对象
+</span>        <span class="k">print</span><span class="p">(</span><span class="s">"最优参数是 c= "</span><span class="p">,</span> <span class="n">grid_search</span><span class="p">.</span><span class="n">best_params_</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"最优模型正确率 = "</span><span class="p">,</span> <span class="n">grid_search</span><span class="p">.</span><span class="n">best_score_</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">machine_svm</span> <span class="o">=</span> <span class="n">grid_search</span><span class="p">.</span><span class="n">best_estimator_</span>  <span class="c1"># 获取最优模型
+</span>
+        <span class="c1">## 模型训练
+</span>        <span class="bp">self</span><span class="p">.</span><span class="n">machine_svm</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+        <span class="c1">## 模型验证
+</span>        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">machine_svm</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test</span><span class="p">)</span>
+        <span class="n">correct</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">count_nonzero</span><span class="p">(</span><span class="n">result</span> <span class="o">==</span> <span class="n">y_test</span><span class="p">)</span>
+        <span class="n">accuracy</span> <span class="o">=</span> <span class="n">correct</span> <span class="o">/</span> <span class="n">result</span><span class="p">.</span><span class="n">size</span>
+
+        <span class="k">print</span><span class="p">(</span><span class="s">"测试集正确率："</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">)</span>
+
+        <span class="c1">## 模型保存
+</span>        <span class="n">joblib</span><span class="p">.</span><span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">machine_svm</span><span class="p">,</span> <span class="s">'model/svm.pkl'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="数据处理">数据处理</h3>
+
+<p>  在前面，我们用做了特殊处理的图片对模型进行训练，所以在用该模型进行识别操作时，也需要对被识别图像做同样的操作。在之前清洗数据时我并没有详细讲解具体的操作，所以放到这里详细说明。</p>
+
+<p>  我们想要预测一个图像，显然无法直接对一个RGB格式的图片下手，对于一个RGB格式的图片，它的每一个像素点都由三个数值组成（Rad Green Blue），这不利于识别，所以需要处理成一个数值，这样的处理过程我们称之为<strong>灰度化</strong>。</p>
+
+<p>  如下方的两个图像就是做了灰度化处理的图像对比。</p>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img/translate/7.jpg" alt="7.jpg" />
+    </div>
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C8.jpg" alt="blog-img\translate\8.jpg" />
+    </div>
+    
+</div>
+
+<p>  为了更好的配对模型，我们需要对灰度图进一步简化，通常的做法是将像素点间的差距拉的尽可能大（离散化），我们通常使用的方式是<strong>二值化</strong></p>
+
+<p>  如下方的两个图像是灰度图像做了二值化处理的前后对比。</p>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C8.jpg" alt="blog-img\translate\8.jpg" />
+    </div>
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img/translate/10.jpg" alt="10.jpg" />
+    </div>
+    
+</div>
+
+<p>  二值化后的图像，为过滤或弱化出图形中的小白点（噪音），我们常常采用高斯模糊（打马赛克）以及腐蚀的方法。</p>
+
+<p>  如下图分别为做了高斯模糊和腐蚀操作的二值图像。</p>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C11.jpg" alt="blog-img\translate\11.jpg" />
+    </div>
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C12.jpg" alt="blog-img\translate\12.jpg" />
+    </div>
+    
+</div>
+
+<p>  有时，我们会把握不好腐蚀操作的度，以至于一些重要信息也被过滤掉了，为了弥补过滤掉的内容，一般会对腐蚀后的图像做<strong>膨胀</strong>操作。<br />
+一般的，先对一个图像做腐蚀再对齐做膨胀的组合操作我们称之为<strong>开运算</strong>。</p>
+
+<p>  如下为两个分别是做了碰撞和开运算的图像。</p>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C13.jpg" alt="blog-img\translate\13.jpg" />
+    </div>
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C14.jpg" alt="blog-img\translate\14.jpg" />
+    </div>
+    
+</div>
+
+<p>  通过<code class="language-plaintext highlighter-rouge">opencv</code>库实现以上操作，可以帮助我们从一张图片中提取出很多有效的信息。你可以从下面的代码中直观得体会出这个处理流程。</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">def</span> <span class="nf">change_color</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">img</span><span class="p">):</span>
+        <span class="s">"""
+        将图像进行预处理
+        :param img:img 彩图
+        :return: img 二值图
+        """</span>
+        <span class="c1">## 原图像备份
+</span>        <span class="n">copy_img</span> <span class="o">=</span> <span class="n">img</span><span class="p">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">show</span><span class="p">(</span><span class="n">copy_img</span><span class="p">)</span>
+
+        <span class="c1">## 高斯模糊
+</span>        <span class="n">copy_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+
+        <span class="c1">## 图像灰度化
+</span>        <span class="n">copy_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">copy_img</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">show</span><span class="p">(</span><span class="n">copy_img</span><span class="p">)</span>
+
+        <span class="c1">## 图像二值化
+</span>        <span class="n">_</span><span class="p">,</span> <span class="n">copy_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">threshold</span><span class="p">(</span><span class="n">copy_img</span><span class="p">,</span> <span class="mi">115</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">THRESH_BINARY_INV</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">show</span><span class="p">(</span><span class="n">copy_img</span><span class="p">)</span>
+
+        <span class="c1">## 开运算降噪
+</span>        <span class="n">copy_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">morphologyEx</span><span class="p">(</span><span class="n">copy_img</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">MORPH_OPEN</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">show</span><span class="p">(</span><span class="n">copy_img</span><span class="p">)</span>
+
+        <span class="c1">## 膨胀运算
+</span>        <span class="n">copy_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">morphologyEx</span><span class="p">(</span><span class="n">copy_img</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">MORPH_DILATE</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)),</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">show</span><span class="p">(</span><span class="n">copy_img</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">copy_img</span>
+</code></pre></div></div>
+
+<hr />
 <p><a href="#go_to_top">回到顶部</a></p>]]></content><author><name>Ranok</name></author><category term="人工智能" /><category term="计算机视觉" /><category term="python" /><category term="机器学习" /><category term="爬虫" /><summary type="html"><![CDATA[  不知不觉间，人工智能慢慢开始走进千家万户。无人驾驶、AI绘图、语音识别、AI聊天都是人工智能的领域。我作为一个智能的学生已经被迷得不行了，在这份热爱的支持下我完成了这份项目。虽然我的项目与当今智能技术无法比拟，但是其中运用到的机器学习模型（如SVM分类器）足以能够让我的项目归类到人工智能。]]></summary></entry><entry><title type="html">Java EE</title><link href="http://localhost:4000/javaee" rel="alternate" type="text/html" title="Java EE" /><published>2022-12-24T00:00:00+08:00</published><updated>2022-12-24T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-javaee</id><content type="html" xml:base="http://localhost:4000/javaee"><![CDATA[<p>  Java EE，Java 平台企业版（Java Platform Enterprise Edition），之前称为Java 2 Platform, Enterprise Edition (J2EE)，2018年3月更名为 Jakarta EE(这个名称应该还没有得到群众认可)。是 Sun 公司为企业级应用推出的标准平台，用来开发B/S架构软件。Java EE 可以说是一个框架，也可以说是一种规范。</p>
 
 <hr />
