@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-27T21:57:23+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">基于svm实现的屏幕翻译项目解析</title><link href="http://localhost:4000/tranlate" rel="alternate" type="text/html" title="基于svm实现的屏幕翻译项目解析" /><published>2023-02-19T00:00:00+08:00</published><updated>2023-02-19T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-translate</id><content type="html" xml:base="http://localhost:4000/tranlate"><![CDATA[<p><a id="go_to_top"></a>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-02T18:32:01+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">基于svm实现的屏幕翻译项目解析</title><link href="http://localhost:4000/tranlate" rel="alternate" type="text/html" title="基于svm实现的屏幕翻译项目解析" /><published>2023-02-19T00:00:00+08:00</published><updated>2023-02-19T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-translate</id><content type="html" xml:base="http://localhost:4000/tranlate"><![CDATA[<p><a id="go_to_top"></a>
   不知不觉间，人工智能慢慢开始走进千家万户。无人驾驶、AI绘图、语音识别、AI聊天都是人工智能的领域。我作为一个智能的学生已经被迷得不行了，在这份热爱的支持下我完成了这份项目。虽然我的项目与当今智能技术无法比拟，但是其中运用到的机器学习模型（如<code class="language-plaintext highlighter-rouge">SVM</code>分类器）足以能够让我的项目归类到人工智能。</p>
 
 <hr />
@@ -31,6 +31,22 @@
           <li><a href="#数据处理">数据处理</a></li>
         </ul>
       </li>
+      <li><a href="#单词--句子的识别">单词 \&amp; 句子的识别</a>
+        <ul>
+          <li><a href="#q--a">Q \&amp; A</a></li>
+          <li><a href="#findcontours轮廓获取函数说明">findContours轮廓获取函数说明</a>
+            <ul>
+              <li><a href="#函数说明">函数说明</a></li>
+              <li><a href="#函数签名">函数签名</a></li>
+              <li><a href="#代码演示">代码演示</a></li>
+            </ul>
+          </li>
+          <li><a href="#首先从图片中分离出句子">首先从图片中分离出句子</a></li>
+          <li><a href="#其次从句子中分离出单词">其次从句子中分离出单词</a></li>
+          <li><a href="#最后从单词中分离出字母并识别">最后从单词中分离出字母并识别</a></li>
+        </ul>
+      </li>
+      <li><a href="#翻译">翻译</a></li>
     </ul>
   </li>
 </ul>
@@ -377,6 +393,312 @@
 
         <span class="k">return</span> <span class="n">copy_img</span>
 </code></pre></div></div>
+<hr />
+
+<h2 id="单词--句子的识别">单词 &amp; 句子的识别</h2>
+
+<p>  在前面的讲解中，我们已经得到了可以识别字母的模型和清洗好的数据。但是模型只有识别字母的能力没有识别单词的功能，更没有识别句子的能力。所以这里我们需要自己想办法将识别出来的字母进行组合拼凑。</p>
+
+<hr />
+
+<h3 id="q--a">Q &amp; A</h3>
+
+<p>  问题1：为什么，模型无法识别单词？<br />
+  答：模型是拿字母图集训练出来的，所以只能识别单词。</p>
+
+<p>  问题2：是否能够训练出能识别单词的模型<br />
+  答：可以，但是成本很大，效率也不高。对于26个字母都需要上百的图形数据取训练，如果换成数不胜数的单词的话，需要的数据那更是数不清。而且单词之间本身就有很多相似的部分，这也会加大识别的难度降低效率。</p>
+
+<p>  问题3：如果模型不能识别单词，那要怎么处理这个问题呢？<br />
+  答：其实使用<a href="#数据处理">数据处理</a>中说到的的方法就可以巧妙地处理这个问题，不过还要用到cv中的一个内置函数函数，具体操作请看下文。</p>
+
+<hr />
+
+<h3 id="findcontours轮廓获取函数说明">findContours轮廓获取函数说明</h3>
+
+<h4 id="函数说明">函数说明</h4>
+
+<p>   <a href="https://blog.csdn.net/m0_60447786/article/details/125452378">findContours</a>可以作用于，二值图像，查找出图像的所有轮廓信息并返回。</p>
+
+<h4 id="函数签名">函数签名</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">def</span> <span class="nf">findContours</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">method</span><span class="p">,</span> <span class="n">contours</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">hierarchy</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+</code></pre></div></div>
+<p>  image：表示一个二值度图像。<br />
+  mode：使用的二值化的算法。<br />
+  method：轮廓检测的方式。</p>
+
+<p>  函数具体的使用方式这里不做过多的阐述，如果你对此感兴趣，详情请看这里👉<a href="https://blog.csdn.net/m0_60447786/article/details/125452378">findContours函数详细解析</a></p>
+
+<h4 id="代码演示">代码演示</h4>
+
+<p>  文字的描述或许依然让你难以理解。那么我们来看看下面的代码和效果展示。</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">test_findContours</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="s">"""
+        该函数用于展示findContours的函数
+        :param img: img
+        :return: img,con
+    """</span>
+    <span class="c1">## 轮廓提取
+</span>    <span class="n">contours</span><span class="p">,</span> <span class="n">w1</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">findContours</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">RETR_EXTERNAL</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">CHAIN_APPROX_SIMPLE</span><span class="p">)</span>
+    
+    <span class="c1">## 轮廓绘制
+</span>    <span class="n">show_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">drawContours</span><span class="p">(</span><span class="n">copy_img</span><span class="p">.</span><span class="n">copy</span><span class="p">(),</span> <span class="n">contours</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">show</span><span class="p">(</span><span class="n">show_img</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>  如下两图，分别是原图和描绘轮廓后的图形。</p>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C15.jpg" alt="blog-img\translate\15.jpg" />
+    </div>
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C16.jpg" alt="blog-img\translate\16.jpg" />
+    </div>
+    
+</div>
+
+<hr />
+
+<h3 id="首先从图片中分离出句子">首先从图片中分离出句子</h3>
+
+<p>  如何识别出一个句子？其实我们只需要框出句子的轮廓，再根据轮廓信息，从原图像中裁剪出来即可。</p>
+
+<p>  但是前面谈到的findContours函数似乎只能查找出字母的轮廓，那要怎么做？</p>
+
+<p>  其实只要适当的对图像做膨胀运算，让所有的字母粘连在一起，所有的单词粘连在一起，让它们形成一个整体。那这个整体不就是句子的轮廓了吗？怎么样是不是很巧妙？<br /></p>
+
+<blockquote>
+  <p>不能上手就对图像做膨胀运算，这可能会放大一些杂质（噪音）！</p>
+</blockquote>
+
+<p>  下面将处理过程进行展示，处理次序依次是高斯模糊、灰度化、二值化、开运算、膨胀</p>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C17.jpg" alt="blog-img\translate\17.jpg" />
+    </div>
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C18.jpg" alt="blog-img\translate\18.jpg" />
+    </div>
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C19.jpg" alt="blog-img\translate\19.jpg" />
+    </div>
+    
+</div>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C20.jpg" alt="blog-img\translate\20.jpg" />
+    </div>
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C21.jpg" alt="blog-img\translate\21.jpg" />
+    </div>
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C22.jpg" alt="blog-img\translate\22.jpg" />
+    </div>
+    
+</div>
+
+<p>  代码实现如下。</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">def</span> <span class="nf">change_color</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">img</span><span class="p">):</span>
+        <span class="s">"""
+        将图像进行预处理
+        :param img:img 彩图
+        :return: img 二值图
+        """</span>
+        <span class="c1">## 原图像备份
+</span>        <span class="n">copy_img</span> <span class="o">=</span> <span class="n">img</span><span class="p">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">show</span><span class="p">(</span><span class="n">copy_img</span><span class="p">)</span>
+
+        <span class="c1">## 高斯模糊
+</span>        <span class="n">copy_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+
+        <span class="c1">## 图像灰度化
+</span>        <span class="n">copy_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">copy_img</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">show</span><span class="p">(</span><span class="n">copy_img</span><span class="p">)</span>
+
+        <span class="c1">## 图像二值化
+</span>        <span class="n">_</span><span class="p">,</span> <span class="n">copy_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">threshold</span><span class="p">(</span><span class="n">copy_img</span><span class="p">,</span> <span class="mi">115</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">THRESH_BINARY_INV</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">show</span><span class="p">(</span><span class="n">copy_img</span><span class="p">)</span>
+
+        <span class="c1">## 开运算降噪
+</span>        <span class="n">copy_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">morphologyEx</span><span class="p">(</span><span class="n">copy_img</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">MORPH_OPEN</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">show</span><span class="p">(</span><span class="n">copy_img</span><span class="p">)</span>
+
+        <span class="c1">## 膨胀运算
+</span>        <span class="n">copy_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">morphologyEx</span><span class="p">(</span><span class="n">copy_img</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">MORPH_DILATE</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)),</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">show</span><span class="p">(</span><span class="n">copy_img</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">copy_img</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="其次从句子中分离出单词">其次从句子中分离出单词</h3>
+
+<p>  这一步操作其实和，上一步差不多，只不过需要将膨胀运算等的参数略做调整，使得单词中的字母之间互相连接而单词之间不连接。</p>
+
+<p>  除此之外，还要记录单词之间的次序，以便后期整理。</p>
+
+<p>  话不多说，上结果：</p>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C23.jpg" alt="blog-img\translate\23.jpg" />
+    </div>
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C24.jpg" alt="blog-img\translate\24.jpg" />
+    </div>
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C25.jpg" alt="blog-img\translate\25.jpg" />
+    </div>
+    
+</div>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C26.jpg" alt="blog-img\translate\26.jpg" />
+    </div>
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C27.jpg" alt="blog-img\translate\27.jpg" />
+    </div>
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C28.jpg" alt="blog-img\translate\28.jpg" />
+    </div>
+    
+</div>
+
+<p>  下面是代码展示，相比与句子识别部分的代码，下面还多了单词剪切和手动降噪的等代码逻辑。</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">def</span> <span class="nf">image_init</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">img</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="s">"""
+        该函数用于将图像灰度化，模糊化，二值化等操作得到可以处理的图像
+        :param img: img
+        :return: img,con
+        """</span>
+        <span class="k">if</span> <span class="n">img</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">img</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">img</span>
+        <span class="n">copy_img</span> <span class="o">=</span> <span class="n">img</span><span class="p">.</span><span class="n">copy</span><span class="p">()</span>
+
+        <span class="c1">## 高斯滤波
+</span>        <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+
+        <span class="c1">## 灰度化处理
+</span>        <span class="n">gray_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_RGB2GRAY</span><span class="p">)</span>
+
+        <span class="c1">## 二值化
+</span>        <span class="n">_</span><span class="p">,</span> <span class="n">binary</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">threshold</span><span class="p">(</span><span class="n">gray_img</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">THRESH_BINARY_INV</span><span class="p">)</span>
+
+        <span class="c1"># ## 开运算用以降噪
+</span>        <span class="n">kernel</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">morphologyEx</span><span class="p">(</span><span class="n">binary</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">MORPH_OPEN</span><span class="p">,</span> <span class="n">kernel</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="c1">## 膨胀
+</span>        <span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">morphologyEx</span><span class="p">(</span><span class="n">binary</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">MORPH_DILATE</span><span class="p">,</span> <span class="n">kernel</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+        <span class="c1">## 轮廓提取
+</span>        <span class="n">contours</span><span class="p">,</span> <span class="n">w1</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">findContours</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">RETR_EXTERNAL</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">CHAIN_APPROX_SIMPLE</span><span class="p">)</span>
+        <span class="n">show_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">drawContours</span><span class="p">(</span><span class="n">copy_img</span><span class="p">.</span><span class="n">copy</span><span class="p">(),</span> <span class="n">contours</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="mi">3</span><span class="p">)</span>
+
+        <span class="c1">## 提取有效轮廓
+</span>        <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">contours</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">cv2</span><span class="p">.</span><span class="n">contourArea</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="p">.</span><span class="n">min_area</span><span class="p">:</span>  <span class="c1"># 过于小的部分抛弃
+</span>                <span class="k">continue</span>
+
+            <span class="n">rect</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">boundingRect</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+            <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">weight</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="n">rect</span>  <span class="c1"># 这个是轮廓的信息
+</span>            <span class="n">result</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">rect</span><span class="p">)</span>  <span class="c1"># 收集所有的轮廓信息
+</span>        <span class="c1"># contour 所表示的是每一个矩形轮廓的左上点和右下点的坐标
+</span>
+        <span class="n">contours</span> <span class="o">=</span> <span class="p">[[[</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="p">[</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">]]]</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">result</span><span class="p">]</span>
+
+        <span class="c1">## 剪切对应的轮廓，并返回对应的轮廓矩形的左上点和右下点的坐标集合、
+</span>        <span class="n">result_imgs</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">contour</span> <span class="ow">in</span> <span class="n">contours</span><span class="p">:</span>
+            <span class="n">result_imgs</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">copy_img</span><span class="p">[</span><span class="n">contour</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]:</span><span class="n">contour</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">contour</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]:</span><span class="n">contour</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]])</span>
+
+        <span class="k">return</span> <span class="n">result_imgs</span><span class="p">,</span> <span class="n">contours</span>
+
+</code></pre></div></div>
+<h3 id="最后从单词中分离出字母并识别">最后从单词中分离出字母并识别</h3>
+
+<p>  其实这一步大体与前面步骤相同，只不过可能不需要再进行膨胀运算了，不然的话将字母整理粘合在一起就不好识别了。</p>
+
+<p>  同样的，我们需要记录分离出来的字母的前后次序，以便整理出正确单词。</p>
+
+<p>  对于每一个分离出来的字母图片同样按照之前<a href="#数据处理">数据处理</a>的步骤，整理成一个可供SVM分类器识别的二值图片后，进行字母预测。</p>
+
+<p>  将识别好的字母按顺序组成单词，再将单词按照次序整理成句子（有些类似于函数回溯的过程）。那么我们就得到了图片的英文识别结果了。</p>
+
+<p>  那么下面这两张图就是字母分离的结果，也是我们之前所展示过的。</p>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C15.jpg" alt="blog-img\translate\15.jpg" />
+    </div>
+    
+    <div style="flex: 10.0%">
+        <img src="/assets/img/blog-img%5Ctranslate%5C16.jpg" alt="blog-img\translate\16.jpg" />
+    </div>
+    
+</div>
+
+<p>  下面给出，字母图片处理的有关代码逻辑</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">def</span> <span class="nf">resize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">img</span><span class="p">):</span>
+        <span class="s">"""
+        图像需要原先就是灰度图像
+        将图片调整到标准大小20*20
+        :param img: 原图像
+        :return:finish_img
+        """</span>
+
+        <span class="k">if</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">:</span>  <span class="c1"># 表示长宽比太大了，不适合做拉伸操作
+</span>            <span class="c1">## 待补充，这里需要解决过度拉伸的问题，可能需要寻找填充的方法
+</span>            <span class="c1"># 计算需要用于填充的图像的宽高
+</span>            <span class="n">high</span> <span class="o">=</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">wide</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+
+            <span class="n">grid</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">high</span><span class="p">,</span> <span class="n">wide</span><span class="p">))</span>  <span class="c1"># 计算用于填充的黑色图片
+</span>
+            <span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">grid</span><span class="p">,</span> <span class="n">img</span><span class="p">))</span>      <span class="c1"># 左右都做填充
+</span>            <span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">img</span><span class="p">,</span> <span class="n">grid</span><span class="p">))</span>  <span class="c1"># 左右都做填充
+</span>
+            <span class="c1"># 最后将填充的图像重新转换为20*20的格式
+</span>            <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+
+          <span class="k">else</span><span class="p">:</span>
+            <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+
+        <span class="c1"># 调整大小并返回
+</span>        <span class="k">return</span> <span class="n">img</span>
+
+</code></pre></div></div>
+<hr />
+
+<h2 id="翻译">翻译</h2>
+
+<p>待补充。。。</p>
 
 <hr />
 <p><a href="#go_to_top">回到顶部</a></p>]]></content><author><name>Ranok</name></author><category term="人工智能" /><category term="计算机视觉" /><category term="python" /><category term="机器学习" /><category term="爬虫" /><summary type="html"><![CDATA[  不知不觉间，人工智能慢慢开始走进千家万户。无人驾驶、AI绘图、语音识别、AI聊天都是人工智能的领域。我作为一个智能的学生已经被迷得不行了，在这份热爱的支持下我完成了这份项目。虽然我的项目与当今智能技术无法比拟，但是其中运用到的机器学习模型（如SVM分类器）足以能够让我的项目归类到人工智能。]]></summary></entry><entry><title type="html">Java EE</title><link href="http://localhost:4000/javaee" rel="alternate" type="text/html" title="Java EE" /><published>2022-12-24T00:00:00+08:00</published><updated>2022-12-24T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-javaee</id><content type="html" xml:base="http://localhost:4000/javaee"><![CDATA[<p>  Java EE，Java 平台企业版（Java Platform Enterprise Edition），之前称为Java 2 Platform, Enterprise Edition (J2EE)，2018年3月更名为 Jakarta EE(这个名称应该还没有得到群众认可)。是 Sun 公司为企业级应用推出的标准平台，用来开发B/S架构软件。Java EE 可以说是一个框架，也可以说是一种规范。</p>
