@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-02T18:33:58+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">基于svm实现的屏幕翻译项目解析</title><link href="http://localhost:4000/tranlate" rel="alternate" type="text/html" title="基于svm实现的屏幕翻译项目解析" /><published>2023-02-19T00:00:00+08:00</published><updated>2023-02-19T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-translate</id><content type="html" xml:base="http://localhost:4000/tranlate"><![CDATA[<p><a id="go_to_top"></a>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-02T18:41:27+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">基于svm实现的屏幕翻译项目解析</title><link href="http://localhost:4000/tranlate" rel="alternate" type="text/html" title="基于svm实现的屏幕翻译项目解析" /><published>2023-02-19T00:00:00+08:00</published><updated>2023-02-19T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-translate</id><content type="html" xml:base="http://localhost:4000/tranlate"><![CDATA[<p><a id="go_to_top"></a>
   不知不觉间，人工智能慢慢开始走进千家万户。无人驾驶、AI绘图、语音识别、AI聊天都是人工智能的领域。我作为一个智能的学生已经被迷得不行了，在这份热爱的支持下我完成了这份项目。虽然我的项目与当今智能技术无法比拟，但是其中运用到的机器学习模型（如<code class="language-plaintext highlighter-rouge">SVM</code>分类器）足以能够让我的项目归类到人工智能。</p>
 
 <hr />
@@ -161,7 +161,7 @@
     </div>
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C6.jpg" alt="blog-img\translate\6.jpg" />
+        <img src="/assets/img/blog-img/translate/6.jpg" alt="6.jpg" />
     </div>
     
 </div>
@@ -203,7 +203,7 @@
 <h3 id="对建模的理解与机器学习的理解">对建模的理解与机器学习的理解</h3>
 <p>  在数据规范化后我们得到了，噪音（杂质）相对较少的 \(20 * 20\)的图片信息，但是我们的\(SVM\)分类器模型（下面以“\(SVM\)”简称）还不能直接使用这些数据，\(SVM\)所反映的是多个数值影响一个数值的<strong>映射关系函数</strong>，可以简单的概括成以下的函数，训练的最终目的就是为了得到这个函数：</p>
 
-\[f(x) = w_1x_1 + w_2x_2 + w_3x_3 + \dots w_nx_n\]
+\[f(x) = w_1x_1 + w_2x_2 + w_3x_3 + /dots w_nx_n\]
 
 <blockquote>
   <p>其中 \(x_i\) 表示自变量，可以理解为对应图片像素点的数值，\(w_i\)表示权值，\(f(x)\)是最终计算出来的结果。</p>
@@ -306,7 +306,7 @@
     </div>
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C8.jpg" alt="blog-img\translate\8.jpg" />
+        <img src="/assets/img/blog-img/translate/8.jpg" alt="8.jpg" />
     </div>
     
 </div>
@@ -318,7 +318,7 @@
 <div class="row">
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C8.jpg" alt="blog-img\translate\8.jpg" />
+        <img src="/assets/img/blog-img/translate/8.jpg" alt="8.jpg" />
     </div>
     
     <div style="flex: 10.0%">
@@ -334,11 +334,11 @@
 <div class="row">
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C11.jpg" alt="blog-img\translate\11.jpg" />
+        <img src="/assets/img/blog-img/translate/11.jpg" alt="11.jpg" />
     </div>
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C12.jpg" alt="blog-img\translate\12.jpg" />
+        <img src="/assets/img/blog-img/translate/12.jpg" alt="12.jpg" />
     </div>
     
 </div>
@@ -351,11 +351,11 @@
 <div class="row">
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C13.jpg" alt="blog-img\translate\13.jpg" />
+        <img src="/assets/img/blog-img/translate/13.jpg" alt="13.jpg" />
     </div>
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C14.jpg" alt="blog-img\translate\14.jpg" />
+        <img src="/assets/img/blog-img/translate/14.jpg" alt="14.jpg" />
     </div>
     
 </div>
@@ -453,11 +453,11 @@
 <div class="row">
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C15.jpg" alt="blog-img\translate\15.jpg" />
+        <img src="/assets/img/blog-img/translate/15.jpg" alt="15.jpg" />
     </div>
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C16.jpg" alt="blog-img\translate\16.jpg" />
+        <img src="/assets/img/blog-img/translate/16.jpg" alt="16.jpg" />
     </div>
     
 </div>
@@ -481,15 +481,15 @@
 <div class="row">
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C17.jpg" alt="blog-img\translate\17.jpg" />
+        <img src="/assets/img/blog-img/translate/17.jpg" alt="17.jpg" />
     </div>
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C18.jpg" alt="blog-img\translate\18.jpg" />
+        <img src="/assets/img/blog-img/translate/18.jpg" alt="18.jpg" />
     </div>
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C19.jpg" alt="blog-img\translate\19.jpg" />
+        <img src="/assets/img/blog-img/translate/19.jpg" alt="19.jpg" />
     </div>
     
 </div>
@@ -497,15 +497,15 @@
 <div class="row">
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C20.jpg" alt="blog-img\translate\20.jpg" />
+        <img src="/assets/img/blog-img/translate/20.jpg" alt="20.jpg" />
     </div>
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C21.jpg" alt="blog-img\translate\21.jpg" />
+        <img src="/assets/img/blog-img/translate/21.jpg" alt="21.jpg" />
     </div>
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C22.jpg" alt="blog-img\translate\22.jpg" />
+        <img src="/assets/img/blog-img/translate/22.jpg" alt="22.jpg" />
     </div>
     
 </div>
@@ -557,15 +557,15 @@
 <div class="row">
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C23.jpg" alt="blog-img\translate\23.jpg" />
+        <img src="/assets/img/blog-img/translate/23.jpg" alt="23.jpg" />
     </div>
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C24.jpg" alt="blog-img\translate\24.jpg" />
+        <img src="/assets/img/blog-img/translate/24.jpg" alt="24.jpg" />
     </div>
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C25.jpg" alt="blog-img\translate\25.jpg" />
+        <img src="/assets/img/blog-img/translate/25.jpg" alt="25.jpg" />
     </div>
     
 </div>
@@ -573,15 +573,15 @@
 <div class="row">
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C26.jpg" alt="blog-img\translate\26.jpg" />
+        <img src="/assets/img/blog-img/translate/26.jpg" alt="26.jpg" />
     </div>
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C27.jpg" alt="blog-img\translate\27.jpg" />
+        <img src="/assets/img/blog-img/translate/27.jpg" alt="27.jpg" />
     </div>
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C28.jpg" alt="blog-img\translate\28.jpg" />
+        <img src="/assets/img/blog-img/translate/28.jpg" alt="28.jpg" />
     </div>
     
 </div>
@@ -654,11 +654,11 @@
 <div class="row">
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C15.jpg" alt="blog-img\translate\15.jpg" />
+        <img src="/assets/img/blog-img/translate/15.jpg" alt="15.jpg" />
     </div>
     
     <div style="flex: 10.0%">
-        <img src="/assets/img/blog-img%5Ctranslate%5C16.jpg" alt="blog-img\translate\16.jpg" />
+        <img src="/assets/img/blog-img/translate/16.jpg" alt="16.jpg" />
     </div>
     
 </div>

@@ -112,7 +112,7 @@ thumbnail: assets/img/thumbnails/feature-img/translate.jpg # 文件路径在gith
 
 &emsp;&emsp;也就是将一个普通的字母图片通过横向纵向的拉伸与压缩变成一个 $$ 20*20 $$ 标准的图片。显而易见的，这种做法很容易导致图片信息了流失。我在实践中也遇到了这个问题，其中影响最大的就是字母 $$ il $$ 等长宽比差距较大的字母，如果直接通过拉伸与放缩的手段让其规范化的话就会出现以下的结果（左边为原图，右边为处理后的图像）以至于影响到后面建模的效果:
 
-{% include aligner.html images="blog-img/translate/5.jpg,blog-img\translate\6.jpg" column=10 %}
+{% include aligner.html images="blog-img/translate/5.jpg,blog-img/translate/6.jpg" column=10 %}
 
 &emsp;&emsp;对此我的做法是显式地判断图片的长宽比，当长宽比超过4时，手动放缩，具体代码如下：
 
@@ -152,7 +152,7 @@ thumbnail: assets/img/thumbnails/feature-img/translate.jpg # 文件路径在gith
 ### 对建模的理解与机器学习的理解
 &emsp;&emsp;在数据规范化后我们得到了，噪音（杂质）相对较少的 $$20 * 20$$的图片信息，但是我们的$$ SVM $$分类器模型（下面以“$$SVM$$”简称）还不能直接使用这些数据，$$SVM$$所反映的是多个数值影响一个数值的**映射关系函数**，可以简单的概括成以下的函数，训练的最终目的就是为了得到这个函数：
 
-$$ f(x) = w_1x_1 + w_2x_2 + w_3x_3 + \dots w_nx_n $$
+$$ f(x) = w_1x_1 + w_2x_2 + w_3x_3 + /dots w_nx_n $$
 
 > 其中 $$ x_i $$ 表示自变量，可以理解为对应图片像素点的数值，$$ w_i $$表示权值，$$f(x)$$是最终计算出来的结果。
 
@@ -243,26 +243,26 @@ $$ f(x) = w_1x_1 + w_2x_2 + w_3x_3 + \dots w_nx_n $$
 &emsp;&emsp;如下方的两个图像就是做了灰度化处理的图像对比。
 
 
-{% include aligner.html images="blog-img/translate/7.jpg,blog-img\translate\8.jpg" column=10 %}
+{% include aligner.html images="blog-img/translate/7.jpg,blog-img/translate/8.jpg" column=10 %}
 
 &emsp;&emsp;为了更好的配对模型，我们需要对灰度图进一步简化，通常的做法是将像素点间的差距拉的尽可能大（离散化），我们通常使用的方式是**二值化**
 
 &emsp;&emsp;如下方的两个图像是灰度图像做了二值化处理的前后对比。
 
-{% include aligner.html images="blog-img\translate\8.jpg,blog-img/translate/10.jpg" column=10 %}
+{% include aligner.html images="blog-img/translate/8.jpg,blog-img/translate/10.jpg" column=10 %}
 
 &emsp;&emsp;二值化后的图像，为过滤或弱化出图形中的小白点（噪音），我们常常采用高斯模糊（打马赛克）以及腐蚀的方法。
 
 &emsp;&emsp;如下图分别为做了高斯模糊和腐蚀操作的二值图像。
 
-{% include aligner.html images="blog-img\translate\11.jpg,blog-img\translate\12.jpg" column=10 %}
+{% include aligner.html images="blog-img/translate/11.jpg,blog-img/translate/12.jpg" column=10 %}
 
 &emsp;&emsp;有时，我们会把握不好腐蚀操作的度，以至于一些重要信息也被过滤掉了，为了弥补过滤掉的内容，一般会对腐蚀后的图像做**膨胀**操作。<br>
 一般的，先对一个图像做腐蚀再对齐做膨胀的组合操作我们称之为**开运算**。
 
 &emsp;&emsp;如下为两个分别是做了碰撞和开运算的图像。
 
-{% include aligner.html images="blog-img\translate\13.jpg,blog-img\translate\14.jpg" column=10 %}
+{% include aligner.html images="blog-img/translate/13.jpg,blog-img/translate/14.jpg" column=10 %}
 
 &emsp;&emsp;通过`opencv`库实现以上操作，可以帮助我们从一张图片中提取出很多有效的信息。你可以从下面的代码中直观得体会出这个处理流程。
 
@@ -357,7 +357,7 @@ def test_findContours(self, image=None):
 
 &emsp;&emsp;如下两图，分别是原图和描绘轮廓后的图形。
 
-{% include aligner.html images="blog-img\translate\15.jpg,blog-img\translate\16.jpg" column=10 %}
+{% include aligner.html images="blog-img/translate/15.jpg,blog-img/translate/16.jpg" column=10 %}
 
 ---
 
@@ -373,8 +373,8 @@ def test_findContours(self, image=None):
 
 &emsp;&emsp;下面将处理过程进行展示，处理次序依次是高斯模糊、灰度化、二值化、开运算、膨胀
 
-{% include aligner.html images="blog-img\translate\17.jpg,blog-img\translate\18.jpg,blog-img\translate\19.jpg" column=10 %}
-{% include aligner.html images="blog-img\translate\20.jpg,blog-img\translate\21.jpg,blog-img\translate\22.jpg" column=10 %}
+{% include aligner.html images="blog-img/translate/17.jpg,blog-img/translate/18.jpg,blog-img/translate/19.jpg" column=10 %}
+{% include aligner.html images="blog-img/translate/20.jpg,blog-img/translate/21.jpg,blog-img/translate/22.jpg" column=10 %}
 
 &emsp;&emsp;代码实现如下。
 
@@ -421,8 +421,8 @@ def test_findContours(self, image=None):
 
 &emsp;&emsp;话不多说，上结果：
 
-{% include aligner.html images="blog-img\translate\23.jpg,blog-img\translate\24.jpg,blog-img\translate\25.jpg" column=10 %}
-{% include aligner.html images="blog-img\translate\26.jpg,blog-img\translate\27.jpg,blog-img\translate\28.jpg" column=10 %}
+{% include aligner.html images="blog-img/translate/23.jpg,blog-img/translate/24.jpg,blog-img/translate/25.jpg" column=10 %}
+{% include aligner.html images="blog-img/translate/26.jpg,blog-img/translate/27.jpg,blog-img/translate/28.jpg" column=10 %}
 
 &emsp;&emsp;下面是代码展示，相比与句子识别部分的代码，下面还多了单词剪切和手动降噪的等代码逻辑。
 
@@ -490,7 +490,7 @@ def test_findContours(self, image=None):
 
 &emsp;&emsp;那么下面这两张图就是字母分离的结果，也是我们之前所展示过的。
 
-{% include aligner.html images="blog-img\translate\15.jpg,blog-img\translate\16.jpg" column=10 %}
+{% include aligner.html images="blog-img/translate/15.jpg,blog-img/translate/16.jpg" column=10 %}
 
 &emsp;&emsp;下面给出，字母图片处理的有关代码逻辑
 
