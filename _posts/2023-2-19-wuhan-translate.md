@@ -39,6 +39,17 @@ thumbnail: assets/img/thumbnails/feature-img/translate.jpg # 文件路径在gith
     - [其次从句子中分离出单词](#其次从句子中分离出单词)
     - [最后从单词中分离出字母并识别](#最后从单词中分离出字母并识别)
   - [翻译](#翻译)
+    - [传统爬虫](#传统爬虫)
+    - [selenium技术模块介绍](#selenium技术模块介绍)
+    - [selenium与传统爬虫的对比](#selenium与传统爬虫的对比)
+      - [传统爬虫爬百度翻译](#传统爬虫爬百度翻译)
+      - [selenium爬百度翻译](#selenium爬百度翻译)
+    - [selenium效率优化](#selenium效率优化)
+      - [1. 使用显式等待](#1-使用显式等待)
+      - [2. 无头浏览器](#2-无头浏览器)
+      - [3. 多线程优化](#3-多线程优化)
+    - [翻译实现](#翻译实现)
+- [作者自己的一些话](#作者自己的一些话)
 
 ---
 
@@ -476,8 +487,10 @@ def test_findContours(self, image=None):
             result_imgs.append(copy_img[contour[0][1]:contour[1][1], contour[0][0]:contour[1][0]])
 
         return result_imgs, contours
-
 ```
+
+---
+
 ### 最后从单词中分离出字母并识别
 
 &emsp;&emsp;其实这一步大体与前面步骤相同，只不过可能不需要再进行膨胀运算了，不然的话将字母整理粘合在一起就不好识别了。
@@ -528,7 +541,254 @@ def test_findContours(self, image=None):
 
 ## 翻译
 
-待补充。。。
+&emsp;&emsp;翻译功能，本项目使用爬虫实现。<br>
+
+### 传统爬虫
+
+&emsp;&emsp;对于传统的爬虫，其一般步骤是：
+
+1. 抓包，找接口。
+2. 寻找表单中的一些参数规律，并解析。
+3. 封装请求头，保存`cookie`状态，考虑使用代理等。
+4. 发送表单请求，获取返回信息。
+5. 解析数据，并保存。
+
+&emsp;&emsp;传统的爬虫方式，其实就是通过伪装成浏览器的方式获取网络资源的。这种做法的好处是，小巧轻便，速度快。
+
+&emsp;&emsp;但是其局限性也很大，一旦后台更改了接口访问方式、文本加密方式就可能要重写一个份代码。对于需要保存登录信息的网页，我们使用的`cookie`也需要时不时更新一下。一些网站带有的反爬机制也会增加传统爬虫的难度。
+
+> 顺带一提，百度翻译现在已经加密了翻译接口的表单参数，用传统的爬虫已经爬不了了。
+
+&emsp;&emsp;所以我选择selenium技术进行爬虫。
 
 ---
+
+### selenium技术模块介绍
+
+&emsp;&emsp;如果说传统爬虫是伪装成浏览器，那么`selenium`就是模拟成浏览器访问数据。
+
+&emsp;&emsp;什么是“模拟成浏览器”？
+
+&emsp;&emsp;就是像真的浏览器一样，加载一个网页上所有的数据包括，JavaScript，html，png，等等。<br>
+&emsp;&emsp;如果处理得当，这种爬虫可以规避 $$ 95% $$ 的反爬监控。
+
+---
+
+### selenium与传统爬虫的对比
+
+&emsp;&emsp;selenium的工作思路是基于网页html结构的，而传统爬虫是针对的API接口。
+
+&emsp;&emsp;下面以百度翻译的爬取为例来说明这两种方式的区别。
+
+---
+
+#### 传统爬虫爬百度翻译
+
+&emsp;&emsp;1. 打开网页，输入数据，开始抓包。
+
+{% include aligner.html images="blog-img/translate/29.jpg" column=10 %}
+
+&emsp;&emsp;2. 找到带有，翻译结果的参数。
+
+{% include aligner.html images="blog-img/translate/30.jpg" column=10 %}
+
+&emsp;&emsp;3. 根据抓包工具提供的信息封装请求头。
+
+{% include aligner.html images="blog-img/translate/31.jpg" column=10 %}
+
+&emsp;&emsp;4. 整理表单数据，发送请求。
+
+&emsp;&emsp;5. 接收返回信息并解析。
+
+---
+
+#### selenium爬百度翻译
+
+&emsp;&emsp;1. 打开网页，找到输入框，从html源码中定位输入框的位置，编写`XPATH`语句。
+
+{% include aligner.html images="blog-img/translate/29.jpg" column=10 %}
+
+&emsp;&emsp;2. 在定位到的输入框组件中，（不需要手动输入）输入数据。
+
+&emsp;&emsp;3. 再次使用`XPATH`语法，直接从结果框中定位翻译结果。
+
+{% include aligner.html images="blog-img/translate/33.jpg" column=10 %}
+
+
+&emsp;&emsp;selenium的优势在于，不需要繁琐的更新请求头，不用担心接口的更新而导致程序会失效，selenium相比传统的爬虫更加稳定，如果网页没有较大的改变selenium可以一直有效。selenium的难度也不大，只要有一点html基础和XPATH语法就可以灵活使用。
+
+&emsp;&emsp;selenium的劣势也很明显，由于是模拟浏览器，所以会加载很多用不上的信息，比如网页中的图片，视频之类的资源，这会使得爬取的速度下降。
+
+---
+
+### selenium效率优化
+
+&emsp;&emsp;前面有提到，selenium因加载无用信息而导致速度的下降，对此我们有以下几种方式来加速。
+
+#### 1. 使用显式等待
+
+&emsp;&emsp;网页中的信息往往在没有全部加载出来前（通俗的讲就是，刷新箭头还在转的时候），就已经出现了我们想要的信息，这个时候我们不需要等待直接上手抓数据。<br>
+&emsp;&emsp;这种方式称之为显式等待。
+
+#### 2. 无头浏览器
+
+&emsp;&emsp;所谓的无头浏览器就是，直接不展示界面，让selenium在后台加载数据，省去浏览器展示的时间。
+
+#### 3. 多线程优化
+
+&emsp;&emsp;这是一种传统的的方法。如果要访问多次，那么多个线程加载肯定比一个要快。要注意访问公共资源时`上锁`。
+
+> 多线程优化用的好的话，程序效率会大大提升。不过这也同样加大了调试的难度。初学者要慎重使用。
+
+---
+
+### 翻译实现
+
+&emsp;&emsp;selenium爬虫的代码实现，部分代码
+```python
+class spider:
+    url = 'https://fanyi.baidu.com/'
+    path_ad = '//div[@class="app-guide-inner"]/div[@class="app-guide-aside"]/span'
+    path_input = '//div[@class="textarea-wrap"]/textarea[@class="textarea"]'
+    path_out = '//p[@class="ordinary-output target-output clearfix"]/span'
+
+    @staticmethod
+    def get_no_ui_browser():
+        """
+        获得一个无界面浏览器对象
+        :return: Chrome
+        """
+        chrome_options = Options()
+        chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--disable-gpu')
+        chrome_options.add_argument('blink-settings=imagesEnabled=false')  # 可以选择不加载图片以提升速度
+        browser = webdriver.Chrome(chrome_options=chrome_options)
+
+        return browser
+
+    @staticmethod
+    def get_browser():
+        """
+        获得一个有界面浏览器对象（用于展示或者调试）
+        :return:  Chrome
+        """
+
+        return webdriver.Chrome()
+
+    def click_object(self, object):
+        """
+        用于点击一个元素
+        :param object:元素对象
+        :return: None
+        """
+        self.browser.execute_script("arguments[0].click();", object)
+
+    def close_ad(self):
+        # 这里显示等待界面中的广告出现
+        try:
+            self.ad = WebDriverWait(self.browser, 1).until(EC.presence_of_element_located((By.XPATH, self.path_ad)))
+        except:
+            return
+        self.click_object(self.ad)
+
+    def __init__(self, debug=False):
+        self.browser = self.get_browser() if debug else self.get_no_ui_browser()  # 获取一个浏览器对象
+        self.browser.implicitly_wait(5)  # 设置隐式等待的时间
+
+        self.browser.get(self.url)  # 打开界面
+        self.close_ad()  # 关闭界面上的广告
+        self.find_button()  # 寻找输入框
+
+    def find_button(self):
+        """
+        此方法用于实现常用元素的查找
+        :return: None
+        """
+        ## 寻找输入输出框框
+        self.text_input = WebDriverWait(self.browser, 5).until(
+            EC.presence_of_element_located((By.XPATH, self.path_input)))
+        # self.text_out = self.browser.find_element(by=By.XPATH, value=self.path_out)
+
+    def input(self, text):
+        """
+        用于给输入框输入句子
+        :param text: 待翻译文本
+        :return: bool
+        """
+        self.text_input.clear()  # 清除输入内容
+        self.text_input.send_keys(text)  # 填写被翻译内容
+
+    def get_translate_sentence(self):
+        """
+        获取翻译结果
+        :return:翻译结果
+        """
+        try:
+            self.text_out = WebDriverWait(self.browser, 5).until(EC.presence_of_element_located((By.XPATH, self.path_out)))
+        except:
+            return ''
+        return self.text_out.text
+
+    def translate_sentence(self, text, wait=0.5):
+        """
+        用于实现翻译的逻辑
+        :param text: 需要翻译的文本
+        :return: 翻译结果
+        """
+        self.input(text)
+        time.sleep(wait)
+        return self.get_translate_sentence()
+```
+
+&emsp;&emsp;在加上多线程优化
+```python
+class translation_queue:
+    number = 5  # 默认开启界面数
+    queue = []  # 浏览器队列
+    hh, tt = 0, 0  # 队列头，队列尾
+
+    def add_browser(self):
+        self.queue.append(spider())
+
+    def __init__(self, number=None):
+        ## 初始化线程池大小
+        if number is not None:
+            self.number = number
+
+        ## 初始化5个浏览器
+        children = []
+        for _ in range(self.number):
+            children.append(Thread(target=self.add_browser))
+            children[-1].start()
+
+        # 等待所有浏览器初始化完毕
+        for i in range(self.number):
+            children[i].join()
+
+    def set_text(self, text):
+        self.queue[self.tt].input(text)
+        self.tt = (self.tt + 1) % self.number
+
+    def get_text(self):
+        text = self.queue[self.hh].get_translate_sentence()
+        self.hh = (self.hh + 1) % self.number
+        return text
+
+```
+---
+
+# 作者自己的一些话
+
+&emsp;&emsp;本项目其实只是对人工智能算法模型SVM分类器的一个小小的应用。一个模型能做的事情其实都很小很简单，因此对图片的数据清洗解析简化等的步骤尤为重要，而这些处理步骤其实就是，将我们所能看懂图片信息一步步转化成计算机能读的懂的数据。然后将计算机得到的结果转化成我们能读懂的信息（如图片，文字，视频）。这些转化的任务正是我们程序员的工作。
+
+&emsp;&emsp;在项目实操中，还是遇到了不少的困难，例如训练数据找不到，训练数据洗不干净，模型效率低，字母`il`分不清，传统爬虫爬不了翻译等等问题。
+
+&emsp;&emsp;程序试错试也是一个复杂的而又漫长的过程，多线程的优化更是进一步加大了编码的难度。
+
+&emsp;&emsp;实现部分远比我当初预想的要难得多，没有团队的支持所有模块都是我一人完成的，平均花了1-2天的时间，虽然很辛苦，但总之项目还是写出来了，代码不多一共1400行，但行行都是心血的付出。
+
+&emsp;&emsp;希望新人们在以后中遇到困难也可以坚持下去，办法总比困难多。只要方向是对的，那么坚持下去就没有错。
+
+---
+
 [回到顶部](#go_to_top)

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-02T18:41:27+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">基于svm实现的屏幕翻译项目解析</title><link href="http://localhost:4000/tranlate" rel="alternate" type="text/html" title="基于svm实现的屏幕翻译项目解析" /><published>2023-02-19T00:00:00+08:00</published><updated>2023-02-19T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-translate</id><content type="html" xml:base="http://localhost:4000/tranlate"><![CDATA[<p><a id="go_to_top"></a>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-04T14:25:08+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">基于svm实现的屏幕翻译项目解析</title><link href="http://localhost:4000/tranlate" rel="alternate" type="text/html" title="基于svm实现的屏幕翻译项目解析" /><published>2023-02-19T00:00:00+08:00</published><updated>2023-02-19T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-translate</id><content type="html" xml:base="http://localhost:4000/tranlate"><![CDATA[<p><a id="go_to_top"></a>
   不知不觉间，人工智能慢慢开始走进千家万户。无人驾驶、AI绘图、语音识别、AI聊天都是人工智能的领域。我作为一个智能的学生已经被迷得不行了，在这份热爱的支持下我完成了这份项目。虽然我的项目与当今智能技术无法比拟，但是其中运用到的机器学习模型（如<code class="language-plaintext highlighter-rouge">SVM</code>分类器）足以能够让我的项目归类到人工智能。</p>
 
 <hr />
@@ -46,9 +46,29 @@
           <li><a href="#最后从单词中分离出字母并识别">最后从单词中分离出字母并识别</a></li>
         </ul>
       </li>
-      <li><a href="#翻译">翻译</a></li>
+      <li><a href="#翻译">翻译</a>
+        <ul>
+          <li><a href="#传统爬虫">传统爬虫</a></li>
+          <li><a href="#selenium技术模块介绍">selenium技术模块介绍</a></li>
+          <li><a href="#selenium与传统爬虫的对比">selenium与传统爬虫的对比</a>
+            <ul>
+              <li><a href="#传统爬虫爬百度翻译">传统爬虫爬百度翻译</a></li>
+              <li><a href="#selenium爬百度翻译">selenium爬百度翻译</a></li>
+            </ul>
+          </li>
+          <li><a href="#selenium效率优化">selenium效率优化</a>
+            <ul>
+              <li><a href="#1-使用显式等待">1. 使用显式等待</a></li>
+              <li><a href="#2-无头浏览器">2. 无头浏览器</a></li>
+              <li><a href="#3-多线程优化">3. 多线程优化</a></li>
+            </ul>
+          </li>
+          <li><a href="#翻译实现">翻译实现</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
+  <li><a href="#作者自己的一些话">作者自己的一些话</a></li>
 </ul>
 
 <hr />
@@ -637,8 +657,10 @@
             <span class="n">result_imgs</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">copy_img</span><span class="p">[</span><span class="n">contour</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]:</span><span class="n">contour</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">contour</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]:</span><span class="n">contour</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]])</span>
 
         <span class="k">return</span> <span class="n">result_imgs</span><span class="p">,</span> <span class="n">contours</span>
-
 </code></pre></div></div>
+
+<hr />
+
 <h3 id="最后从单词中分离出字母并识别">最后从单词中分离出字母并识别</h3>
 
 <p>  其实这一步大体与前面步骤相同，只不过可能不需要再进行膨胀运算了，不然的话将字母整理粘合在一起就不好识别了。</p>
@@ -698,9 +720,289 @@
 
 <h2 id="翻译">翻译</h2>
 
-<p>待补充。。。</p>
+<p>  翻译功能，本项目使用爬虫实现。<br /></p>
+
+<h3 id="传统爬虫">传统爬虫</h3>
+
+<p>  对于传统的爬虫，其一般步骤是：</p>
+
+<ol>
+  <li>抓包，找接口。</li>
+  <li>寻找表单中的一些参数规律，并解析。</li>
+  <li>封装请求头，保存<code class="language-plaintext highlighter-rouge">cookie</code>状态，考虑使用代理等。</li>
+  <li>发送表单请求，获取返回信息。</li>
+  <li>解析数据，并保存。</li>
+</ol>
+
+<p>  传统的爬虫方式，其实就是通过伪装成浏览器的方式获取网络资源的。这种做法的好处是，小巧轻便，速度快。</p>
+
+<p>  但是其局限性也很大，一旦后台更改了接口访问方式、文本加密方式就可能要重写一个份代码。对于需要保存登录信息的网页，我们使用的<code class="language-plaintext highlighter-rouge">cookie</code>也需要时不时更新一下。一些网站带有的反爬机制也会增加传统爬虫的难度。</p>
+
+<blockquote>
+  <p>顺带一提，百度翻译现在已经加密了翻译接口的表单参数，用传统的爬虫已经爬不了了。</p>
+</blockquote>
+
+<p>  所以我选择selenium技术进行爬虫。</p>
 
 <hr />
+
+<h3 id="selenium技术模块介绍">selenium技术模块介绍</h3>
+
+<p>  如果说传统爬虫是伪装成浏览器，那么<code class="language-plaintext highlighter-rouge">selenium</code>就是模拟成浏览器访问数据。</p>
+
+<p>  什么是“模拟成浏览器”？</p>
+
+<p>  就是像真的浏览器一样，加载一个网页上所有的数据包括，JavaScript，html，png，等等。<br />
+  如果处理得当，这种爬虫可以规避 \(95%\) 的反爬监控。</p>
+
+<hr />
+
+<h3 id="selenium与传统爬虫的对比">selenium与传统爬虫的对比</h3>
+
+<p>  selenium的工作思路是基于网页html结构的，而传统爬虫是针对的API接口。</p>
+
+<p>  下面以百度翻译的爬取为例来说明这两种方式的区别。</p>
+
+<hr />
+
+<h4 id="传统爬虫爬百度翻译">传统爬虫爬百度翻译</h4>
+
+<p>  1. 打开网页，输入数据，开始抓包。</p>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img class="single" src="/assets/img/blog-img/translate/29.jpg" alt="29.jpg" />
+    </div>
+    
+</div>
+
+<p>  2. 找到带有，翻译结果的参数。</p>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img class="single" src="/assets/img/blog-img/translate/30.jpg" alt="30.jpg" />
+    </div>
+    
+</div>
+
+<p>  3. 根据抓包工具提供的信息封装请求头。</p>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img class="single" src="/assets/img/blog-img/translate/31.jpg" alt="31.jpg" />
+    </div>
+    
+</div>
+
+<p>  4. 整理表单数据，发送请求。</p>
+
+<p>  5. 接收返回信息并解析。</p>
+
+<hr />
+
+<h4 id="selenium爬百度翻译">selenium爬百度翻译</h4>
+
+<p>  1. 打开网页，找到输入框，从html源码中定位输入框的位置，编写<code class="language-plaintext highlighter-rouge">XPATH</code>语句。</p>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img class="single" src="/assets/img/blog-img/translate/29.jpg" alt="29.jpg" />
+    </div>
+    
+</div>
+
+<p>  2. 在定位到的输入框组件中，（不需要手动输入）输入数据。</p>
+
+<p>  3. 再次使用<code class="language-plaintext highlighter-rouge">XPATH</code>语法，直接从结果框中定位翻译结果。</p>
+
+<div class="row">
+    
+    <div style="flex: 10.0%">
+        <img class="single" src="/assets/img/blog-img/translate/33.jpg" alt="33.jpg" />
+    </div>
+    
+</div>
+
+<p>  selenium的优势在于，不需要繁琐的更新请求头，不用担心接口的更新而导致程序会失效，selenium相比传统的爬虫更加稳定，如果网页没有较大的改变selenium可以一直有效。selenium的难度也不大，只要有一点html基础和XPATH语法就可以灵活使用。</p>
+
+<p>  selenium的劣势也很明显，由于是模拟浏览器，所以会加载很多用不上的信息，比如网页中的图片，视频之类的资源，这会使得爬取的速度下降。</p>
+
+<hr />
+
+<h3 id="selenium效率优化">selenium效率优化</h3>
+
+<p>  前面有提到，selenium因加载无用信息而导致速度的下降，对此我们有以下几种方式来加速。</p>
+
+<h4 id="1-使用显式等待">1. 使用显式等待</h4>
+
+<p>  网页中的信息往往在没有全部加载出来前（通俗的讲就是，刷新箭头还在转的时候），就已经出现了我们想要的信息，这个时候我们不需要等待直接上手抓数据。<br />
+  这种方式称之为显式等待。</p>
+
+<h4 id="2-无头浏览器">2. 无头浏览器</h4>
+
+<p>  所谓的无头浏览器就是，直接不展示界面，让selenium在后台加载数据，省去浏览器展示的时间。</p>
+
+<h4 id="3-多线程优化">3. 多线程优化</h4>
+
+<p>  这是一种传统的的方法。如果要访问多次，那么多个线程加载肯定比一个要快。要注意访问公共资源时<code class="language-plaintext highlighter-rouge">上锁</code>。</p>
+
+<blockquote>
+  <p>多线程优化用的好的话，程序效率会大大提升。不过这也同样加大了调试的难度。初学者要慎重使用。</p>
+</blockquote>
+
+<hr />
+
+<h3 id="翻译实现">翻译实现</h3>
+
+<p>  selenium爬虫的代码实现，部分代码</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">spider</span><span class="p">:</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s">'https://fanyi.baidu.com/'</span>
+    <span class="n">path_ad</span> <span class="o">=</span> <span class="s">'//div[@class="app-guide-inner"]/div[@class="app-guide-aside"]/span'</span>
+    <span class="n">path_input</span> <span class="o">=</span> <span class="s">'//div[@class="textarea-wrap"]/textarea[@class="textarea"]'</span>
+    <span class="n">path_out</span> <span class="o">=</span> <span class="s">'//p[@class="ordinary-output target-output clearfix"]/span'</span>
+
+    <span class="o">@</span><span class="nb">staticmethod</span>
+    <span class="k">def</span> <span class="nf">get_no_ui_browser</span><span class="p">():</span>
+        <span class="s">"""
+        获得一个无界面浏览器对象
+        :return: Chrome
+        """</span>
+        <span class="n">chrome_options</span> <span class="o">=</span> <span class="n">Options</span><span class="p">()</span>
+        <span class="n">chrome_options</span><span class="p">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'--headless'</span><span class="p">)</span>
+        <span class="n">chrome_options</span><span class="p">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'--disable-gpu'</span><span class="p">)</span>
+        <span class="n">chrome_options</span><span class="p">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'blink-settings=imagesEnabled=false'</span><span class="p">)</span>  <span class="c1"># 可以选择不加载图片以提升速度
+</span>        <span class="n">browser</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="n">Chrome</span><span class="p">(</span><span class="n">chrome_options</span><span class="o">=</span><span class="n">chrome_options</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">browser</span>
+
+    <span class="o">@</span><span class="nb">staticmethod</span>
+    <span class="k">def</span> <span class="nf">get_browser</span><span class="p">():</span>
+        <span class="s">"""
+        获得一个有界面浏览器对象（用于展示或者调试）
+        :return:  Chrome
+        """</span>
+
+        <span class="k">return</span> <span class="n">webdriver</span><span class="p">.</span><span class="n">Chrome</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">click_object</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span>
+        <span class="s">"""
+        用于点击一个元素
+        :param object:元素对象
+        :return: None
+        """</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">browser</span><span class="p">.</span><span class="n">execute_script</span><span class="p">(</span><span class="s">"arguments[0].click();"</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">close_ad</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># 这里显示等待界面中的广告出现
+</span>        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">ad</span> <span class="o">=</span> <span class="n">WebDriverWait</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">browser</span><span class="p">,</span> <span class="mi">1</span><span class="p">).</span><span class="n">until</span><span class="p">(</span><span class="n">EC</span><span class="p">.</span><span class="n">presence_of_element_located</span><span class="p">((</span><span class="n">By</span><span class="p">.</span><span class="n">XPATH</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">path_ad</span><span class="p">)))</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">click_object</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">ad</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">browser</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">get_browser</span><span class="p">()</span> <span class="k">if</span> <span class="n">debug</span> <span class="k">else</span> <span class="bp">self</span><span class="p">.</span><span class="n">get_no_ui_browser</span><span class="p">()</span>  <span class="c1"># 获取一个浏览器对象
+</span>        <span class="bp">self</span><span class="p">.</span><span class="n">browser</span><span class="p">.</span><span class="n">implicitly_wait</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># 设置隐式等待的时间
+</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">browser</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">url</span><span class="p">)</span>  <span class="c1"># 打开界面
+</span>        <span class="bp">self</span><span class="p">.</span><span class="n">close_ad</span><span class="p">()</span>  <span class="c1"># 关闭界面上的广告
+</span>        <span class="bp">self</span><span class="p">.</span><span class="n">find_button</span><span class="p">()</span>  <span class="c1"># 寻找输入框
+</span>
+    <span class="k">def</span> <span class="nf">find_button</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s">"""
+        此方法用于实现常用元素的查找
+        :return: None
+        """</span>
+        <span class="c1">## 寻找输入输出框框
+</span>        <span class="bp">self</span><span class="p">.</span><span class="n">text_input</span> <span class="o">=</span> <span class="n">WebDriverWait</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">browser</span><span class="p">,</span> <span class="mi">5</span><span class="p">).</span><span class="n">until</span><span class="p">(</span>
+            <span class="n">EC</span><span class="p">.</span><span class="n">presence_of_element_located</span><span class="p">((</span><span class="n">By</span><span class="p">.</span><span class="n">XPATH</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">path_input</span><span class="p">)))</span>
+        <span class="c1"># self.text_out = self.browser.find_element(by=By.XPATH, value=self.path_out)
+</span>
+    <span class="k">def</span> <span class="nf">input</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+        <span class="s">"""
+        用于给输入框输入句子
+        :param text: 待翻译文本
+        :return: bool
+        """</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">text_input</span><span class="p">.</span><span class="n">clear</span><span class="p">()</span>  <span class="c1"># 清除输入内容
+</span>        <span class="bp">self</span><span class="p">.</span><span class="n">text_input</span><span class="p">.</span><span class="n">send_keys</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>  <span class="c1"># 填写被翻译内容
+</span>
+    <span class="k">def</span> <span class="nf">get_translate_sentence</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s">"""
+        获取翻译结果
+        :return:翻译结果
+        """</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">text_out</span> <span class="o">=</span> <span class="n">WebDriverWait</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">browser</span><span class="p">,</span> <span class="mi">5</span><span class="p">).</span><span class="n">until</span><span class="p">(</span><span class="n">EC</span><span class="p">.</span><span class="n">presence_of_element_located</span><span class="p">((</span><span class="n">By</span><span class="p">.</span><span class="n">XPATH</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">path_out</span><span class="p">)))</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s">''</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="n">text_out</span><span class="p">.</span><span class="n">text</span>
+
+    <span class="k">def</span> <span class="nf">translate_sentence</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">wait</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
+        <span class="s">"""
+        用于实现翻译的逻辑
+        :param text: 需要翻译的文本
+        :return: 翻译结果
+        """</span>
+        <span class="bp">self</span><span class="p">.</span><span class="nb">input</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+        <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wait</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="n">get_translate_sentence</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>  在加上多线程优化</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">translation_queue</span><span class="p">:</span>
+    <span class="n">number</span> <span class="o">=</span> <span class="mi">5</span>  <span class="c1"># 默认开启界面数
+</span>    <span class="n">queue</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># 浏览器队列
+</span>    <span class="n">hh</span><span class="p">,</span> <span class="n">tt</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>  <span class="c1"># 队列头，队列尾
+</span>
+    <span class="k">def</span> <span class="nf">add_browser</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">queue</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">spider</span><span class="p">())</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="c1">## 初始化线程池大小
+</span>        <span class="k">if</span> <span class="n">number</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">number</span> <span class="o">=</span> <span class="n">number</span>
+
+        <span class="c1">## 初始化5个浏览器
+</span>        <span class="n">children</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">number</span><span class="p">):</span>
+            <span class="n">children</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">add_browser</span><span class="p">))</span>
+            <span class="n">children</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">].</span><span class="n">start</span><span class="p">()</span>
+
+        <span class="c1"># 等待所有浏览器初始化完毕
+</span>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">number</span><span class="p">):</span>
+            <span class="n">children</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">join</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">set_text</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">queue</span><span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">tt</span><span class="p">].</span><span class="nb">input</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">tt</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">tt</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="bp">self</span><span class="p">.</span><span class="n">number</span>
+
+    <span class="k">def</span> <span class="nf">get_text</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">queue</span><span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">hh</span><span class="p">].</span><span class="n">get_translate_sentence</span><span class="p">()</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">hh</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">hh</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="bp">self</span><span class="p">.</span><span class="n">number</span>
+        <span class="k">return</span> <span class="n">text</span>
+
+</code></pre></div></div>
+<hr />
+
+<h1 id="作者自己的一些话">作者自己的一些话</h1>
+
+<p>  本项目其实只是对人工智能算法模型SVM分类器的一个小小的应用。一个模型能做的事情其实都很小很简单，因此对图片的数据清洗解析简化等的步骤尤为重要，而这些处理步骤其实就是，将我们所能看懂图片信息一步步转化成计算机能读的懂的数据。然后将计算机得到的结果转化成我们能读懂的信息（如图片，文字，视频）。这些转化的任务正是我们程序员的工作。</p>
+
+<p>  在项目实操中，还是遇到了不少的困难，例如训练数据找不到，训练数据洗不干净，模型效率低，字母<code class="language-plaintext highlighter-rouge">il</code>分不清，传统爬虫爬不了翻译等等问题。</p>
+
+<p>  程序试错试也是一个复杂的而又漫长的过程，多线程的优化更是进一步加大了编码的难度。</p>
+
+<p>  实现部分远比我当初预想的要难得多，没有团队的支持所有模块都是我一人完成的，平均花了1-2天的时间，虽然很辛苦，但总之项目还是写出来了，代码不多一共1400行，但行行都是心血的付出。</p>
+
+<p>  希望新人们在以后中遇到困难也可以坚持下去，办法总比困难多。只要方向是对的，那么坚持下去就没有错。</p>
+
+<hr />
+
 <p><a href="#go_to_top">回到顶部</a></p>]]></content><author><name>Ranok</name></author><category term="人工智能" /><category term="计算机视觉" /><category term="python" /><category term="机器学习" /><category term="爬虫" /><summary type="html"><![CDATA[  不知不觉间，人工智能慢慢开始走进千家万户。无人驾驶、AI绘图、语音识别、AI聊天都是人工智能的领域。我作为一个智能的学生已经被迷得不行了，在这份热爱的支持下我完成了这份项目。虽然我的项目与当今智能技术无法比拟，但是其中运用到的机器学习模型（如SVM分类器）足以能够让我的项目归类到人工智能。]]></summary></entry><entry><title type="html">Java EE</title><link href="http://localhost:4000/javaee" rel="alternate" type="text/html" title="Java EE" /><published>2022-12-24T00:00:00+08:00</published><updated>2022-12-24T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-javaee</id><content type="html" xml:base="http://localhost:4000/javaee"><![CDATA[<p>  Java EE，Java 平台企业版（Java Platform Enterprise Edition），之前称为Java 2 Platform, Enterprise Edition (J2EE)，2018年3月更名为 Jakarta EE(这个名称应该还没有得到群众认可)。是 Sun 公司为企业级应用推出的标准平台，用来开发B/S架构软件。Java EE 可以说是一个框架，也可以说是一种规范。</p>
 
 <hr />
