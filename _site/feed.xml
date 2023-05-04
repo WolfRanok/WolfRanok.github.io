@@ -1,7 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-04T10:33:25+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">xcpc模板积累</title><link href="http://localhost:4000/algorithm" rel="alternate" type="text/html" title="xcpc模板积累" /><published>2023-05-04T00:00:00+08:00</published><updated>2023-05-04T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-algorithm</id><content type="html" xml:base="http://localhost:4000/algorithm"><![CDATA[<p>  这是一个竞赛算法模板博客，用于应对xcpc等算法竞赛。此模板不一定是符合大众的模板，我会带有自己的风格。模板我会不断地更新，内容仅供参考。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-04T10:47:02+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">xcpc模板积累</title><link href="http://localhost:4000/algorithm" rel="alternate" type="text/html" title="xcpc模板积累" /><published>2023-05-04T00:00:00+08:00</published><updated>2023-05-04T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-algorithm</id><content type="html" xml:base="http://localhost:4000/algorithm"><![CDATA[<p>  这是一个竞赛算法模板博客，用于应对xcpc等算法竞赛。此模板不一定是符合大众的模板，我会带有自己的风格。模板我会不断地更新，内容仅供参考。</p>
 
 <hr />
+<h1 id="目录">目录</h1>
 
+<ul>
+  <li><a href="#目录">目录</a></li>
+  <li><a href="#算法模板积累">算法模板积累</a>
+    <ul>
+      <li><a href="#图论">图论</a>
+        <ul>
+          <li><a href="#单元最短路">单元最短路</a>
+            <ul>
+              <li><a href="#dijiestal">dijiestal</a></li>
+              <li><a href="#spfa">SPFA</a></li>
+            </ul>
+          </li>
+          <li><a href="#多远最短路">多远最短路</a>
+            <ul>
+              <li><a href="#floyd">Floyd</a></li>
+            </ul>
+          </li>
+          <li><a href="#最小生成树">最小生成树</a>
+            <ul>
+              <li><a href="#prim">prim</a></li>
+              <li><a href="#kruskar">Kruskar</a></li>
+            </ul>
+          </li>
+          <li><a href="#spfa负环判断">spfa负环判断</a></li>
+          <li><a href="#差分约束">差分约束</a></li>
+          <li><a href="#最近公共祖先lca">最近公共祖先lca</a></li>
+          <li><a href="#有向图的强连通分量">有向图的强连通分量</a></li>
+          <li><a href="#无向图的强连通分量">无向图的强连通分量</a>
+            <ul>
+              <li><a href="#e-dcc缩点">e-dcc缩点</a></li>
+              <li><a href="#v-dcc缩边">v-dcc缩边</a></li>
+            </ul>
+          </li>
+          <li><a href="#二分图">二分图</a>
+            <ul>
+              <li><a href="#染色法判断二分图是否合理">染色法判断二分图是否合理</a></li>
+              <li><a href="#匈牙利算法-解-二分图的最大匹配数">匈牙利算法 解 二分图的最大匹配数</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#dp">dp</a>
+        <ul>
+          <li><a href="#背包问题">背包问题</a>
+            <ul>
+              <li><a href="#完全背包">完全背包</a></li>
+              <li><a href="#多重背包的二进制优化">多重背包的二进制优化</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#数据结构">数据结构</a>
+        <ul>
+          <li><a href="#树状数组">树状数组</a></li>
+          <li><a href="#线段树">线段树</a></li>
+        </ul>
+      </li>
+      <li><a href="#数学">数学</a>
+        <ul>
+          <li><a href="#pow">pow</a></li>
+          <li><a href="#矩阵快速幂">矩阵快速幂</a></li>
+          <li><a href="#逆元计算">逆元计算</a></li>
+          <li><a href="#欧拉筛">欧拉筛</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
 <h1 id="算法模板积累">算法模板积累</h1>
 
 <hr />
