@@ -1,4 +1,356 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-04T10:47:02+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">xcpc模板积累</title><link href="http://localhost:4000/algorithm" rel="alternate" type="text/html" title="xcpc模板积累" /><published>2023-05-04T00:00:00+08:00</published><updated>2023-05-04T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-algorithm</id><content type="html" xml:base="http://localhost:4000/algorithm"><![CDATA[<p>  这是一个竞赛算法模板博客，用于应对xcpc等算法竞赛。此模板不一定是符合大众的模板，我会带有自己的风格。模板我会不断地更新，内容仅供参考。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-06T00:07:40+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">大数据技术原理与应用</title><link href="http://localhost:4000/bigdata" rel="alternate" type="text/html" title="大数据技术原理与应用" /><published>2023-06-05T00:00:00+08:00</published><updated>2023-06-05T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-bigData</id><content type="html" xml:base="http://localhost:4000/bigdata"><![CDATA[<p>  “大数据技术原理与应用”是一门介绍大数据技术的课程。通过学习这门课程，学生可以深入了解大数据技术的原理和应用，并学会如何使用各种工具和技术来处理和管理大数据。此外，该课程还涵盖了大数据架构、设计和性能优化等方面的内容，这些知识对于开展大规模数据处理和分析项目非常重要。因此，“大数据技术原理与应用”对于计算机科学和数据科学领域的学生和从业人员，以及对大数据感兴趣的其他人士都有很大的意义。</p>
+
+<hr />
+<h1 id="前言">前言</h1>
+<p>  本博客是本人反复听了上课的28分钟录音，听了8个小时左右辛苦肝出来的。如果你可以看到这篇博客，说明我对你有足够的信任，请不要辜负这份信任。</p>
+
+<blockquote>
+  <p>未经本人允许，请不要分享本博客出去，分享方式包括但不限于分享链接，截图等。</p>
+</blockquote>
+
+<hr />
+<h1 id="考题整理">考题整理</h1>
+
+<h2 id="客观题部分50分">客观题部分（50分）</h2>
+
+<h3 id="1-hadoop运行模式有哪些">1. Hadoop运行模式有哪些？</h3>
+
+<ol>
+  <li>单机模式</li>
+  <li>伪分布式模式</li>
+  <li>完全分布式模式</li>
+</ol>
+
+<hr />
+
+<h3 id="2-单机模式和伪分布式模式的区别">2. 单机模式和伪分布式模式的区别</h3>
+
+<p>  单机模式只使用一个进程来运行所有的Hadoop服务和组件，而伪分布式模式则模拟了一个真正的分布式环境，它启动了多个进程来运行不同的Hadoop服务和组件，并且这些进程都能够相互通信。因此，伪分布式模式可以更好地模拟实际的生产环境，并且可以更好地测试Hadoop应用程序的性能和可靠性。</p>
+
+<hr />
+
+<h3 id="3-伪分布式的安装">3. 伪分布式的安装</h3>
+
+<h4 id="31-hadoop的开发和运行需要什么环境">3.1 Hadoop的开发和运行需要什么环境？</h4>
+
+<p>  需要Java环境在hadoop-env.sh 中配置</p>
+
+<h4 id="32-伪分布式的安装需要修改哪些配置文件">3.2 伪分布式的安装需要修改哪些配置文件？</h4>
+
+<p>  需要修改文件：core-site.xml hdfs-site.xml</p>
+
+<h4 id="33有关fsdefaultfs的配置的两种问法">3.3有关fs.defaultFS的配置的两种问法</h4>
+
+<h5 id="331问法一fsdefaultfs的参数在哪一个配置文件中进行配置">3.3.1问法一：fs.defaultFS的参数在哪一个配置文件中进行配置？</h5>
+
+<p>  在sore-site.xml中配置</p>
+
+<h5 id="333问法二配置namebode地址时由哪一个参数指定的">3.3.3问法二：配置NameBode地址时由哪一个参数指定的</h5>
+
+<p>  由core-site.xml中的dfs.namenode.dir.参数指定</p>
+
+<hr />
+
+<h3 id="4-hadoop的核心功能组件">4 Hadoop的核心功能组件</h3>
+
+<blockquote>
+  <p>可能会考填空或简答。</p>
+</blockquote>
+
+<h4 id="41-填空的问法请列举出两个除hdfs和mapreduce之外的两个文件">4.1 填空的问法：请列举出两个除hdfs和MapReduce之外的两个文件</h4>
+
+<ol>
+  <li>HBase</li>
+  <li>Hive</li>
+  <li>Pig</li>
+  <li>Mahout</li>
+  <li>ZooKeeper</li>
+  <li>Flume</li>
+  <li>Sqoop</li>
+  <li>Ambari</li>
+</ol>
+
+<h4 id="42-简答题的问法请举两个核心组件并说明其作用">4.2 简答题的问法：请举两个核心组件并说明其作用</h4>
+
+<ol>
+  <li>HBas：是一个提供高可靠性、高性能、可伸缩、实时读写、分布式的列式数据库</li>
+  <li>Hive：是一个数据库工具</li>
+  <li>Pig：是一种数据流语言和运行环境</li>
+  <li>Mahout：是一个开源的项目，它提供了一些课扩展的机器学习领域经典算法的实现</li>
+  <li>ZooKeeper：是一个高效和可靠的协同工作系统。5 Namenode</li>
+</ol>
+
+<hr />
+
+<h3 id="namenode">Namenode</h3>
+
+<blockquote>
+  <p>Datanode会定时的为Namenode发送心跳</p>
+</blockquote>
+
+<h4 id="51用于存储数据块信息的目录结构的是哪一个结点">5.1用于存储数据块信息的目录结构的是哪一个结点？</h4>
+
+<p>  Namenode</p>
+
+<h4 id="52-从功能的角度分析namenode主要用于存储什么信息不确定">5.2 从功能的角度分析Namenode主要用于存储什么信息（不确定）</h4>
+
+<p>  NameNode存储着文件系统树以及文件树中所有的文件和文件夹的元数据信息</p>
+
+<h4 id="53在hdfs中保存着两个数据结构请说明这两个数据结构是什么有什么用">5.3在HDFS中保存着两个数据结构，请说明这两个数据结构是什么，有什么用？</h4>
+
+<p>  这两个数据结构分别是FsImage和Editlog。<br />
+  FsImageL用于维护文件系统树以及文件树中所有的文件和文件夹的元数据。<br />
+  EditLog用于操作日志文件以及记录了所有针对文件的创建、删除、重命名等操作。<br /></p>
+
+<hr />
+
+<h4 id="6-datanode的主要功能是什么">6 DataNode的主要功能是什么？</h4>
+
+<p>  负责管理它所在结点上存储的数据的读写,及存储数据（存放数据）<br /></p>
+
+<blockquote>
+  <p>DataNode和DataNode之间会进行进程通信</p>
+</blockquote>
+
+<hr />
+
+<h3 id="7-hadoop集群主要瓶颈是什么">7 Hadoop集群主要瓶颈是什么？</h3>
+
+<p>  不是CPU，主要瓶颈是<strong>磁盘IO</strong></p>
+
+<hr />
+
+<h3 id="8-ssh免密登录是为了什么目的是什么">8 ssh免密登录是为了什么/目的是什么？</h3>
+
+<ol>
+  <li>启动集群不需要输入密码</li>
+  <li>进程之间可以免密通信</li>
+  <li>免密登录<strong>不是必须的</strong></li>
+</ol>
+
+<hr />
+
+<h3 id="9-hadoop的启停命令">9 Hadoop的启停命令</h3>
+
+<ol>
+  <li>start-all.sh：启动所有的Hadoop守护进程</li>
+  <li>stop-all.sh：停止所有的Hadoop守护进程</li>
+  <li>start-dfs.sh：启动Hadoop HDFS守护进程NameNode、SecondaryNameNode和DataNode</li>
+  <li>stop-dfs.sh：停止Hadoop HDFS守护进程NameNode、SecondaryNameNode和DataNode</li>
+  <li>单独启动某个进程：hadoop-daemons.sh start name</li>
+  <li>单独关闭某个进程：hadoop-daemons.sh stop name</li>
+</ol>
+
+<hr />
+
+<h3 id="10-hadoop是否支持随机读取">10 Hadoop是否支持随机读取</h3>
+
+<p>  <strong>不支持</strong></p>
+
+<hr />
+
+<h3 id="11-指令相关">11 ：指令相关</h3>
+
+<h4 id="111列举两个hdfs常用的shell命令">11.1列举<strong>两个</strong>HDFS常用的shell命令</h4>
+
+<ol>
+  <li>Hadoop fs -ls <path> 用于展示在指定目录<path>下的文件详细信息</path></path></li>
+  <li>Hadoop fs -cat <path> 将指定文件的内容输出到标准输出</path></li>
+  <li>Hadoop fs -mkdir [-p] <path> 创建一个或多个文件夹，-p选型用于递归的创建子文件夹</path></li>
+  <li>Hadoop fs -cp <src> <dst> 将文件从源路径<src>复制到目标路径<dst></dst></src></dst></src></li>
+</ol>
+
+<h4 id="112-列举两个常用的java-api">11.2 列举两个常用的java API</h4>
+
+<ol>
+  <li>org.apache.hadoop.fs.FSDataInputStream：文件输入流，用于读Hadoop文件</li>
+  <li>org.apache.hadoop.fs.FSDataOutputStream:文件输出流，用于写Hadoop文件</li>
+  <li>org.apache.hadoop.fs.Path：用于表示hadoop文件系统中一个文件或者目录的路径</li>
+</ol>
+
+<hr />
+
+<h3 id="12-hadoop的特性">12 Hadoop的特性</h3>
+
+<h4 id="121-简答题的写法写5个不需要解释">12.1 简答题的写法（写5个，不需要解释）：</h4>
+
+<ol>
+  <li>高可靠性</li>
+  <li>高效性</li>
+  <li>高可扩展性</li>
+  <li>高容错性</li>
+  <li>成本低</li>
+  <li>运行的在linux系统上</li>
+  <li>支持各种编程语言</li>
+</ol>
+
+<h4 id="122-填空题的写法挑两个即可">12.2 填空题的写法（挑两个即可）：</h4>
+
+<ol>
+  <li>高可靠性</li>
+  <li>高效性</li>
+  <li>高可扩展性</li>
+  <li>高容错性</li>
+  <li>成本低</li>
+  <li>运行的在linux系统上</li>
+  <li>支持各种编程语言</li>
+</ol>
+
+<hr />
+
+<h2 id="综合应用50分">综合应用（50分）</h2>
+
+<h3 id="13-hive">13 Hive</h3>
+
+<p>  大致题面：br</p>
+
+<p>  给你一段数据（两种数据）：</p>
+
+<p>  第一种：100 \t zhansan \t 18<br />
+  第二种：100，zhansan，18</p>
+
+<h4 id="131-使用hql语言创建一个数据库并指定路径">13.1 使用HQL语言创建一个数据库,并指定路径</h4>
+
+<p>  use 指定的数据库;</p>
+
+<p>  如果是第一种数据则写：<br />
+  create table table_name(hight int, name string,age int) ROW FORMAT DELIMITED FIELDS TERMINATED BY ‘\t’</p>
+
+<p>  如果是第二种数据则写：<br />
+  create table table_name(hight int, name string,age int) ROW FORMAT DELIMITED FIELDS TERMINATED BY ‘,’</p>
+
+<h4 id="133-装载数据">13.3 装载数据</h4>
+
+<p>  load data [local] inpath <path路径> into table <这里写刚才创建的数据表名></这里写刚才创建的数据表名></path路径></p>
+
+<blockquote>
+  <p>这里local表示在本地文件中获取，即如果在本地才需要加上</p>
+</blockquote>
+
+<h4 id="134-删除非空数据库">13.4 删除（非空）数据库</h4>
+
+<p>  drop database <数据库名称> cascade</数据库名称></p>
+
+<hr />
+
+<h3 id="14-hbase">14 Hbase</h3>
+<h4 id="141-设计逻辑结构">14.1 设计逻辑结构</h4>
+<p>  题面：给你一个json串，设计一个逻辑结构</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/bigdata/1.png" alt="1.png" />
+    </div>
+    
+</div>
+
+<p>   答</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/bigdata/2.png" alt="2.png" />
+    </div>
+    
+</div>
+
+<h5 id="142-如何确定一个单元格">14.2 如何确定一个单元格？</h5>
+
+<p>  以下面这个为例。</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/bigdata/3.png" alt="3.png" />
+    </div>
+    
+</div>
+
+<p>   现在以确定一个姓名为LiuJun的人为例：<br />
+<strong>行键</strong>“201505002”，<strong>列族</strong>“info”<strong>限定符</strong>“email”和<strong>时间戳</strong>“1230016521”这四个坐标值确定的单元格[“201505002”,”Info”,”email”,”1230016521”]</p>
+
+<h5 id="1422问法二我们的单元格是通过坐标来决定的这四维坐标分别是什么">14.2.2问法二：我们的单元格是通过坐标来决定的，这四维坐标分别是什么？</h5>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="err">“</span><span class="n">行键</span><span class="err">”</span><span class="p">,</span><span class="err">”</span><span class="n">列族</span><span class="err">”</span><span class="p">,</span><span class="err">”</span><span class="n">列限定符</span><span class="err">”</span><span class="p">,</span><span class="err">”</span><span class="n">时间戳</span><span class="err">”</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h4 id="143-创建表">14.3 创建表</h4>
+
+<p>以第一题的表格为例：</p>
+
+<pre><code class="language-SQL">create 'myTable', {NAME =&gt; 'personal_info'}, {NAME =&gt; 'office_info'}
+</code></pre>
+<h4 id="144-插入数据">14.4 插入数据</h4>
+
+<p>  可以使用 put 命令向 HBase 表格中的特定单元格添加数据。以下是向名为 myTable 的表格中，行键为 row1，列族为 cf1，列名为 column1 的单元格添加数据的示例：</p>
+
+<pre><code class="language-SQL">put 'myTable', 'row1', 'cf1:column1', 'value1'
+</code></pre>
+
+<p>  其中，myTable 是表格的名称，row1 是行键，cf1 是列族名称，column1 是列名。要将值 value1 添加到该单元格，请将其作为最后一个参数传递给 put 命令。</p>
+
+<hr />
+
+<h3 id="15-mapreduce">15 mapreduce</h3>
+
+<h4 id="151mapreduce的编程规范">15.1MapReduce的编程规范</h4>
+
+<p>用户编写的程序分成三个部分：</p>
+
+<p><strong>1：Mapper</strong></p>
+<ol>
+  <li>用户自定义的Mapper要继承自己的父类</li>
+  <li>Mapper的输入数据是KV对的形式（KV类型可自己定义）</li>
+  <li>Mapper中的业务逻辑写在map0方法中</li>
+  <li>Mapper的输出数据是KV对的形式（KV类型可自定义）</li>
+</ol>
+
+<p><strong>2：Reducer</strong></p>
+<ol>
+  <li>用户自定义的Reducer要继承自己的父类</li>
+  <li>Reducer的输入数据类型对应Mapper输出数据类型</li>
+  <li>Reducer中的业务逻辑写在reduceO方法中</li>
+  <li>ReduceTask进程对每一组相同K的<kv>组调用一次reduce()方法</kv></li>
+</ol>
+
+<p><strong>3：Driver</strong><br />
+相当于Yam集群的客户端，用于提交我们整个程序到YARN集群，提交的是封装了MapReduce程序相关运行参数的job对象。</p>
+
+<h4 id="152自定义数据类型">15.2自定义数据类型</h4>
+
+<ol>
+  <li>实现Writable接口</li>
+  <li>空参构造</li>
+  <li>重写序列化方法</li>
+  <li>重写反序列化方法</li>
+  <li>如果需要把结果显示在文件中，则需要重写toString()</li>
+  <li>如果需要将自定义的bean放在key中传输，则要实现Comparable接口</li>
+</ol>
+
+<h4 id="153代码实现">15.3代码实现</h4>
+
+<h5 id="第一套卷子考点map逻辑实现">第一套卷子考点：map逻辑实现</h5>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/bigdata/4.png" alt="4.png" />
+    </div>
+    
+</div>
+
+<h5 id="1532第二套卷子考点driver逻辑实现">15.3.2第二套卷子考点：Driver逻辑实现</h5>
+
+<p>  7点全要考</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/bigdata/5.png" alt="5.png" />
+    </div>
+    
+</div>]]></content><author><name>Ranok</name></author><category term="big data" /><category term="java" /><category term="期末考试" /><summary type="html"><![CDATA[  “大数据技术原理与应用”是一门介绍大数据技术的课程。通过学习这门课程，学生可以深入了解大数据技术的原理和应用，并学会如何使用各种工具和技术来处理和管理大数据。此外，该课程还涵盖了大数据架构、设计和性能优化等方面的内容，这些知识对于开展大规模数据处理和分析项目非常重要。因此，“大数据技术原理与应用”对于计算机科学和数据科学领域的学生和从业人员，以及对大数据感兴趣的其他人士都有很大的意义。]]></summary></entry><entry><title type="html">xcpc模板积累</title><link href="http://localhost:4000/algorithm" rel="alternate" type="text/html" title="xcpc模板积累" /><published>2023-05-04T00:00:00+08:00</published><updated>2023-05-04T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-algorithm</id><content type="html" xml:base="http://localhost:4000/algorithm"><![CDATA[<p>  这是一个竞赛算法模板博客，用于应对xcpc等算法竞赛。此模板不一定是符合大众的模板，我会带有自己的风格。模板我会不断地更新，内容仅供参考。</p>
 
 <hr />
 <h1 id="目录">目录</h1>
@@ -4943,99 +5295,4 @@ index表示行标题，columns表示列标题，默认名称为从0开始的有�
 2 线程正在工作<br />
  线程正在工作<br /></p>
 
-<p>可以看到输出<strong>十分的杂乱</strong>，说明确实是多线程输出。</p>]]></content><author><name>Ranok</name></author><category term="python" /><category term="多线程" /><category term="多进程" /><summary type="html"><![CDATA[进程是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。线程是进程中的一部分，也是进程的的实际运作单位，它也是操作系统中的最小运算调度单位。]]></summary></entry><entry><title type="html">Jekyll 入门指导</title><link href="http://localhost:4000/jekyll" rel="alternate" type="text/html" title="Jekyll 入门指导" /><published>2022-12-04T00:00:00+08:00</published><updated>2022-12-04T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll"><![CDATA[<p>jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务,例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。</p>
-
-<hr />
-
-<h2 id="前言">前言</h2>
-
-<p>该博客的部署使用的就是Jekyll框架，Jekyll是一门很成熟的技术（也可能是有点老的缘故），他可以将makedown格式的文档转化成一个个静态的页面，即便你没有系统的学过前端三件套也可以制作自己的主页（真的太棒了！）。</p>
-
-<p>对于使用者来说只需要找到对应的资源模板，套用jekyll即可得到你想要的博客。</p>
-
-<p>如果你想要了解更多，这个是Jekyll官网的传送门 \(\Longrightarrow\) <a href="http://jekyllrb.com/">Jekyll</a></p>
-
-<hr />
-
-<h2 id="jekyll-基础知识">Jekyll 基础知识</h2>
-
-<h3 id="基本结构">基本结构</h3>
-<p>Jekyll 也遵循「约定大于配置」的基本原则，所以上手成本极低。</p>
-
-<p>在新创建的项目目录下，有几个重要的文件夹：</p>
-
-<h4 id="_layouts">_layouts</h4>
-
-<p>用于存放各种布局.html 的文件用于对.md文件的转换，在md设置的消息头中的变量，.md文件选择了layout布局之后，会引入对应的布局.html中，html会存放这些变量的默认值，</p>
-
-<h4 id="_drafts">_drafts</h4>
-
-<p>用于存放.md博客的草稿，不会再jekyll工作的时候生成，需要使用指令jekyll server –draft 才会显示在界面中</p>
-<h4 id="_posts">_posts</h4>
-
-<p>用于存放博客文章</p>
-<h4 id="_site">_site</h4>
-
-<p>用于存放项目构建完成之后所生成的静态文件，也就是说，静态网站的所有文件都会来源于此，其中 CSS 文件、JS 文件以及图片文件，会存放在该目录下的 assets 文件夹中。我们可以直接把该目录下的文件拿去部署</p>
-
-<p>除此之外，还有一些其他文件：</p>
-<h4 id="_configyml">_config.yml</h4>
-
-<p>是项目的配置文件，一些全局配置会写在这个文件内，比如 collections（后续推文会讲解），默认文件/路径，等等。总之，这里可以自定义很多东西</p>
-
-<h4 id="gitignore">.gitignore</h4>
-
-<p>创建项目时会自动生成，不需要纳入到 CVS 的文件存放于此，它可以限制一些元素在_site 中的生成</p>
-
-<h4 id="gemfile--gemfilelock">Gemfile &amp; Gemfile.lock</h4>
-
-<p>存放项目所依赖的 Ruby gems，里面拥有存放页面的样式信息，当新加入了主题配置之后，需要使用bundle install指令安装新的配置才能使用。需要使用新的主题时，需要在_config.yml文件的there做更改。注意，使用了新的布局之后可能会导致一些布局不可用，例如“post”，因为在新的主题上可能没有定义这样的布局。所以使用新的布局之后要在_layout中查看一下是否有对应的布局可以使用。</p>
-
-<h4 id="aboutmd">about.md</h4>
-
-<p>会存放有关在界面中的about的内容，生成的页面会出现在主界面上的位置，同理命名其他的文件也会在主界面的上方出现</p>
-
-<hr />
-
-<h2 id="makedown-语法">makedown 语法</h2>
-<h4 id="permalink">permalink</h4>
-<p>可以用于自定义所创建页面的URL。例如，permalink：/Jekyll/ 表示创建的页面会在主页面URL中后加上/Jekyll</p>
-
-<h4 id="layout">layout</h4>
-<p>表示自己所使用的界面样式，常见的值有post</p>
-
-<h4 id="_configyml-1">._config.yml</h4>
-
-<ol>
-  <li>defaults：可用于写一些默认值，例如为layout设置默认值（要注意以下冒号的位置）
-    <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">defaults</span><span class="pi">:</span>
-  <span class="pi">-</span> 
-<span class="err"> </span><span class="na">scope</span><span class="pi">:</span>
-   <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>  <span class="c1"># 这里填写此默认值影响的返回路径</span>
- <span class="na">values</span><span class="pi">:</span>   <span class="c1"># 这里补充默认值</span>
-     <span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post"</span>
-</code></pre></div>    </div>
-    <p>再例如对图片文件的加载：</p>
-    <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">defaults</span><span class="pi">:</span>
-  <span class="pi">-</span>
-<span class="err"> </span><span class="na">scope</span><span class="pi">:</span>
-   <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">assets/img"</span>
- <span class="na">values</span><span class="pi">:</span>
-   <span class="na">image</span><span class="pi">:</span> <span class="no">true</span>
-</code></pre></div>    </div>
-    <p>该例子表示，在html文件中可能加载图片信息的位置会在，assets/img的文件夹下寻找</p>
-  </li>
-</ol>
-
-<hr />
-<h2 id="常用指令">常用指令</h2>
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">jekyll new 工程名</code>  创建工程</li>
-  <li><code class="language-plaintext highlighter-rouge">bundle exec jekyll server</code>   启动项目，启动项目之后可以在浏览器中访问http://127.0.0.1:400/看到效果。</li>
-  <li><code class="language-plaintext highlighter-rouge">jekyll new PATH --blank</code>  创建新的空项目</li>
-  <li><code class="language-plaintext highlighter-rouge">jekyll build</code> 或 <code class="language-plaintext highlighter-rouge">jekyll b</code> 构建项目，生成可部署的 _site 目录</li>
-  <li><code class="language-plaintext highlighter-rouge">jekyll serve</code> 或 <code class="language-plaintext highlighter-rouge">jekyll s</code>  构建并运行项目，会自动监听文件变化，不需要反复执行</li>
-  <li><code class="language-plaintext highlighter-rouge">jekyll clean</code>  清除所有的构建产物</li>
-  <li><code class="language-plaintext highlighter-rouge">jekyll new-theme</code>  创建一个新的主题脚手架</li>
-  <li><code class="language-plaintext highlighter-rouge">jekyll doctor</code>  诊断，输出所有已经废弃的依赖包或者有问题的配置</li>
-</ol>]]></content><author><name>Ranok</name></author><category term="Jekyll" /><category term="web前端" /><summary type="html"><![CDATA[jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务,例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。]]></summary></entry></feed>
+<p>可以看到输出<strong>十分的杂乱</strong>，说明确实是多线程输出。</p>]]></content><author><name>Ranok</name></author><category term="python" /><category term="多线程" /><category term="多进程" /><summary type="html"><![CDATA[进程是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。线程是进程中的一部分，也是进程的的实际运作单位，它也是操作系统中的最小运算调度单位。]]></summary></entry></feed>
