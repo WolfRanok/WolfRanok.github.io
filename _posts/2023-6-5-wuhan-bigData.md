@@ -31,7 +31,7 @@ permalink: bigdata # 这条会将该界面的URL自定义
 
 ### 2. 单机模式和伪分布式模式的区别
 
-&emsp;&emsp;单机模式：Hadoop只在一台机器上运行，存储采用本地文件系统，没有采用分布式翁建系统HDFS。<br>
+&emsp;&emsp;单机模式：Hadoop只在一台机器上运行，存储采用本地文件系统，没有采用分布式文件系统HDFS。<br>
 &emsp;&emsp;伪分布式：Hadoop存储采用分布式文件系统HDFS，而且HDFS的名称结点和数据结点位于集群的不同机器上。
 
 ---
@@ -51,11 +51,11 @@ permalink: bigdata # 这条会将该界面的URL自定义
 
 ##### 3.3.1问法一：fs.defaultFS的参数在哪一个配置文件中进行配置？
 
-&emsp;&emsp;在sore-site.xml中配置
+&emsp;&emsp;在core-site.xml中配置
 
 ##### 3.3.3问法二：配置NameBode地址时由哪一个参数指定的
 
-&emsp;&emsp;由core-site.xml中的dfs.namenode.dir.参数指定
+&emsp;&emsp;由core-site.xml中的dfs.namenode.dir参数指定
 
 ---
 
@@ -76,11 +76,11 @@ permalink: bigdata # 这条会将该界面的URL自定义
 
 #### 4.2 简答题的问法：请举两个核心组件并说明其作用
 
-1.	HBas：是一个提供高可靠性、高性能、可伸缩、实时读写、分布式的列式数据库
-2.	Hive：是一个数据库工具
+1.	HBase：是一个提供高可靠性、高性能、可伸缩、实时读写、分布式的列式数据库
+2.	Hive：是一个基于hadoop数据仓库工具
 3.	Pig：是一种数据流语言和运行环境
-4.	Mahout：是一个开源的项目，它提供了一些课扩展的机器学习领域经典算法的实现
-5.	ZooKeeper：是一个高效和可靠的协同工作系统。5 Namenode
+4.	Mahout：是一个开源的项目，它提供了一些可扩展的机器学习领域经典算法的实现
+5.	ZooKeeper：是一个高效和可靠的协同工作系统。
 
 ---
 
@@ -99,7 +99,7 @@ permalink: bigdata # 这条会将该界面的URL自定义
 #### 5.3在HDFS中保存着两个数据结构，请说明这两个数据结构是什么，有什么用？
 
 &emsp;&emsp;这两个数据结构分别是FsImage和Editlog。<br>
-&emsp;&emsp;FsImageL用于维护文件系统树以及文件树中所有的文件和文件夹的元数据。<br>
+&emsp;&emsp;FsImage用于维护文件系统树以及文件树中所有的文件和文件夹的元数据。<br>
 &emsp;&emsp;EditLog用于操作日志文件以及记录了所有针对文件的创建、删除、重命名等操作。<br>
 
 ---
