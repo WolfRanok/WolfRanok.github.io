@@ -274,13 +274,13 @@ put 'myTable', 'row1', 'cf1:column1', 'value1'
 **1：Mapper**
 1. 用户自定义的Mapper要继承自己的父类
 2. Mapper的输入数据是KV对的形式（KV类型可自己定义）
-3. Mapper中的业务逻辑写在map0方法中
+3. Mapper中的业务逻辑写在map()方法中
 4. Mapper的输出数据是KV对的形式（KV类型可自定义）
 
 **2：Reducer**
 1. 用户自定义的Reducer要继承自己的父类
 2. Reducer的输入数据类型对应Mapper输出数据类型
-3. Reducer中的业务逻辑写在reduceO方法中
+3. Reducer中的业务逻辑写在reduce()方法中
 4. ReduceTask进程对每一组相同K的<kv>组调用一次reduce()方法
 
 **3：Driver**<br>
