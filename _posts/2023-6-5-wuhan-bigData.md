@@ -199,6 +199,9 @@ permalink: bigdata # 这条会将该界面的URL自定义
 #### 13.1 使用HQL语言创建一个数据库,并指定路径
 
 &emsp;&emsp;use 指定的数据库;
+&emsp;&emsp;create database database_name location 'path';
+
+#### 13.2 在指定的数据库中创建表
 
 &emsp;&emsp;如果是第一种数据则写：<br>
 &emsp;&emsp;create table table_name(hight int, name string,age int) ROW FORMAT DELIMITED FIELDS TERMINATED BY ‘\t’
