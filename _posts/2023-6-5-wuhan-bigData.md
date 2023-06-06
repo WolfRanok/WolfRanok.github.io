@@ -211,7 +211,7 @@ permalink: bigdata # 这条会将该界面的URL自定义
 
 #### 13.3 装载数据
 
-&emsp;&emsp;load data [local] inpath <path路径> into table <这里写刚才创建的数据表名>
+&emsp;&emsp;load data [local] inpath < path路径> into table <这里写刚才创建的数据表名>
 
 > 这里local表示在本地文件中获取，即如果在本地才需要加上
 
