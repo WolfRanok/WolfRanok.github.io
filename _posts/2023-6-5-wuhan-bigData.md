@@ -281,7 +281,7 @@ put 'myTable', 'row1', 'cf1:column1', 'value1'
 1. 用户自定义的Reducer要继承自己的父类
 2. Reducer的输入数据类型对应Mapper输出数据类型
 3. Reducer中的业务逻辑写在reduce()方法中
-4. ReduceTask进程对每一组相同K的<kv>组调用一次reduce()方法
+4. ReduceTask进程对每一组相同K的< k,v>组调用一次reduce()方法
 
 **3：Driver**<br>
 相当于Yam集群的客户端，用于提交我们整个程序到YARN集群，提交的是封装了MapReduce程序相关运行参数的job对象。
