@@ -135,6 +135,8 @@ permalink: bigdata # 这条会将该界面的URL自定义
 4.	stop-dfs.sh：停止Hadoop HDFS守护进程NameNode、SecondaryNameNode和DataNode
 5.	单独启动某个进程：hadoop-daemons.sh start name
 6.	单独关闭某个进程：hadoop-daemons.sh stop name
+7.  启动YARN命令：start-yarn.sh
+8.  关闭YARN命令：stop-yarn.sh
 
 ---
 
