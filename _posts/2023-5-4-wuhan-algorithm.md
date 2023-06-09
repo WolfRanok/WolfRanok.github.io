@@ -17,10 +17,10 @@ thumbnail: assets/img/thumbnails/feature-img/algorithm.jpg # 文件路径在gith
 - [目录](#目录)
 - [算法模板积累](#算法模板积累)
   - [图论](#图论)
-    - [单元最短路](#单元最短路)
+    - [单源最短路](#单源最短路)
       - [dijiestal](#dijiestal)
       - [SPFA](#spfa)
-    - [多远最短路](#多远最短路)
+    - [多源最短路](#多源最短路)
       - [Floyd](#floyd)
     - [最小生成树](#最小生成树)
       - [prim](#prim)
@@ -39,6 +39,7 @@ thumbnail: assets/img/thumbnails/feature-img/algorithm.jpg # 文件路径在gith
     - [背包问题](#背包问题)
       - [完全背包](#完全背包)
       - [多重背包的二进制优化](#多重背包的二进制优化)
+    - [数位dp](#数位dp)
   - [数据结构](#数据结构)
     - [树状数组](#树状数组)
     - [线段树](#线段树)
@@ -57,7 +58,7 @@ thumbnail: assets/img/thumbnails/feature-img/algorithm.jpg # 文件路径在gith
 
 ---
 
-### 单元最短路
+### 单源最短路
 
 ---
 
@@ -157,7 +158,7 @@ int spfa(int u){
 
 ---
 
-### 多远最短路
+### 多源最短路
 
 ---
 
@@ -629,7 +630,52 @@ while(n--){
 }
 
 ```
+### 数位dp
+这个板子不具有一般性，请结合题目来理解：
 
+如果一个正整数每一个数位都是 互不相同 的，我们称它是 特殊整数 。
+
+给你一个正整数 $$ n $$ ，请你返回区间 $$[1, n]$$ 之间特殊整数的数目。
+
+示例：<br>
+输入:
+```py
+    20
+```
+
+输出
+```py
+    19
+```
+
+
+```c++
+int f[15][1<<10];   // 合法情况下（第一个数字允许是0），这里存储的是一般情况下（不受限制）的情况
+int n;
+string s;   // 字符串表示的数字
+
+// is_limt表示是否受到了前面数字的约束
+// is_num第i个数前面是否填了数字
+int dfs(int i,int mask,bool is_limt,bool is_num){
+    if(i==n) return is_num; // 合法返回1
+        
+    if(!is_limt&&is_num&&f[i][mask]!=-1) return f[i][mask];
+        
+    int res=0;
+    if(!is_num) res=dfs(i+1,mask,false,false);  // 前面全是0的状态是可以传导的，且前面是0那就对后面的数字不存在约束
+
+    // 如果受到限制，那么就必须要设置最大值为s[i]，否则最大值可以到9
+    int up=is_limt?s[i]-'0':9;
+
+    // is_sum==false表示前面没有填写数字，那么这一位需要从1开始，否则可以从0开始
+    for(int d=1-is_num;d<=up;d++)   // 遍历选择的数字
+        if(!(mask >> d & 1))    // 这个数字没有填写过
+            res+=dfs(i+1,mask|(1<<d),d==up&&is_limt,true);
+    if(!is_limt&&is_num) f[i][mask]=res;
+    return res;
+
+}
+```
 ---
 ## 数据结构
 ---

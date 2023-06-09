@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-06T00:07:40+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">大数据技术原理与应用</title><link href="http://localhost:4000/bigdata" rel="alternate" type="text/html" title="大数据技术原理与应用" /><published>2023-06-05T00:00:00+08:00</published><updated>2023-06-05T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-bigData</id><content type="html" xml:base="http://localhost:4000/bigdata"><![CDATA[<p>  “大数据技术原理与应用”是一门介绍大数据技术的课程。通过学习这门课程，学生可以深入了解大数据技术的原理和应用，并学会如何使用各种工具和技术来处理和管理大数据。此外，该课程还涵盖了大数据架构、设计和性能优化等方面的内容，这些知识对于开展大规模数据处理和分析项目非常重要。因此，“大数据技术原理与应用”对于计算机科学和数据科学领域的学生和从业人员，以及对大数据感兴趣的其他人士都有很大的意义。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-09T17:45:32+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">大数据技术原理与应用</title><link href="http://localhost:4000/bigdata" rel="alternate" type="text/html" title="大数据技术原理与应用" /><published>2023-06-05T00:00:00+08:00</published><updated>2023-06-05T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-bigData</id><content type="html" xml:base="http://localhost:4000/bigdata"><![CDATA[<p>  “大数据技术原理与应用”是一门介绍大数据技术的课程。通过学习这门课程，学生可以深入了解大数据技术的原理和应用，并学会如何使用各种工具和技术来处理和管理大数据。此外，该课程还涵盖了大数据架构、设计和性能优化等方面的内容，这些知识对于开展大规模数据处理和分析项目非常重要。因此，“大数据技术原理与应用”对于计算机科学和数据科学领域的学生和从业人员，以及对大数据感兴趣的其他人士都有很大的意义。</p>
 
 <hr />
 <h1 id="前言">前言</h1>
@@ -25,7 +25,8 @@
 
 <h3 id="2-单机模式和伪分布式模式的区别">2. 单机模式和伪分布式模式的区别</h3>
 
-<p>  单机模式只使用一个进程来运行所有的Hadoop服务和组件，而伪分布式模式则模拟了一个真正的分布式环境，它启动了多个进程来运行不同的Hadoop服务和组件，并且这些进程都能够相互通信。因此，伪分布式模式可以更好地模拟实际的生产环境，并且可以更好地测试Hadoop应用程序的性能和可靠性。</p>
+<p>  单机模式：Hadoop只在一台机器上运行，存储采用本地文件系统，没有采用分布式文件系统HDFS。<br />
+  伪分布式：Hadoop存储采用分布式文件系统HDFS，而且HDFS的名称结点和数据结点位于集群的不同机器上。</p>
 
 <hr />
 
@@ -43,11 +44,11 @@
 
 <h5 id="331问法一fsdefaultfs的参数在哪一个配置文件中进行配置">3.3.1问法一：fs.defaultFS的参数在哪一个配置文件中进行配置？</h5>
 
-<p>  在sore-site.xml中配置</p>
+<p>  在core-site.xml中配置</p>
 
 <h5 id="333问法二配置namebode地址时由哪一个参数指定的">3.3.3问法二：配置NameBode地址时由哪一个参数指定的</h5>
 
-<p>  由core-site.xml中的dfs.namenode.dir.参数指定</p>
+<p>  由core-site.xml中的dfs.namenode.dir参数指定</p>
 
 <hr />
 
@@ -73,11 +74,11 @@
 <h4 id="42-简答题的问法请举两个核心组件并说明其作用">4.2 简答题的问法：请举两个核心组件并说明其作用</h4>
 
 <ol>
-  <li>HBas：是一个提供高可靠性、高性能、可伸缩、实时读写、分布式的列式数据库</li>
-  <li>Hive：是一个数据库工具</li>
+  <li>HBase：是一个提供高可靠性、高性能、可伸缩、实时读写、分布式的列式数据库</li>
+  <li>Hive：是一个基于hadoop数据仓库工具</li>
   <li>Pig：是一种数据流语言和运行环境</li>
-  <li>Mahout：是一个开源的项目，它提供了一些课扩展的机器学习领域经典算法的实现</li>
-  <li>ZooKeeper：是一个高效和可靠的协同工作系统。5 Namenode</li>
+  <li>Mahout：是一个开源的项目，它提供了一些可扩展的机器学习领域经典算法的实现</li>
+  <li>ZooKeeper：是一个高效和可靠的协同工作系统。</li>
 </ol>
 
 <hr />
@@ -99,7 +100,7 @@
 <h4 id="53在hdfs中保存着两个数据结构请说明这两个数据结构是什么有什么用">5.3在HDFS中保存着两个数据结构，请说明这两个数据结构是什么，有什么用？</h4>
 
 <p>  这两个数据结构分别是FsImage和Editlog。<br />
-  FsImageL用于维护文件系统树以及文件树中所有的文件和文件夹的元数据。<br />
+  FsImage用于维护文件系统树以及文件树中所有的文件和文件夹的元数据。<br />
   EditLog用于操作日志文件以及记录了所有针对文件的创建、删除、重命名等操作。<br /></p>
 
 <hr />
@@ -139,6 +140,8 @@
   <li>stop-dfs.sh：停止Hadoop HDFS守护进程NameNode、SecondaryNameNode和DataNode</li>
   <li>单独启动某个进程：hadoop-daemons.sh start name</li>
   <li>单独关闭某个进程：hadoop-daemons.sh stop name</li>
+  <li>启动YARN命令：start-yarn.sh</li>
+  <li>关闭YARN命令：stop-yarn.sh</li>
 </ol>
 
 <hr />
@@ -211,9 +214,12 @@
 
 <h4 id="131-使用hql语言创建一个数据库并指定路径">13.1 使用HQL语言创建一个数据库,并指定路径</h4>
 
-<p>  use 指定的数据库;</p>
+<p>  create database database_name location ‘path’;</p>
 
-<p>  如果是第一种数据则写：<br />
+<h4 id="132-在指定的数据库中创建表">13.2 在指定的数据库中创建表</h4>
+
+<p>  use 指定的数据库;<br />
+  如果是第一种数据则写：<br />
   create table table_name(hight int, name string,age int) ROW FORMAT DELIMITED FIELDS TERMINATED BY ‘\t’</p>
 
 <p>  如果是第二种数据则写：<br />
@@ -221,7 +227,7 @@
 
 <h4 id="133-装载数据">13.3 装载数据</h4>
 
-<p>  load data [local] inpath <path路径> into table <这里写刚才创建的数据表名></这里写刚才创建的数据表名></path路径></p>
+<p>  load data [local] inpath &lt; path路径&gt; into table <这里写刚才创建的数据表名></这里写刚才创建的数据表名></p>
 
 <blockquote>
   <p>这里local表示在本地文件中获取，即如果在本地才需要加上</p>
@@ -302,7 +308,7 @@
 <ol>
   <li>用户自定义的Mapper要继承自己的父类</li>
   <li>Mapper的输入数据是KV对的形式（KV类型可自己定义）</li>
-  <li>Mapper中的业务逻辑写在map0方法中</li>
+  <li>Mapper中的业务逻辑写在map()方法中</li>
   <li>Mapper的输出数据是KV对的形式（KV类型可自定义）</li>
 </ol>
 
@@ -310,12 +316,12 @@
 <ol>
   <li>用户自定义的Reducer要继承自己的父类</li>
   <li>Reducer的输入数据类型对应Mapper输出数据类型</li>
-  <li>Reducer中的业务逻辑写在reduceO方法中</li>
-  <li>ReduceTask进程对每一组相同K的<kv>组调用一次reduce()方法</kv></li>
+  <li>Reducer中的业务逻辑写在reduce()方法中</li>
+  <li>ReduceTask进程对每一组相同K的&lt; k,v&gt;组调用一次reduce()方法</li>
 </ol>
 
 <p><strong>3：Driver</strong><br />
-相当于Yam集群的客户端，用于提交我们整个程序到YARN集群，提交的是封装了MapReduce程序相关运行参数的job对象。</p>
+相当于Yarn集群的客户端，用于提交我们整个程序到YARN集群，提交的是封装了MapReduce程序相关运行参数的job对象。</p>
 
 <h4 id="152自定义数据类型">15.2自定义数据类型</h4>
 
@@ -361,13 +367,13 @@
     <ul>
       <li><a href="#图论">图论</a>
         <ul>
-          <li><a href="#单元最短路">单元最短路</a>
+          <li><a href="#单源最短路">单源最短路</a>
             <ul>
               <li><a href="#dijiestal">dijiestal</a></li>
               <li><a href="#spfa">SPFA</a></li>
             </ul>
           </li>
-          <li><a href="#多远最短路">多远最短路</a>
+          <li><a href="#多源最短路">多源最短路</a>
             <ul>
               <li><a href="#floyd">Floyd</a></li>
             </ul>
@@ -404,6 +410,7 @@
               <li><a href="#多重背包的二进制优化">多重背包的二进制优化</a></li>
             </ul>
           </li>
+          <li><a href="#数位dp">数位dp</a></li>
         </ul>
       </li>
       <li><a href="#数据结构">数据结构</a>
@@ -433,7 +440,7 @@
 
 <hr />
 
-<h3 id="单元最短路">单元最短路</h3>
+<h3 id="单源最短路">单源最短路</h3>
 
 <hr />
 
@@ -531,7 +538,7 @@
 
 <hr />
 
-<h3 id="多远最短路">多远最短路</h3>
+<h3 id="多源最短路">多源最短路</h3>
 
 <hr />
 
@@ -992,7 +999,48 @@
 <span class="p">}</span>
 
 </code></pre></div></div>
+<h3 id="数位dp">数位dp</h3>
+<p>这个板子不具有一般性，请结合题目来理解：</p>
 
+<p>如果一个正整数每一个数位都是 互不相同 的，我们称它是 特殊整数 。</p>
+
+<p>给你一个正整数 \(n\) ，请你返回区间 \([1, n]\) 之间特殊整数的数目。</p>
+
+<p>示例：<br />
+输入:</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="mi">20</span>
+</code></pre></div></div>
+
+<p>输出</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="mi">19</span>
+</code></pre></div></div>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">f</span><span class="p">[</span><span class="mi">15</span><span class="p">][</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">10</span><span class="p">];</span>   <span class="c1">// 合法情况下（第一个数字允许是0），这里存储的是一般情况下（不受限制）的情况</span>
+<span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+<span class="n">string</span> <span class="n">s</span><span class="p">;</span>   <span class="c1">// 字符串表示的数字</span>
+
+<span class="c1">// is_limt表示是否受到了前面数字的约束</span>
+<span class="c1">// is_num第i个数前面是否填了数字</span>
+<span class="kt">int</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">,</span><span class="kt">int</span> <span class="n">mask</span><span class="p">,</span><span class="kt">bool</span> <span class="n">is_limt</span><span class="p">,</span><span class="kt">bool</span> <span class="n">is_num</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="n">n</span><span class="p">)</span> <span class="k">return</span> <span class="n">is_num</span><span class="p">;</span> <span class="c1">// 合法返回1</span>
+        
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">is_limt</span><span class="o">&amp;&amp;</span><span class="n">is_num</span><span class="o">&amp;&amp;</span><span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">mask</span><span class="p">]</span><span class="o">!=-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">mask</span><span class="p">];</span>
+        
+    <span class="kt">int</span> <span class="n">res</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">is_num</span><span class="p">)</span> <span class="n">res</span><span class="o">=</span><span class="n">dfs</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">mask</span><span class="p">,</span><span class="nb">false</span><span class="p">,</span><span class="nb">false</span><span class="p">);</span>  <span class="c1">// 前面全是0的状态是可以传导的，且前面是0那就对后面的数字不存在约束</span>
+
+    <span class="c1">// 如果受到限制，那么就必须要设置最大值为s[i]，否则最大值可以到9</span>
+    <span class="kt">int</span> <span class="n">up</span><span class="o">=</span><span class="n">is_limt</span><span class="o">?</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="sc">'0'</span><span class="o">:</span><span class="mi">9</span><span class="p">;</span>
+
+    <span class="c1">// is_sum==false表示前面没有填写数字，那么这一位需要从1开始，否则可以从0开始</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">d</span><span class="o">=</span><span class="mi">1</span><span class="o">-</span><span class="n">is_num</span><span class="p">;</span><span class="n">d</span><span class="o">&lt;=</span><span class="n">up</span><span class="p">;</span><span class="n">d</span><span class="o">++</span><span class="p">)</span>   <span class="c1">// 遍历选择的数字</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">mask</span> <span class="o">&gt;&gt;</span> <span class="n">d</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">))</span>    <span class="c1">// 这个数字没有填写过</span>
+            <span class="n">res</span><span class="o">+=</span><span class="n">dfs</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">mask</span><span class="o">|</span><span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">d</span><span class="p">),</span><span class="n">d</span><span class="o">==</span><span class="n">up</span><span class="o">&amp;&amp;</span><span class="n">is_limt</span><span class="p">,</span><span class="nb">true</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">is_limt</span><span class="o">&amp;&amp;</span><span class="n">is_num</span><span class="p">)</span> <span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">mask</span><span class="p">]</span><span class="o">=</span><span class="n">res</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">res</span><span class="p">;</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
 <hr />
 <h2 id="数据结构">数据结构</h2>
 <hr />
