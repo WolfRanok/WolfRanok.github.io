@@ -48,6 +48,7 @@ thumbnail: assets/img/thumbnails/feature-img/algorithm.jpg # 文件路径在gith
     - [矩阵快速幂](#矩阵快速幂)
     - [逆元计算](#逆元计算)
     - [欧拉筛](#欧拉筛)
+    - [博弈论](#博弈论)
 
 ---
 # 算法模板积累
@@ -650,7 +651,7 @@ while(n--){
 
 
 ```c++
-int f[15][1<<10];   // 合法情况下（第一个数字允许是0），这里存储的是一般情况下（不受限制）的情况
+int f[15][1<<10];   // 前面出现了数字的合法情况下（当前数字允许是0），这里存储的是一般情况下（不受限制）的情况
 int n;
 string s;   // 字符串表示的数字
 
@@ -853,5 +854,68 @@ void primes(){
             v[i*prime[j]]=prime[j];
         }
     }
+}
+```
+
+### 博弈论
+
+给定一个有 N
+
+个节点的有向无环图，图中某些节点上有棋子，两名玩家交替移动棋子。
+
+玩家每一步可将任意一颗棋子沿一条有向边移动到另一个点，无法移动者输掉游戏。
+
+对于给定的图和棋子初始位置，双方都会采取最优的行动，询问先手必胜还是先手必败。
+
+对于一个有向无环图来说，如果只有一个棋子那么那个棋子的位置的sg值为0则必败，否则必胜<br>
+如果有多个棋子那么取这些棋子的sg的异或值，异或值为0则必败，否则必胜。
+
+```c++
+#include<bits/stdc++.h>
+using namespace std;
+
+const int N=1e5+10;
+
+int head[N],edge[N],Next[N],tt;
+int n,m,p;
+int a[N];
+void add(int x,int y){
+	edge[++tt]=y;
+	Next[tt]=head[x];
+	head[x]=tt;
+}
+int h[N];
+
+int sg(int x){
+	if(h[x]!=-1) return h[x];
+	unordered_map<int,bool>mp;
+	for(int i=head[x];i;i=Next[i]){
+		int y=edge[i];
+		mp[sg(y)]=true;
+	}
+	for(int i=0;i<=n;i++){
+		if(!mp[i]){
+			h[x]=i;
+			break;
+		}
+	}
+	return h[x];
+}
+
+int main(){
+	scanf("%d %d %d",&n,&m,&p);
+	for(int i=1,x,y;i<=m;i++){
+		scanf("%d %d",&x,&y);
+		add(x,y);
+	}
+	memset(h,-1,sizeof h);
+	int res=0;
+	for(int i=1;i<=p;i++){
+		scanf("%d",a+i);
+		res^=sg(a[i]);	// 用于计算sj函数 
+	}
+	if(res==0) puts("lose"); 
+	else puts("win");
+	return 0;
 }
 ```
