@@ -1,4 +1,1715 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-09T22:34:20+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">大数据技术原理与应用</title><link href="http://localhost:4000/bigdata" rel="alternate" type="text/html" title="大数据技术原理与应用" /><published>2023-06-05T00:00:00+08:00</published><updated>2023-06-05T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-bigData</id><content type="html" xml:base="http://localhost:4000/bigdata"><![CDATA[<p>  “大数据技术原理与应用”是一门介绍大数据技术的课程。通过学习这门课程，学生可以深入了解大数据技术的原理和应用，并学会如何使用各种工具和技术来处理和管理大数据。此外，该课程还涵盖了大数据架构、设计和性能优化等方面的内容，这些知识对于开展大规模数据处理和分析项目非常重要。因此，“大数据技术原理与应用”对于计算机科学和数据科学领域的学生和从业人员，以及对大数据感兴趣的其他人士都有很大的意义。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-11T22:08:23+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">毛概期末整理</title><link href="http://localhost:4000/maogai" rel="alternate" type="text/html" title="毛概期末整理" /><published>2023-06-11T00:00:00+08:00</published><updated>2023-06-11T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-maogai</id><content type="html" xml:base="http://localhost:4000/maogai"><![CDATA[<p>  毛概是毛泽东思想和中国特色社会主义理论体系概论的简称。学习毛概有利于刚进入大学的学生思想的转变，更好的完成大学期间学习任务，提高大学生自我素质，增加应对现实中各种挑战的能力，尽快适应新的学习生活环境，完成大学期间的各项发展任务，成为社会发展的有用之才。</p>
+
+<hr />
+
+<h1 id="前言">前言</h1>
+<p>  本次博客整理，针对毛概期末考试，知识点较多，请提前准备。<br />
+  其中选择题部分可以在，学习通中找到对应的答案。本博客也对此作出整理</p>
+
+<hr />
+
+<h1 id="目录">目录</h1>
+
+<ul>
+  <li><a href="#前言">前言</a></li>
+  <li><a href="#目录">目录</a></li>
+  <li><a href="#正文">正文</a>
+    <ul>
+      <li><a href="#选择题">选择题</a>
+        <ul>
+          <li><a href="#导论部分">导论部分</a></li>
+          <li><a href="#第一章">第一章</a></li>
+          <li><a href="#第二章">第二章</a></li>
+          <li><a href="#第三章">第三章</a></li>
+          <li><a href="#第四章">第四章</a></li>
+          <li><a href="#第五章">第五章</a></li>
+          <li><a href="#第六章">第六章</a></li>
+          <li><a href="#第七章">第七章</a></li>
+          <li><a href="#第八章">第八章</a></li>
+          <li><a href="#新思想第一章">新思想第一章</a></li>
+          <li><a href="#新思想第二章">新思想第二章</a></li>
+          <li><a href="#新思想第三章">新思想第三章</a></li>
+          <li><a href="#新思想第四章">新思想第四章</a></li>
+          <li><a href="#新思想第五章">新思想第五章</a></li>
+          <li><a href="#新思想第六章">新思想第六章</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h1 id="正文">正文</h1>
+
+<h2 id="选择题">选择题</h2>
+
+<h3 id="导论部分">导论部分</h3>
+<p>1
+【单选题】马克思主义中国化的第一个理论成果是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、毛泽东思想
+B、邓小平理论
+C、“三个代表”重要思想
+D、科学发展观
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>2
+【单选题】马克思主义中国化的命题是（ ）提出的。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、马克思
+B、列宁
+C、毛泽东
+D、邓小平
+</code></pre></div></div>
+
+<p>正确答案： C</p>
+
+<p>3
+【单选题】在毛泽东思想的指导下，党领导人民完成了新民主主义革命，建立了中华人民共和国，中华民族从此（ ）了。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、站起来
+B、富起来
+C、强起来
+D、大起来
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>4
+【单选题】100年来，中国共产党团结带领中国人民进行的一切奋斗、一切牺牲、一切创造，归结起来就是一个主题（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、实现民族独立、人民解放
+B、实现中华民族伟大复兴
+C、实现现代化
+D、实现共同富裕
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>5
+【单选题】马克思主义中国化最新成果是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、邓小平理论
+B、“三个代表”重要思想
+C、科学发展观
+D、习近平新时代中国特色社会主义思想
+</code></pre></div></div>
+
+<p>正确答案： D</p>
+
+<p>1
+【多选题】马克思主义中国化的原因包括（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、解决中国实际问题的客观需要
+B、马克思主义理论发展的内在要求
+C、马克思主义理论提供了解决中国问题的现成答案
+D、马克思主义只能在中国发展
+</code></pre></div></div>
+
+<p>正确答案： AB</p>
+
+<p>2
+【多选题】马克思主义中国化的两大理论成果是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、毛泽东思想
+B、邓小平理论
+C、中国特色社会主义理论体系
+D、习近平新时代中国特色社会主义思想
+</code></pre></div></div>
+
+<p>正确答案： AC</p>
+
+<p>3
+【多选题】中国特色社会主义理论体系包括（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、邓小平理论
+B、“三个代表”重要思想
+C、科学发展观
+D、习近平新时代中国特色社会主义思想
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<p>4
+【多选题】中国共产党百年创造的伟大成就是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、创造了新民主主义革命的伟大成就
+B、创造了社会主义革命和建设的伟大成就
+C、创造了改革开放和社会主义现代化建设的伟大成就
+D、创造了新时代中国特色社会主义的伟大成就
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<p>5
+【多选题】学习本课程的目的是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、准确把握马克思主义中国化进程中形成的理论成果
+B、深刻认识中国共产党领导人民进行的革命、建设、改革的历史进程、历史变革、历史成就
+C、透彻理解中国共产党在新时代坚持的基本理论、基本路线、基本方略
+D、切实提升运用马克思主义立场、观点和方法认识问题、分析问题和解决问题能力
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<hr />
+
+<h3 id="第一章">第一章</h3>
+
+<p>1
+【单选题】毛泽东思想形成的时代背景是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、和平与发展
+B、战争与革命
+C、改革开放
+D、信息革命
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>2
+【单选题】毛泽东思想形成的实践基础是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、党领导的革命和建设的实践
+B、党领导的改革开放
+C、党领导的新民主主义革命
+D、党领导的社会主义建设
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>3
+【单选题】把毛泽东思想确立为党的指导思想并写入党章是在（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、中共六大
+B、中共七大
+C、中共八大
+D、中共九大
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>4
+【单选题】毛泽东思想围绕的主题是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、中国革命和建设
+B、中国改革开放
+C、中国特色社会主义建设
+D、中华民族伟大复兴
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>5
+【单选题】党的根本工作路线是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、实事求是
+B、群众路线
+C、独立自主
+D、为人民服务
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>1
+【多选题】毛泽东思想是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、马克思主义中国化的第一个理论成果
+B、马克思列宁主义在中国的运用和发展
+C、关于中国革命和建设的正确理论原则和经验总结
+D、中国共产党集体智慧的结晶
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<p>2
+【多选题】毛泽东思想的主要内容包括新民主主义革命理论、社会主义革命和社会主义建设理论，还有（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、革命军队建设和军事战略的理论
+B、政策和策略的理论
+C、思想政治工作和文化工作的理论
+D、党的建设理论
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<p>3
+【多选题】毛泽东的哲学著作有（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、《反对本本主义》
+B、《实践论》
+C、《矛盾论》
+D、《人的正确思想是从哪里来的？》
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<p>4
+【多选题】毛泽东思想活的灵魂包括（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、实事求是
+B、群众路线
+C、独立自主
+D、与时俱进
+</code></pre></div></div>
+
+<p>正确答案： ABC</p>
+
+<p>5
+【多选题】关于毛泽东的评价正确的是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、毛泽东是伟大的马克思主义者，伟大的无产阶级革命家、战略家和理论家
+B、毛泽东晚年犯了严重错误，他的错误是第一位的，功绩是第二位的
+C、他为中国共产党和中国人民解放军的创立和发展做出了不可磨灭的贡献
+D、他对中国革命的功绩远远大于他的过失
+</code></pre></div></div>
+
+<p>正确答案： ACD</p>
+
+<hr />
+
+<h3 id="第二章">第二章</h3>
+
+<p>1
+【单选题】新民主主义革命的性质是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、无产阶级社会主义革命
+B、资产阶级民主主义革命
+C、农民革命
+D、土地革命
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>2
+【单选题】新民主主义国家的国体是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、资产阶级专政
+B、无产阶级专政
+C、人民民主专政
+D、各革命阶级联合专政
+</code></pre></div></div>
+
+<p>正确答案： D</p>
+
+<p>3
+【单选题】近代中国革命斗争的主要形式是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、工人罢工
+B、商人罢市
+C、学生罢课
+D、武装斗争
+</code></pre></div></div>
+
+<p>正确答案： D</p>
+
+<p>4
+【单选题】新民主主义革命时期加强党的建设，必须把（ ）放在首位。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、思想建设
+B、组织建设
+C、作风建设
+D、制度建设
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>5
+【单选题】新民主主义革命的道路是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、城市包围农村，武装夺取政权
+B、农村包围城市，武装夺取政权
+C、城市包围农村，和平夺取政权
+D、农村包围城市，和平夺取政权
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>1
+【多选题】新民主主义革命的对象包括（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、帝国主义
+B、封建主义
+C、民族资本主义
+D、官僚资本主义
+</code></pre></div></div>
+
+<p>正确答案： ABD</p>
+
+<p>2
+【多选题】新民主主义革命的动力包括（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、无产阶级
+B、农民阶级
+C、城市小资产阶级
+D、民族资产阶级
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<p>3
+【多选题】近代中国无产阶级的特殊优点有（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、富于组织纪律性
+B、革命最坚决最彻底
+C、分布集中，便于组织和团结
+D、和农民有天然联系，便于结成工农联盟
+</code></pre></div></div>
+
+<p>正确答案： BCD</p>
+
+<p>4
+【多选题】新民主主义的经济纲领是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、没收封建地主阶级的土地归农民所有
+B、没收官僚资产阶级的垄断资本归新民主主义的国家所有
+C、没收民族工商业
+D、保护民族工商业
+</code></pre></div></div>
+
+<p>正确答案： ABD</p>
+
+<p>5
+【多选题】新民主主义革命的三大法宝是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、统一战线
+B、武装斗争
+C、党的建设
+D、土地革命
+</code></pre></div></div>
+
+<p>正确答案： ABC</p>
+
+<hr />
+
+<h3 id="第三章">第三章</h3>
+
+<p>1
+【单选题】过渡时期我国社会的性质是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、半殖民地半封建社会
+B、新民主主义社会
+C、资本主义社会
+D、社会主义社会
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>2
+【单选题】新民主主义社会的主要矛盾是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、地主阶级和农民阶级矛盾
+B、资产阶级和无产阶级矛盾
+C、无产阶级和小资产阶级矛盾
+D、农民阶级和小资产阶级矛盾
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>3
+【单选题】中国共产党在过渡时期总路线的主体是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、实现国家的社会主义工业化
+B、实现国家对农业的社会主义改造
+C、实现国家对手工业的社会主义改造
+D、实现国家对资本主义工商业的社会主义改造
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>4
+【单选题】我国农业社会主义改造的道路是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、直接没收
+B、和平赎买
+C、互助合作
+D、自愿上交
+</code></pre></div></div>
+
+<p>正确答案： C</p>
+
+<p>5
+【单选题】社会主义制度在中国确立的标志是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、1949年新中国成立
+B、1952年民主革命任务完成
+C、1954年《中华人民共和国宪法》颁布
+D、1956年底社会主义改造基本完成
+</code></pre></div></div>
+
+<p>正确答案： D</p>
+
+<p>1
+【多选题】新民主主义社会的阶级构成是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、工人阶级
+B、农民阶级
+C、小资产阶级
+D、民族资产阶级
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<p>2
+【多选题】我国农业社会主义改造步骤有（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、农业生产互助组
+B、初级农业生产合作社
+C、高级农业生产合作社
+D、社会主义集体农庄
+</code></pre></div></div>
+
+<p>正确答案： ABC</p>
+
+<p>3
+【多选题】我国能够采取赎买的方式对资本主义工商业进行和平改造的原因有（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、在社会主义革命阶段，民族资产阶级既有剥削工人取得利润的一面，又有拥护宪法、愿意接受社会主义改造的一面
+B、中国共产党与民族资产阶级长期保持着统一战线的关系
+C、我国已经有了以工人阶级为领导、工农联盟为基础的人民民主专政的国家政权
+D、建立了强大的社会主义国营经济并掌握了国家的经济命脉
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<p>4
+【多选题】我国社会主义改造的历史经验有（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、社会主义工业化建设与社会主义改造同时并举
+B、采取积极引导、逐步过渡的方式
+C、用和平方法进行改造
+D、走互助合作的道路
+</code></pre></div></div>
+
+<p>正确答案： ABC</p>
+
+<p>5
+【多选题】1956年底，我国社会主义改造基本完成，标志着（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、社会主义制度在我国已经确立
+B、我国进入了社会主义初级阶段
+C、我国步入了社会主义改革时期
+D、我国实现了新民主主义向社会主义过渡
+</code></pre></div></div>
+
+<p>正确答案： ABD</p>
+
+<hr />
+
+<h3 id="第四章">第四章</h3>
+<p>1
+【单选题】毛泽东在《论十大关系》中提出社会主义建设的基本方针是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、多快好省地建设社会主义
+B、以经济建设为中心
+C、以阶级斗争为纲
+D、调动一切积极因素为社会主义事业服务
+</code></pre></div></div>
+
+<p>2
+【单选题】我国社会主义社会基本矛盾性质是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、对抗性的矛盾
+B、非对抗性的矛盾
+C、适应性的矛盾
+D、非适应性的矛盾
+</code></pre></div></div>
+
+<p>3
+【单选题】毛泽东指出，解决人民内部矛盾的方法是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、民主方法
+B、专政方法
+C、法律制裁方法
+D、劳动改造方法
+</code></pre></div></div>
+
+<p>4
+【单选题】毛泽东强调，社会主义国家政治生活的主题是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、阶级斗争
+B、革命
+C、正确处理人民内部矛盾
+D、经济建设
+</code></pre></div></div>
+
+<p>5
+【单选题】中国共产党强调，我国实现四个现代化关键在于（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、农业现代化
+B、工业现代化
+C、国防现代化
+D、科学技术现代化
+</code></pre></div></div>
+
+<p>1
+【多选题】我国社会主义社会存在两类不同性质矛盾是指（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、主要矛盾
+B、基本矛盾
+C、敌我矛盾
+D、人民内部矛盾
+</code></pre></div></div>
+
+<p>2
+【多选题】处理人民内部矛盾的民主方法有（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、讨论的方法
+B、批评的方法
+C、说服教育的方法
+D、强迫劳动的方法
+</code></pre></div></div>
+
+<p>3
+【多选题】毛泽东关于走中国工业化道路的思想包括（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、把重工业作为我国经济建设的重点
+B、必须充分注意发展农业和轻工业
+C、以农业为基础，以工业为主导，以农轻重为序发展国民经济的总方针
+D、一整套“两条腿走路”的工业化发展思路
+</code></pre></div></div>
+
+<p>4
+【多选题】毛泽东提出，社会主义可以分为两个阶段（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、不发达的社会主义
+B、比较发达的社会主义
+C、社会主义初级阶段
+D、社会主义高级阶段
+</code></pre></div></div>
+
+<p>5
+【多选题】我国社会主义建设道路初步探索的意义有（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、巩固和发展了我国的社会主义制度
+B、为开创中国特色社会主义提供了宝贵经验、理论准备、物质基础
+C、丰富了科学社会主义的理论和实践
+D、为其他国家的社会主义建设提供了经验和借鉴
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="第五章">第五章</h3>
+
+<p>1
+【单选题】当今时代主题是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、和平与发展
+B、战争与革命
+C、改革与开放
+D、创新与变革
+</code></pre></div></div>
+
+<p>2
+【单选题】我国发展新的历史方位是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、中国特色社会主义进入了新时代
+B、中国特色社会主义进入了新阶段
+C、中国特色社会主义进入了新时期
+D、中国特色社会主义进入了新征程
+</code></pre></div></div>
+
+<p>3
+【单选题】中国特色社会主义理论体系形成发展的实践基础是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、党领导的新民主主义革命
+B、党领导的社会主义改造
+C、党领导的社会主义建设
+D、党领导的改革开放和社会主义现代化建设
+</code></pre></div></div>
+
+<p>4
+【单选题】提出了“建设有中国特色的社会主义”的重大命题是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、毛泽东
+B、邓小平
+C、江泽民
+D、胡锦涛
+</code></pre></div></div>
+
+<p>5
+【单选题】（ ）把习近平新时代中国特色社会主义思想确立为党的指导思想。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、党的十七大
+B、党的十八大
+C、党的十九大
+D、党的二十大
+</code></pre></div></div>
+
+<p>1
+【多选题】百年未有之大变局是指（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、当前国际格局和国际体系正在发生深刻调整
+B、全球治理体系正在发生深刻变革
+C、国际力量对比正在发生近代以来最具革命性的变化
+D、世界范围呈现出影响人类历史进程和趋向的重大态势
+</code></pre></div></div>
+
+<p>2
+【多选题】习近平新时代中国特色社会主义思想回答的时代课题是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、什么是马克思主义中国化时代化，怎样推进马克思主义中国化时代化
+B、新时代坚持和发展什么样的中国特色社会主义、怎样坚持和发展中国特色社会主义
+C、建设什么样的社会主义现代化强国、怎样建设社会主义现代化强国
+D、建设什么样的长期执政的马克思主义政党、怎样建设长期执政的马克思主义政党
+</code></pre></div></div>
+
+<p>3
+【多选题】习近平新时代中国特色社会主义思想的主要内容是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、“十个明确”
+B、“十四个坚持”
+C、“十三个方面成就”
+D、“十个结合”
+</code></pre></div></div>
+
+<p>4
+【多选题】习近平新时代中国特色社会主义思想的历史地位是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、当代中国马克思主义、21世纪马克思主义
+B、中华文化和中国精神的时代精华
+C、中国特色社会主义理论体系的重要组成部分
+D、实现中华民族伟大复兴的行动指南
+</code></pre></div></div>
+
+<p>5
+【多选题】中国特色社会主义理论体系是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、马克思主义中国化时代化的重大理论成果
+B、全党全国各族人民团结奋斗的共同思想基础
+C、坚持和发展中国特色社会主义的行动指南
+D、全面推进中华民族伟大复兴的根本指针
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="第六章">第六章</h3>
+
+<p>1
+【单选题】邓小平理论回答的首要的基本理论问题是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、什么是马克思主义中国化，怎样马克思主义中国化
+B、什么是社会主义，怎样建设社会主义
+C、建设什么样的党，怎样建设党
+D、实现什么样的发展，怎样发展
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>2
+【单选题】邓小平理论的精髓是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、解放思想、实事求是
+B、与时俱进、求真务实
+C、改革开放、自力更生
+D、发展生产、共同富裕
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>3
+【单选题】社会主义的根本任务是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、消灭剥削
+B、改革开放
+C、发展生产力
+D、实现共同富裕
+</code></pre></div></div>
+
+<p>正确答案： C</p>
+
+<p>4
+【单选题】社会主义社会发展的直接动力是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、革命
+B、创新
+C、开放
+D、改革
+</code></pre></div></div>
+
+<p>正确答案： D</p>
+
+<p>5
+【单选题】中国特色社会主义理论体系的开篇之作是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、邓小平理论
+B、“三个代表”重要思想
+C、科学发展观
+D、习近平新时代中国特色社会主义思想
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>1
+【多选题】社会主义的本质是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、解放生产力，发展生产力
+B、消灭剥削，消除两极分化
+C、最终达到共同富裕
+D、按劳分配
+</code></pre></div></div>
+
+<p>正确答案： ABC</p>
+
+<p>2
+【多选题】党在社会主义初级阶段的基本路线中“两个基本点”是指（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、坚持党的领导
+B、坚持四项基本原则
+C、坚持改革开放
+D、坚持独立自主，自力更生
+</code></pre></div></div>
+
+<p>正确答案： BC</p>
+
+<p>3
+【多选题】邓小平提出的“三步走”发展战略是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、从1981年到1990年实现国民生产总值比1980年翻一番，解决人民的温饱问题
+B、从1991年到20世纪末，使国民生产总值再翻一番，达到小康水平
+C、到建党一百周年时，全面建成小康社会
+D、到21世纪中叶，国民生产总值再翻两番，达到中等发达国家水平，基本实现现代化
+</code></pre></div></div>
+
+<p>正确答案： ABD</p>
+
+<p>4
+【多选题】社会主义市场经济理论的要点有（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、计划经济和市场经济不是划分社会制度的标志，计划经济不等于社会主义，市场经济也不等于资本主义
+B、计划和市场都是经济手段，对经济活动的调节各有优势和长处，社会主义实行市场经济要把两者结合起来
+C、市场经济作为资源配置的一种方式本身不具有制度属性，可以和不同的社会制度结合，但它和不同社会制度结合具有不同的性质
+D、计划经济是社会主义的基本特征，市场经济是资本主义特有的东西
+</code></pre></div></div>
+
+<p>正确答案： ABC</p>
+
+<p>5
+【多选题】邓小平提出的“两手抓”的思想有（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、一手抓工业，一手抓农业
+B、一手抓物质文明，一手抓精神文明
+C、一手抓建设，一手抓法制
+D、一手抓改革开放，一手抓惩治腐败
+</code></pre></div></div>
+
+<p>正确答案： BCD</p>
+
+<hr />
+
+<h3 id="第七章">第七章</h3>
+
+<p>1
+【单选题】“三个代表”重要思想回答的重大问题是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、什么是马克思主义中国化，怎样马克思主义中国化
+B、什么是社会主义，怎样建设社会主义
+C、建设什么样的党，怎样建设党
+D、实现什么样的发展，怎样发展
+</code></pre></div></div>
+
+<p>正确答案： C</p>
+
+<p>2
+【单选题】党执政兴国的第一要务是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、发展
+B、改革
+C、开放
+D、创新
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>3
+【单选题】党的十四大确立了我国经济体制改革的目标是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、建立公有制为主体，多种所有制经济共同发展的经济制度
+B、实行按劳分配为主体，多种分配方式并存的收入分配制度
+C、建立完善的社会保障体系
+D、建立社会主义市场经济体制
+</code></pre></div></div>
+
+<p>正确答案： D</p>
+
+<p>4
+【单选题】党领导人民治理国家的基本方略是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、依法治国
+B、以德治国
+C、依人治国
+D、以仁治国
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>5
+【单选题】标志着我国对外开放进入了一个新的阶段是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、创办经济特区
+B、加入世界贸易组织
+C、建立自贸区
+D、建立自由港
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>1
+【多选题】“三个代表”重要思想的核心观点是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、始终代表中国先进生产力的发展要求
+B、始终代表中国先进文化的前进方向
+C、始终代表中国最广大人民的根本利益
+D、始终代表发展中国家利益
+</code></pre></div></div>
+
+<p>正确答案： ABC</p>
+
+<p>2
+【多选题】正确认识和处理改革、发展、稳定的关系，要（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、把改革的力度、发展的速度和社会可承受的程度统一起来
+B、把不断改善人民生活作为处理改革发展稳定关系的重要结合点
+C、在社会稳定中推进改革发展，通过改革发展促进社会稳定
+D、坚持发展是第一要务，为了发展可以牺牲稳定
+</code></pre></div></div>
+
+<p>正确答案： ABC</p>
+
+<p>3
+【多选题】党的十五大把“三步走”战略的第三步进一步具体化，提出了三个阶段性目标是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、21世纪第一个10年，实现国民生产总值比2000年翻一番，使人民的小康生活更加富裕，形成比较完善的社会主义市场经济体制
+B、到建党100周年时，全面建成小康社会
+C、到建党100周年时，使国民经济更加发展，各项制度更加完善
+D、到21世纪中叶新中国成立100周年时，基本实现现代化，建成富强民主文明的社会主义国家
+</code></pre></div></div>
+
+<p>正确答案： ACD</p>
+
+<p>4
+【多选题】在党的十六大报告中，江泽民把社会主义（ ）一起确立为社会主义现代化全面发展的三大基本目标。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、物质文明
+B、政治文明
+C、社会文明
+D、精神文明
+</code></pre></div></div>
+
+<p>正确答案： ABD</p>
+
+<p>5
+【多选题】江泽民提出领导干部要“三讲”，是指（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、讲纪律
+B、讲学习
+C、讲政治
+D、讲正气
+</code></pre></div></div>
+
+<p>正确答案： BCD</p>
+
+<hr />
+
+<h3 id="第八章">第八章</h3>
+
+<p>1
+【单选题】科学发展观回答的重大问题是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、什么是马克思主义中国化，怎样马克思主义中国化
+B、什么是社会主义，怎样建设社会主义
+C、建设什么样的党，怎样建设党
+D、实现什么样的发展，怎样发展
+</code></pre></div></div>
+
+<p>正确答案： D</p>
+
+<p>2
+【单选题】科学发展观的核心立场是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、发展
+B、以人为本
+C、全面协调可持续
+D、统筹兼顾
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>3
+【单选题】转变经济发展方式的重大战略决策（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、实施创新驱动发展战略
+B、全面深化经济体制改革
+C、促进区域协调发展
+D、推动城乡发展一体化
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>4
+【单选题】社会主义民主政治的本质和核心要求（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、党的领导
+B、人民当家作主
+C、依法治国
+D、自由人权
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>5
+【单选题】（ ）是中国特色社会主义的本质属性。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、繁荣富强
+B、民主法治
+C、社会和谐
+D、生态优美
+</code></pre></div></div>
+
+<p>正确答案： C</p>
+
+<p>1
+【多选题】科学发展观的基本要求是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、全面
+B、共享
+C、协调
+D、可持续
+</code></pre></div></div>
+
+<p>正确答案： ACD</p>
+
+<p>2
+【多选题】社会主义核心价值体系的基本内容包括（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、马克思主义指导思想
+B、中国特色社会主义共同理想
+C、以爱国主义为核心的民族精神和以改革创新为核心的时代精神
+D、社会主义荣辱观
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<p>3
+【多选题】构建社会主义和谐社会的总要求是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、民主法治、公平正义
+B、诚信友爱、充满活力
+C、安定有序、人与自然和谐相处
+D、共建共享
+</code></pre></div></div>
+
+<p>正确答案： ABC</p>
+
+<p>4
+【多选题】建设社会主义生态文明必须树立的生态文明理念有（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、改造自然
+B、尊重自然
+C、顺应自然
+D、保护自然
+</code></pre></div></div>
+
+<p>正确答案： BCD</p>
+
+<p>5
+【多选题】新形势下，党面临的考验有（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、执政考验
+B、改革开放考验
+C、市场经济考验
+D、外部环境考验
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<hr />
+
+<h3 id="新思想第一章">新思想第一章</h3>
+
+<p>1
+【单选题】马克思主义中国化时代化的最新理论成果是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、邓小平理论
+B、“三个代表”重要思想
+C、科学发展观
+D、习近平新时代中国特色社会主义思想
+</code></pre></div></div>
+
+<p>正确答案： D</p>
+
+<p>2
+【单选题】新时代我国社会主要矛盾是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、人民对于建立先进的工业国的要求同落后的农业国的现实之间的矛盾
+B、人民对于经济文化迅速发展的需要同当前经济文化不能满足人民需要的状况之间的矛盾
+C、人民日益增长的物质文化需要同落后的社会生产之间的矛盾
+D、人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾
+</code></pre></div></div>
+
+<p>正确答案： D</p>
+
+<p>3
+【单选题】习近平新时代中国特色社会主义思想始终坚持以（ ）为中心。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、经济
+B、人民
+C、发展
+D、改革
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>4
+【单选题】习近平新时代中国特色社会主义思想的主要创立者是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、习近平
+B、江泽民
+C、胡锦涛
+D、邓小平
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>5
+【单选题】（ ）把习近平新时代中国特色社会主义思想确立为党的指导思想。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、党的十七大
+B、党的十八大
+C、党的十九大
+D、党的二十大
+</code></pre></div></div>
+
+<p>正确答案： C</p>
+
+<p>1
+【多选题】坚持和发展中国特色社会主义的总任务是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、实现社会主义现代化
+B、实现中华民族伟大复兴
+C、实现共同富裕
+D、实现全面小康
+</code></pre></div></div>
+
+<p>正确答案： AB</p>
+
+<p>2
+【多选题】习近平新时代中国特色社会主义思想回答的时代课题是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、什么是马克思主义中国化时代化，怎样推进马克思主义中国化时代化
+B、新时代坚持和发展什么样的中国特色社会主义、怎样坚持和发展中国特色社会主义
+C、建设什么样的社会主义现代化强国、怎样建设社会主义现代化强国
+D、建设什么样的长期执政的马克思主义政党、怎样建设长期执政的马克思主义政党
+</code></pre></div></div>
+
+<p>正确答案： BCD</p>
+
+<p>3
+【多选题】习近平新时代中国特色社会主义思想的主要内容包括（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、“十个明确”
+B、“十四个坚持”
+C、“十三个方面成就”
+D、“三个务必”
+</code></pre></div></div>
+
+<p>正确答案： ABC</p>
+
+<p>4
+【多选题】习近平新时代中国特色社会主义思想的世界观和方法论是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、必须坚持人民至上和自信自立
+B、必须坚持守正创新和问题导向
+C、必须坚持改革开放和独立自主
+D、必须坚持系统观念和胸怀天下
+</code></pre></div></div>
+
+<p>正确答案： ABD</p>
+
+<p>5
+【多选题】习近平新时代中国特色社会主义思想的历史地位是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、当代中国马克思主义、21世纪马克思主义
+B、中国特色社会主义理论体系的开篇之作
+C、中华文化和中国精神的时代精华
+D、实现中华民族伟大复兴的行动指南
+</code></pre></div></div>
+
+<p>正确答案： ACD</p>
+
+<hr />
+
+<h3 id="新思想第二章">新思想第二章</h3>
+
+<p>1
+【单选题】从2020年到2035年，我国发展目标是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、解决温饱问题
+B、全面建成小康社会
+C、基本实现现代化
+D、建成社会主义现代化强国
+</code></pre></div></div>
+
+<p>正确答案： C</p>
+
+<p>2
+【单选题】决定当代中国命运的关键一招是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、实现国家统一
+B、党的自我革命
+C、改革开放
+D、全面依法治国
+</code></pre></div></div>
+
+<p>正确答案： C</p>
+
+<p>3
+【单选题】全面深化改革要坚持的原则是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、坚持和完善中国特色社会主义制度
+B、坚持党对改革的集中统一领导
+C、坚持人民立场
+D、坚持社会主义市场经济改革方向
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>4
+【单选题】（ ）是伟大的自我革命。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、全面建设社会主义现代化国家
+B、全面深化改革
+C、全面依法治国
+D、全面从严治党
+</code></pre></div></div>
+
+<p>正确答案： D</p>
+
+<p>5
+【单选题】全面从严治党，要把（ ）摆在首位。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、政治建设
+B、思想建设
+C、组织建设
+D、作风建设
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>1
+【多选题】“四个全面”战略布局中战略举措是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、全面深化改革
+B、全面依法治国
+C、全面从严治党
+D、全面建设社会主义现代化国家
+</code></pre></div></div>
+
+<p>正确答案： ABC</p>
+
+<p>2
+【多选题】全面深化改革的总目标是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、完善和发展中国特色社会主义制度
+B、推进国家治理体系和治理能力现代化
+C、建立完善的社会主义市场经济体制
+D、建立完善的社会治理体制
+</code></pre></div></div>
+
+<p>正确答案： AB</p>
+
+<p>3
+【多选题】全面依法治国的总目标是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、完善和发展中国特色社会主义制度
+B、推进国家治理体系和治理能力现代化
+C、建设中国特色社会主义法治体系
+D、建设社会主义法治国家
+</code></pre></div></div>
+
+<p>正确答案： CD</p>
+
+<p>4
+【多选题】走中国特色社会主义法治道路（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、是学习西方先进法治经验的必然结果
+B、是历史的必然结论
+C、是由我国社会主义国家性质所决定的
+D、是立足我国基本国情的必然选择
+</code></pre></div></div>
+
+<p>正确答案： BCD</p>
+
+<p>5
+【多选题】中国特色社会主义法治道路的核心要义是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、坚持党的领导
+B、坚持中国特色社会主义制度
+C、维护公平正义
+D、贯彻中国特色社会主义法治理论
+</code></pre></div></div>
+
+<p>正确答案： ABD</p>
+
+<hr />
+
+<h3 id="新思想第三章">新思想第三章</h3>
+
+<p>1
+【单选题】新发展格局是指（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、以国内大循环为主体、以国际大双循环为辅助
+B、以国际大循环为主体、以国内大双循环为辅助
+C、以国内大循环为主体、国内国际双循环相互促进
+D、以国际大循环为主体、国内国际双循环相互促进
+</code></pre></div></div>
+
+<p>正确答案： C</p>
+
+<p>2
+【单选题】我国的根本政治制度是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、人民代表大会制度
+B、中国共产党领导的多党合作和政治协商制度
+C、民族区域自治制度
+D、基层群众自治制度
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>3
+【单选题】（ ）是中国社会主义民主政治中独特的、独有的、独到的民主形式。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、选举民主
+B、协商民主
+C、人民民主
+D、全面民主
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>4
+【单选题】（ ）是一个国家、一个民族发展中更基本、更深沉、更持久的力量。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、道路自信
+B、理论自信
+C、制度自信
+D、文化自信
+</code></pre></div></div>
+
+<p>正确答案： D</p>
+
+<p>5
+【单选题】我国社会建设的重点是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、保障和改善民生
+B、创新社会管理
+C、建设平安中国
+D、建设美丽中国
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>1
+【多选题】我国进入了新发展阶段的依据是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、从理论依据来看，新发展阶段是社会主义初级阶段中的一个阶段
+B、从历史依据来看，新发展阶段是我们党带领人民迎来从站起来、富起来到强起来历史性跨越的新阶段
+C、从现实依据来看，我们已经拥有开启新征程、实现新的更高目标的雄厚物质基础
+D、从国际比较来看，我国已经进入世界发达国家行列
+</code></pre></div></div>
+
+<p>正确答案： ABC</p>
+
+<p>2
+【多选题】新时代爱国统一战线的组成包括（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、全体社会主义劳动者
+B、社会主义事业的建设者
+C、拥护社会主义的爱国者
+D、拥护祖国统一和致力于中华民族伟大复兴的爱国者
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<p>3
+【多选题】社会主义核心价值观的基本内容是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、富强、民主、文明、和谐
+B、自由、平等、公正、法治
+C、自强、弘毅、求是、拓新
+D、爱国、敬业、诚信、友善
+</code></pre></div></div>
+
+<p>正确答案： ABD</p>
+
+<p>4
+【多选题】经济发展与改善民生的关系是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、经济发展是改善民生的前提
+B、抓民生可以促进经济发展
+C、经济发展为改善民生提供物质基础
+D、改善民生是经济发展的目的
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<p>5
+【多选题】关于绿水青山就是金山银山理解正确的是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、阐述了经济发展和生态环境保护的关系
+B、揭示了保护生态环境就是保护生产力、改善生态环境就是发展生产力的道理
+C、绿水青山既是自然财富、生态财富，又是社会财富、经济财富
+D、保护生态环境就是保护自然价值和增值自然资本，就是保护经济社会发展潜力和后劲，使绿水青山持续发挥生态效益和经济社会效益
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<hr />
+
+<h3 id="新思想第四章">新思想第四章</h3>
+
+<p>1
+【单选题】（ ）是安邦定国的重要基石。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、社会和谐
+B、国家安全
+C、民族团结
+D、国家统一
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>2
+【单选题】总体国家安全观是（ ）提出的。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、邓小平
+B、江泽民
+C、胡锦涛
+D、习近平
+</code></pre></div></div>
+
+<p>正确答案： D</p>
+
+<p>3
+【单选题】维护国家安全和社会安定的根本保证是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、坚持推进国家安全体系和能力现代化
+B、坚持统筹发展和安全
+C、坚持党对国家安全工作的绝对领导
+D、坚持中国特色国家安全道路
+</code></pre></div></div>
+
+<p>正确答案： C</p>
+
+<p>4
+【单选题】坚持总体国家安全观，要以（ ）为宗旨。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、人民安全
+B、政治安全
+C、经济安全
+D、文化安全
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>5
+【单选题】坚持总体国家安全观，把（ ）放在首要位置。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、人民安全
+B、政治安全
+C、经济安全
+D、文化安全
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>1
+【多选题】关于总体国家安全观理解正确的是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、关键在“总体”
+B、强调打总体战
+C、突出的是大安全理念
+D、强调科学统筹
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<p>2
+【多选题】中华优秀传统文化中蕴含着丰富的国家安全战略思想有（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、安而不忘危，存而不忘亡，治而不忘乱
+B、民为邦本，本固邦宁
+C、内事文而和，外事武而义
+D、亲人善邻，国之宝也
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<p>3
+【多选题】做好国家安全工作要加强科学统筹，做到（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、统筹发展和安全
+B、统筹开放和安全
+C、统筹传统安全和非传统安全
+D、统筹自身安全和共同安全
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<p>4
+【多选题】政治安全的核心是政权安全和制度安全，最根本的就是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、维护中国共产党的领导和执政地位
+B、维护中国特色社会主义制度
+C、维护国家主权和安全
+D、维护最广大人民的根本利益
+</code></pre></div></div>
+
+<p>正确答案： AB</p>
+
+<p>5
+【多选题】总体国家安全观是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、党历史上第一个被确立为国家安全工作指导思想的重大战略思想
+B、马克思主义国家安全理论中国化的最新成果
+C、习近平新时代中国特色社会主义思想的重要组成部分
+D、新时代国家安全工作的根本遵循和行动指南
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<hr />
+<h3 id="新思想第五章">新思想第五章</h3>
+
+<p>1
+【单选题】中国坚持以（ ）为底线维护国家主权、安全、发展利益。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、国际责任
+B、国家核心利益
+C、世界和平
+D、独立自主
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>2
+【单选题】中国坚持以（ ）为理念引领全球治理体系改革。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、平等互信
+B、合作共赢
+C、公平正义
+D、相互尊重
+</code></pre></div></div>
+
+<p>正确答案： C</p>
+
+<p>3
+【单选题】中国坚持以（ ）为原则推动“一带一路”建设。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、共商共建共享
+B、互利共赢
+C、公平正义
+D、独立自主
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>4
+【单选题】中国外交政策的宗旨是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、维护世界和平和促进共同发展
+B、维护国家主权和利益
+C、建立国际政治经济新秩序
+D、反对霸权主义和强权政治
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>5
+【单选题】“一带一路”倡议是（ ）提出的。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、邓小平
+B、江泽民
+C、胡锦涛
+D、习近平
+</code></pre></div></div>
+
+<p>正确答案： D</p>
+
+<p>1
+【多选题】习近平外交思想是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、习近平新时代中国特色社会主义思想的重要组成部分
+B、马克思主义基本原理同中国特色大国外交实践相结合的重大理论结晶
+C、以习近平同志为核心的党中央治国理政思想在外交领域的集中体现
+D、新时代我国对外工作的根本遵循和行动指南
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<p>2
+【多选题】新型国际关系“新”在（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、共建共享
+B、相互尊重
+C、公平正义
+D、合作共赢
+</code></pre></div></div>
+
+<p>正确答案： BCD</p>
+
+<p>3
+【多选题】构建人类命运共同体的核心是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、政治上，要相互尊重、平等协商，坚决摒弃冷战思维和强权政治，走对话而不对抗、结伴而不结盟的国与国交往新路
+B、安全上，要坚持以对话解决争端、以协商化解分歧，统筹应对传统和非传统安全威胁，反对一切形式的恐怖主义
+C、经济上，要同舟共济，促进贸易和投资自由化便利化，推动经济全球化朝着更加开放、包容、普惠、平衡、共赢的方向发展
+D、文化上，要尊重世界文明多样性，以文明交流超越文明隔阂、文明互鉴超越文明冲突、文明共存超越文明优越
+E、生态上，要坚持环境友好，合作应对气候变化，保护好人类赖以生存的地球家园
+</code></pre></div></div>
+
+<p>正确答案： ABCDE</p>
+
+<p>4
+【多选题】“一带一路”是指（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、“丝绸之路经济带”
+B、“21世纪海上丝绸之路”
+C、长江经济带
+D、中欧铁路
+</code></pre></div></div>
+
+<p>正确答案： AB</p>
+
+<p>5
+【多选题】丝绸之路精神的核心是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、和平合作
+B、开放包容
+C、互学互鉴
+D、互利共赢
+</code></pre></div></div>
+
+<p>正确答案： ABCD</p>
+
+<hr />
+
+<h3 id="新思想第六章">新思想第六章</h3>
+
+<p>1
+【单选题】中国特色社会主义最本质的特征是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、党的领导
+B、人民当家作主
+C、依法治国
+D、社会和谐
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>2
+【单选题】中国特色社会主义制度的最大优势是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、人民当家作主
+B、协商民主
+C、党的领导
+D、法律面前人人平等
+</code></pre></div></div>
+
+<p>正确答案： C</p>
+
+<p>3
+【单选题】我国最高政治领导力量是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、全国人民代表大会
+B、中国共产党
+C、国务院
+D、中国人民政治协商会议
+</code></pre></div></div>
+
+<p>正确答案： B</p>
+
+<p>4
+【单选题】实现中华民族伟大复兴关键在（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、改革开放
+B、依法治国
+C、以人民为中心
+D、党
+</code></pre></div></div>
+
+<p>正确答案： D</p>
+
+<p>5
+【单选题】我国的根本领导制度是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、党的领导制度
+B、人民代表大会制度
+C、民族区域自治制度
+D、基层群众自治制度
+</code></pre></div></div>
+
+<p>正确答案： A</p>
+
+<p>1
+【多选题】中国共产党的性质是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、中国工人阶级的先锋队
+B、中国人民先锋队
+C、中华民族的先锋队
+D、全体中国人的先锋队
+</code></pre></div></div>
+
+<p>正确答案： ABC</p>
+
+<p>2
+【多选题】党的领导是中国特色社会主义制度的最大优势，是因为（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、中国特色社会主义制度是党领导人民创建的
+B、党的领导是充分发挥中国特色社会主义制度优势的根本保障
+C、中国特色社会主义制度本身固有的
+D、党的自身优势是中国特色社会主义制度优势的主要来源
+</code></pre></div></div>
+
+<p>正确答案： ABD</p>
+
+<p>3
+【多选题】党的领导决策核心是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、中央委员会
+B、中央政治局
+C、中央政治局常委会
+D、全国代表大会
+</code></pre></div></div>
+
+<p>正确答案： ABC</p>
+
+<p>4
+【多选题】党是最高政治领导力量，原因是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、与生俱来的
+B、由国家性质所决定的
+C、由国家宪法所确立的
+D、被中国革命、建设、改革伟大实践所证明的
+</code></pre></div></div>
+
+<p>正确答案： BCD</p>
+
+<p>5
+【多选题】民主和集中的关系是（ ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A、两者互为条件、相辅相成、缺一不可
+B、两者互为前提、相互促进
+C、民主是正确集中的前提和基础
+D、集中是民主的必然要求和归宿
+</code></pre></div></div>
+
+<p>正确答案： ACD</p>
+
+<hr />]]></content><author><name>Ranok</name></author><category term="毛概" /><category term="期末考试" /><summary type="html"><![CDATA[  毛概是毛泽东思想和中国特色社会主义理论体系概论的简称。学习毛概有利于刚进入大学的学生思想的转变，更好的完成大学期间学习任务，提高大学生自我素质，增加应对现实中各种挑战的能力，尽快适应新的学习生活环境，完成大学期间的各项发展任务，成为社会发展的有用之才。]]></summary></entry><entry><title type="html">大数据技术原理与应用</title><link href="http://localhost:4000/bigdata" rel="alternate" type="text/html" title="大数据技术原理与应用" /><published>2023-06-05T00:00:00+08:00</published><updated>2023-06-05T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-bigData</id><content type="html" xml:base="http://localhost:4000/bigdata"><![CDATA[<p>  “大数据技术原理与应用”是一门介绍大数据技术的课程。通过学习这门课程，学生可以深入了解大数据技术的原理和应用，并学会如何使用各种工具和技术来处理和管理大数据。此外，该课程还涵盖了大数据架构、设计和性能优化等方面的内容，这些知识对于开展大规模数据处理和分析项目非常重要。因此，“大数据技术原理与应用”对于计算机科学和数据科学领域的学生和从业人员，以及对大数据感兴趣的其他人士都有很大的意义。</p>
 
 <hr />
 <h1 id="前言">前言</h1>
@@ -5286,124 +6997,4 @@ index表示行标题，columns表示列标题，默认名称为从0开始的有�
 <p>解决方法：更改字体防止图形乱码</p>
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">pl</span>
 <span class="n">pl</span><span class="p">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s">'font.sans-serif'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">'SimHei'</span><span class="p">]</span>
-</code></pre></div></div>]]></content><author><name>Ranok</name></author><category term="机器学习" /><category term="python" /><category term="numpy" /><category term="pandas" /><category term="matplotlib" /><summary type="html"><![CDATA[机器学习是研究怎样使用计算机模拟或实现人类学习活动的科学，是人工智能中最具智能特征，最前沿的研究领域之一。自20世纪80年代以来，机器学习作为实现人工智能的途径，在人工智能界引起了广泛的兴趣，特别是近十几年来，机器学习领域的研究工作发展很快，它已成为人工智能的重要课题之一。机器学习不仅在基于知识的系统中得到应用，而且在自然语言理解、非单调推理、机器视觉、模式识别等许多领域也得到了广泛应用。一个系统是否具有学习能力已成为是否具有“智能”的一个标志。]]></summary></entry><entry><title type="html">python 多线程与多进程</title><link href="http://localhost:4000/process" rel="alternate" type="text/html" title="python 多线程与多进程" /><published>2022-12-05T00:00:00+08:00</published><updated>2022-12-05T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-pythonProcessThreading</id><content type="html" xml:base="http://localhost:4000/process"><![CDATA[<p>进程是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。线程是进程中的一部分，也是进程的的实际运作单位，它也是操作系统中的最小运算调度单位。</p>
-
-<hr />
-<h2 id="前言">前言</h2>
-<p>多线程与多进程还是比较实用的。本博客以应用为目的展示两个基础的类。</p>
-
-<h2 id="多进程-process">多进程 Process</h2>
-
-<p>process模块是一个创建进程的模块，借助这个模块，就可以完成进程的创建。<br /></p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Process</span>
-</code></pre></div></div>
-<h4 id="参数介绍">参数介绍</h4>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Process</span><span class="p">(</span><span class="n">group</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">kwargs</span><span class="o">=</span><span class="p">{})</span>
-</code></pre></div></div>
-
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">group</code>——参数未使用，值始终为<code class="language-plaintext highlighter-rouge">None</code></li>
-  <li><code class="language-plaintext highlighter-rouge">target</code>——表示调用对象，即子进程要执行的任务</li>
-  <li><code class="language-plaintext highlighter-rouge">args</code>——表示调用对象的位置参数元组，args=(1,2,’egon’,)</li>
-  <li><code class="language-plaintext highlighter-rouge">kwargs</code>——表示调用对象的字典，kwargs={‘name’:’egon’,’age’:18}</li>
-  <li><code class="language-plaintext highlighter-rouge">name</code>——为子进程的名称</li>
-</ol>
-
-<h4 id="方法介绍">方法介绍</h4>
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">obj.start()</code>：启动进程，并调用该子进程中的obj.run()</li>
-  <li><code class="language-plaintext highlighter-rouge">obj.run()</code>：进程启动时运行的方法，正是它去调用target指定的函数，我们自定义类的类中一定要实现该方法</li>
-  <li><code class="language-plaintext highlighter-rouge">obj.terminate()</code>：强制终止进程obj，不会进行任何清理操作，如果obj创建了子进程，该子进程就成了僵尸进程，使用该方法需要特别小心这种情况。如果obj还保存了一个锁那么也将不会被释放，进而导致死锁</li>
-  <li><code class="language-plaintext highlighter-rouge">obj.is_alive()</code>：如果obj仍然运行，返回<code class="language-plaintext highlighter-rouge">True</code></li>
-  <li><code class="language-plaintext highlighter-rouge">obj.join([timeout])</code>：主线程等待obj终止（强调：是主线程处于等的状态，而obj是处于运行的状态）。<code class="language-plaintext highlighter-rouge">timeout</code>是可选的超时时间，需要强调的是，obj.join只能join住start开启的进程，而不能join住run开启的进程</li>
-</ol>
-
-<h4 id="属性介绍">属性介绍</h4>
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">obj.daemon</code>：默认值为False，如果设为True，代表obj为后台运行的守护进程，当obj的父进程终止时，obj也随之终止，并且设定为True后，obj不能创建自己的新进程，必须在</li>
-  <li><code class="language-plaintext highlighter-rouge">obj.start()</code>：之前设置</li>
-  <li><code class="language-plaintext highlighter-rouge">obj.name</code>：进程的名称</li>
-  <li><code class="language-plaintext highlighter-rouge">obj.pid</code>：进程的<code class="language-plaintext highlighter-rouge">pid</code></li>
-  <li><code class="language-plaintext highlighter-rouge">obj.exitcode</code>：进程在运行时为<code class="language-plaintext highlighter-rouge">None</code>、如果为–N，表示被信号N结束(了解即可)</li>
-  <li><code class="language-plaintext highlighter-rouge">obj.authkey</code>：进程的身份验证键,默认是由<code class="language-plaintext highlighter-rouge">os.urandom()</code>随机生成的32字符的字符串。这个键的用途是为涉及网络连接的底层进程间通信提供安全性，这类连接只有在具有相同的身份验证键时才能成功（了解即可）</li>
-</ol>
-
-<h4 id="使用案例">使用案例</h4>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Process</span>
-<span class="kn">import</span> <span class="nn">os</span>
-
-<span class="k">def</span> <span class="nf">worker</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
-    <span class="c1"># 返回父子进程的pid
-</span>    <span class="k">print</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">getpid</span><span class="p">(),</span> <span class="n">os</span><span class="p">.</span><span class="n">getppid</span><span class="p">())</span>
-
-
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'I am parent process'</span><span class="p">)</span>
-    <span class="n">jobs</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="n">Process</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">worker</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">i</span><span class="p">,))</span>
-        <span class="n">jobs</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-        <span class="n">p</span><span class="p">.</span><span class="n">start</span><span class="p">()</span>
-</code></pre></div></div>
-<h4 id="方法介绍-1">方法介绍</h4>
-
-<div class="row">
-    
-    <div style="flex: 100.0%">
-        <img class="single" src="/assets/img/blog-img/process/threading.png" alt="threading.png" />
-    </div>
-    
-</div>
-
-<h4 id="使用样例">使用样例</h4>
-<h5 id="利用函数使用多线程">利用函数使用多线程</h5>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">threading</span> <span class="kn">import</span> <span class="n">Thread</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">def</span> <span class="nf">work</span><span class="p">():</span>
-    <span class="k">global</span> <span class="n">a</span>
-    <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="err">，</span><span class="n">end</span><span class="o">=</span><span class="err">’’</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
-    <span class="n">childs</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-        <span class="n">childs</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">work</span><span class="p">))</span>
-        <span class="n">childs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">].</span><span class="n">start</span><span class="p">()</span>
-</code></pre></div></div>
-
-<p>程序运行结果：<br />
-<code class="language-plaintext highlighter-rouge">1 2 3 4 5</code><br />
-如果创建的不是线程而是进程则资源不会共享，运行结果会是：<br />
-<code class="language-plaintext highlighter-rouge">1 1 1 1 1</code></p>
-
-<h5 id="利用类重写thrrad方法实现多线程">利用类重写Thrrad方法实现多线程</h5>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">threading</span> <span class="kn">import</span> <span class="n">Thread</span>
-<span class="kn">import</span> <span class="nn">time</span>
-<span class="n">num</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">childs</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">class</span> <span class="nc">MyThread</span><span class="p">(</span><span class="n">Thread</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">t</span> <span class="o">=</span> <span class="n">num</span>
-
-        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-            <span class="k">print</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">t</span><span class="p">,</span> <span class="s">'线程正在工作'</span><span class="p">)</span>
-            <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-    <span class="n">num</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
-    <span class="n">childs</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">MyThread</span><span class="p">())</span>
-    <span class="n">childs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">].</span><span class="n">start</span><span class="p">()</span>
-</code></pre></div></div>
-<p>运行结果之一：<br />
-1 线程正在工作<br />
-2 线程正在工作<br />
-3 线程正在工作<br />
-132 线程正在工作 线程正在工作 <br />
-线程正在工作<br />
-<br />
-13 线程正在工作<br />
-2 线程正在工作<br />
- 线程正在工作<br /></p>
-
-<p>可以看到输出<strong>十分的杂乱</strong>，说明确实是多线程输出。</p>]]></content><author><name>Ranok</name></author><category term="python" /><category term="多线程" /><category term="多进程" /><summary type="html"><![CDATA[进程是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。线程是进程中的一部分，也是进程的的实际运作单位，它也是操作系统中的最小运算调度单位。]]></summary></entry></feed>
+</code></pre></div></div>]]></content><author><name>Ranok</name></author><category term="机器学习" /><category term="python" /><category term="numpy" /><category term="pandas" /><category term="matplotlib" /><summary type="html"><![CDATA[机器学习是研究怎样使用计算机模拟或实现人类学习活动的科学，是人工智能中最具智能特征，最前沿的研究领域之一。自20世纪80年代以来，机器学习作为实现人工智能的途径，在人工智能界引起了广泛的兴趣，特别是近十几年来，机器学习领域的研究工作发展很快，它已成为人工智能的重要课题之一。机器学习不仅在基于知识的系统中得到应用，而且在自然语言理解、非单调推理、机器视觉、模式识别等许多领域也得到了广泛应用。一个系统是否具有学习能力已成为是否具有“智能”的一个标志。]]></summary></entry></feed>
