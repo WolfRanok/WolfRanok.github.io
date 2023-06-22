@@ -1,14 +1,105 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-20T12:49:25+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">网络爬虫</title><link href="http://localhost:4000/crawler" rel="alternate" type="text/html" title="网络爬虫" /><published>2023-06-20T00:00:00+08:00</published><updated>2023-06-20T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-spider</id><content type="html" xml:base="http://localhost:4000/crawler"><![CDATA[<p>网络爬虫（Web Crawler）是一种自动化程序，它可以在互联网上浏览和收集信息。它们可以发现和抓取网站上的所有内容，包括文本、图片、视频、音频等，并将这些数据保存到数据库或文件中。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-22T01:39:06+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">神经网络</title><link href="http://localhost:4000/artificialNetwork" rel="alternate" type="text/html" title="神经网络" /><published>2023-06-21T00:00:00+08:00</published><updated>2023-06-21T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-artificialNetwork</id><content type="html" xml:base="http://localhost:4000/artificialNetwork"><![CDATA[<p>  人工神经网络（Artificial Neural Networks，简写为ANNs）也简称为神经网络（NNs）或称作连接模型（Connection Model），它是一种模仿动物神经网络行为特征，进行分布式并行信息处理的算法数学模型。这种网络依靠系统的复杂程度，通过调整内部大量节点之间相互连接的关系，从而达到处理信息的目的。</p>
+
+<hr />
+
+<h1 id="前言">前言</h1>
+<p>  本博客针对神经网络期末考试课程整理，由于该授课老师对考试内容透露较少，因此整理的内容不一定能准确的压到，请做好心理准备。</p>
 
 <hr />
 
 <h1 id="目录">目录</h1>
-
 <ul>
+  <li><a href="#前言">前言</a></li>
   <li><a href="#目录">目录</a></li>
   <li><a href="#正文">正文</a>
     <ul>
-      <li><a href="#"></a></li>
+      <li><a href="#问答题">问答题</a>
+        <ul>
+          <li><a href="#1-神经网络的优化方案5条">1 神经网络的优化方案（5条）</a></li>
+          <li><a href="#2-过拟合的优化方案5条">2 过拟合的优化方案（5条）</a></li>
+          <li><a href="#3-对公式中的参数解释">3 对公式中的参数解释</a></li>
+          <li><a href="#4必考列举深度学习中最常见的激活函数并说明3条">4（必考）列举深度学习中最常见的激活函数并说明（3条）</a></li>
+          <li><a href="#5-cnn的基本结构有哪些基本模块和功能">5 CNN的基本结构，有哪些基本模块和功能</a></li>
+          <li><a href="#6-卷积神经网络相关问题">6 卷积神经网络相关问题</a>
+            <ul>
+              <li><a href="#61-卷积神经网络主要工作是什么">6.1 卷积神经网络主要工作是什么？</a></li>
+              <li><a href="#62-池化层的池化作用">6.2 池化层的池化作用</a></li>
+              <li><a href="#63简述两种池化方式">6.3简述两种池化方式</a></li>
+            </ul>
+          </li>
+          <li><a href="#7-对一些名词的解释">7 对一些名词的解释</a>
+            <ul>
+              <li><a href="#epoch">Epoch</a></li>
+              <li><a href="#batch">Batch</a></li>
+              <li><a href="#interation">interation</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#编程题">编程题</a>
+        <ul>
+          <li><a href="#a卷">A卷</a>
+            <ul>
+              <li><a href="#1-导入tensorflow模块并命名为tf">1 导入tensorflow模块并命名为tf</a></li>
+              <li><a href="#2-利用constent创建一个形状为22数值分别为1234类型为float的常量tensor_a">2 利用constent创建一个形状为2*2，数值分别为[1,2,3,4]，类型为float的常量tensor_a</a></li>
+              <li><a href="#3-创建一个形状为22的变量tensor_b并且b中的每个元素的值为1">3 创建一个形状为2*2的变量tensor_b，并且b中的每个元素的值为1</a></li>
+              <li><a href="#4-将两个tensor_a和tensor_b相加定义为tensor_c">4 将两个tensor_a和tensor_b相加，定义为tensor_c</a></li>
+              <li><a href="#5-tensor_c的数值是多少">5 tensor_c的数值是多少</a></li>
+            </ul>
+          </li>
+          <li><a href="#b卷">B卷</a>
+            <ul>
+              <li><a href="#1-导入tensorflow模块并命名为tf-1">1 导入tensorflow模块并命名为tf</a></li>
+              <li><a href="#2-利用constent创建一个形状为32数值分别为123456类型为float的常量tensor_a">2 利用constent创建一个形状为3*2，数值分别为[1,2,3,4,5,6]，类型为float的常量tensor_a</a></li>
+              <li><a href="#3-创建一个形状为22的变量tensor_b并且b中的每个元素的值为1-1">3 创建一个形状为2*2的变量tensor_b，并且b中的每个元素的值为1</a></li>
+              <li><a href="#4-将两个tensor_a-和tensor_b数乘定义为tensor_c">4 将两个tensor_a 和tensor_b数乘，定义为tensor_c</a></li>
+              <li><a href="#5-tensor_c的数值是多少-1">5 tensor_c的数值是多少</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#计算大题">计算大题</a>
+        <ul>
+          <li><a href="#卷积计算灰度图像">卷积计算（灰度图像）</a>
+            <ul>
+              <li><a href="#1-根据卷积以上输入数据和卷积核给出每次卷积的过程12">1 根据卷积以上输入数据和卷积核给出每次卷积的过程。（12’）</a></li>
+              <li><a href="#2-最终的特征图是什么3">2 最终的特征图是什么？(3’)</a></li>
+            </ul>
+          </li>
+          <li><a href="#多通道彩色图像">多通道（彩色图像）</a>
+            <ul>
+              <li><a href="#1-请给出每次卷积的过程12">1 请给出每次卷积的过程。(12’)</a></li>
+              <li><a href="#2-最终的特征图是什么3-1">2 最终的特征图是什么？(3’)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#设计题开放性题目">设计题（开放性题目）</a>
+        <ul>
+          <li><a href="#1_a-中文电影评论分类的目标是什么并说明其意义">1_A 中文电影评论分类的目标是什么？并说明其意义。</a></li>
+          <li><a href="#1_b-垃圾邮件分类的目标是什么并说明其意义">1_B 垃圾邮件分类的目标是什么？并说明其意义。</a></li>
+          <li><a href="#2-设计一个基于循环神经网络分类器要考虑哪些问题3点">2 设计一个基于循环神经网络分类器，要考虑哪些问题。（3点）</a>
+            <ul>
+              <li><a href="#21-电影评论的解法">2.1 电影评论的解法</a></li>
+              <li><a href="#22-垃圾邮件的解法">2.2 垃圾邮件的解法</a></li>
+            </ul>
+          </li>
+          <li><a href="#列举至少2个评估模型性能的指标并说明原因">列举至少2个评估模型性能的指标，并说明原因。</a>
+            <ul>
+              <li><a href="#31-电影评论的解法">3.1 电影评论的解法</a></li>
+              <li><a href="#32-垃圾邮件的解法">3.2 垃圾邮件的解法</a></li>
+            </ul>
+          </li>
+          <li><a href="#4_a-请设计一种循环神经网络模型用于中文电影评论情感分析并且介绍你所设计模型的结构">4_a 请设计一种循环神经网络模型，用于中文电影评论情感分析，并且介绍你所设计模型的结构</a></li>
+          <li><a href="#4_b-请设计一种循环神经网络模型用于中文电影评论情感分析并且介绍你所设计模型的结构">4_b 请设计一种循环神经网络模型，用于中文电影评论情感分析，并且介绍你所设计模型的结构</a></li>
+        </ul>
+      </li>
+      <li><a href="#选择题--判断">选择题 \&amp; 判断</a>
+        <ul>
+          <li><a href="#重点掌握部分">重点掌握部分</a></li>
+          <li><a href="#非重点掌握部分">非重点掌握部分</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
@@ -17,7 +108,2816 @@
 
 <h1 id="正文">正文</h1>
 
-<p>##</p>]]></content><author><name>Ranok</name></author><category term="python" /><category term="爬虫" /><category term="期末考试" /><summary type="html"><![CDATA[网络爬虫（Web Crawler）是一种自动化程序，它可以在互联网上浏览和收集信息。它们可以发现和抓取网站上的所有内容，包括文本、图片、视频、音频等，并将这些数据保存到数据库或文件中。]]></summary></entry><entry><title type="html">毛概期末整理</title><link href="http://localhost:4000/maogai" rel="alternate" type="text/html" title="毛概期末整理" /><published>2023-06-11T00:00:00+08:00</published><updated>2023-06-11T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-maogai</id><content type="html" xml:base="http://localhost:4000/maogai"><![CDATA[<p>  毛概是毛泽东思想和中国特色社会主义理论体系概论的简称。学习毛概有利于刚进入大学的学生思想的转变，更好的完成大学期间学习任务，提高大学生自我素质，增加应对现实中各种挑战的能力，尽快适应新的学习生活环境，完成大学期间的各项发展任务，成为社会发展的有用之才。</p>
+<h2 id="问答题">问答题</h2>
+
+<h3 id="1-神经网络的优化方案5条">1 神经网络的优化方案（5条）</h3>
+
+<ol>
+  <li>通过改变模型待优化的参数和神经网络层数来改变网络模型的复杂度。</li>
+  <li>选择更加合适的损失函数</li>
+  <li>优化学习率</li>
+  <li>选择更加合适的优化器</li>
+  <li>数据集增强</li>
+  <li>正则化</li>
+  <li>使用dropout防止过拟合</li>
+</ol>
+
+<hr />
+
+<h3 id="2-过拟合的优化方案5条">2 过拟合的优化方案（5条）</h3>
+
+<p>数据层面：<br />
+  （1）获取更多的数据集：数据增强<br />
+  （2）数据预处理：清洗数据，筛选更高质量的特征</p>
+
+<p>模型层面：<br />
+  （1）选择简单的模型<br />
+  （2）加入正则化：L1，L2正则化，降低模型的复杂度</p>
+
+<p>更多方法：<br />
+  （1）加入噪声：减少频繁出现的无意义的模式<br />
+  （2）dropout：随机去除一部分的神经元</p>
+
+<hr />
+
+<h3 id="3-对公式中的参数解释">3 对公式中的参数解释</h3>
+
+\[\sum w_i*x_i + b = wx + b\]
+
+<p>  \(w_i\) :权重变量<br />
+  \(x_i\) :数据输入变量<br />
+  \(b\) :偏置<br /></p>
+
+<hr />
+
+<h3 id="4必考列举深度学习中最常见的激活函数并说明3条">4（必考）列举深度学习中最常见的激活函数并说明（3条）</h3>
+
+<ol>
+  <li>sigmoid函数：取值范围为(0,1)，它可以将一个实数映射到(0,1)的区间。</li>
+  <li>tanh函数：tanh函数也叫也称为双切正切函数，取值范围为[-1,1]。</li>
+  <li>ReLU函数：将负数映射为0，将正数保留不变。</li>
+  <li>Softmax函数：将一组任意实数值映射到一个概率分布，其中每个值都是正的并且总和等于1。</li>
+  <li>Leaky ReLU函数：在负区域返回一个小的斜率而不是0。</li>
+</ol>
+
+<hr />
+
+<h3 id="5-cnn的基本结构有哪些基本模块和功能">5 CNN的基本结构，有哪些基本模块和功能</h3>
+
+<p>基本组成单元:<br />
+  具有可学习的权重和偏置的神经元组成</p>
+
+<p>基本层级构造<br />
+  输入层：数据的输入（通常是图像）<br />
+  卷积层：使用卷积进行特征提取和映射<br />
+  激活函数：增加非线性映射<br />
+  池化层：下采样，对特征图稀疏处理，减少数据运算量<br />
+  全连接层：通常在尾部，对数据重新拟合并输出分类结果</p>
+
+<hr />
+
+<h3 id="6-卷积神经网络相关问题">6 卷积神经网络相关问题</h3>
+
+<h4 id="61-卷积神经网络主要工作是什么">6.1 卷积神经网络主要工作是什么？</h4>
+<p>  提取特征。</p>
+
+<h4 id="62-池化层的池化作用">6.2 池化层的池化作用</h4>
+
+<p>  作用：降维,缩减模型大小。提高计算速度<br /></p>
+
+<h4 id="63简述两种池化方式">6.3简述两种池化方式</h4>
+
+<p>最大池化：<br />
+  输入张量中的每个窗口映射到该窗口中的最大值。它能够保留局部特征的最大值并压缩输入的空间维度</p>
+
+<p>均值池化：<br />
+  将输入张量中的每个窗口映射到该窗口中的平均值。它能够对输入进行平滑处理并压缩输入的空间维度。</p>
+
+<hr />
+
+<h3 id="7-对一些名词的解释">7 对一些名词的解释</h3>
+
+<h4 id="epoch">Epoch</h4>
+<p>  表示整个数据集的一次迭代。</p>
+
+<h4 id="batch">Batch</h4>
+<p>  指的是不能一次性将整个数据集传递给神经网络，所以我们将数据集分成几个批处理，每一批称为Batch</p>
+
+<h4 id="interation">interation</h4>
+<p>  迭代的次数。例如我们有10000张图像作为数据，Batch大小为200。那么一个Epoch 应该运行50次Iteration(10,000除以200)。</p>
+
+<hr />
+
+<h2 id="编程题">编程题</h2>
+
+<h3 id="a卷">A卷</h3>
+
+<h4 id="1-导入tensorflow模块并命名为tf">1 导入tensorflow模块并命名为tf</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
+</code></pre></div></div>
+
+<h4 id="2-利用constent创建一个形状为22数值分别为1234类型为float的常量tensor_a">2 利用constent创建一个形状为2*2，数值分别为[1,2,3,4]，类型为float的常量tensor_a</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tensor_a</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">constent</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]],</span><span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span><span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="p">.</span><span class="n">float32</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="3-创建一个形状为22的变量tensor_b并且b中的每个元素的值为1">3 创建一个形状为2*2的变量tensor_b，并且b中的每个元素的值为1</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tensor_b</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="p">.</span><span class="n">ones</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]))</span>
+</code></pre></div></div>
+
+<h4 id="4-将两个tensor_a和tensor_b相加定义为tensor_c">4 将两个tensor_a和tensor_b相加，定义为tensor_c</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">c</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">tensor_a</span><span class="p">,</span><span class="n">tensor_b</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="5-tensor_c的数值是多少">5 tensor_c的数值是多少</h4>
+
+<p>以下是完整的输出(你只需要写<code class="language-plaintext highlighter-rouge">array</code>中的内容即可)</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">c</span>
+
+<span class="o">&lt;</span><span class="n">tf</span><span class="p">.</span><span class="n">Tensor</span><span class="p">:</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="n">dtype</span><span class="o">=</span><span class="n">float32</span><span class="p">,</span><span class="n">numpy</span><span class="o">=</span>
+<span class="n">array</span><span class="p">([[</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">4.</span><span class="p">,</span><span class="mf">5.</span><span class="p">]],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">float32</span><span class="p">)</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="b卷">B卷</h3>
+
+<h4 id="1-导入tensorflow模块并命名为tf-1">1 导入tensorflow模块并命名为tf</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
+</code></pre></div></div>
+
+<h4 id="2-利用constent创建一个形状为32数值分别为123456类型为float的常量tensor_a">2 利用constent创建一个形状为3*2，数值分别为[1,2,3,4,5,6]，类型为float的常量tensor_a</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tensor_a</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">constent</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]],</span><span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span><span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="p">.</span><span class="n">float32</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="3-创建一个形状为22的变量tensor_b并且b中的每个元素的值为1-1">3 创建一个形状为2*2的变量tensor_b，并且b中的每个元素的值为1</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tensor_b</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="p">.</span><span class="n">ones</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]))</span>
+</code></pre></div></div>
+
+<h4 id="4-将两个tensor_a-和tensor_b数乘定义为tensor_c">4 将两个tensor_a 和tensor_b数乘，定义为tensor_c</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tensor_c</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">tensor_a</span><span class="p">,</span><span class="n">tensor_b</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="5-tensor_c的数值是多少-1">5 tensor_c的数值是多少</h4>
+
+<p>以下是完整的输出(你只需要写<code class="language-plaintext highlighter-rouge">array</code>中的内容即可)</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">c</span>
+
+<span class="o">&lt;</span><span class="n">tf</span><span class="p">.</span><span class="n">Tensor</span><span class="p">:</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="n">dtype</span><span class="o">=</span><span class="n">float32</span><span class="p">,</span><span class="n">numpy</span><span class="o">=</span>
+<span class="n">array</span><span class="p">([[</span><span class="mf">3.</span><span class="p">,</span><span class="mf">3.</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">7.</span><span class="p">,</span><span class="mf">7.</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">11.</span><span class="p">,</span><span class="mf">11.</span><span class="p">]],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">float32</span><span class="p">)</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="计算大题">计算大题</h2>
+
+<blockquote>
+  <p>以下图片只是做一个示例，考试时请自行计算，要求，每一步都必须要写到位，每一个像素值都需要计算<br />
+示例中空白的部分在考试时需要补全</p>
+</blockquote>
+
+<h3 id="卷积计算灰度图像">卷积计算（灰度图像）</h3>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/3.jpg" alt="3.jpg" />
+    </div>
+    
+</div>
+
+<h4 id="1-根据卷积以上输入数据和卷积核给出每次卷积的过程12">1 根据卷积以上输入数据和卷积核给出每次卷积的过程。（12’）</h4>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/4.jpg" alt="4.jpg" />
+    </div>
+    
+</div>
+
+<h4 id="2-最终的特征图是什么3">2 最终的特征图是什么？(3’)</h4>
+
+<div class="row">
+    
+    <div style="flex: 50.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/5.jpg" alt="5.jpg" />
+    </div>
+    
+</div>
+
+<hr />
+
+<h3 id="多通道彩色图像">多通道（彩色图像）</h3>
+
+<h4 id="1-请给出每次卷积的过程12">1 请给出每次卷积的过程。(12’)</h4>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/1.jpg" alt="1.jpg" />
+    </div>
+    
+</div>
+
+<h4 id="2-最终的特征图是什么3-1">2 最终的特征图是什么？(3’)</h4>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/2.jpg" alt="2.jpg" />
+    </div>
+    
+</div>
+
+<hr />
+
+<h2 id="设计题开放性题目">设计题（开放性题目）</h2>
+
+<p>本题针对两个题面进行分析，分别是：“中文电影评论情感分析”、“垃圾邮件分类”。</p>
+
+<h3 id="1_a-中文电影评论分类的目标是什么并说明其意义">1_A 中文电影评论分类的目标是什么？并说明其意义。</h3>
+
+<p>  目标：对电影评论进行分类。<br />
+  意义：根据模型识别出电影的评论是正面的还是负面的，有助于对电影做出定性的分析。</p>
+
+<h3 id="1_b-垃圾邮件分类的目标是什么并说明其意义">1_B 垃圾邮件分类的目标是什么？并说明其意义。</h3>
+
+<p>  目标：对邮件进行分类<br />
+  意义：将邮件分为，有用邮件和垃圾邮件，有助于对邮件做出定性的分析。</p>
+
+<hr />
+
+<h3 id="2-设计一个基于循环神经网络分类器要考虑哪些问题3点">2 设计一个基于循环神经网络分类器，要考虑哪些问题。（3点）</h3>
+
+<h4 id="21-电影评论的解法">2.1 电影评论的解法</h4>
+
+<ol>
+  <li>数据的处理问题：需要收集电影评论数据并进行清洗、去重、分词等预处理操作。</li>
+  <li>模型的选择问题：选择双向LSTM神经网络，作为该神经网络的分类器。因为双向LSTM可以同时考虑历史和未来的信息，从而更好地预测当前时间步的输出。</li>
+  <li>训练方式的选择：使用监督学习的方式训练LSTM网络分类器。使用数据量较大时考虑使用采用批量训练的方式。</li>
+  <li>模型评估的方法选择：结合交叉验证来评估模型性能。</li>
+  <li>要防止过拟合的发生：采用一些正则化技术，如L1、L2正则化和dropout等方法来缓解。</li>
+</ol>
+
+<h4 id="22-垃圾邮件的解法">2.2 垃圾邮件的解法</h4>
+
+<ol>
+  <li>数据的处理问题：需要收集邮件数据并进行清洗、去重、分词等预处理操作。</li>
+  <li>模型的选择问题：选择双向LSTM神经网络，作为该神经网络的分类器。因为双向LSTM可以同时考虑历史和未来的信息，从而更好地预测当前时间步的输出。</li>
+  <li>训练方式的选择：使用监督学习的方式训练LSTM网络分类器。使用数据量较大时考虑使用采用批量训练的方式。</li>
+  <li>模型评估的方法选择：结合交叉验证来评估模型性能。</li>
+  <li>要防止过拟合的发生：采用一些正则化技术，如L1、L2正则化和dropout等方法来缓解。</li>
+</ol>
+
+<h3 id="列举至少2个评估模型性能的指标并说明原因">列举至少2个评估模型性能的指标，并说明原因。</h3>
+
+<h4 id="31-电影评论的解法">3.1 电影评论的解法</h4>
+
+<ol>
+  <li>准确率：它表示分类器正确预测样本标签的比例。在电影情感分析任务中，准确率可以告诉我们分类器正确预测情感极性评论的比例。</li>
+  <li>召回率：指实际为正例的样本中被分类器正确识别为正例的比例。在情感分析中，召回率可以衡量分类器正确捕捉到所有积极或消极评论的能力。</li>
+  <li>AUC值：AUC值越大，则分类器的性能越好，在正负样本不平衡时可以使用。</li>
+  <li>F1值：分数是准确率和召回率的加权平均值，它综合了两者的影响。F1分数越高，则分类器的性能越好。</li>
+</ol>
+
+<h4 id="32-垃圾邮件的解法">3.2 垃圾邮件的解法</h4>
+
+<ol>
+  <li>准确率：它表示分类器正确预测样本标签的比例。在电影情感分析任务中，在垃圾邮件分类任务中，准确率可以告诉我们分类器正确预测垃圾邮件或非垃圾邮件的比例。。</li>
+  <li>召回率：指实际为正例的样本中被分类器正确识别为正例的比例。在垃圾邮件分类中，召回率可以衡量分类器正确捕捉到所有垃圾邮件的能力。</li>
+  <li>AUC值：AUC值越大，则分类器的性能越好，在正负样本不平衡时可以使用。</li>
+  <li>F1值：分数是准确率和召回率的加权平均值，它综合了两者的影响。F1分数越高，则分类器的性能越好。</li>
+</ol>
+
+<h3 id="4_a-请设计一种循环神经网络模型用于中文电影评论情感分析并且介绍你所设计模型的结构">4_a 请设计一种循环神经网络模型，用于中文电影评论情感分析，并且介绍你所设计模型的结构</h3>
+
+<p>这里选用LSTM循环神经网络</p>
+
+<ol>
+  <li>输入层：接受原始文本数据，即需要进行情感分类的中文电影评论，将每一个中文文本转化为词向量。</li>
+  <li>Embedding Layer（嵌入层）：使用预训练的中文词向量来初始化嵌入层参数。</li>
+  <li>LSTM层：按顺序处理每个词向量，并输出相应的隐藏状态向量和记忆状态向量。</li>
+  <li>全局最大池化层：提取整个序列的最大特征向量，减少模型复杂度并提高泛化性能。在此模型中，用全局最大池化来得到固定长度的特征向量。</li>
+  <li>全连接层：全连接层接收全局池化层的输出，可以进一步提取高级特征，并通过ReLU激活函数进行非线性映射。</li>
+  <li>Sigmoid层：输出层采用Sigmoid函数作为激活函数，将全连接层的输出映射到0~1之间。</li>
+  <li>Output（输出层）：生成最终的模型预测结果，即电影评论的正向与负向</li>
+</ol>
+
+<p>最后使用交叉熵损失函数作为目标函数，使用反向传播算法进行参数更新。</p>
+
+<h3 id="4_b-请设计一种循环神经网络模型用于中文电影评论情感分析并且介绍你所设计模型的结构">4_b 请设计一种循环神经网络模型，用于中文电影评论情感分析，并且介绍你所设计模型的结构</h3>
+
+<p>这里选用LSTM循环神经网络</p>
+
+<ol>
+  <li>输入层：接受原始文本数据，即需要进行分类的邮件信息，将每一个文本转化为词向量。</li>
+  <li>Embedding Layer（嵌入层）：使用预训练的词向量来初始化嵌入层参数。</li>
+  <li>LSTM层：按顺序处理每个词向量，并输出相应的隐藏状态向量和记忆状态向量。</li>
+  <li>全局最大池化层：提取整个序列的最大特征向量，减少模型复杂度并提高泛化性能。在此模型中，用全局最大池化来得到固定长度的特征向量。</li>
+  <li>全连接层：全连接层接收全局池化层的输出，可以进一步提取高级特征，并通过ReLU激活函数进行非线性映射。</li>
+  <li>Sigmoid层：输出层采用Sigmoid函数作为激活函数，将全连接层的输出映射到0~1之间。</li>
+  <li>Output（输出层）：生成最终的模型预测结果，即邮件是否为垃圾邮件的评定。</li>
+</ol>
+
+<p>最后使用交叉熵损失函数作为目标函数，使用反向传播算法进行参数更新。</p>
+
+<hr />
+
+<h2 id="选择题--判断">选择题 &amp; 判断</h2>
+
+<h3 id="重点掌握部分">重点掌握部分</h3>
+
+<p>1.【单选】
+以下关于深度学习描述正确的是</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 深度学习是机器学习的一个分支
+	B. 深度学习与机器学习是互相包含的关系
+	C. 深度学习与机器学习同属于人工智能但相互之间没有关系
+	D. 以上都不对
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>2.【单选】
+传统机器学习和深度学习是人工智能核心技术，在工程流程上略有差别，以下步骤在深度学习中不需要做的是</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 模型评估
+	B. 特征工程
+	C. 数据清洗
+	D. 模型构建
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>3.【单选】
+是指根据文本所表达的含义和情感信息将文本划分成褒扬的或贬义的两种或几种类型，是对文本作者倾向性和观点、态度的划分，因此有时也称倾向性分析。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 语音识别
+	B. 机器学习
+	C. 自然语言处理
+	D. 情感分类
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>4.【单选】
+下列有关单层感知器的说法错误的是？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 包含输入层、隐藏层和输出层
+	B. 包含求和和激活操作
+	C. 能够解决“与门”操作
+	D. “与门”的线性分割线的斜率有权值决定
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>5.【单选】
+若输入x1=1，x2=0，对应的权值分别为0.5，0.5，则经过过sign函数后的值是多少？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 0
+	B. 1
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>6.【单选】
+如果我们希望预测n个类（p1，p2 … pk）的概率使得所有n的p的和等于1，那么下列哪个函数可以用作输出层中的激活函数？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. softmax
+	B. ReLU
+	C. Sigmoid
+	D. Tanh
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>7.【单选】
+将Sigmoid激活函数改为ReLu，将有助于克服梯度消失问题？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 对
+	B. 错
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>8.【单选】
+Sigmoid是神经网络中最常用到的一种激活函数，除非当梯度太大导致激活函数被弥散，这叫作神经元饱和。</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/6.png" alt="6.png" />
+    </div>
+    
+</div>
+
+<p>这就是为什么ReLU会被提出来，因为ReLU可以使得梯度在正向时输出值与原始值一样。</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/7.png" alt="7.png" />
+    </div>
+    
+</div>
+
+<p>这是否意味着在神经网络中ReLU单元永远不会饱和?（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 对的
+	B. 错的
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>9.【单选】
+您正在构建一个用于识别黄瓜（y=1）和西瓜（y=0）的二进制分类器。您建议将这些激活函数中的哪一个用于输出层？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. ReLU
+	B. Leaky ReLU
+	C. sigmoid
+	D. tanh
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>10.【单选】
+假定你在神经网络中的隐藏层中使用激活函数 X。在特定神经元给定任意输入，你会得到输出「-0.0001」。X 可能是以下哪一个激活函数？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. ReLU
+	B. tanh（x）
+	C. sigmoid
+	D. 以上都不是
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>11.【单选】
+DNN的全称是（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 深度神经网络
+	B. 深度学习网络
+	C. 动态神经网络
+	D. 动态学习网络
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>12.【单选】
+下列有关全连接网络说法正确的是（  ）：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 每个神经元具有激活函数功能
+	B. 每一个神经元与下一层的神经元完全连接
+	C. 神经元之间不存在跨层连接
+	D. 以上都正确
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>13.【单选】
+在一个神经网络中，知道每一个神经元的权重和偏差是最重要的一步。如果知道了神经元准确的权重和偏差，便可以近似任何函数，但怎么获知每个神经的权重和偏移呢（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 搜索每个可能的权重和偏差组合，直到得到最佳值
+	B. 赋予一个初始值，然后检查跟最佳值的差值，不断迭代调整权重
+	C. 随机赋值
+	D. 以上都不正确
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>14.【单选】
+假设神经元的输入值为（1,2,3），对应的权重为4,5,6，神经元经过一个线性函数y=2x，最终的输出结果是多少（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 32
+	B. 64
+	C. 96
+	D. 48
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>15.【单选】</p>
+
+<p>下列声明哪些是正确的？（  ）</p>
+
+<p>声明1：可以通过将所有权重初始化为0来训练网络</p>
+
+<p>声明2：可以通过将偏差初始化为0来训练网络</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1对2错
+	B. 1错2对
+	C. 1和2都对
+	D. 1和2都错
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>16.【单选】
+我们在训练神经网络过程中，使用梯度下降法不断更新哪种数值，进而使得损失函数最小化?（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 样本数目
+	B. 特征值
+	C. 超参数
+	D. 参数
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>17.【单选】
+在神经网络中，我们是通过以下哪个方法在训练网络的时候更新参数，从而最小化损失函数的?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正向传播算法
+	B. 池化计算
+	C. 卷积计算
+	D. 反向传播算法
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>18.【单选】
+单层感知器能够实现异或问题的分类，这句话是否正确？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确
+	B. 错误
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>19.【单选】
+如果我们用了一个过大的学习速率会发生什么？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 神经网络会收敛
+	B. 不好说
+	C. 都不对
+	D. 神经网络不会收敛
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>20.【单选】
+在下图中，我们可以观察到误差出现了许多小的”涨落”。 这种情况我们应该担心吗？（  ）</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/8.png" alt="8.png" />
+    </div>
+    
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 需要，这也许意味着神经网络的学习速率存在问题
+	B. 不需要，只要在训练集和交叉验证集上有累积的下降就可以了
+	C. 不确定
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>21.【单选】
+当神经网络的调参效果不好时，需要从哪些角度考虑？（ ）</p>
+
+<p>1 是否找到合适的损失函数</p>
+
+<p>2 batch size是否合适</p>
+
+<p>3 是否选择了和是的激活函数</p>
+
+<p>4 是否选择合适的学习率</p>
+
+<p>5 是否过拟合</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1,3,4,5
+	B. 1,2,3,4
+	C. 全部都不是
+	D. 全部都是
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>22.【单选】
+学习率会影响待优化的参数的收敛吗？</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 会
+	B. 不会
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>23.【单选】
+在训练神经网络时，损失函数(loss)在最初的几个epochs时没有下降，可能的原因是？（  ）</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/9.png" alt="9.png" />
+    </div>
+    
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 学习率太高
+	B. 正则参数太高
+	C. 陷入局部最小值
+	D. 以上都有可能
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>24.【单选】学习率（），会导致待优化的参数在最小值附近波动，不收敛；学习率（），会导致待优化的参数收敛缓慢。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 过小；过大
+	B. 过大；过小
+	C. 过大；过大
+	D. 过小；过小
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>25.【单选】当训练一个神经网络来作图像识别任务时，通常会绘制一张训练集误差和交叉训练集误差图来进行调试。</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/10.png" alt="10.png" />
+    </div>
+    
+</div>
+
+<p>在上图中，最好在哪个时间停止训练？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. A
+	B. B
+	C. C
+	D. D
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>26.【单选】
+在选择神经网络的深度时，下面哪些参数需要考虑？（  ）</p>
+
+<p>1 神经网络的类型(如MLP,CNN)</p>
+
+<p>2 输入数据</p>
+
+<p>3 计算能力(硬件和软件能力决定)</p>
+
+<p>4 学习速率</p>
+
+<p>5 映射的输出函数</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1,2,3,5
+	B. 2,3,4,5
+	C. 都需要
+	D. 1,3,4,5
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>27.【单选】
+Dropout对一个神经元随机屏蔽输入权重这句话是否正确？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确的
+	B. 错误的
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>28.【单选】
+在一个神经网络中，下面哪种方法可以用来处理过拟合？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. dropout
+	B. 分批归一化
+	C. 正则化
+	D. 以上都可以
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>29.【单选】
+下列的哪种方法可以用来降低深度学习模型的过拟合问题？（  ）</p>
+
+<p>1 增加更多的数据</p>
+
+<p>2 使用数据扩增技术(data augmentation)</p>
+
+<p>3 使用归纳性更好的架构</p>
+
+<p>4 正规化数据</p>
+
+<p>5 降低架构的复杂度</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1,4,5
+	B. 1,2,3
+	C. 1,3,4,5
+	D. 所有都可以
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>30.【单选】
+数据规一化(Normalization)的好处都有啥？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 让每一层的输入的范围都大致固定
+	B. 它将权重的归一化平均值和标准差
+	C. 它是一种非常有效的反向传播(BP)方法
+	D. 以上都不正确
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>31.【单选】
+单层的神经网络反向传播算法也适用多层神经网络的反向传播，这句话正确吗？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确
+	B. 不正确
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>32.【单选】前馈神经网络是指网络只能前向传播，不能后向传播，这句话是否正确（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确的
+	B. 错误的
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>33.【单选】
+“所谓的权值共享就是说，用一个卷积核去卷积一张图，这张图每个位置是被同样数值的卷积核操作的，权重是一样的”，这句话是否正确</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确
+	B. 错误
+	C. 不确定
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>34.【单选】
+CNN是卷积神经网络，它的关键层有哪些？（ ）1 输入层2 卷积层3 激活层4 池化层5 全连接层</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1,2,3,4
+	B. 1,2,3,4,5
+	C. 2,4
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>35.【单选】
+关于循环神经网络以下说法错误的是?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 循环神经网络可以根据时间轴展开
+	B. LSTM 无法解决梯度消失的问题
+	C. LSTM 也是一种循环神经网络
+	D. 循环神经网络可以简写为 RNN
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>36.【单选】
+关于循环神经网络，哪个不是LSTM的门?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 输入门
+	B. 遗忘门
+	C. 输出门
+	D. 更新门
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>37.【单选】
+“门”的出现可以帮助防止在RNN中的梯度消失问题。（ ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 对
+	B. 错
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>38.【单选】
+以下关于标准 RNN 模型，说法正确的是?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 不存在一对一的模型结构
+	B. 反向传播时不考虑时间方向
+	C. 不存在多对多的模型结构
+	D. 会出现长时间传输记忆的信息衰减的问题
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>39.【单选】深度学习可以用在下列哪些NLP任务中？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 情感分析
+	B. 问答系统
+	C. 机器翻译
+	D. 所有选项
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>40.【单选】给定一个长度为n的不完整单词序列，我们希望预测下一个字母是什么。比如输入是“predictio”(9个字母组成)，希望预测第十个字母是什么。下面哪种神经网络结构适用于解决这个工作？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 循环神经网络
+	B. 卷积神经网络
+	C. 全连接神经网络
+	D. 以上都不是
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>41.【单选】以下哪项任务优先选择使用卷积神经网络来实现</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 图像数据获取
+	B. 图像预处理
+	C. 图像特征提取
+	D. 图像数据增强
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>42.【单选】
+对于一个图像识别问题(在一张照片里找出一只猫)，下面哪种神经网络可以更好地解决这个问题？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 循环神经网络
+	B. 感知机
+	C. 多层感知机
+	D. 卷积神经网络
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>43.【单选】
+在训练CNN时，可以对输入进行旋转、平移、缩放等预处理提高模型泛化能力。这么说是对，还是不对？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 对
+	B. 不对
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>44.【单选】
+一个32X32大小的图像，通过步长为4，尺寸为4X4的池化运算后，尺寸变为</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 14X14
+	B. 2X2
+	C. 28X28
+	D. 8X8
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>45.【单选】
+图像卷积处理中，例如32X32，strides=1，padding=”VALID”，FILTER卷积核3*3，则经过卷积处理之后图像尺寸变为?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 28X28
+	B. 14X14
+	C. 30X30
+	D. 32X32
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<hr />
+
+<h3 id="非重点掌握部分">非重点掌握部分</h3>
+
+<p>1.【单选】给定一个长度为n的不完整单词序列，我们希望预测下一个字母是什么。比如输入是“predictio”(9个字母组成)，希望预测第十个字母是什么。下面哪种神经网络结构适用于解决这个工作？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 循环神经网络
+	B. 卷积神经网络
+	C. 全连接神经网络
+	D. 以上都不是
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>2.【单选】关于循环神经网络，哪个不是LSTM的门?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 输入门
+	B. 遗忘门
+	C. 输出门
+	D. 更新门
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>3.【单选】
+以下哪项任务优先选择使用卷积神经网络来实现</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 图像数据获取
+	B. 图像预处理
+	C. 图像特征提取
+	D. 图像数据增强
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>4.【单选】
+对于一个图像识别问题(在一张照片里找出一只猫)，下面哪种神经网络可以更好地解决这个问题？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 循环神经网络
+	B. 感知机
+	C. 多层感知机
+	D. 卷积神经网络
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>5.【单选】
+若输入x1=1，x2=0，对应的权值分别为0.5，0.5，则经过过sign函数后的值是多少？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 0
+	B. 1
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>6.【单选】
+在神经网络中，我们是通过以下哪个方法在训练网络的时候更新参数，从而最小化损失函数的?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正向传播算法
+	B. 池化计算
+	C. 卷积计算
+	D. 反向传播算法
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>7.【单选】单层的神经网络反向传播算法也适用多层神经网络的反向传播，这句话正确吗？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确
+	B. 不正确
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>8.【单选】前馈神经网络是指网络只能前向传播，不能后向传播，这句话是否正确（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确的
+	B. 错误的
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>9.【单选】
+学习率（），会导致待优化的参数在最小值附近波动，不收敛；学习率（），会导致待优化的参数收敛缓慢。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 过小；过大
+	B. 过大；过小
+	C. 过大；过大
+	D. 过小；过小
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>10.【单选】
+学习率会影响待优化的参数的收敛吗？</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 会
+	B. 不会
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>11.【单选】
+下列有关LSTM的细胞状态正确的是。（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. LSTM决定从细胞状态中丢弃什么信息
+	B. LSTM决定什么信息增加到细胞状态中
+	C. LSTM决定从细胞状态中输出什么信息
+	D. 以上都是
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>12.【单选】
+关于循环神经网络，哪个不是LSTM的门?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 输入门
+	B. 遗忘门
+	C. 输出门
+	D. 更新门
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>13.【单选】
+给定一个长度为n的不完整单词序列，我们希望预测下一个字母是什么。比如输入是“predictio”(9个字母组成)，希望预测第十个字母是什么。下面哪种神经网络结构适用于解决这个工作？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 循环神经网络
+	B. 卷积神经网络
+	C. 全连接神经网络
+	D. 以上都不是
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>14.【单选】
+构建一个神经网络，将前一层的输出和它自身作为输入。</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/11.png" alt="11.png" />
+    </div>
+    
+</div>
+
+<p>下列哪一种架构有反馈连接？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 循环神经网络
+	B. 卷积神经网络
+	C. 限制玻尔兹曼机
+	D. 以上都不正确
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>15.【单选】
+“门”的出现可以帮助防止在RNN中的梯度消失问题。（ ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 对
+	B. 错
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>16.【单选】
+以下关于标准 RNN 模型，说法正确的是?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 不存在一对一的模型结构
+	B. 反向传播时不考虑时间方向
+	C. 不存在多对多的模型结构
+	D. 会出现长时间传输记忆的信息衰减的问题
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>17.【单选】
+以下关于标准 RNN 模型，说法正确的是?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 不存在一对一的模型结构
+	B. 反向传播时不考虑时间方向
+	C. 不存在多对多的模型结构
+	D. 会出现长时间传输记忆的信息衰减的问题
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>18.【单选】
+一个循环神经网络可以被展开成为一个完全连接的、具有无限长度的普通神经网络，这种说法是（  ）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确的
+	B. 错误的
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>19.【单选】
+输入图片大小为200×200，依次经过一层卷积（kernel size 5×5，same padding ，stride 2），pooling（kernel size 3×3，valid padding ，stride 1），又一层卷积（kernel size 3×3，same padding，stride 1）之后，输出特征图大小为（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 96
+	B. 97
+	C. 98
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>20.【单选】
+增加卷积核的大小对于改进卷积神经网络的效果是必要的吗？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 没听说过
+	B. 是
+	C. 否
+	D. 不知道
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>21.【单选】
+在训练CNN时，可以对输入进行旋转、平移、缩放等预处理提高模型泛化能力。这么说是对，还是不对？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 对
+	B. 不对
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>22.【单选】
+当构建一个神经网络进行图片的语义分割时，通常采用下面哪种顺序？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 先用卷积神经网络处理输入，再用反卷积神经网络得到输出
+	B. 先用反卷积神经网络处理输入，再用卷积神经网络得到输出
+	C. 不确定
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>23.【单选】
+假设下方是传入最大池化层的一个输入，该层中神经元的池化大小为(3,3)</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/12.png" alt="12.png" />
+    </div>
+    
+</div>
+
+<p>那么，该池化层的输出是多少？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 3
+	B. 7
+	C. 5
+	D. 5.5
+</code></pre></div></div>
+
+<p>正确答案：B
+24.【单选】在一个神经网络中，下面哪种方法可以用来处理过拟合？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. dropout
+	B. 分批归一化
+	C. 正则化
+	D. 以上都可以
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>25.【单选】下列的哪种方法可以用来降低深度学习模型的过拟合问题？（  ）</p>
+
+<p>1 增加更多的数据</p>
+
+<p>2 使用数据扩增技术(data augmentation)</p>
+
+<p>3 使用归纳性更好的架构</p>
+
+<p>4 正规化数据</p>
+
+<p>5 降低架构的复杂度</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1,4,5
+	B. 1,2,3
+	C. 1,3,4,5
+	D. 所有都可以
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>26.【多选】优化神经网络可以从哪些方面入手？（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 学习率的优化
+	B. 梯度下降的优化
+	C. 过拟合和欠拟合的优化
+	D. 梯度的优化
+</code></pre></div></div>
+
+<p>正确答案：A,B,C</p>
+
+<p>27.【单选】当神经网络的调参效果不好时，需要从哪些角度考虑？（ ）</p>
+
+<p>1 是否找到合适的损失函数</p>
+
+<p>2 batch size是否合适</p>
+
+<p>3 是否选择了和是的激活函数</p>
+
+<p>4 是否选择合适的学习率</p>
+
+<p>5 是否过拟合</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1,3,4,5
+	B. 1,2,3,4
+	C. 全部都不是
+	D. 全部都是
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>28.【单选】过拟合和欠拟合的优化不包括以下哪种方法？（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. Dropout
+	B. Bagging
+	C. 梯度下降法
+	D. 正则化
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>29.【单选】单层的神经网络反向传播算法也适用多层神经网络的反向传播，这句话正确吗？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确
+	B. 不正确
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>30.【单选】一个完成的反向传播的步骤是（  ）</p>
+
+<p>1 将隐藏层误差反向传播给输入层，调节隐藏层到输入层的权值和阈值</p>
+
+<p>2 将输出层的误差反向传播给隐藏层，调整隐藏层到输出层的权值和阈值</p>
+
+<p>3 将隐藏层的误差反向传播给隐藏层，调节隐藏层到隐藏层的权值和阈值</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1 2 3
+	B. 2 1 3
+	C. 1 3 2
+	D. 2 3 1
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>31.【单选】已知：</p>
+
+<ul>
+  <li>
+    <p>大脑是有很多个叫做神经元的东西构成，神经网络是对大脑的简单的数学表达。</p>
+  </li>
+  <li>
+    <p>每一个神经元都有输入、处理函数和输出。</p>
+  </li>
+  <li>
+    <p>神经元组合起来形成了网络，可以拟合任何函数。</p>
+  </li>
+  <li>
+    <p>为了得到最佳的神经网络，我们用梯度下降方法不断更新模型</p>
+  </li>
+</ul>
+
+<p>给定上述关于神经网络的描述，什么情况下神经网络模型被称为深度学习模型？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 加入更多层，使神经网络的深度增加
+	B. 有维度更高的数据
+	C. 当这是一个图形识别的问题
+	D. 以上都不正确
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>32.【单选】前馈神经网络是指网络只能前向传播，不能后向传播，这句话是否正确（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确的
+	B. 错误的
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>33.【单选】反向传播算法一开始计算什么内容的梯度，之后将其反向传播？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 预测结果与样本标签之间的误差
+	B. 各个输入样本的平方差之和
+	C. 各个网络权重的平方差之和
+	D. 以上都不对
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>34.【单选】下图中的数据是线性可分的么？（  ）</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/13.png" alt="13.png" />
+    </div>
+    
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 是
+	B. 否 正确答案：B
+</code></pre></div></div>
+
+<p>35.【单选】下列有关单层感知器的说法错误的是？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 包含输入层、隐藏层和输出层
+	B. 包含求和和激活操作
+	C. 能够解决“与门”操作
+	D. “与门”的线性分割线的斜率有权值决定
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>36.【单选】神经网络结构的选择会影响训练模型的效果，神经元结构不包括哪方面的选择。（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. depth
+	B. width
+	C. connectivity
+	D. function
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>37.【多选】神经网络模型的效果受神经元结构的影响，受哪方面的选择。（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. depth
+	B. width
+	C. connectivity
+	D. function
+</code></pre></div></div>
+
+<p>正确答案：A,B,C</p>
+
+<p>38.【单选】传统机器学习和深度学习是人工智能核心技术，在工程流程上略有差别，以下步骤在深度学习中不需要做的是</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 模型评估
+	B. 特征工程
+	C. 数据清洗
+	D. 模型构建
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>39.【单选】如果我们用了一个过大的学习速率会发生什么？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 神经网络不会收敛
+	B. 不好说
+	C. 都不对
+	D. 神经网络会收敛
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>40.【单选】过拟合和欠拟合的优化不包括以下哪种方法？（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. Bagging
+	B. Dropout
+	C. 梯度下降法
+	D. 正则化
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>41.【多选】神经网络中优化方法有（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. Adam
+	B. 随机梯度下降法
+	C. 随机下降法
+	D. 梯度下降法
+</code></pre></div></div>
+
+<p>正确答案：A,B,D</p>
+
+<p>42.【单选】在选择神经网络的深度时，下面哪些参数需要考虑？（  ）</p>
+
+<p>1 神经网络的类型(如MLP,CNN)</p>
+
+<p>2 输入数据</p>
+
+<p>3 计算能力(硬件和软件能力决定)</p>
+
+<p>4 学习速率</p>
+
+<p>5 映射的输出函数</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 都需要
+	B. 2,3,4,5
+	C. 1,2,3,5
+	D. 1,3,4,5
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>43.【单选】当训练一个神经网络来作图像识别任务时，通常会绘制一张训练集误差和交叉训练集误差图来进行调试。</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/14.png" alt="14.png" />
+    </div>
+    
+</div>
+
+<p>在上图中，最好在哪个时间停止训练？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. C
+	B. B
+	C. D
+	D. A
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>44.【单选】当数据太大而不能同时在RAM中处理时，哪种梯度技术更有优势？（ ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 随机梯度下降(Stochastic Gradient Descent)
+	B. 全批量梯度下降(Full Batch Gradient Descent )
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>45.【单选】当神经网络的调参效果不好时，需要从哪些角度考虑？（ ）</p>
+
+<p>1 是否找到合适的损失函数</p>
+
+<p>2 batch size是否合适</p>
+
+<p>3 是否选择了和是的激活函数</p>
+
+<p>4 是否选择合适的学习率</p>
+
+<p>5 是否过拟合</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1,3,4,5
+	B. 全部都是
+	C. 1,2,3,4
+	D. 全部都不是
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>46.【单选】下列的哪种方法可以用来降低深度学习模型的过拟合问题？（  ）</p>
+
+<p>1 增加更多的数据</p>
+
+<p>2 使用数据扩增技术(data augmentation)</p>
+
+<p>3 使用归纳性更好的架构</p>
+
+<p>4 正规化数据</p>
+
+<p>5 降低架构的复杂度</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1,3,4,5
+	B. 所有都可以
+	C. 1,2,3
+	D. 1,4,5
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>47.【单选】在一个神经网络中，下面哪种方法可以用来处理过拟合？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 分批归一化
+	B. dropout
+	C. 以上都可以
+	D. 正则化
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>48.【单选】下图中，红色曲线表示关于深度学习算法中每个时期的训练精度。绿色和蓝色曲线都表示验证的准确性。</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/15.png" alt="15.png" />
+    </div>
+    
+</div>
+
+<p>哪条曲线表示过拟合overfitting？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 绿色曲线
+	B. 蓝色曲线
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>49.【单选】以下词语中，与卷积神经网络的概念无关的是</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. ImageNet
+	B. 超平面
+	C. BP算法
+	D. 特征提取
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>50.【单选】以下哪些是CNN网络常用的模型？（  ）</p>
+
+<p>1 LeNet-5</p>
+
+<p>2 AlexNet</p>
+
+<p>3 VGGNet</p>
+
+<p>4 Google Inception Net</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1,2,3,4
+	B. 1,2,3
+	C. 2,3
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>51.【单选】从图中趋势可见，如果增加神经网络的宽度，精确度会增加到一个特定阈值后，便开始降低。造成这一现象的可能原因是什么？（  ）</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/16.png" alt="16.png" />
+    </div>
+    
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 即使增加卷积核的数量，只有少部分的核会被用作预测
+	B. 当卷积核数量增加时，神经网络的预测能力（Power）会降低
+	C. 当卷积核数量增加时，导致过拟合
+	D. 以上都不正确
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>52.【单选】输入图像已被转换为大小为28×28的矩阵和大小为7×7的步幅为1的核心/滤波器，填充方式是valid 。卷积矩阵的大小是多少？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 22 X 22
+	B. 21 X 21
+	C. 28 X 28
+	D. 7X 7
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>53.【多选】借助池化，网络存储可以有效提升存储的利用率，池化操作通常有几种?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 平均池化
+	B. 卷积
+	C. 最大池化
+	D. 全连接
+</code></pre></div></div>
+
+<p>正确答案：A,C</p>
+
+<p>54.【单选】在深度学习网络中，反向传播算法用于寻求最优参数，在反向传播算法中使用的什么法则进行逐层求导的?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 链式法则
+	B. 累加法则
+	C. 对等法则
+	D. 归一法则
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>55.【单选】一个完成的反向传播的步骤是（  ）</p>
+
+<p>1 将隐藏层误差反向传播给输入层，调节隐藏层到输入层的权值和阈值</p>
+
+<p>2 将输出层的误差反向传播给隐藏层，调整隐藏层到输出层的权值和阈值</p>
+
+<p>3 将隐藏层的误差反向传播给隐藏层，调节隐藏层到隐藏层的权值和阈值</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1 2 3
+	B. 2 1 3
+	C. 1 3 2
+	D. 2 3 1
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>56.【单选】前馈神经网络是指网络只能前向传播，不能后向传播，这句话是否正确（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确的
+	B. 错误的
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>57.【单选】反向传播算法一开始计算什么内容的梯度，之后将其反向传播？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 预测结果与样本标签之间的误差
+	B. 各个输入样本的平方差之和
+	C. 各个网络权重的平方差之和
+	D. 以上都不对
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>58.【单选】单层的神经网络反向传播算法也适用多层神经网络的反向传播，这句话正确吗？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确
+	B. 不正确
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>59.【单选】将Sigmoid激活函数改为ReLu，将有助于克服梯度消失问题？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 对
+	B. 错
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>60.【单选】如果我们希望预测n个类（p1，p2 … pk）的概率使得所有n的p的和等于1，那么下列哪个函数可以用作输出层中的激活函数？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. softmax
+	B. ReLU
+	C. Sigmoid
+	D. Tanh
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>61.【单选】您正在构建一个用于识别黄瓜（y=1）和西瓜（y=0）的二进制分类器。您建议将这些激活函数中的哪一个用于输出层？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. ReLU
+	B. Leaky ReLU
+	C. sigmoid
+	D. tanh
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>62.【单选】下列哪个函数不可以做激活函数？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. y=tanh(x)
+	B. y=sin(x)
+	C. y=max(x,0)
+	D. y=2x
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>63.【单选】在输出层不能使用以下哪种激活函数来分类图像（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. sigmoid
+	B. Tanh
+	C. ReLU
+	D. If（x&gt; 5,1,0）
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>64.【单选】下列有关单层感知器的说法错误的是？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 包含输入层、隐藏层和输出层
+	B. 包含求和和激活操作
+	C. 能够解决“与门”操作
+	D. “与门”的线性分割线的斜率有权值决定
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>65.【单选】神经网络最基本的结构不包括（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 输入层
+	B. 激活层
+	C. 隐藏层
+	D. 输出层
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>66.【单选】下列有关全连接网络说法正确的是（  ）：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 每个神经元具有激活函数功能
+	B. 每一个神经元与下一层的神经元完全连接
+	C. 神经元之间不存在跨层连接
+	D. 以上都正确
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>67.【单选】单层感知器能够实现异或问题的分类，这句话是否正确？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确
+	B. 错误
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>68.【单选】在一个简单的MLP模型中，输入层有8个神经元，隐藏层有5个神经元，输出层有1个神经元。隐藏输出层和输入隐藏层之间的权重矩阵的大小是多少（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. [1 X 5]，[5 X 8]
+	B. [8×5]，[1×5]
+	C. [5×8]，[5×1]
+	D. [5×1]，[8×5]
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>69.【单选】以下关于深度学习描述正确的是</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 深度学习是机器学习的一个分支
+	B. 深度学习与机器学习同属于人工智能但相互之间没有关系
+	C. 深度学习与机器学习是互相包含的关系
+	D. 以上都不对
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>70.【单选】在输出层不能使用以下哪种激活函数来分类图像（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. Tanh
+	B. ReLU
+	C. sigmoid
+	D. If（x&gt; 5,1,0）
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>71.【单选】相比sigmoid激活函数，relu激活函数有什么优势？(  )</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 防止梯度消失
+	B. ReLu函数简繁计算速度快
+	C. 以上都是
+	D. ReLu输出具有稀疏性
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>72.【单选】下列哪个函数不可以做激活函数？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. y=tanh(x)
+	B. y=2x
+	C. y=max(x,0)
+	D. y=sin(x)
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>73.【单选】您正在构建一个用于识别黄瓜（y=1）和西瓜（y=0）的二进制分类器。您建议将这些激活函数中的哪一个用于输出层？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. Leaky ReLU
+	B. tanh
+	C. ReLU
+	D. sigmoid
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>74.【单选】若输入x1=1，x2=0，对应的权值分别为0.5，0.5，则经过过sign函数后的值是多少？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1
+	B. 0
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>75.【单选】如果我们希望预测n个类（p1，p2 … pk）的概率使得所有n的p的和等于1，那么下列哪个函数可以用作输出层中的激活函数？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. softmax
+	B. Sigmoid
+	C. Tanh
+	D. ReLU
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>76.【单选】将Sigmoid激活函数改为ReLu，将有助于克服梯度消失问题？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 错
+	B. 对
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>77.【单选】您正在构建一个用于识别黄瓜（y=1）和西瓜（y=0）的二进制分类器。您建议将这些激活函数中的哪一个用于输出层？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. tanh
+	B. Leaky ReLU
+	C. ReLU
+	D. sigmoid
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>78.【单选】相比sigmoid激活函数，relu激活函数有什么优势？(  )</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. ReLu输出具有稀疏性
+	B. ReLu函数简繁计算速度快
+	C. 防止梯度消失
+	D. 以上都是
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>79.【单选】以下关于深度学习描述正确的是</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 深度学习与机器学习是互相包含的关系
+	B. 深度学习是机器学习的一个分支
+	C. 深度学习与机器学习同属于人工智能但相互之间没有关系
+	D. 以上都不对
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>80.【多选】一般神经网络包括（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 输入层
+	B. 隐藏层
+	C. 激活层
+	D. 输出层
+</code></pre></div></div>
+
+<p>正确答案：A,B,D</p>
+
+<p>81.【单选】单层感知器能够实现异或问题的分类，这句话是否正确？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确
+	B. 错误 正确答案：B
+</code></pre></div></div>
+
+<p>82.【多选】已知全连接神经网络的某一层的参数总量为 330,则上一层和本层的神经元数量可能为?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 33 和 10
+	B. 9 和 33
+	C. 32 和 10
+	D. 10 和 33
+</code></pre></div></div>
+
+<p>正确答案：A,D</p>
+
+<p>83.【单选】全连接神经网络，如果输入层为44X8矩阵，那么与它相连的第一级参数矩阵最有可能为</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 32X32矩阵
+	B. 任意尺寸矩阵
+	C. 32X4矩阵
+	D. 8X5矩阵
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>84.【多选】深度学习中常用的损失函数有</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 均方误差损失函数
+	B. L1 损失函数
+	C. 交叉熵误差损失函数
+	D. 自下降损失函数
+</code></pre></div></div>
+
+<p>正确答案：A,C</p>
+
+<p>85.【单选】若输入x1=1，x2=0，对应的权值分别为0.5，0.5，则经过过sign函数后的值是多少？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 0
+	B. 1
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>86.【单选】梯度下降算法的正确步骤是什么？（  ）</p>
+
+<p>1 计算预测值和真实值之间的误差</p>
+
+<p>2 重复迭代，直至得到网络权重的最佳值</p>
+
+<p>3 把输入传入网络，得到输出值</p>
+
+<p>4 用随机值初始化权重和偏差</p>
+
+<p>5 对每一个产生误差的神经元，调整相应的（权重）值以减小误差</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 3，2，1，5，4
+	B. 5，4，3，2，1
+	C. 1，2，3，4，5
+	D. 4，3，1，5，2 ​
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>87.【单选】假设神经元的输入值为（1,2,3），对应的权重为4,5,6，神经元经过一个线性函数y=2x，最终的输出结果是多少（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 64
+	B. 32
+	C. 48
+	D. 96
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>88.【单选】我们在训练神经网络过程中，使用梯度下降法不断更新哪种数值，进而使得损失函数最小化?（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 样本数目
+	B. 特征值
+	C. 参数
+	D. 超参数
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>89.【单选】神经元的网络计算公式中，各参数代表的含义错误的是（）</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/17.png" alt="17.png" />
+    </div>
+    
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. b 为偏置值
+	B. z 为真实结果
+	C. x 为输入
+	D. w 为权重
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>90.【单选】在神经网络中，我们是通过以下哪个方法在训练网络的时候更新参数，从而最小化损失函数的?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 反向传播算法
+	B. 池化计算
+	C. 正向传播算法
+	D. 卷积计算
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>91.【单选】优化器是训练神经网络的重要组成部分，使用优化器的目的不包含以下哪项</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 加快算法收敛速度
+	B. 避过局部极值
+	C. 减少手工参数的设置难度
+	D. 避过过拟合问题
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>92.【单选】神经网络最基本的结构不包括（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 隐藏层
+	B. 输出层
+	C. 输入层
+	D. 激活层
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>93.【单选】DNN的全称是（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 动态神经网络
+	B. 深度学习网络
+	C. 动态学习网络
+	D. 深度神经网络
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>94.【单选】下列有关全连接网络说法正确的是（  ）：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 每个神经元具有激活函数功能
+	B. 神经元之间不存在跨层连接
+	C. 以上都正确
+	D. 每一个神经元与下一层的神经元完全连接
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>95.【单选】下列有关张量和和变量的说法正确的是（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 张量可以简单理解为多维度数组
+	B. 在TensorFlow中所有的数据都是通过张量的形式表示“
+	C. 变量是一种特殊的张量
+	D. 以上都是
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>96.【单选】TensorFlow的说法哪些是正确的（  ）</p>
+
+<p>A  TensorFlow是由谷歌在2015年年底推出的一款开源框架</p>
+
+<p>B  TensorFlow是基于DistDelief进行研发的第二代人工智能系统，用来快速实现深度学习（DL）和卷积神经网络（CNN）等各种算法</p>
+
+<p>C  TensorFlow名字描述了执行的原理：Tensor（张量）意味着N维数组，Flow（流）意味着基于数据流图的计算</p>
+
+<p>D  以上都是</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. A
+	B. D
+	C. B
+	D. C
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>97.【单选】深度学习与机器学习算法之间的区别在于，深度学习过程中无需进行特征提取工作，也就是说，我们建议在进行深度学习过程之前要首先完成特征提取的工作。这种说法是（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确的
+	B. 错误的
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>98.【单选】有关数据的流向机制描述正确的是（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 注入机制是feed，取出机制是fetch
+	B. 取出机制，即向模式中输入数据
+	C. 注入机制，即从模式中得到结果
+	D. 注入机制是fetch，取出机制是feed
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>99.【单选】有关“图”描述错误的是（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. “图”会在会话中被启动
+	B. 使用Graph函数生成新的计算图
+	C. 一个“图”代表一个或多个计算任务
+	D. 不同计算图上的张量和运算不共享
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>100.【单选】Dropout对一个神经元随机屏蔽输入权重这句话是否正确？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确的
+	B. 错误的
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>101.【单选】当神经网络的调参效果不好时，需要从哪些角度考虑？（ ）</p>
+
+<p>1 是否找到合适的损失函数</p>
+
+<p>2 batch size是否合适</p>
+
+<p>3 是否选择了和是的激活函数</p>
+
+<p>4 是否选择合适的学习率</p>
+
+<p>5 是否过拟合</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1,3,4,5
+	B. 1,2,3,4
+	C. 全部都不是
+	D. 全部都是
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>102.【单选】学习率（），会导致待优化的参数在最小值附近波动，不收敛；学习率（），会导致待优化的参数收敛缓慢。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 过小；过大
+	B. 过大；过小
+	C. 过大；过大
+	D. 过小；过小
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>103.【单选】学习率会影响待优化的参数的收敛吗？</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 会
+	B. 不会 正确答案：A
+</code></pre></div></div>
+
+<p>104.【单选】在训练神经网络时，损失函数(loss)在最初的几个epochs时没有下降，可能的原因是？（  ）</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/18.png" alt="18.png" />
+    </div>
+    
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 学习率太高
+	B. 正则参数太高
+	C. 陷入局部最小值
+	D. 以上都有可能
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>105.【单选】下列哪个不是自适应学习率优化器？()</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. AdamGrad优化器
+	B. Adam 优化器
+	C. 梯度下降优化器
+	D. RMSDrop优化器
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>106.【单选】如果我们用了一个过大的学习速率会发生什么？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 神经网络会收敛
+	B. 不好说
+	C. 都不对
+	D. 神经网络不会收敛
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>107.【单选】当训练一个神经网络来作图像识别任务时，通常会绘制一张训练集误差和交叉训练集误差图来进行调试。</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/19.png" alt="19.png" />
+    </div>
+    
+</div>
+
+<p>在上图中，最好在哪个时间停止训练？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. A
+	B. B
+	C. C
+	D. D
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>108.【单选】当数据太大而不能同时在RAM中处理时，哪种梯度技术更有优势？（ ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 全批量梯度下降(Full Batch Gradient Descent )
+	B. 随机梯度下降(Stochastic Gradient Descent)
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>109.【单选】过拟合和欠拟合的优化不包括以下哪种方法？（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. Dropout
+	B. Bagging
+	C. 梯度下降法
+	D. 正则化
+</code></pre></div></div>
+
+<p>正确答案：C</p>
+
+<p>110.【单选】下列的哪种方法可以用来降低深度学习模型的过拟合问题？（  ）</p>
+
+<p>1 增加更多的数据</p>
+
+<p>2 使用数据扩增技术(data augmentation)</p>
+
+<p>3 使用归纳性更好的架构</p>
+
+<p>4 正规化数据</p>
+
+<p>5 降低架构的复杂度</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1,4,5
+	B. 1,2,3
+	C. 1,3,4,5
+	D. 所有都可以
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>111.【单选】在一个神经网络中，下面哪种方法可以用来处理过拟合？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. dropout
+	B. 分批归一化
+	C. 正则化
+	D. 以上都可以
+</code></pre></div></div>
+
+<p>正确答案：D</p>
+
+<p>112.【多选】优化神经网络可以从哪些方面入手？（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 学习率的优化
+	B. 梯度下降的优化
+	C. 过拟合和欠拟合的优化
+	D. 梯度的优化
+</code></pre></div></div>
+
+<p>正确答案：A,B,C</p>
+
+<p>113.【多选】神经网络中优化方法有（）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 梯度下降法
+	B. 随机梯度下降法
+	C. Adam
+	D. 随机下降法
+</code></pre></div></div>
+
+<p>正确答案：A,B,C</p>
+
+<p>114.【单选】如图所示，当开始训练时，误差一直很高，这是因为神经网络在往全局最小值前进之前一直被卡在局部最小值里。为了避免这种情况，我们可以采取下面哪种策略？（  ）</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/artificialNetwork/20.png" alt="20.png" />
+    </div>
+    
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 改变学习速率，比如一开始的几个训练周期不断更改学习率速率
+	B. 一开始将学习速率减小10倍，然后用动量项(momentum)
+	C. 增加参数数目，这样神经网络就不会卡在局部最优处
+	D. 以上都不对
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>115.【单选】在深度学习网络中，反向传播算法用于寻求最优参数，在反向传播算法中使用的什么法则进行逐层求导的?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 链式法则
+	B. 累加法则
+	C. 对等法则
+	D. 归一法则
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>116.【单选】前馈神经网络是指网络只能前向传播，不能后向传播，这句话是否正确（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确的
+	B. 错误的
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>117.【单选】反向传播算法一开始计算什么内容的梯度，之后将其反向传播？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 预测结果与样本标签之间的误差
+	B. 各个输入样本的平方差之和
+	C. 各个网络权重的平方差之和
+	D. 以上都不对
+</code></pre></div></div>
+
+<p>正确答案：A</p>
+
+<p>118.【单选】单层的神经网络反向传播算法也适用多层神经网络的反向传播，这句话正确吗？（  ）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 正确
+	B. 不正确
+</code></pre></div></div>
+
+<p>正确答案：B</p>
+
+<p>119.【单选】一个完成的反向传播的步骤是（  ）</p>
+
+<p>1 将隐藏层误差反向传播给输入层，调节隐藏层到输入层的权值和阈值</p>
+
+<p>2 将输出层的误差反向传播给隐藏层，调整隐藏层到输出层的权值和阈值</p>
+
+<p>3 将隐藏层的误差反向传播给隐藏层，调节隐藏层到隐藏层的权值和阈值</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	A. 1 2 3
+	B. 2 1 3
+	C. 1 3 2
+	D. 2 3 1
+</code></pre></div></div>
+
+<p>正确答案：D</p>]]></content><author><name>Ranok</name></author><category term="python" /><category term="人工智能" /><category term="期末考试" /><summary type="html"><![CDATA[  人工神经网络（Artificial Neural Networks，简写为ANNs）也简称为神经网络（NNs）或称作连接模型（Connection Model），它是一种模仿动物神经网络行为特征，进行分布式并行信息处理的算法数学模型。这种网络依靠系统的复杂程度，通过调整内部大量节点之间相互连接的关系，从而达到处理信息的目的。]]></summary></entry><entry><title type="html">网络爬虫</title><link href="http://localhost:4000/crawler" rel="alternate" type="text/html" title="网络爬虫" /><published>2023-06-20T00:00:00+08:00</published><updated>2023-06-20T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-spider</id><content type="html" xml:base="http://localhost:4000/crawler"><![CDATA[<p>网络爬虫（Web Crawler）是一种自动化程序，它可以在互联网上浏览和收集信息。它们可以发现和抓取网站上的所有内容，包括文本、图片、视频、音频等，并将这些数据保存到数据库或文件中。</p>
+
+<hr />
+
+<h1 id="目录">目录</h1>
+
+<ul>
+  <li><a href="#目录">目录</a></li>
+  <li><a href="#前言">前言</a></li>
+  <li><a href="#正文">正文</a>
+    <ul>
+      <li><a href="#选择题部分">选择题部分</a>
+        <ul>
+          <li><a href="#1-下列选项中不能用于解析网页数据的是">1 下列选项中，不能用于解析网页数据的是（）</a></li>
+          <li><a href="#2-下列选项中用于匹配任意字符数字的是">2 下列选项中，用于匹配任意字符数字的是（）</a></li>
+          <li><a href="#3-下列选项中用于在xpath中选取属性节点的是">3 下列选项中，用于在Xpath中选取属性节点的是（）</a></li>
+          <li><a href="#4-列选项中关于re模块的说法错误的是">4 列选项中，关于re模块的说法错误的是（）</a></li>
+          <li><a href="#5-下列选项中关于lxml说法错误的是">5 下列选项中，关于lxml说法错误的是（）</a></li>
+          <li><a href="#6-下列选项中关于selenium描述错误的是">6 下列选项中，关于Selenium描述错误的是（）</a></li>
+          <li><a href="#7-下列选项中属于chrome浏览器驱动程序的是">7 下列选项中，属于Chrome浏览器驱动程序的是（）</a></li>
+          <li><a href="#8-下列选项中用于根据指定url地址访问页面的方法是">8 下列选项中，用于根据指定URL地址访问页面的方法是（）</a></li>
+          <li><a href="#9-下列选项中通过类名定位元素的方法是">9 下列选项中，通过类名定位元素的方法是（）</a></li>
+          <li><a href="#10-下列选项中关于显式等待和隐式等待描述错误的是">10 下列选项中，关于显式等待和隐式等待描述错误的是（）</a></li>
+        </ul>
+      </li>
+      <li><a href="#简答题--论述题">简答题 \&amp; 论述题</a>
+        <ul>
+          <li><a href="#1-什么是网络爬虫">1 什么是网络爬虫？</a>
+            <ul>
+              <li><a href="#理论定义">理论定义：</a></li>
+              <li><a href="#分类">分类：</a></li>
+            </ul>
+          </li>
+          <li><a href="#2-网页的分类简答题问法">2 网页的分类（简答题问法）</a></li>
+          <li><a href="#3-网络爬虫的应用场景有哪些">3 网络爬虫的应用场景有哪些？</a></li>
+          <li><a href="#4-网络爬虫合法性研究">4 网络爬虫合法性研究</a>
+            <ul>
+              <li><a href="#41论述题的考法">4.1论述题的考法</a>
+                <ul>
+                  <li><a href="#网络爬虫是否合法">网络爬虫是否合法？</a></li>
+                  <li><a href="#合法合规的爬虫是什么样的">合法合规的爬虫是什么样的？</a></li>
+                  <li><a href="#你认为不合法合规的爬虫是什么样的">你认为不合法合规的爬虫是什么样的？</a></li>
+                </ul>
+              </li>
+              <li><a href="#42简答题的问法">4.2简答题的问法</a>
+                <ul>
+                  <li><a href="#什么是robotstxt协议">什么是robots.txt协议？</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#5-防爬虫的应对策略有哪些">5 防爬虫的应对策略有哪些？</a></li>
+          <li><a href="#6-http和https-的区别">6 http和https 的区别？</a></li>
+          <li><a href="#7-网页的分类论述题问法">7 网页的分类（论述题问法）</a>
+            <ul>
+              <li><a href="#71静态网页动态网页是什么">7.1静态网页，动态网页是什么？</a></li>
+              <li><a href="#72静态网页的特点">7.2静态网页的特点</a></li>
+              <li><a href="#73动态网页的特点">7.3动态网页的特点</a></li>
+              <li><a href="#74动态网页采集技术类型有哪些你最喜欢用哪一个">7.4动态网页采集技术类型有哪些？你最喜欢用哪一个</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#综合应用题">综合应用题</a>
+        <ul>
+          <li><a href="#1-scrapy-redis架构">1 Scrapy-Redis架构</a></li>
+          <li><a href="#2-scrapyspider类的常用属性和方法">2 scrapy.Spider类的常用属性和方法</a></li>
+        </ul>
+      </li>
+      <li><a href="#程序题部分">程序题部分</a>
+        <ul>
+          <li><a href="#程序填空">程序填空</a></li>
+          <li><a href="#程序解释题">程序解释题</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="前言">前言</h1>
+
+<p>  本博客针对，网络爬虫期末考试进行整理。部分整理针对题型进行整理。祝你取得一个<strong>好成绩</strong>！。</p>
+
+<hr />
+
+<h1 id="正文">正文</h1>
+
+<h2 id="选择题部分">选择题部分</h2>
+
+<blockquote>
+  <p>针对平时测试所整理，有概率考到</p>
+</blockquote>
+
+<h3 id="1-下列选项中不能用于解析网页数据的是">1 下列选项中，不能用于解析网页数据的是（）</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. LXML     
+B. Beautiful Soup  
+C. JSONPath   
+D. Requests
+</code></pre></div></div>
+
+<p>  正确答案：D</p>
+
+<h3 id="2-下列选项中用于匹配任意字符数字的是">2 下列选项中，用于匹配任意字符数字的是（）</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. \w    
+B. \d   
+C. \D    
+D. \W
+</code></pre></div></div>
+
+<p>  正确答案：B</p>
+
+<h3 id="3-下列选项中用于在xpath中选取属性节点的是">3 下列选项中，用于在Xpath中选取属性节点的是（）</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. /     
+B. //    
+C. @   
+D. #
+</code></pre></div></div>
+
+<p>  正确答案：C</p>
+
+<h3 id="4-列选项中关于re模块的说法错误的是">4 列选项中，关于re模块的说法错误的是（）</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. re模块是Python中可操作正则表达式的模块
+B. re模块中的compile( )函数用于对正则表达式进行编译
+C. 使用findall( )方法或finditer( )方法可以获取所有与正则表达式匹配的内容
+D. 使用finditer( )方法返回的是列表，使用findall( )方法返回的是迭代器
+</code></pre></div></div>
+
+<p>  正确答案：D</p>
+
+<h3 id="5-下列选项中关于lxml说法错误的是">5 下列选项中，关于lxml说法错误的是（）</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. Element类的find( )方法用于从根节点开始查找，并以列表形式返回匹配的节点
+B. 使用lxml库可以对HTML文档或XML文档中的节点进行定位和提取
+C. ElementTree类的对象可以理解为HTML文档或XML文档的树节点
+D. 使用lxml库可以对HTML文档缺少的&lt;html&gt;和&lt;body&gt;元素自动补全
+</code></pre></div></div>
+
+<p>  正确答案：D</p>
+
+<h3 id="6-下列选项中关于selenium描述错误的是">6 下列选项中，关于Selenium描述错误的是（）</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. Selenium是一个开源的便携式自动化测试工具
+B. Selenium可以直接在浏览器上运行
+C. Selenium自身携带浏览器，并支持浏览器的功能
+D. Selenium可以根据指令自动加载网页或判断网页上是否发生动作
+</code></pre></div></div>
+
+<p>  正确答案：C</p>
+
+<h3 id="7-下列选项中属于chrome浏览器驱动程序的是">7 下列选项中，属于Chrome浏览器驱动程序的是（）</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. ChromeDriver
+B. geckodriver
+C. operachromiumdriver
+D. IEDriverServer
+</code></pre></div></div>
+
+<p>  正确答案：A</p>
+
+<h3 id="8-下列选项中用于根据指定url地址访问页面的方法是">8 下列选项中，用于根据指定URL地址访问页面的方法是（）</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. get()
+B. Post()
+C. head()
+D. put()
+</code></pre></div></div>
+
+<p>  正确答案：A</p>
+
+<h3 id="9-下列选项中通过类名定位元素的方法是">9 下列选项中，通过类名定位元素的方法是（）</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. find_element_by_name()
+B. find_element_by_class_name()
+C. find_element_by_id()
+D. find_element_by_tag_name()
+</code></pre></div></div>
+
+<p>  正确答案：B</p>
+
+<h3 id="10-下列选项中关于显式等待和隐式等待描述错误的是">10 下列选项中，关于显式等待和隐式等待描述错误的是（）</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 隐式等待就是设置一个全局的最大等待时间
+B. 显式等待会先指定某个条件，再设置最长等待时间
+C. 隐式等待可作用于单个元素
+D. 显式等待只能作用于单个元素
+</code></pre></div></div>
+
+<p>  正确答案：C</p>
+
+<hr />
+
+<h2 id="简答题--论述题">简答题 &amp; 论述题</h2>
+
+<h3 id="1-什么是网络爬虫">1 什么是网络爬虫？</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>本题考察简答题 5'
+</code></pre></div></div>
+
+<h4 id="理论定义">理论定义：</h4>
+
+<p>  网络爬虫就是一个模拟真人浏览万维网行为的程序，这个程序可以代替真人自动请求万维网，并接收从万维网返回的数据。与真人浏览万维网相比，网络爬虫能够浏览的信息量更大，效率也更高。（重点）</p>
+
+<h4 id="分类">分类：</h4>
+
+<p>  通用网络爬虫、聚焦网络爬虫、增量式网络爬虫、深层网络爬虫。</p>
+
+<p>  通用网络爬虫:是指访问全互联网资源的网络爬虫。它是搜索引擎（如百度、谷歌、雅虎等）抓取系统的重要组成部分，主要用于将互联网中的网页下载到本地，形成一个互联网内容的镜像备份。（重点）</p>
+
+<p>  聚焦网络爬虫:是指有选择性地访问那些与预定主题相关网页的网络爬虫，它根据预先定义好的目标，有选择性地访问与目标主题相关的网页，获取所需要的数据。</p>
+
+<p>  增量式网络爬虫:是指对已下载的网页采取增量式更新，只抓取新产生或者已经发生变化的网页的网络爬虫。</p>
+
+<p>  深层网络爬虫:是指抓取深层网页的网络爬虫，它要抓取的网页层次比较深，需要通过一定的附加策略才能够自动抓取，实现难度较大。</p>
+
+<hr />
+
+<h3 id="2-网页的分类简答题问法">2 网页的分类（简答题问法）</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>本题考察简答题 5'
+</code></pre></div></div>
+
+<p>  主要分为表层网页，深层网页。</p>
+
+<p>  表层网页是指传统搜索引擎可以索引的页面，主要以超链接可以到达的静态网页构成的网页。<br />
+  深层网页是指大部分内容无法通过静态链接获取的，只能通过用户提交一些关键词才能获取的网页，如用户注册后内容才可见的网页。</p>
+
+<hr />
+
+<h3 id="3-网络爬虫的应用场景有哪些">3 网络爬虫的应用场景有哪些？</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>本题考察简答题 5'
+</code></pre></div></div>
+
+<p>  搜索引擎、舆情分析与监测、聚合平台、出行类软件等。</p>
+
+<p>  搜索引擎：如百度、谷歌、雅虎等。</p>
+
+<p>  舆情分析与监测：例如用于过滤敏感词汇。发掘舆情热点，跟踪目标话题。</p>
+
+<p>  运用网络爬虫技术对一些电商平台上的商品信息进行采集，将所有的商品信息放到自己的平台上展示，并提供横向数据的比较。</p>
+
+<p>  出行类软件，比如飞猪、携程、去哪儿等，也是网络爬虫应用比较多的场景。</p>
+
+<hr />
+
+<h3 id="4-网络爬虫合法性研究">4 网络爬虫合法性研究</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>本题考察简答题 5' &amp; 论述题 16'
+</code></pre></div></div>
+
+<h4 id="41论述题的考法">4.1论述题的考法</h4>
+
+<h5 id="网络爬虫是否合法">网络爬虫是否合法？</h5>
+<p>  （1）爬虫本身不违法。<br />
+  （2）如果爬虫程序采集到会侵犯到有关公民信息，以及商业机密等内容，并将之用于非法途径的，则肯定构成非法获取公民个人信息的违法行为。<br />
+  （3）部分公司提供公开API接口允许爬取其数据。爬取这样的数据并不违法。<br />
+  （4）网络爬虫在遵守法律政策和网站协议的情况下是合法的。<br /></p>
+
+<h5 id="合法合规的爬虫是什么样的">合法合规的爬虫是什么样的？</h5>
+
+<p>  （1）遵守robots.txt协议<br />
+  （2）不断请求而不会影响网站的正常运行<br />
+  （3）不获取敏感信息<br />
+  （4）不会对目标网站造成安全隐患<br />
+  （5）网站公开数据允许收集<br />
+  （6）爬虫有明确用户使用场景<br /></p>
+
+<h5 id="你认为不合法合规的爬虫是什么样的">你认为不合法合规的爬虫是什么样的？</h5>
+
+<p>  （1）爬取未公开、未经许可、且带有敏感信息的数据。<br />
+  （2）使用技术手段不克制，造成提供信息的平台的服务资源损失。<br />
+  （3）出售个人信息，将爬取的信息用在了不正当商业行为中。<br />
+  （4）不遵循数据许可协议，超出约定的使用。<br />
+  （5）无限制地抓取网页。<br />
+  （6）使用爬虫，模拟用户行为欺瞒网站。</p>
+
+<h4 id="42简答题的问法">4.2简答题的问法</h4>
+
+<h5 id="什么是robotstxt协议">什么是robots.txt协议？</h5>
+
+<p>  Robots协议又称爬虫协议，它是国际互联网界通行的道德规范，用于保护网站数据和信息不受侵犯。网站管理员通常会在网页根目录下放置一个符合Robots协议的robots.txt文件，用于告知哪些数据允许爬取，哪些数据不允许爬取。</p>
+
+<hr />
+
+<h3 id="5-防爬虫的应对策略有哪些">5 防爬虫的应对策略有哪些？</h3>
+
+<p>  添加User-Agent字段、降低访问频率、设置代理服务、识别验证码。<br /></p>
+
+<p>  1. 添加User-Agent字段:浏览器在访问网站时会携带固定的User-Agent，向网站表明自己的真实身份。所以可以在请求网页时携带User-Agent，将自己伪装成一个浏览器。</p>
+
+<p>  2. 降低访问频率:同一账户在较短的时间内多次访问了网页可能会被封禁。所以可以每抓取一次页面数据就休息几秒钟，或者限制每天抓取的页面数据的数量。</p>
+
+<p>  3. 设置代理服务:反复使用同一IP地址进行访问，则极易被网站认出是爬虫。所以可以在网络爬虫和Web服务器之间设置代理服务器。</p>
+
+<p>  4. 识别验证码:有些网站可能会要求该客户端进行登录验证，并随机提供一个验证码，为了应对这种发情况可以将爬虫像人类一样通过滑动或点击行为识别验证码。</p>
+
+<hr />
+
+<h3 id="6-http和https-的区别">6 http和https 的区别？</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>本题考察简答题 5'
+</code></pre></div></div>
+
+<p>  HTTP协议全称为超文本传输协议，它用于将Web服务器的超文本资源传送到浏览器中。</p>
+
+<p>  HTTPS协议是一种超文本传输安全协议。</p>
+
+<p>  两者的不同：<br />
+  HTTP中浏览器与Web服务器的连接是一种一次性连接，它限制每次连接只能处理一个请求。<br />
+  HTTPS在HTTP协议基础上添加了安全套接字协议，完成互联网数据传输加密，实现互联网传输安全保护。</p>
+
+<hr />
+
+<h3 id="7-网页的分类论述题问法">7 网页的分类（论述题问法）</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>本题考察论述题 16'
+</code></pre></div></div>
+
+<h4 id="71静态网页动态网页是什么">7.1静态网页，动态网页是什么？</h4>
+
+<p>  静态网页中包含的诸如文本、图像、FLASH动画、超链接等内容，在编写网页源代码时已经确定，基本上不会发生变化，除非更改源码。</p>
+
+<p>  动态网页有数据库支撑、包含程序以及提供与用户交互功能，如用户登录、用户注册、信息查询等功能，这些功能根据用户传入不同参数网页会显示不同数据。</p>
+
+<h4 id="72静态网页的特点">7.2静态网页的特点</h4>
+
+<p>  1. 静态网页的内容相对稳定，一经上传至网站服务器，无论是否有用户访问内容都会一直保存在网站服务器上。<br />
+  2. 静态网页的访问速度快，访问过程中无须连接数据库。<br />
+  3. 静态网页没有数据库的支持，内容更新与维护比较复杂。<br />
+  4. 静态网页的交互性较差，在功能方面有较大的限制。</p>
+
+<h4 id="73动态网页的特点">7.3动态网页的特点</h4>
+
+<p>  1. 动态网页一般以数据库技术为基础。<br />
+  2. 动态网页并不是独立存在于服务器上的网页文件，只有当用户请求时服务器才会返回一个完整的网页。<br />
+  3. 采用动态网页技术的网站可以实现更多的功能，如用户注册、用户登录、在线调查、用户管理、订单管理等。</p>
+
+<h4 id="74动态网页采集技术类型有哪些你最喜欢用哪一个">7.4动态网页采集技术类型有哪些？你最喜欢用哪一个</h4>
+
+<p>  1. 基于浏览器自动化工具（如Selenium）的采集技术。
+  2. 基于HTML请求模拟采集技术。
+  3. 基于无界面浏览器的采集技术。
+  4. 基于API接口调用的采集技术。</p>
+
+<p>  我最喜欢用浏览器自动化工具Selenium，因为使用Selenium，对于动态网页的数据可以直接使用模拟浏览器运行的方式进行实现，这样做就可以不用管网页内部是如何使用JavaScript渲染页面的，在浏览器中看到是什么样的内容，抓取的结果便是什么样的内容。</p>
+
+<hr />
+
+<h2 id="综合应用题">综合应用题</h2>
+
+<blockquote>
+  <p>本题型一张试卷只有一题，16分，一题分多个小点</p>
+</blockquote>
+
+<h3 id="1-scrapy-redis架构">1 Scrapy-Redis架构</h3>
+
+<p>  绘制以下一张完整的图像。统一要求对关键名称写中文。</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/blog-img/spider/1.jpg" alt="1.jpg" />
+    </div>
+    
+</div>
+
+<p>  注意这里A卷中，与画图题一起考的还有一个多选题，请排除<strong>第二个选项</strong></p>
+
+<hr />
+
+<h3 id="2-scrapyspider类的常用属性和方法">2 scrapy.Spider类的常用属性和方法</h3>
+
+<p>  1. name属性：设置爬虫文件的名称。<br />
+  2. allowed_domains属性：设置爬虫允许抓取的域名范围。<br />
+  3. start_urls属性：表示需要提交的初始URL地址。<br />
+  4. <strong>init</strong>()方法：负责初始化爬虫名称和初始URL列表。<br />
+  5. start_requests()方法：负责生成Requests对象，交给Scrapy下载。<br />
+  6. parse(response)方法：负责解析Response，并返回Item或Requests。<br />
+  7. log(message[level, component])方法：负责发送日志信息。</p>
+
+<p>这个大题下面有关知识点的整理（不用背）（会考多选题和判断题）：</p>
+
+<p>  该文件中可以定义多个管道，这些管道会按照定义的顺序<strong>依次处理</strong>Item对象。（✔）</p>
+
+<p>  CrawlSpider类由于继承了Spider类，所以继承了Spider类的所有公有成员。此外，CrawlSpider类自身也定义了一些属性。在这里，我们着重了解一下rules属性。<br />rules属性是一个包含一个或多个Rule对象给续会介绍的列表。每个Rule对象对抓取网站的动作定义了特定表现。如果多个Rule对象匹配了同一个链接，则根据它们在本属性中定义的顺序，使用第一个Rule对象。</p>
+
+<hr />
+
+<h2 id="程序题部分">程序题部分</h2>
+
+<h3 id="程序填空">程序填空</h3>
+
+<p>以下代码要求掌握，共计13点</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">text</span> <span class="o">=</span> <span class="n">etree</span><span class="p">.</span><span class="n">HTML</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1"># 文章标题
+</span>  <span class="n">title</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'./a[1]/text()'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+  <span class="c1"># 文章链接
+</span>  <span class="n">url</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'./a[1]/@href'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+  <span class="c1"># 文章作者
+</span>  <span class="n">author</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'./div[@class="foruminfo"]//a/span/text()'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">item</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">"文章标题"</span><span class="p">:</span> <span class="n">title</span><span class="p">,</span>
+    <span class="s">"文章链接"</span><span class="p">:</span> <span class="n">url</span><span class="p">,</span>
+    <span class="s">"文章作者"</span><span class="p">:</span> <span class="n">author</span><span class="p">,</span>
+    <span class="s">'发布时间'</span><span class="p">:</span> <span class="n">release_time</span><span class="p">,</span>
+  <span class="p">}</span>
+  <span class="n">items</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="n">ChromeOptions</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1"># text属性 : 获取当前dd节点以及它的子节点和后代节点的文本内容
+</span>  <span class="n">one_film_info_list</span> <span class="o">=</span> <span class="n">dd</span><span class="p">.</span><span class="n">text</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">item</span><span class="p">[</span><span class="s">'name'</span><span class="p">]</span> <span class="o">=</span> <span class="n">one_film_info_list</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">strip</span><span class="p">()</span>
+  <span class="n">item</span><span class="p">[</span><span class="s">'star'</span><span class="p">]</span> <span class="o">=</span> <span class="n">one_film_info_list</span><span class="p">[</span><span class="mi">2</span><span class="p">].</span><span class="n">strip</span><span class="p">()</span>
+  <span class="n">item</span><span class="p">[</span><span class="s">'time'</span><span class="p">]</span> <span class="o">=</span> <span class="n">one_film_info_list</span><span class="p">[</span><span class="mi">3</span><span class="p">].</span><span class="n">strip</span><span class="p">()</span>
+  <span class="n">item</span><span class="p">[</span><span class="s">'score'</span><span class="p">]</span> <span class="o">=</span> <span class="n">one_film_info_list</span><span class="p">[</span><span class="mi">4</span><span class="p">].</span><span class="n">strip</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">def</span> <span class="nf">get_html</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
+    <span class="n">html</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">headers</span><span class="p">).</span><span class="n">text</span>
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">p</span> <span class="o">=</span> <span class="n">etree</span><span class="p">.</span><span class="n">HTML</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">item</span><span class="p">[</span><span class="s">'name'</span><span class="p">]</span> <span class="o">=</span> <span class="n">dd</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'.//p[@class="name"]/a/@title'</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="n">strip</span><span class="p">()</span>
+  <span class="n">item</span><span class="p">[</span><span class="s">'star'</span><span class="p">]</span> <span class="o">=</span> <span class="n">dd</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'.//p[@class="star"]/text()'</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="n">strip</span><span class="p">()</span>
+  <span class="n">item</span><span class="p">[</span><span class="s">'time'</span><span class="p">]</span> <span class="o">=</span> <span class="n">dd</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'.//p[@class="releasetime"]/text()'</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="n">strip</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">item</span><span class="p">[</span><span class="s">'score'</span><span class="p">]</span> <span class="o">=</span> <span class="s">''</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">dd</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'.//p[@class="score"]/i/text()'</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">name</span> <span class="o">=</span> <span class="s">'itcast'</span>		<span class="c1"># 这个是试卷上会给的
+</span>  <span class="n">allowed_domains</span> <span class="o">=</span> <span class="p">[</span><span class="s">'itcast.cn'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1"># 创建MyspiderItem类的对象
+</span>  <span class="n">item</span> <span class="o">=</span> <span class="n">MyspiderItem</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1"># 将每个讲师的信息封装成MyspiderItem类的对象
+</span>  <span class="n">item</span><span class="p">[</span><span class="s">"name"</span><span class="p">]</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+  <span class="n">item</span><span class="p">[</span><span class="s">"level"</span><span class="p">]</span> <span class="o">=</span> <span class="n">level</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="n">在浏览器中看到是什么样的内容</span><span class="err">，</span><span class="n">抓取的结果便是什么样的内容</span>
+  <span class="n">item</span><span class="p">[</span><span class="s">"resume"</span><span class="p">]</span> <span class="o">=</span> <span class="n">resume</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+  <span class="n">items</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="程序解释题">程序解释题</h3>
+
+<p>这里可能会有干扰项</p>
+<blockquote>
+  <p>以下为我个人作答并不一定是参考答案</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">load_page</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+    <span class="s">'''
+    作用:根据url发送请求，获取服务器响应文件
+    url：需要爬取的url地址
+    '''</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s">"User-Agent"</span><span class="p">:</span> <span class="s">"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident / 5.0;"</span><span class="p">}</span>
+    <span class="n">request</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">request</span><span class="p">.</span><span class="n">text</span>
+</code></pre></div></div>
+
+<p>答：根据url，封装请求头，使用get方法发送请求。获取服务器响应文件，并返回文件内容。</p>
+
+<hr />
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">print</span><span class="p">(</span><span class="s">"正在保存"</span> <span class="o">+</span> <span class="n">filename</span><span class="p">)</span>
+  <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">'w'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+    <span class="nb">file</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>答：以打印需要保存的文件名信息；将以读的形式打开（如果不存在就创建）文件，并写入对应的内容</p>
+
+<hr />
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'http://bbs.itheima.com/forum-425-</span><span class="si">{</span><span class="n">page</span><span class="si">}</span><span class="s">.html'</span>
+  <span class="n">file_name</span> <span class="o">=</span> <span class="s">"第"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">page</span><span class="p">)</span> <span class="o">+</span> <span class="s">"页.html"</span>
+  <span class="n">html</span> <span class="o">=</span> <span class="n">load_page</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+  <span class="n">save_file</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="n">file_name</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>答：获取<code class="language-plaintext highlighter-rouge">page</code>信息，拼接<code class="language-plaintext highlighter-rouge">url</code>；给获取到的url命名为“第”+page+“页.html”；传递url参数，调用load_page函数获取网页信息，调用save_file函数保存获取到的信息。</p>
+
+<hr />
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">html</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">text</span><span class="p">)</span>
+  <span class="n">count</span> <span class="o">=</span> <span class="n">html</span><span class="p">[</span><span class="s">'Data'</span><span class="p">][</span><span class="s">'Count'</span><span class="p">]</span>
+  <span class="n">total</span> <span class="o">=</span> <span class="n">count</span> <span class="o">//</span> <span class="mi">10</span> <span class="k">if</span> <span class="n">count</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">count</span> <span class="o">//</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div></div>
+
+<p>答：<code class="language-plaintext highlighter-rouge">json.loads</code>是将响应内容中的<code class="language-plaintext highlighter-rouge">json</code>数据转为字典；<code class="language-plaintext highlighter-rouge">count</code>是从字典中获取职位总条数，<code class="language-plaintext highlighter-rouge">total</code>是计算得到的所要获取的页数。</p>
+
+<hr />
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">detail_page</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+    <span class="s">"""一级页面解析函数：提取每页中10个职位的postid"""</span>
+    <span class="n">one_html</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">one_job_dict</span> <span class="ow">in</span> <span class="n">one_html</span><span class="p">[</span><span class="s">'Data'</span><span class="p">][</span><span class="s">'Posts'</span><span class="p">]:</span>
+      <span class="n">post_id</span> <span class="o">=</span> <span class="n">one_job_dict</span><span class="p">[</span><span class="s">'PostId'</span><span class="p">]</span>
+      <span class="c1"># 拼接二级页面URL地址,再次交给调度器入队列
+</span>      <span class="n">two_url</span> <span class="o">=</span> <span class="s">'https://careers.tencent.com/tencentcareer/api/post/ByPostId?timestamp=1593656158948&amp;postId={}&amp;language=zh-cn'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">post_id</span><span class="p">)</span>
+      <span class="k">yield</span> <span class="n">scrapy</span><span class="p">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">two_url</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">get_job_info</span><span class="p">)</span>   <span class="c1">#将所有的信息交给自定义函数self.get_job_info处理
+</span>
+</code></pre></div></div>
+
+<p>答：<code class="language-plaintext highlighter-rouge">two_url</code>拼接二级页面URL地址,再次交给调度器入队列；<code class="language-plaintext highlighter-rouge">yield scrapy.Request</code>将所有的信息交给自定义函数<code class="language-plaintext highlighter-rouge">self.get_job_info</code>处理</p>
+
+<hr />
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">get_job_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+  <span class="s">"""提取每个职位的具体信息"""</span>
+  <span class="n">two_html</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">text</span><span class="p">)</span>
+  <span class="n">item</span> <span class="o">=</span> <span class="n">TencentItem</span><span class="p">()</span>
+  <span class="n">item</span><span class="p">[</span><span class="s">'job_name'</span><span class="p">]</span> <span class="o">=</span> <span class="n">two_html</span><span class="p">[</span><span class="s">'Data'</span><span class="p">][</span><span class="s">'RecruitPostName'</span><span class="p">]</span>
+  <span class="n">item</span><span class="p">[</span><span class="s">'job_address'</span><span class="p">]</span> <span class="o">=</span> <span class="n">two_html</span><span class="p">[</span><span class="s">'Data'</span><span class="p">][</span><span class="s">'LocationName'</span><span class="p">]</span>
+  <span class="n">item</span><span class="p">[</span><span class="s">'job_type'</span><span class="p">]</span> <span class="o">=</span> <span class="n">two_html</span><span class="p">[</span><span class="s">'Data'</span><span class="p">][</span><span class="s">'CategoryName'</span><span class="p">]</span>
+  <span class="n">item</span><span class="p">[</span><span class="s">'job_time'</span><span class="p">]</span> <span class="o">=</span> <span class="n">two_html</span><span class="p">[</span><span class="s">'Data'</span><span class="p">][</span><span class="s">'LastUpdateTime'</span><span class="p">]</span>
+  <span class="n">item</span><span class="p">[</span><span class="s">'job_responsibility'</span><span class="p">]</span> <span class="o">=</span> <span class="n">two_html</span><span class="p">[</span><span class="s">'Data'</span><span class="p">][</span><span class="s">'Responsibility'</span><span class="p">]</span>
+  <span class="n">item</span><span class="p">[</span><span class="s">'job_requirement'</span><span class="p">]</span> <span class="o">=</span> <span class="n">two_html</span><span class="p">[</span><span class="s">'Data'</span><span class="p">][</span><span class="s">'Requirement'</span><span class="p">]</span>
+
+  <span class="c1"># 至此,一个职位完整信息抓取完成,交给管道文件处理
+</span>  <span class="k">yield</span> <span class="n">item</span>
+</code></pre></div></div>
+
+<p>答：调用<code class="language-plaintext highlighter-rouge">json.loads</code>方法提取每个职位的具体信息；<code class="language-plaintext highlighter-rouge">yield item</code>至此,一个职位完整信息抓取完成,交给<strong>管道文件处理</strong>。</p>
+
+<hr />
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="n">Chrome</span><span class="p">()</span>   <span class="c1"># 创建一个浏览器对象，并打开
+</span><span class="n">driver</span><span class="p">.</span><span class="n">maximize_window</span><span class="p">()</span>    <span class="c1"># 最大化窗口
+</span><span class="n">driver</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s">'https://mail.qq.com/'</span><span class="p">)</span>  <span class="c1"># 调用get方法发起请求
+</span>
+<span class="n">driver</span><span class="p">.</span><span class="n">switch_to</span><span class="p">.</span><span class="n">frame</span><span class="p">(</span><span class="s">'login_frame'</span><span class="p">)</span><span class="c1"># 切换iframe子页面
+</span>
+
+<span class="c1"># 2、用户名、密码、登录
+</span><span class="n">driver</span><span class="p">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s">'u'</span><span class="p">).</span><span class="n">send_keys</span><span class="p">(</span><span class="s">'2621470058'</span><span class="p">)</span>  <span class="c1"># 这个不用管
+</span><span class="n">driver</span><span class="p">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s">'p'</span><span class="p">).</span><span class="n">send_keys</span><span class="p">(</span><span class="s">'zhanshen001'</span><span class="p">)</span> <span class="c1"># 这个不用管
+</span><span class="n">driver</span><span class="p">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s">'login_button'</span><span class="p">).</span><span class="n">click</span><span class="p">()</span>   <span class="c1"># 查找登录按钮的位置，并调用click方法单击此按钮。
+</span></code></pre></div></div>
+
+<p>以上注解已写在程序当中</p>]]></content><author><name>Ranok</name></author><category term="python" /><category term="爬虫" /><category term="期末考试" /><summary type="html"><![CDATA[网络爬虫（Web Crawler）是一种自动化程序，它可以在互联网上浏览和收集信息。它们可以发现和抓取网站上的所有内容，包括文本、图片、视频、音频等，并将这些数据保存到数据库或文件中。]]></summary></entry><entry><title type="html">毛概期末整理</title><link href="http://localhost:4000/maogai" rel="alternate" type="text/html" title="毛概期末整理" /><published>2023-06-11T00:00:00+08:00</published><updated>2023-06-11T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-maogai</id><content type="html" xml:base="http://localhost:4000/maogai"><![CDATA[<p>  毛概是毛泽东思想和中国特色社会主义理论体系概论的简称。学习毛概有利于刚进入大学的学生思想的转变，更好的完成大学期间学习任务，提高大学生自我素质，增加应对现实中各种挑战的能力，尽快适应新的学习生活环境，完成大学期间的各项发展任务，成为社会发展的有用之才。</p>
 
 <hr />
 
@@ -5635,507 +8535,4 @@ w = log(块大小)，r = log(Cache行数)，s = log(主存块数) - w</p>
 <h4 id="68实现共产主义是历史发展的必然p312-313">68.实现共产主义是历史发展的必然（P312-313）</h4>
 <p>  共产主义理想作为一种社会理想，是对人类社会发展规律认识的基础上，设想的社会目标。<br />
   遗产主义理想是一定会实现的，是以前的社会发展规律以及资本主义社会的基本矛盾发展为依据的。<br />
-  社会主义运动的实践，特别是社会主义国家的兴起和不断发展已经并正在用事实证明共产主义理想实现的必然性。</p>]]></content><author><name>Ranok</name></author><category term="马克思主义基本原理" /><category term="期末考试" /><summary type="html"><![CDATA[马克思主义基本原理是指马克思主义政治经济学、辩证唯物主义和历史唯物主义以及科学社会主义。它是马克思主义科学体系的基本理论、基本范畴，是其立场、观点和方法的理论表达。]]></summary></entry><entry><title type="html">机器学习</title><link href="http://localhost:4000/machinelearning" rel="alternate" type="text/html" title="机器学习" /><published>2022-12-09T00:00:00+08:00</published><updated>2022-12-09T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-machineLearning</id><content type="html" xml:base="http://localhost:4000/machinelearning"><![CDATA[<p>今天的人工智能主要依赖的不再是符号知识表示和程序推理机制，现代 AI 而是建立在新的基础上，即机器学习。无论是传统的基于数学的机器学习模型或决策树，还是深度学习的神经网络架构，当今人工智能领域的大多数 AI 应用程序都是基于机器学习技术。</p>
-
-<hr />
-
-<h2 id="前言">前言</h2>
-<p>机器学习是智能专业的专核心课，其科目本身的难度较高，不论是在于理论层面还是代码实现层面都有一定的难度。想要征服机器学习还是一件非常具有挑战性的事情。</p>
-
-<p>本次博客整理了有关机器学习课程的期末考试重点，希望同学们可以获得一个好成绩。</p>
-
-<hr />
-
-<h2 id="问题一有关拟合的问题">问题一：有关拟合的问题</h2>
-<h4 id="什么是过拟合和欠拟合">什么是过拟合和欠拟合？</h4>
-
-<p>过拟合是指模型在训练集上表现很好，到了验证和测试阶段就很差，即模型的泛化能力很差。
-欠拟合是指模型在训练集上表现的不好，以至于在验证和测试阶段表现的也比较差。</p>
-
-<h4 id="如何解决过拟合与欠拟合">如何解决过拟合与欠拟合？</h4>
-<h5 id="过拟合的解决方法">过拟合的解决方法：</h5>
-<ol>
-  <li>重新调整一下参数和超参数。</li>
-  <li>对数据进行特征降维处理，有选择性的抛弃一些特征。</li>
-  <li>降低模型的复杂度。</li>
-  <li>使用正则化约束。</li>
-</ol>
-
-<h5 id="欠拟合的解决方法">欠拟合的解决方法：</h5>
-<ol>
-  <li>增加模型的复杂度，例如使用神经网络代替线性回归、用随机森林代替决策树。</li>
-  <li>考虑选用更多更具有代表意义的特征的数据特征。</li>
-  <li>重新调整一下参数和超参数。</li>
-  <li>降低正则化约束。</li>
-</ol>
-
-<h4 id="决策树如何防止过拟合">决策树如何防止过拟合</h4>
-<p>剪枝。</p>
-
-<hr />
-<h2 id="问题二回归模型与分类模型的区别是什么请举例说明">问题二：回归模型与分类模型的区别是什么？请举例说明。</h2>
-
-<p>回归模型：是对连续变量，进行预测的模型，即回归问题是定量问题。<br />
-回归模型问题的举例：对某城市房价预测、对某地区空气湿度的预测。</p>
-
-<p>分类模型：是对离散变量、进行预测的模型，即分类问题是定类问题。<br />
-分类模型问题的举例：对明天是否下雨的预测、判断病人是否患有某种疾病的预测。</p>
-
-<hr />
-<h2 id="问题三机器学习的四大问题是什么">问题三：机器学习的四大问题是什么？</h2>
-<p>回归、分类、聚类、降维。</p>
-
-<hr />
-<h2 id="问题四机器学习的一般步骤需要以某一实物为例">问题四：机器学习的一般步骤。（需要以某一实物为例）</h2>
-<h4 id="回归问题以披萨价格预测为例">回归问题以披萨价格预测为例。</h4>
-<h5 id="明确任务收集数据">明确任务收集数据。</h5>
-<p>在一定范围内的各个城市中随机选取若干家披萨店，作为初始数据。</p>
-<h5 id="数据分析与预处理">数据分析与预处理。</h5>
-<p>将数据特征初步定为以下几项：</p>
-
-<p>比萨的尺寸、披萨的脂肪含量、披萨的制作成本、披萨的口味、披萨的品牌、披萨所在城市的GDP水平、生产披萨的披萨店的知名度。</p>
-
-<p>分析这些特征是否出现缺失值，对缺失值较多的特征直接删除。对缺失值较少的使用平均值填补定量的特征（例如披萨的脂肪含量），使用众数填补定类的特征（例如披萨的口味）。</p>
-
-<p>将定类数据数值化，方便后期计算。</p>
-
-<p>使用灰色关联分析法有选择性地剔除关联度较小的几个特征，即进行降维与特征选择处理。</p>
-
-<h5 id="模型训练">模型训练</h5>
-
-<p>选择使用线性回归解决该回归问题。</p>
-
-<h5 id="模型评估与参数调优">模型评估与参数调优</h5>
-
-<p>R2评估，模型的优劣，当R2的值越接近1时模型性能越好。
-使用k折交叉验证方法选取出最佳的学习率等参数并再次进行模型训练。</p>
-
-<h5 id="模型应用">模型应用</h5>
-
-<p>将训练模型保存下来，并公布用以推广。</p>
-
-<h4 id="分类问题以肿瘤预测为例">分类问题以肿瘤预测为例。</h4>
-<h5 id="明确任务收集数据-1">明确任务收集数据。</h5>
-<p>随机选取若干家医院的肿瘤病人数据作为初始数据</p>
-
-<h5 id="数据分析与预处理-1">数据分析与预处理。</h5>
-
-<p>将数据特征初步定为以下几项：
-肿瘤的直径、体积、颜色、数量、肿瘤是否为良性、病人体温、病人是否出现炎症等信息。</p>
-
-<p>将肿瘤是否为良性作为目标列作为输出项并做数值化处理。</p>
-
-<p>分析这些特征是否出现缺失值，对缺失值较多的特征直接删除。对缺失值较少的使用平均值填补定量的特征（例如肿瘤的直径），使用众数填补定类的特征（例如病人是否出现炎症）。</p>
-
-<p>使用灰色关联分析法有选择性地剔除关联度较小的几个特征，即进行降维与特征选择处理。</p>
-
-<h5 id="模型训练-1">模型训练</h5>
-
-<p>选择使用逻辑回归解决该分类问题。</p>
-
-<h5 id="模型评估与参数调优-1">模型评估与参数调优</h5>
-
-<p>使用AUC值评估模型的优劣，当R2的值越接近1时模型性能越好。
-使用k折交叉验证方法选取出最佳的激活函数的阈值等参数并再次进行模型训练。</p>
-
-<h5 id="模型应用-1">模型应用</h5>
-
-<p>将训练模型保存下来，并公布用以推广。</p>
-
-<hr />
-
-<h2 id="问题五k折交叉验证的简述">问题五：k折交叉验证的简述。</h2>
-
-<p>k折交叉验证常用于参数调优，使得更容易训练出较高性能的模型。</p>
-
-<p>k折交叉验证的工作流程：<br /></p>
-<ol>
-  <li>将训练集随机地进行k块、并选出其中1块作为验证集。</li>
-  <li>用其余k-1块的数据进行训练，并用验证集，计算出这一次的误差。</li>
-  <li>重复k次以上步骤，每次选取不同的块作为验证集</li>
-  <li>统计每一次计算得到的误差估计，并取平均值作为本次训练参数的最终指标。</li>
-</ol>
-
-<hr />
-
-<h2 id="问题六模型的评估标准">问题六：模型的评估标准</h2>
-<h4 id="回归问题的评估标准">回归问题的评估标准</h4>
-<ol>
-  <li>MSE（均方误差） 预测残差的平方和，数值越小越好。</li>
-  <li>RMSE（平均绝对误差）是在MSE的基础上开根号计算得到，同样数值越小越好。</li>
-  <li>MAE（平均绝对误差）预测残差的绝对值之和，值越小越好。</li>
-  <li>R2 (R方分数)既考虑预测值与真值之间的差异又考虑问题本身与真值之间的差异。结果的约接近于1越好。
-    <h4 id="分类问题的评估标准">分类问题的评估标准</h4>
-  </li>
-  <li>正确率（Accuracy）即被预测正确的样本在所有预测样本中的占比。</li>
-  <li>召回率(TRR) 即在所有真的正类中被模型预测出来的比例。</li>
-  <li>AUC值：AUC的概率意义是随机取一对正负样本，正样本得分大于负样本得分的概
- AUC的范围在[0, 1]之间，并且越接近1越好，越接近0.5属于乱猜</li>
-</ol>
-
-<hr />
-
-<h2 id="问题七决策树的建立以ppt为例">问题七：决策树的建立（以ppt为例）</h2>
-<h4 id="考察公式">考察公式：</h4>
-
-<p>信息熵公式：\(H(X)=\sum_{i=1}^{n}p_i log_2^{\frac{1}{p_i}}=-\sum_{i=1}^{n}p_i log_2{p_i}\)<br />
-信息增益公式：\(Gain(D,a)=Ent(D)-Ent(d|a)=Ent(D)-\sum_{v=1}^V \frac{D_v}{D}Ent(D_v)\)</p>
-
-<h4 id="问题描述">问题描述</h4>
-
-<p>如下图，第一列为论坛号码，第二列为性别，第三列为活跃度，最后一列用户是否流失。</p>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/1.png" alt="1.png" />
-    </div>
-    
-</div>
-
-<p>根据该图整理得到如下表格：</p>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/2.png" alt="2.png" />
-    </div>
-    
-</div>
-
-<h4 id="整体熵为多少">整体熵为多少</h4>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/3.png" alt="3.png" />
-    </div>
-    
-</div>
-
-<h5 id="计算按照性别划分的信息增益">计算按照性别划分的信息增益</h5>
-
-<p>要计算性别的信息增益需要先计算性别的信息熵</p>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/4.png" alt="4.png" />
-    </div>
-    
-</div>
-
-<p>因此得到按照性别划分的信息增益为</p>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/5.png" alt="5.png" />
-    </div>
-    
-</div>
-
-<h4 id="计算按照活跃度划分的信息增益">计算按照活跃度划分的信息增益</h4>
-
-<p>同样的，要计算活跃度的信息增益需要先计算活跃度的信息熵</p>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/6.png" alt="6.png" />
-    </div>
-    
-</div>
-
-<p>因此得到按照活跃度划分的信息增益为：</p>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/14.png" alt="14.png" />
-    </div>
-    
-</div>
-
-<h4 id="比较两种特征对流失度的影响">比较两种特征对流失度的影响</h4>
-
-<p>活跃度的信息增益比性别的信息增益大，也就是说，活跃度对用户流失的影响比性别大。</p>
-
-<h4 id="做出决策树图形并说明理由">做出决策树图形并说明理由</h4>
-
-<p>根据第三问的分析，活跃度的信息增益比性别的信息增益大所以要选用，活跃度作为决策树的根节点。最终结果如下所示：</p>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/7.png" alt="7.png" />
-    </div>
-    
-</div>
-
-<hr />
-
-<h2 id="问题八逻辑回归的优化目标函数是什么交叉熵中的两个概率是分布什么不确定">问题八：逻辑回归的优化目标函数是什么？交叉熵中的两个概率是分布什么？(不确定)</h2>
-
-<p>逻辑回归的优化目标函数是:对数似然函数。 <br />
-交叉熵的灵感概率是：真实分布，非真实分布。</p>
-
-<h2 id="问题九简述k近邻的算法流程以及问题问题分析">问题九：简述k近邻的算法流程，以及问题问题分析</h2>
-<h3 id="算法流程">算法流程</h3>
-<ol>
-  <li><strong>计算距离</strong>：计算已知类别数据集中的点与当前点之间的距离
-2）<strong>排序</strong>：按距离递增次序排序
-3）<strong>选择</strong>：选取与当前点距离最小的k个点
-4）<strong>计算频次</strong>：统计前k个点所在的类别出现的频率
-5）<strong>确定类别</strong>：返回前k个点出现频率最高的类别作为当前点的预测分类</li>
-</ol>
-
-<h3 id="计算题以ppt为例">计算题（以ppt为例）</h3>
-<h4 id="考察公式-1">考察公式</h4>
-<p>欧氏距离：平方和开根号 <br />
-曼哈顿距离（城市街区距离）：绝对值的和</p>
-
-<h3 id="提问">提问</h3>
-<p>假设我们现在有几部电影，如何去预测序号9电影的类别？</p>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/8.png" alt="8.png" />
-    </div>
-    
-</div>
-
-<p>分别计算每个电影和被预测电影的距离，然后求解</p>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/9.png" alt="9.png" />
-    </div>
-    
-</div>
-
-<p>所以最终结果预测为喜剧片。</p>
-
-<hr />
-
-<h2 id="问题十标准化与归一化问题以ppt为例">问题十：标准化与归一化问题（以PPT为例）</h2>
-<h4 id="归一化重点">归一化（重点）</h4>
-
-<p><strong>归一化定义</strong>：通过对原始数据进行变换把数据映射到(默认为[0,1])之间</p>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/10.png" alt="10.png" />
-    </div>
-    
-</div>
-
-<p>作用于每一列，max为一列的最大值，min为一列的最小值，那么X’’为最终结果，mx，mi分别为指定区间值，默认mx为1，mi为0</p>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/11.png" alt="11.png" />
-    </div>
-    
-</div>
-
-<h4 id="标准化">标准化</h4>
-
-<p>定义：通过对原始数据进行变换把数据变换到均值为0,标准差为1范围内</p>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/12.png" alt="12.png" />
-    </div>
-    
-</div>
-
-<p>其中，它作用于每一列，mean为平均值，σ为标准差</p>
-
-<hr />
-
-<h2 id="问题十一k均值k-means聚类的算法">问题十一：k均值（k-means）聚类的算法</h2>
-<h4 id="流程">流程</h4>
-<ol>
-  <li>随机设置K个特征空间内的点作为初始的聚类中心</li>
-  <li>对于其他每个点计算到K个中心的距离，未知的点选择最近的一个聚类中心点作为标记类别</li>
-  <li>接着对着标记的聚类中心之后，重新计算出每个聚类的新中心点（平均值）</li>
-  <li>如果计算得出的新中心点与原中心点一样（质心不再移动），那么结束，否则重新进行第二步过程</li>
-</ol>
-
-<hr />
-
-<h2 id="问题十二梯度下降法">问题十二：梯度下降法</h2>
-<h4 id="梯度下降算法的作用">梯度下降算法的作用：</h4>
-
-<p>梯度下降法是一个优化算法，可以递归地找到模型的最小值，从而找到在最优参数。</p>
-
-<h4 id="需要处理的问题">需要处理的问题：</h4>
-
-<ol>
-  <li>学习率：需要在模型建立的速度和质量上做出权衡，学习率过大可能会导致最终结果不收敛，学习率过小会导致训练时间过长。</li>
-  <li>方向：计算出当前点的梯度方向，并向下不断更新自己的位置。</li>
-  <li>终止条件：考虑使用迭代次数、损失函数值到达一定范围之后终止。</li>
-</ol>
-
-<hr />
-
-<h2 id="问题十三逻辑回归不确定">问题十三：逻辑回归（不确定）</h2>
-<h4 id="损失函数">损失函数：</h4>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/13.png" alt="13.png" />
-    </div>
-    
-</div>
-
-<h4 id="目标函数">目标函数</h4>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/machinelearning/14.png" alt="14.png" />
-    </div>
-    
-</div>
-
-<h4 id="定义">定义：</h4>
-<p>逻辑回归是机器学习中的一种分类模型，做二分类（1/0）任务，并给出相应概率。</p>
-<h4 id="sigmoid函数">sigmoid函数</h4>
-<p>sigmoid可以将数值压缩到[0,1]的范围内。</p>
-
-<hr />
-
-<h2 id="问题十四编程大题">问题十四：编程大题</h2>
-<h4 id="线性回归以实验为例">线性回归（以实验为例）</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>序号</th>
-      <th>直径（英寸）</th>
-      <th>价格（ 美元）</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>6</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>8</td>
-      <td>9</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>10</td>
-      <td>13</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>14</td>
-      <td>17.5</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>18</td>
-      <td>18</td>
-    </tr>
-  </tbody>
-</table>
-
-<h5 id="该线性回归是一个几元函数表达式是什么">该线性回归是一个几元函数，表达式是什么？</h5>
-<p>是一个一元线性回归函数。<br />
-表达式为：\(f(x) = w_1x_1 + b\)<br />
-其中\(w_1\)表示的是“直径”特征的权重，\(x_1\)表示“直径”变量，\(b\)表示截距</p>
-
-<h5 id="代码实现">代码实现</h5>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
-<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>   <span class="c1"># 最小二乘法线性回归
-</span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
-
-<span class="n">X_train_old</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">18</span><span class="p">]).</span><span class="n">reshape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">Y_train_old</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mf">17.5</span><span class="p">,</span><span class="mi">18</span><span class="p">]).</span><span class="n">reshape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">X_train_old</span><span class="p">,</span><span class="n">Y_train_old</span>
-
-<span class="c1"># 因为数据较少所以没必要再单独划出测试集了
-</span><span class="n">X_train</span><span class="p">,</span><span class="n">X_test</span><span class="p">,</span><span class="n">Y_train</span><span class="p">,</span><span class="n">Y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_train_old</span><span class="p">,</span><span class="n">Y_train_old</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">33</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
-<span class="c1"># X_train,X_test,Y_train,Y_test = X_train_old,[],Y_train_old,[]
-</span><span class="n">X_train</span><span class="p">,</span><span class="n">X_test</span><span class="p">,</span><span class="n">Y_train</span><span class="p">,</span><span class="n">Y_test</span>
-
-<span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
-<span class="n">model</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">Y_train</span><span class="p">)</span>
-
-<span class="n">T_sim1</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-
-</code></pre></div></div>
-<h5 id="逻辑回归以实验为例">逻辑回归（以实验为例）</h5>
-<p>代码实现：</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
-<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
-
-<span class="c1"># 1.获取数据
-</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Sample code number'</span><span class="p">,</span> <span class="s">'Clump Thickness'</span><span class="p">,</span> <span class="s">'Uniformity of Cell Size'</span><span class="p">,</span> <span class="s">'Uniformity of Cell Shape'</span><span class="p">,</span>
-                   <span class="s">'Marginal Adhesion'</span><span class="p">,</span> <span class="s">'Single Epithelial Cell Size'</span><span class="p">,</span> <span class="s">'Bare Nuclei'</span><span class="p">,</span> <span class="s">'Bland Chromatin'</span><span class="p">,</span>
-                   <span class="s">'Normal Nucleoli'</span><span class="p">,</span> <span class="s">'Mitoses'</span><span class="p">,</span> <span class="s">'Class'</span><span class="p">]</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s">"breast-cancer-wisconsin.data"</span><span class="p">,</span><span class="n">names</span><span class="o">=</span><span class="n">names</span><span class="p">)</span>
-<span class="n">data</span><span class="p">.</span><span class="n">head</span><span class="p">()</span>
-
-<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">22</span><span class="p">)</span>
-<span class="n">x_train</span><span class="p">.</span><span class="n">head</span><span class="p">()</span>
-
-<span class="n">estimator</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
-<span class="n">estimator</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-
-<span class="n">y_predict</span> <span class="o">=</span> <span class="n">estimator</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test</span><span class="p">)</span>
-</code></pre></div></div>
-<h2 id="问题十五随机森林">问题十五：随机森林</h2>
-<h4 id="随机森林的算法流程随机森林bagging决策树">随机森林的算法流程（随机森林=Bagging+决策树）</h4>
-
-<ol>
-  <li>随机选取m条数据</li>
-  <li>随机选取k个特征</li>
-  <li>训练决策树</li>
-  <li>重复1-3</li>
-  <li>对上面的若决策树进行平权投票</li>
-</ol>
-
-<h4 id="bagging和boosting的区别">bagging和boosting的区别</h4>
-
-<h5 id="区别一数据方面">区别一:数据方面</h5>
-<ol>
-  <li>Bagging：对数据进行采样训练；</li>
-  <li>Boosting：根据前一轮学习结果调整数据的重要性。</li>
-</ol>
-
-<h5 id="区别二投票方面">区别二:投票方面</h5>
-<ol>
-  <li>Bagging：所有学习器平权投票；</li>
-  <li>Boosting：对学习器进行加权投票。</li>
-</ol>
-
-<h5 id="区别三学习顺序">区别三:学习顺序</h5>
-<ol>
-  <li>Bagging的学习是并行的，每个学习器没有依赖关系；</li>
-  <li>Boosting学习是串行，学习有先后顺序。</li>
-</ol>
-
-<h5 id="区别四主要作用">区别四:主要作用</h5>
-<ol>
-  <li>Bagging主要用于提高泛化性能（解决过拟合，也可以说降低方差）</li>
-  <li>Boosting主要用于提高训练精度 （解决欠拟合，也可以说降低偏差）</li>
-</ol>]]></content><author><name>Ranok</name></author><category term="机器学习" /><category term="期末考试" /><category term="python" /><summary type="html"><![CDATA[今天的人工智能主要依赖的不再是符号知识表示和程序推理机制，现代 AI 而是建立在新的基础上，即机器学习。无论是传统的基于数学的机器学习模型或决策树，还是深度学习的神经网络架构，当今人工智能领域的大多数 AI 应用程序都是基于机器学习技术。]]></summary></entry></feed>
+  社会主义运动的实践，特别是社会主义国家的兴起和不断发展已经并正在用事实证明共产主义理想实现的必然性。</p>]]></content><author><name>Ranok</name></author><category term="马克思主义基本原理" /><category term="期末考试" /><summary type="html"><![CDATA[马克思主义基本原理是指马克思主义政治经济学、辩证唯物主义和历史唯物主义以及科学社会主义。它是马克思主义科学体系的基本理论、基本范畴，是其立场、观点和方法的理论表达。]]></summary></entry></feed>

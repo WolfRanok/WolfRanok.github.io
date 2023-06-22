@@ -81,6 +81,8 @@ ___粗斜体文字___
 
 > 引用内容
 
+    这是一段黑底白字的注释
+
 表格是制作方式类似于latex
 
 其中第二行的
@@ -100,7 +102,8 @@ ___粗斜体文字___
 不加column=1 参数的话图片就会居中
 {% include aligner.html images="blog-img/wolf-test.jpg" column=1 %}
 
-导入多张图片，只需要在图片导入的位置用，分隔即可
+导入多张图片，只需要在图片导入的位置用，分隔即可，这个路径一般是从`blog-img/`开始的
+
 {% include aligner.html images="pexels/book-glass.jpeg,feature-img/desk-messy.jpeg" %}
 
 !(你好)[pexels/book-glass.jpeg]
