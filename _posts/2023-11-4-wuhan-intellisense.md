@@ -5,6 +5,8 @@ author: TraSorrow
 tags: [python, 期末考试]     #标签会影响
 feature-img: "assets/img/feature-img/TraSorrow.jpg" # 这是一个会出现在博客文章内部的图片
 thumbnail: "assets/img/thumbnails/feature-img/TraSorrow.jpg" # 这是一个会出现在博客外部的图片
+permalink: intellisense # 路径
+
 ---
 
 &emsp;&emsp;《智能感知》是一门专注于研究如何通过计算机技术和人工智能理论来感知和理解现实世界的课程。它涵盖了多个领域的知识，包括机器学习、深度学习、计算机视觉、自然语言处理等，旨在培养学生具备利用人工智能技术进行数据分析和解决实际问题的能力。
