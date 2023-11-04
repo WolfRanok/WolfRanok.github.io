@@ -1,11 +1,411 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-03T23:39:16+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">大数据可视化</title><link href="http://localhost:4000/largedatavisualization" rel="alternate" type="text/html" title="大数据可视化" /><published>2023-11-03T00:00:00+08:00</published><updated>2023-11-03T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-largedatavisualization</id><content type="html" xml:base="http://localhost:4000/largedatavisualization"><![CDATA[<p>  大数据可视化是指将庞大的数据集通过图表、地图、仪表盘等可视化工具呈现出来，使人们能够直观地理解和分析数据。它是数据分析和决策过程中的重要工具，有助于揭示数据背后的模式、趋势和关联关系，帮助用户更好地理解数据，并根据数据进行决策。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-04T21:07:56+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">智能感知</title><link href="http://localhost:4000/2023/11/04/wuhan-intellisense.html" rel="alternate" type="text/html" title="智能感知" /><published>2023-11-04T00:00:00+08:00</published><updated>2023-11-04T00:00:00+08:00</updated><id>http://localhost:4000/2023/11/04/wuhan-intellisense</id><content type="html" xml:base="http://localhost:4000/2023/11/04/wuhan-intellisense.html"><![CDATA[<p>  《智能感知》是一门专注于研究如何通过计算机技术和人工智能理论来感知和理解现实世界的课程。它涵盖了多个领域的知识，包括机器学习、深度学习、计算机视觉、自然语言处理等，旨在培养学生具备利用人工智能技术进行数据分析和解决实际问题的能力。</p>
 
 <blockquote>
   <p>温馨提示：如果你觉得界面配色有些刺眼，你可以点击右上角的菜单，选择使用圆形按钮切换主题背景。</p>
 </blockquote>
 
+<p><a id="article_top"></a></p>
+
 <hr />
 
+<h1 id="前言">前言</h1>
+<p>  本博客针对，智能感知期末考试进行整理。材料内容由 <strong>TraSorrow</strong>同学亲情提供，本人只做整理排版工作。内容较多，祝你顺利通过考试，取得一个<strong>好成绩</strong>！。</p>
+
+<hr />
+
+<h1 id="题目部分">题目部分</h1>
+
+<p>题目题型包含选择、判断、以及问答大题、编程题、以及设计题，本博客内容包含两套试卷的量，因此内容较多。</p>
+
+<blockquote>
+  <p>提示：选择判断的试题顺序与考试相同，来不及备考的同学可以<strong>直接背答案</strong></p>
+</blockquote>
+
+<hr />
+<h2 id="选择题">选择题</h2>
+
+<h5 id="1-讯飞开放平台文字识别服务在处理大量文本时可能遇到的主要问题是什么b">1. 讯飞开放平台文字识别服务在处理大量文本时,可能遇到的主要问题是什么?(B)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 识别准确率低
+B. 识别速度慢
+C. 无法处理特殊字符
+D. 所有选项都正确
+</code></pre></div></div>
+
+<h5 id="2-以下哪个应用场景不属于图像识别技术的应用c">2. 以下哪个应用场景不属于图像识别技术的应用?(C)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 自动驾驶
+B. 医学影像诊断
+C. 语音识别
+D. 人脸识别支付
+</code></pre></div></div>
+
+<h5 id="3-讯飞开放平台的语音合成服务主要支持哪些语言b">3. 讯飞开放平台的语音合成服务主要支持哪些语言?(B)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 中文和英文
+B. 中文、英文和其他多种语言
+C. 仅支持中文
+D. 仅支持英文
+</code></pre></div></div>
+
+<h5 id="4-在命名实体识别中以下哪种方法不属于基于深度学习的方法d">4. 在命名实体识别中,以下哪种方法不属于基于深度学习的方法?(D)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 卷积神经网络(CNN)
+B. 循环神经网络(RNN)
+C. 长短时记忆网络(LSTM)
+D. 支持向量机(SVM)
+</code></pre></div></div>
+
+<h5 id="5-flask中的路由装饰器是哪个b">5. Flask中的路由装饰器是哪个?(B)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. @route()
+B. @app.route()
+C. @url_for()
+D. @request()
+</code></pre></div></div>
+
+<h5 id="6-语音识别的输入实际上就是一段随时间播放的信号序列而输出则是一段a">6. 语音识别的输入实际上就是一段随时间播放的信号序列,而输出则是一段(A)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 文本序列
+B. 语音序列
+C. 音频特征
+D. mel频谱
+</code></pre></div></div>
+
+<h5 id="7-语音转写技术的准确性如何提高d">7. 语音转写技术的准确性如何提高?(D)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 增加训练数据量
+B. 优化算法模型
+C. 提高麦克风质量
+D. 所有以上方法
+</code></pre></div></div>
+
+<h5 id="8-语音识别目前存在的主要问题不包括b">8. 语音识别目前存在的主要问题不包括(B)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 自由交谈风格
+B. 细微问题的发现
+C. 语言混合识别
+D. 多人说话重叠
+</code></pre></div></div>
+
+<h5 id="9-提高语音识别健壮性的方法不包括c">9. 提高语音识别健壮性的方法不包括(C)。</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 增加训练集样本
+B. 多样化录音设备
+C. 减小模型参数量
+D. 添加语音增强前处理
+</code></pre></div></div>
+
+<h5 id="10-讯飞开放平台的语音合成服务可以用于哪些应用场景d">10. 讯飞开放平台的语音合成服务可以用于哪些应用场景?(D)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 智能客服机器人
+B. 语音助手
+C. 有声读物制作
+D. 所有以上选项答案
+</code></pre></div></div>
+
+<h5 id="11-讯飞开放平台文字识别服务提供的api接口类型主要有哪些a">11. 讯飞开放平台文字识别服务提供的API接口类型主要有哪些?(A)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. HTTP和HTTPS
+B. TCP和UDP
+C. MQTT和CoAP
+D. 所有选项都正确
+</code></pre></div></div>
+
+<h5 id="12-图像识别技术中卷积神经网络cnn的主要作用是什么c">12. 图像识别技术中,卷积神经网络(CNN)的主要作用是什么?(C)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 生成图像
+B. 分类图像
+C. 提取图像特征
+D. 压缩图像
+</code></pre></div></div>
+
+<h5 id="13-讯飞开放平台语音合成服务在处理大量文本时可能遇到的主要问题是什么a">13. 讯飞开放平台语音合成服务在处理大量文本时,可能遇到的主要问题是什么?(A)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 合成速度慢
+B. 合成质量低
+C. 无法处理特殊字符
+D. 所有选项都正确
+</code></pre></div></div>
+
+<h5 id="14-命名实体识别ner的主要任务是什么c">14. 命名实体识别(NER)的主要任务是什么?(C)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 从文本中提取关键词
+B. 从文本中提取短语
+C. 从文本中识别并分类预定义的实体,如人名、地名、组织名等
+D. 从文本中提取情感倾向
+</code></pre></div></div>
+
+<h5 id="15-flask中的路由装饰器是哪个b">15. Flask中的路由装饰器是哪个?(B)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. @route()
+B. @app.route()
+C. @url_for()
+D. @request()
+</code></pre></div></div>
+
+<h5 id="16-语音识别系统主要包含d以及解码搜索这些主要流程">16. 语音识别系统主要包含(D)以及解码搜索这些主要流程</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 特征提取
+B. 声学模型
+C. 语言模型
+D. 以上都是
+</code></pre></div></div>
+
+<h5 id="17-在语音转写中以下哪个参数对于识别准确性的影响较大d">17. 在语音转写中,以下哪个参数对于识别准确性的影响较大?(D)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 采样率
+B. 帧长
+C. 麦克风数量
+D. 语音质量
+</code></pre></div></div>
+
+<h5 id="18-语音识别又称自动语音识别技术简称是b">18. 语音识别,又称自动语音识别技术,简称是(B)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. TTS
+B. ASR
+C. RAS
+D. SST
+</code></pre></div></div>
+
+<h5 id="19-在语音识别任务中过拟合的解决方法不包括c">19. 在语音识别任务中,过拟合的解决方法不包括（C）。</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 增加训练样本量
+B. 提前停止训练
+C. 增加网络层数
+D. L2正则化
+</code></pre></div></div>
+
+<h5 id="20-海量歌曲数据中找到音乐特征相似的歌曲可以采用技术b">20. 海量歌曲数据中,找到音乐特征相似的歌曲,可以采用技术。(B)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A. 分布式计算
+B. 推荐系统
+C. 数据挖掘
+D. 语音识别
+</code></pre></div></div>
+
+<hr />
+<h2 id="判断题">判断题</h2>
+
+<blockquote>
+  <p>提示都是<strong>对错对对错</strong></p>
+</blockquote>
+
+<ol>
+  <li>（✔）智能感知技术主要依赖于人工智能算法来实现对环境的感知和理解。</li>
+  <li>（✖）在智能感知技术中，计算机视觉和语音识别是两个独立的技术领域，它们之间没有交集。</li>
+  <li>（✔）在Flask中，可以使用AJAX技术实现前后端数据交互。</li>
+  <li>（✔）在Flask中，可以使用render_template()函数渲染HTML模板。</li>
+  <li>（✖）在Flask中，可以使用request对象实现用户会话管理。错</li>
+  <li>（✔）深度学习技术在智能感知技术中的应用主要体现在图像识别、语音识别和自然语言处理等领域。</li>
+  <li>（✖）感知技术在安防领域的应用仅限于人脸识别，无法实现行为分析等功能.错</li>
+  <li>（✔）Flask中的Jinja2模板引擎用于生成动态HTML页面。</li>
+  <li>（✔）在Flask中，可以使用redirect()函数实现页面重定向。</li>
+  <li>（✖）在Flask中，可以使用session对象获取HTTP请求的信息。</li>
+</ol>
+
+<hr />
+
+<h2 id="问答题">问答题</h2>
+
+<h3 id="1语音识别性别年龄的原因有哪些-至少五个">1.语音识别性别/年龄的原因有哪些 至少五个</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 声调
+2. 口音和方言
+3. 语音特征
+4. 背景噪音
+5. 基频
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="2人脸比对的功能讯飞开放平台中的人脸对比对人脸的要求">2.人脸比对的功能,讯飞开放平台中的人脸对比对人脸的要求</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>功能:人脸比对可以对比两张照片中的人脸信息，判断是否是同一个人
+要求:需要清晰的人脸照片，人脸大小不小于30*30像素，其中人脸俯仰角、左右偏航角、人脸翻转角60°以内识别效果更好。
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="3情感分析的功能应用场景">3.情感分析的功能,应用场景</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>功能:情感分析即文本倾向性分析，就是计算机判断人们的看法或评论是属于对事物的积极、消极或中性意见。
+&lt;br&gt;
+应用场景:
+
+1.	电商平台
+2.	社交平台
+3.	客服平台
+4.	Chatbot
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="4语音合成和语音识别的概念和区别">4.语音合成和语音识别的概念和区别</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>语音合成是通过将文本合成为声音音频的过程
+语言识别是将语音中的词汇转化为计算机的可读输入
+他们的区别是:
+语音合成是文本到声音的过程
+语音识别是将人的语音转化为计算机可读的文本信息
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="编程题">编程题</h2>
+
+<h4 id="1程序填空">1.程序填空</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="c1">#判断图片是否存在
+</span>    <span class="k">if</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">exists</span><span class="p">(</span><span class="n">image_path</span><span class="p">):</span>
+    <span class="c1">#读取图片数据
+</span>    <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="c1">#将api_key作为请求params中的参数,发送post请求
+</span>    <span class="n">response</span><span class="o">=</span><span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span><span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="err">‘</span><span class="n">api_key</span><span class="err">’</span><span class="p">:</span><span class="n">api_key</span><span class="p">})</span>
+    <span class="c1">#如果返回的状态码为200,请求成功
+</span>    <span class="k">if</span> <span class="n">response</span><span class="p">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="c1">#如果请求成功,解析返回的JSON数据
+</span>        <span class="n">result</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">text</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="2程序填空">2.程序填空:</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span><span class="n">url_for</span><span class="p">,</span><span class="n">redirect</span>
+    <span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+    <span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="err">‘</span><span class="o">/</span><span class="err">’</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+        <span class="k">return</span> <span class="err">‘</span><span class="n">Hello</span> <span class="n">World</span><span class="err">’</span>	<span class="o">//</span>	<span class="n">A</span><span class="p">:</span><span class="n">Hello</span> <span class="n">World</span>		<span class="n">B</span><span class="p">:</span><span class="n">success</span>
+    <span class="c1">#省略部分代码
+</span>    <span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="err">‘</span><span class="o">/</span><span class="n">login</span><span class="err">’</span><span class="p">)</span>	<span class="o">//</span>	<span class="n">A</span><span class="p">:</span><span class="err">’</span><span class="o">/</span><span class="n">login</span><span class="err">’</span>		<span class="n">B</span><span class="p">:</span><span class="err">’</span><span class="o">/</span><span class="n">register</span><span class="err">’</span>
+    <span class="k">def</span> <span class="nf">login</span><span class="p">():</span>
+        <span class="c1">#模拟登录流程
+</span>        <span class="n">flag</span> <span class="o">=</span> <span class="err">‘</span><span class="n">success</span><span class="err">’</span>
+        <span class="c1">#如果登录成功,跳转到首页
+</span>        <span class="k">if</span> <span class="n">flag</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">url_for</span><span class="p">(</span><span class="err">‘</span><span class="n">index</span><span class="err">’</span><span class="p">))</span>
+        <span class="k">return</span> <span class="err">‘</span><span class="n">登录页面</span><span class="err">’</span>
+    <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="err">‘</span><span class="n">__main__</span><span class="err">’</span><span class="p">:</span>
+        <span class="n">app</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="设计题">设计题</h2>
+
+<h3 id="基于智能语音合成技术的虚拟导游系统">基于智能语音合成技术的虚拟导游系统</h3>
+
+<h4 id="1评估语音合成系统质量的指标">(1)评估语音合成系统质量的指标</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>自然度：评估合成语音的听起来自然程度，是否接近人类语音。
+清晰度：评估合成语音的发音是否清晰，是否易于理解。
+准确性：评估合成语音的发音是否准确，是否能够准确地传达信息。
+情感表达：评估合成语音是否能够表达出特定的情感，如愉快、悲伤、愤怒等。
+语种和语言能力：评估语音合成系统是否能够支持不同的语种和语言，以及其处理能力如何。
+时延：评估语音合成系统的响应速度，即从输入到输出的时间。
+稳定性：评估语音合成系统在各种情况下的运行稳定性，如在不同网络环境、不同设备、不同操作系统下的表现。
+</code></pre></div></div>
+
+<h4 id="2主要功能至少两个">(2)主要功能至少两个</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>语音导览：根据旅游者的位置和需求，提供景点讲解、历史背景介绍等服务。
+路线规划：根据旅游者的需求和时间安排，为其规划合理的旅游路线，包括交通方式、景点顺序、餐饮等。
+信息咨询：为旅游者提供关于旅游信息、天气、文化等方面的咨询服务。
+语音交互：通过语音识别和语音合成技术，实现与旅游者的语音交互，解答其问题、提供建议等。
+个性化服务：通过分析旅游者的偏好和历史行为，为其提供个性化的导览服务、推荐景点等。
+</code></pre></div></div>
+
+<h5 id="3分别描述实现该功能的技术实现方法至少三个">(3)分别描述实现该功能的技术实现方法至少三个</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.语音识别技术：通过语音识别技术，将旅游者的语音指令转化为文字，便于后续处理和分析。常见的语音识别技术包括基于深度学习和基于规则的方法等。
+2.自然语言处理技术：通过自然语言处理技术，对文字指令进行分析和理解，提取出关键信息，如景点名称、位置、历史背景等。常见的自然语言处理技术包括分词、词性标注、句法分析等。
+3.语音合成技术：通过语音合成技术，将文字指令转化为自然、清晰的语音，便于旅游者理解和接受。常见的语音合成技术包括基于规则的方法和基于深度学习的方法等。
+</code></pre></div></div>
+
+<h4 id="4描述系统可能会出现的问题及解决方案-至少三个">(4)描述系统可能会出现的问题及解决方案	至少三个</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.语音识别不准确：由于环境噪音、口音差异等因素影响，可能导致语音识别不准确。解决方案可以采用多模态识别技术，结合视觉、文本等信息提高识别准确性。
+2.自然语言处理错误：由于语义歧义、背景知识不足等因素影响，可能导致自然语言处理错误。解决方案可以采用上下文理解、多轮对话等方式提高语义理解准确性。
+3.语音合成不自然：由于语音合成的技术限制或参数设置不当等因素影响，可能导致语音合成不自然。解决方案可以采用更自然的语音合成技术或针对特定场景调整参数设置等方式提高语音合成质量。
+4.数据安全问题：由于数据传输、存储等方面存在安全漏洞，可能导致数据泄露或被篡改。解决方案可以采用加密传输、访问控制、备份数据等方式保障数据安全。
+5.系统稳定性不足：由于硬件设备故障、网络中断等因素影响，可能导致系统稳定性不足。解决方案可以采用高可用性设计、容错机制等方式提高系统稳定性。
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="基于智能语音技术的智能家居控制系统">基于智能语音技术的智能家居控制系统</h2>
+
+<p>  (1)(3)(4)同上</p>
+
+<h4 id="2-主要功能至少两个">(2) 主要功能(至少两个):</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.语音控制：用户可以通过语音指令控制智能家居设备，如灯光、窗帘、空调、电视等。这种控制方式无需使用手机或遥控器，方便快捷。
+2.智能家居设备的控制：系统可以连接并控制多种智能家居设备，包括但不限于灯光、窗帘、空调、电视等。用户可以通过语音指令或手机应用程序对这些设备进行统一控制。
+3,定时控制：用户可以为智能家居设备设置定时任务，例如早晨自动开启窗帘和灯光，晚上自动关闭。
+4.远程控制：用户可以通过手机应用程序远程控制智能家居设备，无论身在何处，都能随时随地掌控家中各项设备的状态。
+</code></pre></div></div>
+
+<hr />
+
+<p><a href="#article_top">回到顶部</a></p>]]></content><author><name>TraSorrow</name></author><category term="python" /><category term="期末考试" /><summary type="html"><![CDATA[  《智能感知》是一门专注于研究如何通过计算机技术和人工智能理论来感知和理解现实世界的课程。它涵盖了多个领域的知识，包括机器学习、深度学习、计算机视觉、自然语言处理等，旨在培养学生具备利用人工智能技术进行数据分析和解决实际问题的能力。]]></summary></entry><entry><title type="html">大数据可视化</title><link href="http://localhost:4000/largedatavisualization" rel="alternate" type="text/html" title="大数据可视化" /><published>2023-11-03T00:00:00+08:00</published><updated>2023-11-03T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-largedatavisualization</id><content type="html" xml:base="http://localhost:4000/largedatavisualization"><![CDATA[<p>  大数据可视化是指将庞大的数据集通过图表、地图、仪表盘等可视化工具呈现出来，使人们能够直观地理解和分析数据。它是数据分析和决策过程中的重要工具，有助于揭示数据背后的模式、趋势和关联关系，帮助用户更好地理解数据，并根据数据进行决策。</p>
+
+<blockquote>
+  <p>温馨提示：如果你觉得界面配色有些刺眼，你可以点击右上角的菜单，选择使用圆形按钮切换主题背景。</p>
+</blockquote>
+
+<p><a id="article_top"></a></p>
+
+<hr />
+<h1 id="目录">目录</h1>
+
+<ul>
+  <li><a href="#目录">目录</a></li>
+  <li><a href="#前言">前言</a></li>
+  <li><a href="#题目部分">题目部分</a>
+    <ul>
+      <li><a href="#选择题">选择题</a>
+        <ul>
+          <li><a href="#1-哪些图形适合显示多维数据">1. 哪些图形适合显示多维数据:</a></li>
+          <li><a href="#2-哪些图形适合显示时间序列数据">2. 哪些图形适合显示时间序列数据:</a></li>
+          <li><a href="#3-哪些图形适合显示分类数据">3. 哪些图形适合显示分类数据:</a></li>
+          <li><a href="#4-哪些图形适合显示离散数据">4. 哪些图形适合显示离散数据:</a></li>
+          <li><a href="#5-哪些图形适合显示二元数据">5. 哪些图形适合显示二元数据:</a></li>
+        </ul>
+      </li>
+      <li><a href="#填空题">填空题:</a>
+        <ul>
+          <li><a href="#1-条形图通常显示哪些数据">1. 条形图通常显示哪些数据:</a></li>
+          <li><a href="#2-散点图用于显示什么类型的数据">2. 散点图用于显示什么类型的数据:</a></li>
+          <li><a href="#3-直方图用于显示什么类型的数据">3. 直方图用于显示什么类型的数据:</a></li>
+          <li><a href="#4-饼图用于显示什么类型的数据">4. 饼图用于显示什么类型的数据:</a></li>
+          <li><a href="#5-折线图用于显示什么类型的数据">5. 折线图用于显示什么类型的数据:</a></li>
+        </ul>
+      </li>
+      <li><a href="#问答题">问答题</a>
+        <ul>
+          <li><a href="#1简述数据可视化流程">1.简述数据可视化流程</a></li>
+          <li><a href="#2简述数据可视化常用的工具">2.简述数据可视化常用的工具</a></li>
+          <li><a href="#3简述数据可视化可以用于哪些行业至少五个">3.简述数据可视化可以用于哪些行业(至少五个)</a></li>
+          <li><a href="#4简述可视化的意义至少三条">4.简述可视化的意义(至少三条)</a></li>
+          <li><a href="#5pandas中可以读取多种文件格式常用的文件格式有哪几种">5.pandas中可以读取多种文件格式,常用的文件格式有哪几种</a></li>
+          <li><a href="#6据清洗有哪些方法">6.据清洗有哪些方法</a></li>
+          <li><a href="#7异常值检测有哪些方法两种基本方法">7.异常值检测有哪些方法(两种基本方法):</a></li>
+          <li><a href="#8可视化哪些图像适合对比为什么适合">8.可视化哪些图像适合对比,为什么适合</a></li>
+          <li><a href="#9-编程题">9. 编程题:</a>
+            <ul>
+              <li><a href="#91-阅读以上代码回答问题">9.1 阅读以上代码回答问题:</a></li>
+              <li><a href="#911-encoding是哪一个类型的参数">9.1.1 encoding	是哪一个类型的参数:</a></li>
+              <li><a href="#912-如果要把data3和data4按照b列合并请写出合并代码">9.1.2 如果要把data3和data4按照B列合并,请写出合并代码:</a></li>
+              <li><a href="#92-根据图表来回答问题">9.2 根据图表来回答问题:</a></li>
+              <li><a href="#921-请根据表的数据分析可以从哪几个角度可视化并写出理由">9.2.1 请根据表的数据分析可以从哪几个角度可视化,并写出理由:</a></li>
+              <li><a href="#922-根据上题中选取一种可视化的需求写出完整代码">9.2.2 根据上题中选取一种可视化的需求,写出完整代码</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
 <h1 id="前言">前言</h1>
 <p>  本博客针对，大数据可视化期末考试进行整理。材料内容由 <strong>TraSorrow</strong>（王壮） 同学亲情提供，本人只做整理排版工作。内容不多，祝你取得一个<strong>好成绩</strong>！。</p>
 
@@ -223,7 +623,9 @@
     <span class="c1"># 显示图形  
 </span>    <span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
 
-</code></pre></div></div>]]></content><author><name>TraSorrow</name></author><category term="python" /><category term="大数据" /><summary type="html"><![CDATA[  大数据可视化是指将庞大的数据集通过图表、地图、仪表盘等可视化工具呈现出来，使人们能够直观地理解和分析数据。它是数据分析和决策过程中的重要工具，有助于揭示数据背后的模式、趋势和关联关系，帮助用户更好地理解数据，并根据数据进行决策。]]></summary></entry><entry><title type="html">神经网络</title><link href="http://localhost:4000/artificialNetwork" rel="alternate" type="text/html" title="神经网络" /><published>2023-06-21T00:00:00+08:00</published><updated>2023-06-21T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-artificialNetwork</id><content type="html" xml:base="http://localhost:4000/artificialNetwork"><![CDATA[<p>  人工神经网络（Artificial Neural Networks，简写为ANNs）也简称为神经网络（NNs）或称作连接模型（Connection Model），它是一种模仿动物神经网络行为特征，进行分布式并行信息处理的算法数学模型。这种网络依靠系统的复杂程度，通过调整内部大量节点之间相互连接的关系，从而达到处理信息的目的。</p>
+</code></pre></div></div>
+
+<p><a href="#article_top">回到顶部</a></p>]]></content><author><name>TraSorrow</name></author><category term="python" /><category term="大数据" /><summary type="html"><![CDATA[  大数据可视化是指将庞大的数据集通过图表、地图、仪表盘等可视化工具呈现出来，使人们能够直观地理解和分析数据。它是数据分析和决策过程中的重要工具，有助于揭示数据背后的模式、趋势和关联关系，帮助用户更好地理解数据，并根据数据进行决策。]]></summary></entry><entry><title type="html">神经网络</title><link href="http://localhost:4000/artificialNetwork" rel="alternate" type="text/html" title="神经网络" /><published>2023-06-21T00:00:00+08:00</published><updated>2023-06-21T00:00:00+08:00</updated><id>http://localhost:4000/wuhan-artificialNetwork</id><content type="html" xml:base="http://localhost:4000/artificialNetwork"><![CDATA[<p>  人工神经网络（Artificial Neural Networks，简写为ANNs）也简称为神经网络（NNs）或称作连接模型（Connection Model），它是一种模仿动物神经网络行为特征，进行分布式并行信息处理的算法数学模型。这种网络依靠系统的复杂程度，通过调整内部大量节点之间相互连接的关系，从而达到处理信息的目的。</p>
 
 <hr />
 
@@ -7970,380 +8372,4 @@ D、集中是民主的必然要求和归宿
 <p>  VPN虚拟专用网络，利用公用网络架设专用网络活动目录。</p>
 
 <h4 id="组策略">组策略</h4>
-<p>  是管理员为用户和计算机定义并控制程序、网络资源及操作系统行为的主要工具。</p>]]></content><author><name>Ranok</name></author><category term="服务器" /><category term="期末考试" /><summary type="html"><![CDATA[  服务器指的是网络环境下为客户机(Client)提供某种服务的专用计算机，服务器安装有网络操作系统和各种服务器应用系统软件(如Web服务、电子邮件服务)的计算机。服务器具有高速的CPU运算能力、长时间的可靠运行、强大的I/O外部数据吞吐能力以及更好的扩展性。]]></summary></entry><entry><title type="html">计算机组成原理</title><link href="http://localhost:4000/computer" rel="alternate" type="text/html" title="计算机组成原理" /><published>2022-12-18T00:00:00+08:00</published><updated>2022-12-18T00:00:00+08:00</updated><id>http://localhost:4000/shaoxing-computer</id><content type="html" xml:base="http://localhost:4000/computer"><![CDATA[<p>计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。</p>
-
-<hr />
-
-<h2 id="前言">前言</h2>
-<p>本博客针对《计算机组成原理》课程进行期末复习，其中复习形式以<strong>对真题的解答</strong>为主要方式。本门课程偏硬件，对于软件专业的可能需要花费更多的时间来攻克本门课程。希望你顺利通过本门考试。</p>
-
-<hr />
-
-<h2 id="考题分析">考题分析</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">题型</th>
-      <th style="text-align: center">单项分数</th>
-      <th style="text-align: center">题量</th>
-      <th style="text-align: center">总分</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">选择</td>
-      <td style="text-align: center">2</td>
-      <td style="text-align: center">10</td>
-      <td style="text-align: center">20</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">判断</td>
-      <td style="text-align: center">1</td>
-      <td style="text-align: center">10</td>
-      <td style="text-align: center">10</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">简答</td>
-      <td style="text-align: center">5</td>
-      <td style="text-align: center">10</td>
-      <td style="text-align: center">20</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">计算</td>
-      <td style="text-align: center">10</td>
-      <td style="text-align: center">3</td>
-      <td style="text-align: center">30</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">综合</td>
-      <td style="text-align: center">15</td>
-      <td style="text-align: center">2</td>
-      <td style="text-align: center">30</td>
-    </tr>
-  </tbody>
-</table>
-
-<hr />
-
-<h2 id="选择题">选择题</h2>
-
-<h4 id="1-两个数9f5-h和513-h相加得-c-">1. 两个数\(9F5 H\)和\(513 H\)相加，得( C ).</h4>
-
-<blockquote>
-  <p>后缀<code class="language-plaintext highlighter-rouge">H</code>表示16进制，其表示方式\(9F5 H\)等价于\((9F5)_{16}\)</p>
-</blockquote>
-
-<p>  A: BDBH<br />
-  B: CD8H<br />
-  C: F08H<br />
-  D: CC8H</p>
-
-<h4 id="2--d-表示法主要用于表示浮点数中的阶码">2. ( D )表示法主要用于表示浮点数中的阶码。</h4>
-
-<p>  A: 原码<br />
-  B: 补码<br />
-  C: 反码<br />
-  D: 移码<br /></p>
-
-<h4 id="3-存储字长是-c-">3. 存储字长是( C )</h4>
-<blockquote>
-  <p>存储字长是位数，大小才是个数</p>
-</blockquote>
-
-<p>  A: 存储单元的个数<br />
-  B: 机器指令的位数<br />
-  C: 存放在一个存储单元之后的二进制代码位数<br />
-  D: 机器字长<br /></p>
-
-<h4 id="4-若x补--110001100则x原-b-">4. 若[x]补 = 1.10001100，则[x]原=( B )。</h4>
-<blockquote>
-  <p>这里的第一位表示符号位不是小数点<br />
-原码 = 补码按位取反后 + 1</p>
-</blockquote>
-
-<p>  A: 1.0010101<br />
-  B: 1.01110100<br />
-  C: 0.0010110<br />
-  D: 0.1101010<br /></p>
-
-<h4 id="5-若cpu的地址线为a0a15某芯片存储单元有8k则加在该存储器芯片上的地址线为-c-">5. 若CPU的地址线为A0~A15，某芯片存储单元有8K，则加在该存储器芯片上的地址线为( C )。</h4>
-<blockquote>
-  <p>1k 表示 \(2^{10}\) 所以可以推算出 8k 表示 \(2^{13}\) 所以总线占据13位</p>
-</blockquote>
-
-<p>  A: A0~A10<br />
-  B: A0~A11<br />
-  C: A0~A12<br />
-  D: A0~A13<br /></p>
-
-<h4 id="6-冯诺依曼机工作方式的基本特点是-b-">6. 冯.诺依曼机工作方式的基本特点是( B )。</h4>
-
-<p>  A: 多指令流单数据流<br />
-  B: 按地址访问并顺序执行指令<br />
-  C: 堆栈操作<br />
-  D: 存储器按内容选择地址<br /></p>
-
-<h4 id="7-某一ram-芯片其容为10248位其数据线和地延线分别为-c-">7. 某一RAM 芯片，其容为1024*8位，其数据线和地延线分别为( C )。</h4>
-<blockquote>
-  <p>1024 表示地址线 \(2^{10}\) 共10位，数据线为8位</p>
-</blockquote>
-
-<p>  A: 3、10<br />
-  B: 10、3<br />
-  C: 8、10<br />
-  D: 10、8<br /></p>
-
-<h4 id="8-cache的地址映射中若主存中的任意一块均可映射到cache内的任意一块的位置上称-b-">8. Cache的地址映射中，若主存中的任意一块均可映射到Cache内的任意一块的位置上，称( B )。</h4>
-<blockquote>
-  <p>直接映射表示：取模映射，每一个块只能映射到模数固定的位置上。<br />
-全相联映射：如题意。<br />
-组相联映射：组间直接映射，组内全映射<br /></p>
-</blockquote>
-
-<p>  A: 直接映射<br />
-  B: 全相联映射<br />
-  C: 组相联映射<br />
-  D: 以上全是<br /></p>
-
-<h4 id="9-某机字长8位来用补码形式则机疑数能表示的范国是-c-">9. 某机字长8位，来用补码形式，则机疑数能表示的范国是( C )。</h4>
-<blockquote>
-  <p>左闭右开</p>
-</blockquote>
-
-<p>  A: -127~+127<br />
-  B: -128~+128<br />
-  C: -128~+127<br />
-  D: -127~+128<br /></p>
-
-<h4 id="10-计算机操作的最小单位时间是-a-">10. 计算机操作的最小单位时间是( A )。</h4>
-
-<p>  A: 时钟周期<br />
-  B: 机器周期<br />
-  C: CPU周期<br />
-  D: 指令周期<br /></p>
-
-<hr />
-
-<h2 id="判断题">判断题</h2>
-
-<h4 id="11超前进位不要考虑前一位来的进位">11．超前进位不要考虑前一位来的进位。（✔）</h4>
-<h4 id="12-在补码的加减法中用两位符号位判断溢出两位符号位组合为10时表示结果正溢">12. 在补码的加减法中，用两位符号位判断溢出,两位符号位组合为10时，表示结果正溢。（✖）</h4>
-<blockquote>
-  <p>00	结果为正，无溢出 <br />
-01	正溢，（大于机器所能表示的最大正数）<br />
-10	负溢，（小于机器所能表示的最小负数）<br />
-11	结果为负，无溢出<br /></p>
-</blockquote>
-
-<h4 id="13-nand闪存更适用作为u盘-">13. NAND闪存更适用作为U盘。 （✔）</h4>
-<h4 id="14-在程序的执行过程中cache与主存的地址映射是由操作系统来管理的-">14. 在程序的执行过程中，Cache与主存的地址映射是由操作系统来管理的。 (✖)</h4>
-<blockquote>
-  <p>此处应该把<code class="language-plaintext highlighter-rouge">操作系统</code>换成<code class="language-plaintext highlighter-rouge">硬件</code></p>
-</blockquote>
-
-<h4 id="15存取时间比存取周期花费的时间要长一些-">15．存取时间比存取周期花费的时间要长一些。 (✖)</h4>
-<blockquote>
-  <p>存取周期包括了存储时间，所以存储周期时间要更长</p>
-</blockquote>
-
-<h4 id="16-浮点数的正负由阶码的正负符号决定-">16. 浮点数的正负由阶码的正负符号决定。 (✖)</h4>
-<blockquote>
-  <p>正负由符号位决定</p>
-</blockquote>
-
-<h4 id="17-nor闪存更适用作为程序存储器-">17. NOR闪存更适用作为程序存储器。 (✖)</h4>
-
-<h4 id="18-e2prom-是带电可擦可编程的只读存储-">18. \(E^2PROM\) 是带电可擦可编程的只读存储。 (✔)</h4>
-<h4 id="19硬件实现的功能一般比款件实现具有更尚的执行速度-">19．硬件实现的功能一般比款件实现具有更尚的执行速度。 (✔)</h4>
-<h4 id="20-动态存储dram的刷新是以列为单位的-">20. 动态存储DRAM的刷新是以列为单位的。 (✖)</h4>
-<blockquote>
-  <p>应该以<strong>行</strong>为单位</p>
-</blockquote>
-
-<hr />
-
-<h2 id="简答题">简答题</h2>
-<h4 id="21-任意写出五种指令寻址方式">21. 任意写出五种指令寻址方式。</h4>
-
-<p>  1. 隐含寻址
-  2. 立即寻址
-  3. 直接寻址
-  4. 间接寻址
-  5. 寄存器寻址
-  6. 寄存器间接寻址
-  7. 偏移寻址
-  8. 堆栈寻址</p>
-
-<h4 id="22写出-nor和nand型flash闪存各自的优缺点">22．写出 NOR和NAND型Flash闪存各自的优缺点</h4>
-<p>  NOR可靠性高，适用于擦除次数和编程操作较少，而直接执行代码的场合。
-  NAND存储速度快，闪存有10倍于NOR闪存的可擦除次数，适用于大容量存储设备。</p>
-
-<hr />
-
-<h2 id="计算题">计算题</h2>
-<h3 id="23-二进制计算">23. 二进制计算</h3>
-<blockquote>
-  <p>指数 = 阶码 - 127</p>
-
-  <p>IEEE754标准: 1位符号位 + 8位阶码 + 23位尾数</p>
-</blockquote>
-
-<h4 id="1设浮点数的阶码和尾数部分均用二进制补码表示按照浮点数的运算规则计算xyx2-1010101100y2-100-0101000">(1)设浮点数的阶码和尾数部分均用二进制补码表示，按照浮点数的运算规则计算X+Y:<br />\(X=2^{-101}*0.101100，Y=2^{-100}*(-0.101000)\)</h4>
-
-<p>  [x]浮=1011;0.101100，[y]浮=1100;1.011000</p>
-
-<p>  对阶:小阶向大阶看齐。</p>
-
-<p>  △E=EA-EB=-1</p>
-
-<p>  [x]浮’=1100;0.010110</p>
-
-<p>  尾数相加：00.010110+11.011000=11.101110</p>
-
-<p>  需左规一次</p>
-
-<p>  [x+y]浮=1011；1.011100</p>
-
-<p>  X+Y=2-101*（-0.100100）</p>
-
-<h4 id="2将十进制数10375表示成单精度的ieee754标准规定的32位短浮点数结呆以十六进制形式给出">（2）将十进制数10.375表示成单精度的IEEE754标准规定的32位短浮点数（结呆以十六进制形式给出)。</h4>
-
-<p>将整数部分和小数部分整理成二进制可以得到：</p>
-
-<p>  \(10.375=(1010.011)_2\)</p>
-
-<p>移动小数点，使其位于第一二位之间：</p>
-
-<p>  \(1010.011=1.010011 X 2^3\)</p>
-
-<p>可以得到：</p>
-
-<p>  \(S=0 E=3+127=130 M=010011\)</p>
-
-<p>所以有二进制的IEEE754标准表达式：</p>
-
-<p>  \(01000001 00100110 00000000 00000000\)</p>
-
-<p>最终得到16进制的IEEE754标准表达式：</p>
-
-<p>  \((41260000)_{16}\)</p>
-
-<h3 id="24设主存容量为256k字cache容量为2k字块长为256字存储器按字寻址">24．设主存容量为256K字，Cache容量为2K字，块长为256字，存储器按字寻址。</h3>
-<blockquote>
-  <p>块数 = 容量 / 块长</p>
-
-  <p>直接映射标志位 = s - r<br />
-全相联映射标志位 = s<br />
-w = log(块大小)，r = log(Cache行数)，s = log(主存块数) - w</p>
-</blockquote>
-
-<h4 id="1在直接映射方式下设计主存地址格式并求标志位的位数">1)在直接映射方式下,设计主存地址格式并求标志位的位数;</h4>
-
-<p>  \(块大小 = 256 = 2^8 = 2^w 字节\)<br />
-  \(所以w=8位\)</p>
-
-<p>  \(主存寻址单元数 = 256K = 2^{18} = 2^{s+w}\)<br />
-  \(所以s = 18-8 = 10 位\)</p>
-
-<p>  \(Cache的行大小=2K/256=2^2=2^r\)<br />
-  \(所以r=2 位，标记位位数=s-r=10-2=8位\)</p>
-
-<p>综上所述：</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">标记s-r</th>
-      <th style="text-align: center">行r</th>
-      <th style="text-align: center">字地址w</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">8位</td>
-      <td style="text-align: center">2位</td>
-      <td style="text-align: center">8位</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>标记位的位数是<strong>8</strong>位</p>
-
-<h4 id="2在全相联映射方式下设计主存地址格式并求标志位的位数">2)在全相联映射方式下，设计主存地址格式并求标志位的位数。</h4>
-<p>  \(块大小 = 256 = 2^8 = 2^w 字节\)<br />
-  \(所以w=8位\)</p>
-
-<p>  \(主存寻址单元数 = 256K = 2^{18} = 2^{s+w}\)<br />
-  \(所以s = 18-8 = 10 位\)</p>
-
-<p>综上所述</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">标记s</th>
-      <th style="text-align: center">字地址w</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">10位</td>
-      <td style="text-align: center">8位</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>标记位的位数是<strong>10</strong>位</p>
-
-<hr />
-
-<h2 id="综合题">综合题</h2>
-
-<h3 id="25用8k2位的sram芯片组成32k8位的存储器试问">25．用8K*2位的SRAM芯片组成32K*8位的存储器。试问:</h3>
-
-<h4 id="1地址寄存器多少位5分">1)地址寄存器多少位?(5分)</h4>
-
-<p>  字大小 = 32K = 2^15<br />
-  所以需要15位</p>
-
-<h4 id="2共需要多少片sram5分">2)共需要多少片SRAM?(5分)</h4>
-
-<p>由题意可得
-  新组成的存储器，需要4倍的字扩容、4倍的位扩容才能得到<br />
-  所以：需要\(4*4 = 16\)片</p>
-
-<h4 id="3画出此存储器的组成简要框图5分">3)画出此存储器的组成简要框图。(5分)</h4>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/computer/1.jpg" alt="1.jpg" />
-    </div>
-    
-</div>
-
-<h3 id="26-作图微指令与微操作">26. 作图（微指令与微操作）</h3>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/computer/3.jpg" alt="3.jpg" />
-    </div>
-    
-</div>
-
-<h4 id="参见图1的数据通路画出取数指令ldar3ro的指令周期流程图其含义是将r3为地址数存单元的内容取至寄存器ro中画出方框图并标出各微操作信号序列">参见图1的数据通路,画出取数指令“LDA(R3),RO的指令周期流程图,其含义是将(R3)为地址数存单元的内容取至寄存器RO中，画出方框图并标出各微操作信号序列。</h4>
-<blockquote>
-  <p>输入可以不用画</p>
-
-  <p>在下图中，包括菱形在内的上面部分是<strong>取指</strong>，不包括菱形的下部分是<strong>执行</strong></p>
-</blockquote>
-
-<div class="row">
-    
-    <div class="column">
-        <img class="single" src="/assets/img/blog-img/computer/2.bmp" alt="2.bmp" />
-    </div>
-    
-</div>]]></content><author><name>Ranok</name></author><category term="计算机组成原理" /><category term="期末考试" /><summary type="html"><![CDATA[计算机组成原理重点讲授计算机系统的硬件组成，及其主要功能子系统的基本原理和逻辑设计；主要内容包括计算机系统概述，数据的表示、运算与校验，CPU子系统，存储子系统，总线与I/O子系统，I/O设备及接口等。]]></summary></entry></feed>
+<p>  是管理员为用户和计算机定义并控制程序、网络资源及操作系统行为的主要工具。</p>]]></content><author><name>Ranok</name></author><category term="服务器" /><category term="期末考试" /><summary type="html"><![CDATA[  服务器指的是网络环境下为客户机(Client)提供某种服务的专用计算机，服务器安装有网络操作系统和各种服务器应用系统软件(如Web服务、电子邮件服务)的计算机。服务器具有高速的CPU运算能力、长时间的可靠运行、强大的I/O外部数据吞吐能力以及更好的扩展性。]]></summary></entry></feed>
