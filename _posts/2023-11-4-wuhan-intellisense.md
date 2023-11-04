@@ -211,7 +211,7 @@ thumbnail: "assets/img/thumbnails/feature-img/TraSorrow.jpg" # 这是一个会�
 ### 3.情感分析的功能,应用场景
 	
     功能:情感分析即文本倾向性分析，就是计算机判断人们的看法或评论是属于对事物的积极、消极或中性意见。
-	<br>
+
     应用场景:
 
     1.	电商平台

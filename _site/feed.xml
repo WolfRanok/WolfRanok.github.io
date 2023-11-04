@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-04T21:07:56+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">智能感知</title><link href="http://localhost:4000/2023/11/04/wuhan-intellisense.html" rel="alternate" type="text/html" title="智能感知" /><published>2023-11-04T00:00:00+08:00</published><updated>2023-11-04T00:00:00+08:00</updated><id>http://localhost:4000/2023/11/04/wuhan-intellisense</id><content type="html" xml:base="http://localhost:4000/2023/11/04/wuhan-intellisense.html"><![CDATA[<p>  《智能感知》是一门专注于研究如何通过计算机技术和人工智能理论来感知和理解现实世界的课程。它涵盖了多个领域的知识，包括机器学习、深度学习、计算机视觉、自然语言处理等，旨在培养学生具备利用人工智能技术进行数据分析和解决实际问题的能力。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-04T21:11:14+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ranok</title><subtitle>Wolf Biting Pencil</subtitle><entry><title type="html">智能感知</title><link href="http://localhost:4000/2023/11/04/wuhan-intellisense.html" rel="alternate" type="text/html" title="智能感知" /><published>2023-11-04T00:00:00+08:00</published><updated>2023-11-04T00:00:00+08:00</updated><id>http://localhost:4000/2023/11/04/wuhan-intellisense</id><content type="html" xml:base="http://localhost:4000/2023/11/04/wuhan-intellisense.html"><![CDATA[<p>  《智能感知》是一门专注于研究如何通过计算机技术和人工智能理论来感知和理解现实世界的课程。它涵盖了多个领域的知识，包括机器学习、深度学习、计算机视觉、自然语言处理等，旨在培养学生具备利用人工智能技术进行数据分析和解决实际问题的能力。</p>
 
 <blockquote>
   <p>温馨提示：如果你觉得界面配色有些刺眼，你可以点击右上角的菜单，选择使用圆形按钮切换主题背景。</p>
@@ -230,7 +230,7 @@ D. 语音识别
 <h3 id="3情感分析的功能应用场景">3.情感分析的功能,应用场景</h3>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>功能:情感分析即文本倾向性分析，就是计算机判断人们的看法或评论是属于对事物的积极、消极或中性意见。
-&lt;br&gt;
+
 应用场景:
 
 1.	电商平台
