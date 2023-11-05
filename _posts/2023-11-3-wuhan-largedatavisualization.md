@@ -125,7 +125,7 @@ thumbnail: assets/img/thumbnails/feature-img/largedatavisualization.jpg # 文件
     3. ECharts
     4. FineBl
     5. Python numpy Matplotlib库
-    6. Exccel
+    6. Excel
 
 
 ### 3.简述数据可视化可以用于哪些行业(至少五个)
