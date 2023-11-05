@@ -51,7 +51,7 @@ thumbnail: assets/img/thumbnails/feature-img/largedatavisualization.jpg # 文件
 
 ---
 # 前言
-&emsp;&emsp;本博客针对，大数据可视化期末考试进行整理。材料内容由 **TraSorrow**（王壮） 同学亲情提供，本人只做整理排版工作。内容不多，祝你取得一个**好成绩**！。
+&emsp;&emsp;本博客针对，大数据可视化期末考试进行整理。材料内容由 **TraSorrow**同学亲情提供，本人只做整理排版工作。内容不多，祝你取得一个**好成绩**！。
 
 ---
 
@@ -213,36 +213,6 @@ thumbnail: assets/img/thumbnails/feature-img/largedatavisualization.jpg # 文件
 
 #### 9.2.2 根据上题中选取一种可视化的需求,写出完整代码
 
-> 注意本题代码，老师并未给出，以下为我自创代码，请自行斟酌是否使用。
-
-
-```python
-    import matplotlib.pyplot as plt  
-    import pandas as pd  
-    
-    # 读取数据  
-    data = pd.read_csv('china_gdp.csv')  
-    
-    # 定义年份和数据列  
-    years = data['Year'].tolist()  
-    gdp_total = data['GDP (in trillions of US dollars)'].tolist()  
-    gdp_per_capita = data['Per Capita GDP (in US dollars)'].tolist()  
-    
-    # 创建一个新的图形  
-    plt.figure(figsize=(10, 5))  
-    
-    # 创建一个柱状图，将数据点放在正确的位置，并设置每个柱子的高度  
-    plt.bar(years, gdp_total, color='blue')  
-    plt.bar(years, gdp_per_capita, color='green')  
-    
-    # 设置x轴和y轴的标签，以及图形的标题  
-    plt.xlabel('Year')  
-    plt.ylabel('GDP (in trillions of US dollars)')  
-    plt.title('China GDP: Total and Per Capita')  
-    
-    # 显示图形  
-    plt.show()
-
-```
+> 注意本题代码老师并未透露。且题目也可能变化，为了避免误导此处不展示代码示例。
 
 [回到顶部](#article_top)
