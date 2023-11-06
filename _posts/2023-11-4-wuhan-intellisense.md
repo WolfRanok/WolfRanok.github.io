@@ -236,9 +236,11 @@ permalink: intellisense # 路径
 
 #### 1.程序填空
 
+> 注意这里只显示需要填写答案的部分，并不是完整的代码，请注意区分！
+
 ```python
     #判断图片是否存在
-    if os.path.exists(image_path):
+    if not os.path.exists(image_path):
     #读取图片数据
     data = f.read()
     #将api_key作为请求params中的参数,发送post请求
