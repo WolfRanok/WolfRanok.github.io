@@ -62,5 +62,66 @@ John补充说，纳什的康复不一定是正常的事情。精神分裂症通�
 ---
 
 ## 翻译
+
+### 翻译1 Spell of the Rising Moon（赏月）
+共7个
+
+---
+
+Still,  it tugs at our minds. If we unexpectedly encounter the full moon, huge and yellow over the horizon, we are helpless but to stare back at its commanding presence.And the moon has gifts to bestow upon those who watch.
+
+**译文1**：
+
+尽管如此，它仍然牵动着我们的思绪。如果我们意外地遇到满月，巨大的黄色月亮悬在地平线上，我们除了凝视着它那威严的存在之外，别无他法。而且，月亮会赐予那些注视它的人以礼物。
+
+---
+
+But as the moon lifted off the ridge it gathered firmness and authority.Its complexion changed from red,to orange, to glod,to impassive yellow.It seemed to draw light out of the darkening earth, for asit rose,the hills andvalleys below grew dimmer.By the time the moonstood clear of the horizon, full chested and round and the color of ivory, the valleys were deep shadows in the landscape.
+
+**译文2**：
+
+但是，当月亮从山脊上升起时，它变得坚定而威严。它的颜色从红色变为橙色，再变为金色，最后变为冷漠的黄色。它似乎从逐渐暗淡的大地上吸取了光芒，因为随着它的升起，下面的山丘和山谷变得越来越暗。当月亮完全脱离地平线，饱满圆润，呈现出象牙般的颜色时，山谷在景观中变成了深深的阴影。
+
+---
+
+Moonrise is slow and serried with subtleties.To watch it, we must slip into an older,more patient sense of time.To watch the moon move inexorably higher is to find an unusual stillness within outselves.Our imaginations become aware of the vast distances of space,the immensity of the earth and the huge improbability of our own existence.We feel small but privileged.
+
+**译文3**：
+
+月出是缓慢的，充满了微妙的变化。为了观看它，我们必须融入一种更古老、更耐心的时间感。看着月亮无情地越升越高，我们会发现自己内心深处有一种不同寻常的宁静。我们的想象力开始意识到太空的浩瀚、地球的辽阔以及我们自身存在的巨大不可能性。我们感到渺小但又受着恩待。
+
+---
+
+Moonlight shows us none of life's harder edges. Hillsides seem silken and silvery,the oceans still and blue in its light. In moonlight we become less calculating, more drawn to our feelings.
+
+**译文4**：
+
+月光没有让我们看到生活的棱角。山坡在阳光下显得柔滑而银白，海洋在阳光下显得平静而湛蓝。在月光下，我们变得少了算计，多了被情感所吸引。
+
+---
+
+I return often to the rising moon.I am draw especially when events crowd ease and clarity of vision into a small corner of my life.
+
+**译文5**：
+
+我经常回到月出的时刻。特别是当生活中的琐事将我的轻松和清晰的视野挤到一个小小的角落时，我更是被月出所吸引。
+
+---
+
+Lovers and poets find deeper meaning at night.We are all apt to pose deeper questions-about our originis and destinies.We indulge in riddles,rather than in the impersonal geometries that govern the daylit world.We become philosophers and mystics.
+
+**译文6**：
+
+恋人和诗人在夜晚总能找到更深层的意义。我们都倾向于提出更深层次的问题——关于我们的起源和命运。我们沉迷于谜语之中，而不是沉迷于支配日间世界的非人格化的几何图形。我们变成了哲学家和神秘主义者。
+
+---
+
+At moonrise, as we slow our minds to the pace of the heavens, enchanlment steals over us.We open the vents of feeling and exercise parts of our minds that reason locks away by day.We hear,across the distances,murmurs of ancient hunters and see anew the visions of poets and lovers of long ago.
+
+**译文7**：
+
+在月出之时，当我们放慢思绪，与天际的节奏同步时，我们被迷人的景象所征服。我们敞开心扉，运用那些白天被理智锁住的思维部分。我们听到远处古代猎人的低语，重新看到很久以前诗人和恋人的幻象。
+
+
 ---
 ## 写作
