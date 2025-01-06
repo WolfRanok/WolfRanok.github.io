@@ -522,7 +522,7 @@ permalink: postgraduateEnglish # 这条会将该界面的URL自定义
     C  landmark
     D  roadmap
 
-正确答案:monumental
+正确答案:landmark
 
 5 The fact that your application was not successful this time does not ___________the possibility of your applying again next time.
 
@@ -845,7 +845,7 @@ His remoteness was punctuated by flights of garrulousness about outer space and 
 
 ---
 
-Nash's insight into the dynamics of human rivalry——his theory of rational conflict and cooperation——was to bacome one of the most influential ideas of the twentieth century, transforming the young science of economics the way that Mendel's ideas of genetic transmission, Darwin's model of natural selection, and Newton's calestial mechanics reshaped biology and physics in their day.
+Nash's insight into the dynamics of human rivalry——his theory of rational conflict and cooperation——was to bacome one of the most influential ideas of the twentieth century, transforming the young science of economics the way that Mendel's ideas of genetic transmission, Darwin's model of natural selection, and Newton's celestial mechanics reshaped biology and physics in their day.
 
 **译文7**：
 
@@ -881,14 +881,14 @@ when most people believed in an essentially static and unchanging universe, the 
 
 ---
 
-In order to talk about the nature of the universe and to discuss questions such as whether it has a beginning or an end.
+In order to talk about the nature of the universe and to discuss questions such as whether it has a beginning or an end, you have to be clear about what a scientific theory is.
 
 **译文4**：
 
 为了探讨宇宙的本质以及宇宙是否有始有终等问题，你必须清楚什么是科学理论。
 
 ---
-A theory is a good theory if it satisfies two requirements. it must accurately deescribe a large class of observations on the basis of a model that contains only a few arbitrary elements, ans it must make definite predictions about the results of future observations.
+A theory is a good theory if it satisfies two requirements. it must accurately describe a large class of observations on the basis of a model that contains only a few arbitrary elements, and it must make definite predictions about the results of future observations.
 
 **译文5**：
 
@@ -917,7 +917,7 @@ Still,  it tugs at our minds. If we unexpectedly encounter the full moon, huge a
 
 ---
 
-But as the moon lifted off the ridge it gathered firmness and authority.Its complexion changed from red,to orange, to glod,to impassive yellow.It seemed to draw light out of the darkening earth, for asit rose,the hills andvalleys below grew dimmer.By the time the moonstood clear of the horizon, full chested and round and the color of ivory, the valleys were deep shadows in the landscape.
+But as the moon lifted off the ridge it gathered firmness and authority.Its complexion changed from red,to orange, to glod,to impassive yellow.It seemed to draw light out of the darkening earth, for as it rose,the hills and valleys below grew dimmer.By the time the moonstood clear of the horizon, full chested and round and the color of ivory, the valleys were deep shadows in the landscape.
 
 **译文2**：
 
@@ -957,7 +957,7 @@ Lovers and poets find deeper meaning at night.We are all apt to pose deeper ques
 
 ---
 
-At moonrise, as we slow our minds to the pace of the heavens, enchanlment steals over us.We open the vents of feeling and exercise parts of our minds that reason locks away by day.We hear,across the distances,murmurs of ancient hunters and see anew the visions of poets and lovers of long ago.
+At moonrise, as we slow our minds to the pace of the heavens, enchantment steals over us.We open the vents of feeling and exercise parts of our minds that reason locks away by day.We hear,across the distances,murmurs of ancient hunters and see anew the visions of poets and lovers of long ago.
 
 
 **译文7**：
