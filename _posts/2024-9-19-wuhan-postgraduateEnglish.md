@@ -33,6 +33,10 @@ permalink: postgraduateEnglish # 这条会将该界面的URL自定义
       - [Unit 7 Passage A : Our Picture of the Universe](#unit-7-passage-a--our-picture-of-the-universe)
       - [Unit 10 Passage A : Spell of the Rising Moon](#unit-10-passage-a--spell-of-the-rising-moon)
   - [词汇](#词汇)
+    - [Unit 2 Passage A](#unit-2-passage-a)
+    - [Unit 5 Passage A](#unit-5-passage-a)
+    - [Unit 7 Passage A](#unit-7-passage-a)
+    - [Unit 10 Passage A](#unit-10-passage-a)
   - [完型填空](#完型填空)
     - [Unit 2 Passage A : World English: A Blessing or a Curse?](#unit-2-passage-a--world-english-a-blessing-or-a-curse)
     - [Unit 5 Passage A : A Beautiful Mind](#unit-5-passage-a--a-beautiful-mind-1)
@@ -294,6 +298,381 @@ permalink: postgraduateEnglish # 这条会将该界面的URL自定义
 
 ---
 ## 词汇
+### Unit 2 Passage A
+
+1 There has been much opposition from some social groups, __________from the farming community.
+
+    A straightforwardly
+    B notably
+    C virtually
+    D exceptionally
+
+正确答案:notably
+
+2 The __________view in Britain and other Western countries associates aging with decline, dependency, isolation, and often poverty.
+
+    A  predominant
+    B  credulous
+    C  inclusive
+    D  sustainable
+
+正确答案:predominant
+
+3 But gifts such as these cannot be awarded to everybody, either by judges or by the most __________of governments.
+  
+    A  tough
+    B  demanding
+    C  diverse
+    D  benign
+
+正确答案:benign
+
+4 The foreman read the __________of guilty fourteen times, one for each defendant.
+
+    A  prejudice
+    B  verification
+    C  verdict
+    D  punishment
+
+正确答案:verdict
+
+5.
+ They fear it could have a(n) __________effect on global financial markets.
+
+    A  sizeable
+    B  adverse
+    C  beneficial
+    D  consequential
+
+正确答案:adverse
+
+6 The UN threatened to __________economic sanctions if the talks were broken off.
+
+    A  engage
+    B  pursue
+    C  abandon
+    D  invoke
+
+正确答案:invoke
+
+7 There are at least four crucial differences between the new __________and the old government.
+
+    A  regime
+    B  hegemony
+    C  complex
+    D  federation
+
+正确答案:regime
+
+8 These questions __________a challenge to established attitude of superiority toward the outside world.
+
+    A  evolve
+    B  constitute
+    C  tolerate
+    D  arouse
+
+正确答案:constitute
+
+9 Because of  this, a  strong administrative __________was needed to plan the use of scarce resources, organize production and regulate distribution.
+
+    A  apparatus
+    B  constitution
+    C  insistence
+    D  promotion
+
+正确答案:apparatus
+
+10 I learnt that there are  no genuinely __________animals in this area, all the animals were brought here from other places.
+
+    A  endangered
+    B  domesticated
+    C  indigenous
+    D  extinct
+
+正确答案:indigenous
+
+
+### Unit 5 Passage A
+
+1 Another common use of the tag question is in small talk when the speaker is trying to ___________ conversation: “Sure is hot here, isn’t it?”
+
+    A  illicit
+    B  elicit
+    C  solicit
+    D  explicit
+
+正确答案:elicit
+
+2 Napster says it is delaying the launch of its subscription service yet again, after running into serious problems in its talks with other firms. So here is Napster’s ___________: Still not ready.
+
+    A  refrain
+    B  renown
+    C  restraint
+    D  retention
+
+正确答案:refrain
+
+3 The path from initial lab work on a drug to final approval of the drug by the Food & Drug Administration is a long and ___________process.
+
+    A  hilarious
+    B  notorious
+    C  industrious
+    D  laborious
+
+正确答案:laborious
+
+4 When I was a child, I always refused to write thank-you notes for birthday presents from a faraway relative. My mother would ___________me and say, “Paul, you must learn to be polite.”
+
+    A  glide
+    B  slide
+    C  abide
+    D  chide
+
+正确答案:chide
+
+5 A(n) ___________memory may be a good thing, but the ability to forget is the true token of greatness.
+
+    A  attentive
+    B  inattentive
+    C  retentive
+    D  irretentive
+
+正确答案:retentive
+
+6 There’s still a great deal of ___________on the weapons of mass destruction, which despite what President Bush and Prime Minister Blair say, have not yet been found.
+  
+    A  evidence
+    B  skepticism
+    C  knowledge
+    D  consensus
+
+正确答案:skepticism
+
+7 Even though exercise has many positive benefits, too much can be harmful. Teens who exercise ___________are at risk for both physical and psychological problems.
+
+    A  comparatively
+    B  competitively
+    C  compulsively
+    D  comprehensively
+
+正确答案:compulsively
+
+8 Some of the maids were quiet and affectionate. But others were ___________, driving the young women crazy by complaining to them all the time.
+
+    A  querulous
+    B  fabulous
+    C  pretentious
+    D  conscientious
+
+正确答案:querulous
+
+9 There is nothing more fascinating than observing citizens of many different nationalities ___________and exchanging greetings at an international airport.
+
+    A  singling
+    B  tingling
+    C  jingling
+    D  mingling
+
+正确答案:mingling
+
+10 When Dallas police notified the hospital that President Kennedy had been shot, at first, the young neurosurgeon thought it was a ___________.
+ 
+    A  blank
+    B  flank
+    C  prank
+    D  frank
+
+正确答案:prank
+
+---
+
+### Unit 7 Passage A
+
+1 The aim of science is to ___________theories and to replace them by better theories.
+
+    A  falsify
+    B  testify
+    C  prove
+    D  hypothesize
+
+正确答案:falsify
+
+2 Half the people questioned said they were opposed to the military ___________.
+
+    A  interview
+    B  intervention
+    C  interrogation
+    D  interest
+
+正确答案:intervention
+
+3 The Constitution of the United States is a(n) ___________document.
+
+    A  fierce
+    B  inflammable
+    C  conservative
+    D  monumental
+
+正确答案:monumental
+
+4 The invention of the silicon chip was a ___________in the history of the computer.
+
+    A  sign
+    B  stop
+    C  landmark
+    D  roadmap
+
+正确答案:monumental
+
+5 The fact that your application was not successful this time does not ___________the possibility of your applying again next time.
+
+    A  conclude
+    B  prelude
+    C  include
+    D  preclude
+
+正确答案:preclude
+
+6 The certificate had clearly been ___________, because it contained wrong information.
+
+    A  cheated
+    B  misled
+    C  falsified
+    D  flawed
+
+正确答案:falsified
+
+7 How can a loving, ___________God permit disease, war and suffering?
+
+    A  opportunistic
+    B  omnipotent
+    C  oppressive
+    D  observable
+
+正确答案:omnipotent
+
+8 ___________theory is the hypothesis that in radiation the energy of electrons is discharged not continuously but in certain fixed amounts.
+
+    A  Quantum
+    B  Quotient
+    C  Quantity
+    D  Quality
+
+正确答案:Quantum
+
+9 For some ___________reason, he’s decided to cancel the project.
+
+    A  inexpensive
+    B  interacting
+    C  intact
+    D  inexplicable
+
+正确答案:inexplicable
+
+10 Despite his great commercial success he still ___________for critical approval.
+
+    A  yearns
+    B  pulls
+    C  accounts
+    D  lives
+
+正确答案:yearns
+
+---
+
+### Unit 10 Passage A
+
+1 When she arose to speak in their assemblies, her commanding figure and dignified manners _________every trifler into silence.
+
+    A  rushed
+    B  hushed
+    C  cashed
+    D  pushed
+
+正确答案:hushed
+
+2 In many of his paintings of towns, harbors, and rivers, Marquet showed a particular gift for simplification that seized _________upon the essentials in the scene before him.
+
+    A  unexpectedly
+    B  unavoidably
+    C  unerringly
+    D  unbelievably
+
+正确答案:unerringly
+
+3 The old gentleman was so much immersed in business that he was unable to _________much attention upon me.
+
+    A  bestow
+    B  bewilder
+    C  beware
+    D  betray
+
+正确答案:bestow
+
+4 The most famous _________whiteface clown is Felix Adler, who performed in the early and mid-20th century.
+  
+    A  picturesque
+    B  unique
+    C  technique
+    D  grotesque
+
+正确答案:grotesque
+
+5 By the first century B.C., Roman power was growing and Greek influence had begun to _________.
+
+    A  wane
+    B  waver
+    C  weave
+    D  wax
+
+正确答案:wane
+
+6 To starboard, at Hurghada, behind _________ranks of coral reefs, lay the important Marine Biological Station of the University of Egypt.
+  
+    A  severe
+    B  serried
+    C  seduced
+    D  sentimental
+
+正确答案:serried
+
+7 At first, the downturn was confined to industries most sensitive to high interest rates. But _________, the loss of income in these areas had a ripple effect throughout the economy.
+
+    A  inexorably
+    B  intensively
+    C  inimitably
+    D  infinitely
+
+正确答案:inexorably
+
+8 The puppet theater combines three elements: the puppets; the chanters who sing and _________for the puppets; and the players of the three-stringed instrument.
+
+    A  decline
+    B  reclaim
+    C  declaim
+    D  proclaim
+
+正确答案:declaim
+
+9 This is your daily life; to me it is like a scene from a play, over which one sighs to see the curtain fall—all _________, all light, all happiness.
+
+    A  enchantment
+    B  engagement
+    C  enlargement
+    D  endurance
+
+正确答案:enchantment
+
+10 “It was really rural when we moved here,” says Stanley. “But these newcomers are _________the rural atmosphere.”
+
+    A  justifying
+    B  citifying
+    C  ratifying
+    D  simplifying
+
+正确答案:citifying
+
+
 
 ---
 ## 完型填空
