@@ -15,6 +15,37 @@ permalink: postgraduateEnglish # 这条会将该界面的URL自定义
 &emsp;&emsp;本博客是针对期末英语的知识点整理，仅表示个人看法，如果整理有疏漏的地方欢迎和我讨论。最后希望你能认真复习，祝你取得一个好成绩！
 
 ---
+# 目录
+
+- [前言](#前言)
+- [目录](#目录)
+- [试题](#试题)
+  - [试题介绍](#试题介绍)
+  - [阅读理解（译文）](#阅读理解译文)
+    - [4篇泛读](#4篇泛读)
+      - [Unit 3 Passage A : Spillonomics: Underestimating Risk](#unit-3-passage-a--spillonomics-underestimating-risk)
+      - [Unit 6 Passage A : A Christmas Sermon on peace](#unit-6-passage-a--a-christmas-sermon-on-peace)
+      - [Unit 9 Passage B : Fearing Fear Itself](#unit-9-passage-b--fearing-fear-itself)
+      - [Unit 11 Passage B : Will Tech Revolution Overwhelm Global System?](#unit-11-passage-b--will-tech-revolution-overwhelm-global-system)
+    - [1篇精读](#1篇精读)
+      - [Unit 2 Passage A : World English: A Blessing or Curse?](#unit-2-passage-a--world-english-a-blessing-or-curse)
+      - [Unit 5 Passage A : A Beautiful Mind](#unit-5-passage-a--a-beautiful-mind)
+      - [Unit 7 Passage A : Our Picture of the Universe](#unit-7-passage-a--our-picture-of-the-universe)
+      - [Unit 10 Passage A : Spell of the Rising Moon](#unit-10-passage-a--spell-of-the-rising-moon)
+  - [词汇](#词汇)
+  - [完型填空](#完型填空)
+    - [Unit 2 Passage A : World English: A Blessing or a Curse?](#unit-2-passage-a--world-english-a-blessing-or-a-curse)
+    - [Unit 5 Passage A : A Beautiful Mind](#unit-5-passage-a--a-beautiful-mind-1)
+    - [Unit 7 Passage A : Our Picture of the Universe](#unit-7-passage-a--our-picture-of-the-universe-1)
+    - [Unit 10 Passage A : Spell of the Rising Moon](#unit-10-passage-a--spell-of-the-rising-moon-1)
+  - [翻译](#翻译)
+    - [Unit 2 Passage A World English: A Blessing or a Curse](#unit-2-passage-a-world-english-a-blessing-or-a-curse)
+    - [Unit 5 Passage A : A Beautiful Mind](#unit-5-passage-a--a-beautiful-mind-2)
+    - [Unit 7 Passage A : Our picture of the Universe](#unit-7-passage-a--our-picture-of-the-universe-2)
+    - [Unit 10 Passage A : Spell of the Rising Moon](#unit-10-passage-a--spell-of-the-rising-moon-2)
+  - [写作](#写作)
+---
+
 # 试题
 ## 试题介绍
 
@@ -337,47 +368,47 @@ The Moon shows progressively different phases as it moves along its orbit around
 
 ---
 
-For English is a killer. It is English that has killed off Cumbric, Cornish, Norn and Manx. There are still parts of these islands where sizeable communities speak languages that were there before English. Yet English is everwhere in everyday use and understood by all or virtually all, constituting such a threat to the three remaining Celtic languages, Irish, Scottish Gaelic, and Welsh... that their long-term future must be consdered... very greatly at risk.
+For English is a killer. It is English that has killed off Cumbric, Cornish, Norn and Manx. There are still parts of these islands where sizeable communities speak languages that were there before English. Yet English is everwhere in everyday use and understood by all or virtually all, constituting such a threat to the three remaining Celtic languages, Irish, Scottish Gaelic, and Welsh... that their long-term future must be considered... very greatly at risk.
 
-**译文1**
+**译文1**：
 
 因为英语是个杀手。正是英语，导致坎伯兰语、康沃尔语、诺恩语和马恩语灭亡。在那些岛屿的部分地区，还有较大规模的群体讲比英语更古老的当地语言。但是，现在日常生活中，英语无处不在，人人--或者说--几乎人人都懂英语。英语威胁到那三种遗留的凯尔特语:爱尔兰语、苏格兰盖尔语和威尔士语，……所以必须意识到，从长远来看，这三种语言的未来……十分危险。
 
 ---
 
-**译文2**
+**译文2**：
 
-He alos associated such policies with a prejudice which he calls linguicism ( a condition parallel to racism and sexism ). As Phillipson sees it, leading institutions and indiividuals within the predominantly "white" English-speaking world, have ( by design or default ) encouraged or at least tolerated -- and certainly have not opposes -- the hegemonic spread of English, a pread which began some three centuries ago as economic and colonial expansion.
+He also associated such policies with a prejudice which he calls linguicism ( a condition parallel to racism and sexism ). As Phillipson sees it, leading institutions and individuals within the predominantly "white" English-speaking world, have ( by design or default ) encouraged or at least tolerated -- and certainly have not opposes -- the hegemonic spread of English, a spread which began some three centuries ago as economic and colonial expansion.
 
-他还把这种政策和他所称的“语言歧视” 这个情况类似于“种族歧视”“性别歧视”联系在一起。在菲利普森看来，在以“白人”为主的英语世界中，起主导作用的机构和个人，或故意或无意，鼓励或者至少容忍英语大肆扩张，他们当然不反对英语的扩张。英语的扩张开始于大约三个世纪以前，最初的表现形式是经济与民扩张。
+他还把这种政策和他所称的“语言歧视” （这个情况类似于“种族歧视”“性别歧视”）联系在一起。在菲利普森看来，在以“白人”为主的英语世界中，起主导作用的机构和个人（有意无意地）鼓励或者至少容忍英语大肆扩张，他们当然不反对英语的扩张。英语的霸权传播, 始于大约三个世纪前的经济和殖民扩张。
 
 ---
 
-By and large, we now view them as more or less benign, and often talk with admiration and appreciation about the cultures associated wuth them and what they have given to the world. And it is fairly safe to do this, because none of them now poses much of a threat.
+By and large, we now view them as more or less benign, and often talk with admiration and appreciation about the cultures associated with them and what they have given to the world. And it is fairly safe to do this, because none of them now poses much of a threat.
 
-**译文3**
+**译文3**：
 
 总的来说，我们现在认为这些语言比较好，经常以赞美、感激的语气谈论与它们相关的文化以及它们给世界带来的变化。我们这样的态度，没有什么不妥，因为那些语言现在都不构成严重威胁。
 
 ---
 
-English however is probably too close for us to be able to analyze and judge it as dispassionately as we may now discuss the influence of Classical Chinese on East Asia or of Classical Latin on Western Europe. The jury is still out in te trial of the English language, and may take several centuries to produce its verdict, but evern so we can ask,in this European Year of Languages, whether Price and Phillipson are right to warn us all about the lanuage then I am using at this very moment.
+English however is probably too close for us to be able to analyze and judge it as dispassionately as we may now discuss the influence of Classical Chinese on East Asia or of Classical Latin on Western Europe. The jury is still out in the trial of the English language, and may take several centuries to produce its verdict, but evern so we can ask,in this European Year of Languages, whether Price and Phillipson are right to warn us all about the lanuage then I am using at this very moment.
 
-**译文4**
+**译文4**：
 
-我们现在可以冷静地讨论古汉语对东亚或古拉丁语对西欧的影响。但是，我们与英语关系太紧密，无法同样冷静地分析、评价英语。在对英语的审判中，陪审团还没有露面可能需要好几个世纪才能做出裁决。但即使如此，值此欧洲语言年，我们可以提出这个问题: 普莱斯和菲利普森就我此时使用的语言对我们提出的警告是否有道理。
+我们现在可以冷静地讨论古汉语对东亚或古拉丁语对西欧的影响。但是，我们与英语关系太紧密，无法同样冷静地分析、评价英语。对于英语语言的审判，陪审团仍然没有定论，可能需要几个世纪才能做出裁决。但即使如此，值此欧洲语言年，我们可以提出这个问题: 普莱斯和菲利普森就我此时使用的语言对我们提出的警告是否有道理。
 
 ---
 
 English-speaking South Africans of British descent were not particularly strong in opposing the apartheid regime, and the black opposition, whose members had many languages ,was at first weak and disorganized.
 
-**译文5**
+**译文5**：
 
 说英语的、英国裔的南非人不是非常积极地反对种族隔离制度。在黑人的反对力量中成员使用多种语言，他们起初缺少力量与组织。
 
 ---
 
-**译文6**
+**译文6**：
 
 Such symbolism suggests that the users of the world's ligua franca should seek to benefit as fully as possible from the blessing and as far as possible avoid invoking the curse.
 
@@ -385,42 +416,43 @@ Such symbolism suggests that the users of the world's ligua franca should seek t
 
 ---
 
-### Unit 5 Passage A : A Beautiful Mind（美丽心灵）
+### Unit 5 Passage A : A Beautiful Mind
 
-John Forbes Nash, Jr. ——mathematical genius invemor of a theory of ratiohnal behavior, visionary of the thinking machine——had been sitting with his visitor, also a mathematician, for nearly an hour.
+John Forbes Nash, Jr. ——mathematical genius, inventor of a theory of rational behavior, visionary of the thinking machine——had been sitting with his visitor, also a mathematician, for nearly half an hour.
 
-**译文1**
+**译文1**：
+
 小约翰·福布斯·纳什--数学天才、理性行为理论的创立者、预见会思考的机器出现的预言者--已经和来访者，也是一位数学家，共坐了将近半个小时。
 
 ---
 
 He had been staring dully at a spot immediately in front of the left foot of Harvard professor George Mackey, hardly moving except to brush his long dark hair away from his forehead in a fitful, repetitive.
 
-**译文2**
+**译文2**：
 
 他一直目光呆滞地盯着哈佛教授乔治·麦基左脚前方不远的地方，除了一次次重复着将垂在前额的略长的黑发拨开的动作，他几乎一动不动。
 
 ---
 
-Over the next decade, a decade as notable for its supremefaith in human rationality as for its dark anxieties about mankind's survival, Nash proved himself, in the words of the eminent geometer Mikhail Gromov, "the most remarkable mathematician of the second half of the century
+Over the next decade, a decade as notable for its supreme faith in human rationality as for its dark anxieties about mankind's survival, Nash proved himself, in the words of the eminent geometer Mikhail Gromov, "the most remarkable mathematician of the second half of the century.
 
-**译文3**
+**译文3**：
 
 在接下来的十年，在那既以对人类理性抱有无上信念而著称，又以对人类生存怀有无尽忧虑而闻名的十年,纳什,用知名几何学家米克哈尔·格罗莫夫的话说,证明了自己是“20世纪后半叶最杰出的数学家”
 
 ---
 
-"Geniuses", the mathematician PPaul Halmos wrote, "are of two kinds: the ones who are justlike all of us, but very much more os, and the ones ohw, apparentl, have an extra human spark. We can all run,m and some of us can run the mile in less than 4 minutes; but there is nothing that most of us can do that compares with the creation of the Great G-minor Fugue." Nash's genius was of that mysterious variety more often associated with music and ar than with the oldest of all sciences
+"Geniuses", the mathematician Paul Halmos wrote, "are of two kinds: the ones who are just like all of us, but very much more so, and the ones who, apparently, have an extra human spark. We can all run, and some of us can run the mile in less than 4 minutes; but there is nothing that most of us can do that compares with the creation of the Great G-minor Fugue." Nash's genius was of that mysterious variety more often associated with music and art than with the oldest of all sciences.
 
-**译文4**
+**译文4**：
 
-数学家保罗·哈莫斯写道:“天才分为两种:一种就像我们大家一样，只是更为出色;另一种则是那些明显具备超凡人类灵感的人。我们都能跑步，有些人还能在四分钟内跑完一英里;但是我们大多数人所做的一切无论如何也无法与创作出G小调赋格曲相提并论。”纳什的天分就属于那种常与音乐和艺术而非与最古老的科学紧密相连的神奇异禀
+数学家保罗·哈莫斯写道:“天才分为两种:一种就像我们大家一样，只是更为出色;另一种则是那些明显具备超凡人类灵感的人。我们都能跑步，有些人还能在四分钟内跑完一英里;但是我们大多数人所做的一切无论如何也无法与创作出G小调赋格曲相提并论。”纳什的天分就属于那种常与音乐和艺术而非与最古老的科学紧密相连的神奇异禀。
 
 ---
 
 Compulsively rational, he wished to turn life's decisions——whether to take the first elevator or wait for the next one, there to abnk his money, what job to accept, thether to marry——into calculations of advantage and disadvantage, algorithms or mathematial rules divorced for emotion, convention, and tradition.
 
-**译文5**
+**译文5**：
 
 他具有一种强迫性的理性，希望将生活中的决定--是搭乘第一班电梯还是等待下一班，到哪里存钱，接受什么样的工作，是否结婚--都转化为利弊得失的计算，转化为完全脱离感情、习俗和传统的算法法则或数学规则。
 
@@ -428,7 +460,7 @@ Compulsively rational, he wished to turn life's decisions——whether to take t
 
 His remoteness was punctuated by flights of garrulousness about outer space and geopolitical trends, childish pranks, and unpredictable eruptions of anger. But these outbursts were, more often than not, as enigmatic as his silences." He is not one of us" was a constant refrain.
 
-**译文6**
+**译文6**：
 
 他一贯冷漠，但一时兴起也会喋喋不休地谈论外太空和地缘政治趋势，或做出孩子般的恶作剧,或者毫无征兆地勃然大怒。但是这些情感的进发总是和他的沉默一样神秘莫测。“他和我们不一样”是人们常说的一句话。
 
@@ -436,7 +468,7 @@ His remoteness was punctuated by flights of garrulousness about outer space and 
 
 Nash's insight into the dynamics of human rivalry——his theory of rational conflict and cooperation——was to bacome one of the most influential ideas of the twentieth century, transforming the young science of economics the way that Mendel's ideas of genetic transmission, Darwin's model of natural selection, and Newton's calestial mechanics reshaped biology and physics in their day.
 
-**译文7**
+**译文7**：
 
 纳什对于人类竞争动态变化的洞察--他的理性竞争与合作理论--将会成为20世纪最具影响的思想理论之一。这一理论改变着新兴的经济学，其作用无异于孟德尔的基因遗传、达尔文的自然选择模式和牛顿的天体力学再造了当时的生物学和物理学。
 
@@ -448,7 +480,7 @@ Nash's insight into the dynamics of human rivalry——his theory of rational co
 
 A well-know scientist ( some say it was Bertrand Russell ) once gave a public lecture on astronomy. He described how the earth orbits around the sun and how the sun, in turn, orbits around the center of a vast collection of stars called our galaxy.
 
-**译文1**
+**译文1**：
 
 一位著名的科学家(有人说是伯特兰·罗素)曾经做过一次关于天文学的演讲。他描述了地球如何围绕太阳运转，以及太阳如何进而围绕大量星群的中心运转，这些星群即所谓的银河系。
 
@@ -456,7 +488,7 @@ A well-know scientist ( some say it was Bertrand Russell ) once gave a public le
 
 According to a number of early cosmologies and the Jewish/Christian/Muslim tradition, the universe started at a finite, and not very distant, time in the past.
 
-**译文2**
+**译文2**：
 
 依据一些早期的宇宙论的观点和犹太/基督,穆斯林教派传统的观点，字宙起源于一个特定的并且不太遥远的过去时间。
 
@@ -464,7 +496,7 @@ According to a number of early cosmologies and the Jewish/Christian/Muslim tradi
 
 when most people believed in an essentially static and unchanging universe, the question of whether or not it had a beginning was really one of metaphysics or theology. One could account for what was observed equally well on the theory that the univers had existed forever or on the theory that it was set in motion at some finite time in such a manner as to look as though it had existed forever.
 
-**译文3**
+**译文3**：
 
 在多数人都认为宇宙基本上是静态的而且是不变的情况下，探讨宇宙是否有一个起源确实是一个属于玄学或神学范畴的问题。人们可以用两种不同的理论解释他们所观察到的事物。一种理论是宇宙永存;而另外一种理论是宇宙在某一个有限的时间以一种特定的方式被启动，而这种方式又使得宇宙看上去曾经永远存在。
 
@@ -472,14 +504,14 @@ when most people believed in an essentially static and unchanging universe, the 
 
 In order to talk about the nature of the universe and to discuss questions such as whether it has a beginning or an end.
 
-**译文4**
+**译文4**：
 
 为了探讨宇宙的本质以及宇宙是否有始有终等问题，你必须清楚什么是科学理论。
 
 ---
 A theory is a good theory if it satisfies two requirements. it must accurately deescribe a large class of observations on the basis of a model that contains only a few arbitrary elements, ans it must make definite predictions about the results of future observations.
 
-**译文5**
+**译文5**：
 
 一个好的理论应满足两个要求。一是它必须能够基于一个只包含少数几个任意要素的模型来准确地描述人们所观察到的大量现象。二是它还必须能够明确地预测人们未来所能观察到的现象的结果。
 
@@ -487,13 +519,13 @@ A theory is a good theory if it satisfies two requirements. it must accurately d
 
 It turns out to be very difficult to devise a theory to describe the universe all in one go. Instead, we break the problem up into bits and invent a number of partial theories.
 
-**译文6**
+**译文6**：
 
 事实上，要想设计出一个能够描述一切宇宙现象的理论是十分困难的。取代的办法是，我们可以把问题分割开来，进而创建一些局部理论。
 
 ---
 
-### Unit 10 Passage A : Spell of the Rising Moon（赏月）
+### Unit 10 Passage A : Spell of the Rising Moon
 共7个
 
 ---
