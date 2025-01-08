@@ -27,7 +27,7 @@ permalink: postgraduateEnglish # 这条会将该界面的URL自定义
       - [Unit 6 Passage A : A Christmas Sermon on peace](#unit-6-passage-a--a-christmas-sermon-on-peace)
       - [Unit 9 Passage B : Fearing Fear Itself](#unit-9-passage-b--fearing-fear-itself)
       - [Unit 11 Passage B : Will Tech Revolution Overwhelm Global System?](#unit-11-passage-b--will-tech-revolution-overwhelm-global-system)
-    - [1篇精读](#1篇精读)
+    - [4篇精读](#4篇精读)
       - [Unit 2 Passage A : World English: A Blessing or Curse?](#unit-2-passage-a--world-english-a-blessing-or-curse)
       - [Unit 5 Passage A : A Beautiful Mind](#unit-5-passage-a--a-beautiful-mind)
       - [Unit 7 Passage A : Our Picture of the Universe](#unit-7-passage-a--our-picture-of-the-universe)
@@ -57,7 +57,7 @@ permalink: postgraduateEnglish # 这条会将该界面的URL自定义
 
 | 题型 | 分值 | 来源 |
 | -   | -   | -   |
-| 阅读理解   | 40   |  精读四篇线下阅读+一篇显示泛读文章  |
+| 阅读理解   | 40   |  包含一篇线上泛读文章  |
 | 词汇   | 10   | 精读文章的线上词汇题目原题   |
 |  完型填空  | 10  | 精读文章的线上完型填空原题  |
 | 翻译   | 10  | 英译中-线下精读文章原题  |
@@ -174,7 +174,7 @@ permalink: postgraduateEnglish # 这条会将该界面的URL自定义
 
 ---
 
-### 1篇精读
+### 4篇精读
 
 #### Unit 2 Passage A : World English: A Blessing or Curse?
 
@@ -682,14 +682,14 @@ permalink: postgraduateEnglish # 这条会将该界面的URL自定义
 A simplified form of the English language based on 850 key words was developed in the late 1920s by the English psychologist Charles Kay Ogden and **(1)*<u>publicized</u>*** by the English educator I. A. Richards. Known as Basic English, it was used mainly to teach English to non-English- speaking persons and **(2)*<u>promoted</u>*** as an international language. The complexities of English spelling and grammar, however, were major **(3)*<u>obstacles</u>*** to the adoption of Basic English as a second language.
 
 
-The fundamental principle of Basic English was that any idea, **(4)*<u>however</u>*** complex, may be reduced to simple units of thought and expressed clearly by a limited number of everyday words. The 850-word primary vocabulary was **(5)*<u>composed of</u>*** 600 nouns (representing things or events), 150 adjectives (for qualities and **(6)*<u>properties</u>*** ), and 100 general “operational” words, mainly verbs and prepositions. Almost all the words were in **(7)*<u>common</u>*** use in English-speaking countries. More than 60 percent of them were one-syllable words. The basic vocabulary was created **(8)*<u>in part</u>*** by eliminating numerous words which have the same or similar meanings and by **(9)*<u>experiencing</u>*** the use of 18 “basic” verbs, such as make, get, do, have, and be. These verbs were generally combined with prepositions, such as up, among, under, in, and forward. For example, a Basic English student would use the expression “go up” **(10)*<u>in case of</u>*** “ascend”.
+The fundamental principle of Basic English was that any idea, **(4)*<u>however</u>*** complex, may be reduced to simple units of thought and expressed clearly by a limited number of everyday words. The 850-word primary vocabulary was **(5)*<u>composed of</u>*** 600 nouns (representing things or events), 150 adjectives (for qualities and **(6)*<u>properties</u>*** ), and 100 general “operational” words, mainly verbs and prepositions. Almost all the words were in **(7)*<u>common</u>*** use in English-speaking countries. More than 60 percent of them were one-syllable words. The basic vocabulary was created **(8)*<u>in part</u>*** by eliminating numerous words which have the same or similar meanings and by **(9)*<u>extending</u>*** the use of 18 “basic” verbs, such as make, get, do, have, and be. These verbs were generally combined with prepositions, such as up, among, under, in, and forward. For example, a Basic English student would use the expression “go up” **(10)*<u>instead of</u>*** “ascend”.
  
 参考译文：
 
 
 20世纪20年代末，英国心理学家查尔斯·凯·奥格登开发了一种基于850个关键字的英语简化形式，并由英国教育家I.A.理查兹**推广**。它被称为基础英语，主要用于向非英语母语人士教授英语，并**被推广**为一种国际语言。然而，英语拼写和语法的复杂性是采用基础英语作为第二语言的主要**障碍**。
 
-基础英语的基本原则是，任何想法，**无论多么**复杂，都可以简化为简单的思维单位，并通过有限数量的日常单词清晰地表达出来。850个单词的主要词汇由600个名词（表示事物或事件）、150个形容词（表示品质和**属性**）和100个通用的“操作”词**组成**，主要是动词和介词。几乎所有的单词在英语国家都很**常用**。其中60%以上是单音节单词。基本词汇的创建**部分**是通过消除许多具有相同或相似含义的单词，并**体验**18个“基本”动词的使用，如make、get、do、have和be。这些动词通常与介词结合，如up、between、under、in和forward。例如，一名基础英语学生会在“上升”**的情况下**使用“上升”一词。
+基础英语的基本原则是，任何想法，**无论多么**复杂，都可以简化为简单的思维单位，并通过有限数量的日常单词清晰地表达出来。850个单词的主要词汇由600个名词（表示事物或事件）、150个形容词（表示品质和**属性**）和100个通用的“操作”词**组成**，主要是动词和介词。几乎所有的单词在英语国家都很**常用**。其中60%以上是单音节单词。基本词汇是通过**部分地**消除许多具有相同或相似含义的单词，并**扩展**18个“基本”动词的使用而创建的，如make、get、do、have和be。这些动词通常与介词结合，如up、between、under、in和forward。例如，一名基础英语学生会使用“上升”**而不是**“提升”这个表达。
 
 ---
 
@@ -719,6 +719,9 @@ John补充说，纳什的康复不**一定**是正常的事情。精神分裂症
 
 ### Unit 7 Passage A : Our Picture of the Universe
 
+
+instead, create, significantly, on the other hand, as well as, either, balance, stronger, due to, eternal
+
 It is an interesting reflection on the general climate of thought before the twentieth century that no one had suggested that the universe was expanding or contracting. It was generally accepted that **(1)*<u>either</u>*** the universe had existed forever in an unchanging state, or that it had been **(2)*<u>created</u>*** at a finite time in the past more or less as we observe it today. In part this may have been **(3)*<u>due to</u>*** people’s tendency to believe in eternal truths, **(4)*<u>as well as</u>*** the comfort they found in the thought that even though they may grow old and die, the universe is **(5)*<u>eternal</u>*** and unchanging.
 
 Even those who realized that Newton’s theory of gravity showed that the universe could not be static did not think to suggest that it might be expanding. **(6)*<u>Instead</u>***, they attempted to modify the theory by making the gravitational force repulsive at very large distances. This did not **(7)*<u>significantly</u>*** affect their predictions of the motions of the planets, but it allowed an infinite distribution of stars to remain in equilibrium—with the attractive forces between nearby stars **(8)*<u>balanced</u>*** by the repulsive forces from those that were farther away. However, we now believe such an equilibrium would be unstable: If the stars in some region got only slightly nearer each other, the attractive forces between them would become **(9)*<u>stronger</u>*** and dominate over the repulsive forces so that the stars would continue to fall toward each other.**(10)*<u>On the other hand</u>***, if the stars got a bit farther away from each other, the repulsive forces would dominate and drive them farther apart.
@@ -732,6 +735,7 @@ Even those who realized that Newton’s theory of gravity showed that the univer
 ---
 ### Unit 10 Passage A : Spell of the Rising Moon
 
+depend on, phase, permanent, just as, shadow, illuminate, lunar, wane, closer, resemble
 
 The Moon shows progressively different phases as it moves along its orbit around the Earth. Half the Moon is always in sunlight,**(1)*<u>just as</u>*** half of the Earth has day while the other half has night. Thus, there is no **(2)*<u>permanent</u>*** “dark side of the Moon”, which is sometimes confused with the Moon’s far side—the side that always faces away from the Earth. The phases of the Moon **(3)*<u>depend on</u>*** how much of the sunlit half can be seen at any one time. In the **(4)*<u>phase</u>*** called the new moon, the near side is completely in **(5)*<u>shadow</u>***. About a week after a new moon, the Moon is in first quarter, **(6)*<u>resembling</u>*** a luminous half- circle; another week later, the full moon shows its fully lighted near side; a week afterward, in its last quarter, the Moon appears as a half-circle again. The entire cycle is repeated each **(7)*<u>lunar</u>*** month. The Moon is full when it is farther away from the Sun than the Earth; it is new when it is **(8)*<u>closer</u>***. When it is more than half **(9)*<u>illuminated</u>***, it is said to be in gibbous phase. The Moon is said to be **(10)*<u>waning</u>*** as it progresses from full to new, and to be waxing as it proceeds from new to full.
 
